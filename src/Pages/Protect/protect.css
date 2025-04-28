@@ -1,0 +1,475 @@
+.protect-container {
+  padding-top: 3.75rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.protect-container .banner-container {
+  min-height: 18.75rem;
+  background-image: url(https://i.shgcdn.com/b17e6cc1-2f0a-43c3-a589-d620600587c0/-/format/auto/-/preview/3000x3000/-/quality/lighter/);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.protect-container .banner-container .banner-content {
+  text-align: center;
+}
+
+.protect-container .banner-container .banner-content .banner-title {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.protect-container .banner-container .banner-content .banner-title .title-highlight {
+  color: #ec1d24;
+}
+
+.protect-container .banner-container .banner-content .banner-subtitle {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-top: -1.875rem;
+}
+
+.protect-container .banner-container .shogun-tabs {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  max-width: 37.5rem;
+  position: absolute;
+  bottom: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.protect-container .banner-container .shogun-tabs .shogun-tab {
+  cursor: pointer;
+  margin-left: -1.25rem;
+  z-index: 1;
+  position: relative;
+  min-width: 9.375rem;
+  text-align: center;
+}
+
+.protect-container .banner-container .shogun-tabs .shogun-tab .shogun-tab-box {
+  padding: 0.625rem 1.25rem;
+  background: white;
+  color: black;
+  border-radius: 0.3125rem 0.3125rem 0 0;
+  transition: background 0.3s;
+  clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+}
+
+.protect-container .banner-container .shogun-tabs .shogun-tab .shogun-tab-box .shogun-tab-title {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.protect-container .banner-container .shogun-tabs .shogun-tab.shogun-tab-active {
+  z-index: 2;
+}
+
+.protect-container .banner-container .shogun-tabs .shogun-tab.shogun-tab-active .shogun-tab-box {
+  background: #dd0000;
+  color: white;
+}
+
+.protect-container .banner-container .shogun-tabs .shogun-tab .shogun-tab-border {
+  height: 0.1875rem;
+  background: #dd0000;
+  position: absolute;
+  bottom: -0.0625rem;
+  left: 0;
+  right: 0;
+}
+
+.protect-container .main-wrapper {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 2.5rem;
+}
+
+.protect-container .main-wrapper .tab-panel {
+  display: flex;
+  gap: 1.25rem;
+  border-radius: 0.3125rem;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 75rem;
+  padding: 1.875rem;
+  flex-wrap: wrap;
+}
+
+.protect-container .main-wrapper .tab-panel .tab-image-container {
+  flex: 1 1 40%;
+  max-width: 100%;
+}
+
+.protect-container .main-wrapper .tab-panel .tab-image-container .tab-image {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+.protect-container .main-wrapper .tab-panel .tab-details {
+  border: 1px solid #bbb;
+  border-radius: 0.3125rem;
+  padding: 1.25rem;
+  min-height: 12.5rem;
+  flex: 1 1 40%;
+  max-width: 100%;
+}
+
+.protect-container .main-wrapper .tab-panel .tab-details .service-specification .section-title {
+  margin-bottom: 0.625rem;
+  font-size: 1.5625rem;
+  color: red;
+}
+
+.protect-container .main-wrapper .tab-panel .tab-details .service-specification .spec-item {
+  margin-bottom: 0.625rem;
+  font-size: 1rem;
+}
+
+.protect-container .main-wrapper .tab-panel .tab-details .service-description {
+  margin-top: 1.875rem;
+}
+
+.protect-container .main-wrapper .tab-panel .tab-details .service-description .section-title {
+  margin-bottom: 0.625rem;
+  font-size: 1.5625rem;
+  color: red;
+}
+
+.protect-container .main-wrapper .tab-panel .tab-details .service-description .description-text {
+  font-size: 1rem;
+}
+
+.protect-container .info-container {
+  display: flex;
+  align-items: center;
+  padding: 2.5rem 1.25rem;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.protect-container .info-container .info-text {
+  flex: 1;
+  text-align: left;
+  padding: 0 1.25rem;
+}
+
+.protect-container .info-container .info-text .info-title {
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
+}
+
+.protect-container .info-container .info-text .info-description {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.protect-container .info-container .info-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 0 1.25rem;
+}
+
+.protect-container .info-container .info-image-container .info-image {
+  width: 100%;
+  max-width: 28.125rem;
+  height: auto;
+}
+
+.protect-container .faq-container {
+  display: flex;
+  justify-content: center;
+  margin: 2.5rem 0;
+  font-family: Arial, sans-serif;
+}
+
+.protect-container .faq-container .faq-list {
+  list-style: none;
+  padding: 0 1.25rem;
+  width: 100%;
+  max-width: 75rem;
+  margin: 0;
+}
+
+.protect-container .faq-container .faq-list .faq-item {
+  margin-bottom: 1.25rem;
+  padding: 0.9375rem 1.25rem;
+  border: 1px solid #ccc;
+  text-align: left;
+  background-color: #f5f5f5;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.protect-container .faq-container .faq-list .faq-item .faq-question {
+  position: relative;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0.625rem 2.5rem;
+}
+
+.protect-container .faq-container .faq-list .faq-item .faq-question .faq-icon {
+  position: absolute;
+  right: 1.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  color: #888;
+}
+
+.protect-container .faq-container .faq-list .faq-item .faq-answer {
+  margin-top: 0.9375rem;
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.protect-container .video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.protect-container .video-container .video-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.protect-container .footer-container {
+  background-color: #f0f0f0;
+  min-height: 18.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.protect-container .footer-container .footer-title {
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.protect-container .footer-container .footer-text {
+  font-size: 1.125rem;
+  margin-top: 0.625rem;
+}
+
+.protect-container .bottom-banner {
+  min-height: 18.75rem;
+  background-color: red;
+  background-image: url("https://i.shgcdn.com/1f9ae6c7-8573-492c-a4fc-eaf186e3d402/-/format/auto/-/preview/3000x3000/-/quality/lighter/");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Tablet and Mobile Responsive Design */
+@media (max-width: 768px) {
+  .protect-container {
+    padding-top: 2rem;
+  }
+
+  .protect-container .banner-container {
+    min-height: 15rem;
+  }
+
+  .protect-container .banner-container .banner-content .banner-title {
+    font-size: 1.5rem;
+  }
+
+  .protect-container .banner-container .banner-content .banner-subtitle {
+    font-size: 1.25rem;
+    margin-top: -1.25rem;
+  }
+
+  .protect-container .banner-container .shogun-tabs {
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    position: relative;
+    bottom: auto;
+    padding: 0.625rem 0;
+  }
+
+  .protect-container .banner-container .shogun-tabs .shogun-tab {
+    width: 100%;
+    max-width: 12.5rem;
+    margin: 0.3125rem 0;
+    margin-left: 0;
+  }
+
+  .protect-container .banner-container .shogun-tabs .shogun-tab .shogun-tab-box {
+    border-radius: 0.3125rem;
+  }
+
+  .protect-container .main-wrapper {
+    padding: 1rem;
+  }
+
+  .protect-container .main-wrapper .tab-panel {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 0.625rem;
+  }
+
+  .protect-container .main-wrapper .tab-panel .tab-image-container {
+    flex: 1 1 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .protect-container .main-wrapper .tab-panel .tab-details {
+    flex: 1 1 100%;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 181px;
+    margin-left: -283px;
+  }
+
+  .protect-container .info-container {
+    flex-direction: column;
+    padding: 1.25rem;
+  }
+
+  .protect-container .info-container .info-text {
+    padding: 0;
+    text-align: center;
+  }
+
+  .protect-container .info-container .info-text .info-title {
+    font-size: 1.5rem;
+  }
+
+  .protect-container .info-container .info-text .info-description {
+    font-size: 1rem;
+  }
+
+  .protect-container .info-container .info-image-container {
+    padding: 0;
+    margin-top: 1.25rem;
+  }
+
+  .protect-container .info-container .info-image-container .info-image {
+    max-width: 18.75rem;
+  }
+
+  .-decription-text{
+    font-size: 0.875rem;
+  }
+
+  .protect-container .faq-container {
+    margin: 1.25rem 0;
+  }
+
+  .protect-container .faq-container .faq-list .faq-item {
+    padding: 0.625rem 1rem;
+  }
+
+  .protect-container .faq-container .faq-list .faq-item .faq-question {
+    font-size: 0.875rem;
+    padding: 0.5rem 2rem;
+  }
+
+  .protect-container .faq-container .faq-list .faq-item .faq-question .faq-icon {
+    font-size: 1.25rem;
+  }
+
+  .protect-container .faq-container .faq-list .faq-item .faq-answer {
+    font-size: 0.875rem;
+  }
+
+  .protect-container .video-container {
+    padding-bottom: 75%;
+  }
+
+  .protect-container .footer-container {
+    min-height: 12.5rem;
+  }
+
+  .protect-container .bottom-banner {
+    min-height: 12.5rem;
+  }
+}
+
+/* Mobile-Specific Responsive Design */
+@media (max-width: 480px) {
+  .protect-container .banner-container .banner-content .banner-title {
+    font-size: 1.25rem;
+  }
+
+  .protect-container .banner-container .banner-content .banner-subtitle {
+    font-size: 1rem;
+    margin-top: -0.75rem;
+  }
+
+  .protect-container .banner-container .shogun-tabs .shogun-tab {
+    margin: 0.125rem 0;
+  }
+
+  .protect-container .banner-container .shogun-tabs .shogun-tab .shogun-tab-box .shogun-tab-title {
+    font-size: 0.875rem;
+  }
+
+  .protect-container .main-wrapper .tab-panel .tab-details .service-specification .section-title {
+    font-size: 1.25rem;
+  }
+
+  .protect-container .main-wrapper .tab-panel .tab-details .service-description .section-title {
+    font-size: 1.25rem;
+  }
+
+  .protect-container .main-wrapper .tab-panel .tab-details .service-specification .spec-item {
+    font-size: 0.875rem;
+  }
+
+  .protect-container .main-wrapper .tab-panel .tab-details .service-description .description-text {
+    font-size: 0.875rem;
+  }
+
+  .protect-container .info-container .info-text .info-title {
+    font-size: 1.25rem;
+  }
+
+  .protect-container .info-container .info-text .info-description {
+    font-size: 0.875rem;
+  }
+
+  .protect-container .footer-container .footer-title {
+    font-size: 1.5rem;
+  }
+
+  .protect-container .footer-container .footer-text {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,580 @@
+.main-container {
+  padding-top: 60px;
+  font-family: Arial, sans-serif;
+}
+
+.main-container > .hero-section {
+  min-height: 300px;
+  background-image: url("https://i.shgcdn.com/b17e6cc1-2f0a-43c3-a589-d620600587c0/-/format/auto/-/preview/3000x3000/-/quality/lighter/");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero-section > .hero-title {
+  color: #ffffff;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.hero-title > .highlight {
+  color: #ec1d24;
+}
+
+.hero-section > .hero-subtitle {
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  margin-top: -30px;
+  max-width: 600px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.hero-section > .tab-nav {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.tab-nav > .tab {
+  padding: 10px 30px;
+  cursor: pointer;
+  background: white;
+  color: black;
+  margin-left: -20px;
+  z-index: 1;
+  position: relative;
+  border-radius: 5px 5px 0 0;
+  transition: background 0.3s, color 0.3s;
+  clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+  min-width: 400px;
+  text-align: center;
+}
+
+.tab-nav > .tab.active {
+  background: #dd0000;
+  color: white;
+  z-index: 2;
+}
+
+.tab-nav > .tab:hover {
+  background: #f0f0f0;
+}
+
+.main-container > .tab-content {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.tab-content > .tab-panel {
+  display: none;
+  gap: 20px;
+  border-radius: 5px;
+  align-items: center;
+  width: 100%;
+  padding: 30px;
+  flex-direction: column;
+}
+
+.tab-content > .tab-panel.active {
+  display: flex;
+}
+
+.tab-panel > .tab-title {
+  color: #ec1d24;
+  font-size: 27px;
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.tab-panel > .plan-details {
+  border: 1px solid #bbb;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 100%;
+  min-height: 200px;
+}
+
+.plan-details > .plan-content {
+  padding: 40px;
+  background-color: #fff;
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.plan-content > .plan-description {
+  flex: 1 1 60%;
+}
+
+.plan-description > .section-title {
+  font-size: 32px;
+  color: #ec1d24;
+}
+
+.plan-description > .description-text {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.plan-content > .plan-image-section {
+  flex: 1 1 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.plan-image-section > .plan-image {
+  max-width: 100%;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.plan-details > .cleaning-process {
+  border: 1px solid #bbb;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.cleaning-process > .exterior-section {
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.exterior-section > .section-title,
+.interior-section > .section-title {
+  color: #ec1d24;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.exterior-section > .process-label {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.exterior-section > .process-list,
+.interior-section > .process-list {
+  padding-left: 20px;
+  line-height: 1.8;
+}
+
+.main-container > .wash-plan-section {
+  background-color: white;
+}
+
+.wash-plan-section > .wash-plan-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: white;
+}
+
+.wash-plan-container > .wash-plan-card {
+  padding: 12px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: #f8f8f8;
+  flex: 1 1 45%;
+  margin: 5px;
+  min-height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.wash-plan-card > .card-title {
+  font-size: 22px;
+  color: #ec1d24;
+}
+
+.wash-plan-card > .card-list {
+  line-height: 1.6;
+  padding-left: 20px;
+}
+
+.main-container > .banner-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.banner-section > .banner-image {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.banner-section > .enquire-button {
+  position: absolute;
+  width: 200px;
+  padding: 10px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.banner-section > .enquire-button:hover {
+  background-color: #ec1d24;
+  color: white;
+}
+
+.main-container > .image-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.image-section > .section-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.main-container > .footer-section {
+  background-color: #f0f0f0;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-section > .footer-title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.footer-section > .footer-text {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.main-container > .final-banner {
+  min-height: 300px;
+  background-color: red;
+  background-image: url("https://i.shgcdn.com/be9ed3b6-2cc1-4ea3-ada7-41e3ca1ab623/-/format/auto/-/preview/3000x3000/-/quality/lighter/");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Tablet Styles (768px to 1023px) */
+@media screen and (max-width: 1023px) {
+  .main-container {
+    padding-top: 40px;
+  }
+
+  .main-container > .hero-section {
+    min-height: 250px;
+  }
+
+  .hero-section > .hero-title {
+    font-size: 28px;
+  }
+
+  .hero-section > .hero-subtitle {
+    font-size: 16px;
+    max-width: 500px;
+    margin-top: -20px;
+  }
+
+  .hero-section > .tab-nav {
+    flex-wrap: wrap;
+  }
+
+  .tab-nav > .tab {
+    min-width: 200px;
+    padding: 8px 20px;
+    margin-left: -10px;
+  }
+
+  .main-container > .tab-content {
+    padding: 20px;
+  }
+
+  .tab-content > .tab-panel {
+    padding: 20px;
+  }
+
+  .tab-panel > .tab-title {
+    font-size: 24px;
+  }
+
+  .tab-panel > .plan-details {
+    padding: 20px;
+  }
+
+  .plan-details > .plan-content {
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  .plan-content > .plan-description {
+    flex: 1 1 100%;
+  }
+
+  .plan-content > .plan-image-section {
+    flex: 1 1 100%;
+    padding: 10px;
+  }
+
+  .plan-description > .section-title {
+    font-size: 28px;
+  }
+
+  .plan-description > .description-text {
+    font-size: 14px;
+  }
+
+  .plan-details > .cleaning-process {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .cleaning-process > .exterior-section {
+    padding: 15px;
+  }
+
+  .exterior-section > .section-title,
+  .interior-section > .section-title {
+    font-size: 24px;
+  }
+
+  .wash-plan-section > .wash-plan-container {
+    max-width: 700px;
+    padding: 5px;
+  }
+
+  .wash-plan-container > .wash-plan-card {
+    flex: 1 1 100%;
+    margin: 5px 0;
+  }
+
+  .wash-plan-card > .card-title {
+    font-size: 20px;
+  }
+
+  .banner-section > .enquire-button {
+    width: 150px;
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .footer-section > .footer-title {
+    font-size: 24px;
+  }
+
+  .footer-section > .footer-text {
+    font-size: 16px;
+  }
+
+  .main-container > .final-banner {
+    min-height: 200px;
+  }
+}
+
+/* Mobile Styles (below 768px) */
+@media screen and (max-width: 767px) {
+  .main-container {
+    padding-top: 20px;
+  }
+
+  .main-container > .hero-section {
+    min-height: 200px;
+    background-attachment: scroll; /* Fixed background can be problematic on mobile */
+  }
+
+  .hero-section > .hero-title {
+    font-size: 24px;
+  }
+
+  .hero-section > .hero-subtitle {
+    font-size: 14px;
+    max-width: 90%;
+    margin-top: -15px;
+  }
+
+  .hero-section > .tab-nav {
+    flex-direction: column;
+    align-items: center;
+    position: static;
+    border-bottom: none;
+  }
+
+  .tab-nav > .tab {
+    min-width: 75%;
+    margin-left: 0;
+    border-radius: 5px 5px 0 0;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+    background: white;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .main-container > .tab-content {
+    padding: 10px;
+  }
+  .tab-nav > .tab.active {
+    background: red;
+    color: white;
+  }
+  
+
+  .tab-content > .tab-panel {
+    padding: 15px;
+  }
+
+  .tab-panel > .tab-title {
+    font-size: 20px;
+  }
+
+  .tab-panel > .plan-details {
+    padding: 15px;
+    border: none;
+  }
+
+  .plan-details > .plan-content {
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .plan-content > .plan-description {
+    flex: 1 1 100%;
+  }
+
+  .plan-content > .plan-image-section {
+    flex: 1 1 100%;
+    padding: 5px;
+  }
+
+  .plan-description > .section-title {
+    font-size: 24px;
+  }
+
+  .plan-description > .description-text {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .plan-details > .cleaning-process {
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+  }
+
+  .cleaning-process > .exterior-section {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .exterior-section > .section-title,
+  .interior-section > .section-title {
+    font-size: 20px;
+  }
+
+  .exterior-section > .process-label {
+    font-size: 14px;
+  }
+
+  .exterior-section > .process-list,
+  .interior-section > .process-list {
+    padding-left: 15px;
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .wash-plan-section > .wash-plan-container {
+    max-width: 100%;
+    padding: 5px;
+  }
+
+  .wash-plan-container > .wash-plan-card {
+    flex: 1 1 100%;
+    margin: 5px 0;
+    padding: 10px;
+  }
+
+  .wash-plan-card > .card-title {
+    font-size: 18px;
+  }
+
+  .wash-plan-card > .card-list {
+    font-size: 13px;
+    padding-left: 15px;
+  }
+
+  .main-container > .banner-section {
+    min-height: 150px;
+  }
+
+  .banner-section > .banner-image {
+    max-height: 200px;
+  }
+
+  .banner-section > .enquire-button {
+    width: 120px;
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .main-container > .image-section {
+    min-height: 150px;
+  }
+
+  .image-section > .section-image {
+    max-height: 200px;
+  }
+
+  .main-container > .footer-section {
+    min-height: 200px;
+  }
+
+  .footer-section > .footer-title {
+    font-size: 20px;
+  }
+
+  .footer-section > .footer-text {
+    font-size: 14px;
+  }
+
+  .main-container > .final-banner {
+    min-height: 150px;
+  }
+}
