@@ -1009,8 +1009,7 @@
     width: 270px;
     height: 340px;
     object-fit: cover;
-    /* ensures the image fills the box without distortion */
-    margin: 20px;
+    margin: 10px;
   }
   
 
