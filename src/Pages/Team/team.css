@@ -1,178 +1,291 @@
 /* Team.css */
 
+/* Original Styles (UNCHANGED) */
 .team-container {
-    
-    font-family: Arial, sans-serif;
-  }
-  
-  .team-hero {
-    min-height: 20.75rem;
-    background-image: url('https://i.shgcdn.com/b17e6cc1-2f0a-43c3-a589-d620600587c0/-/format/auto/-/preview/3000x3000/-/quality/lighter/');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-  
-  .team-hero h2 {
-    color: #ffffff;
-    text-align: center;
-    font-size: 32px;
-    font-weight: 400;
-  }
-  
-  .team-hero h2 span {
-    color: #ec1d24;
-  }
-  
-  .team-hero p {
-    color: #ffffff;
-    text-align: center;
-    font-size: 24px;
-    font-weight: 300;
-    margin-top: -30px;
-  }
-  
+  font-family: Arial, sans-serif;
+}
+
+.team-hero {
+  min-height: 20.75rem;
+  background-image: url('https://i.shgcdn.com/b17e6cc1-2f0a-43c3-a589-d620600587c0/-/format/auto/-/preview/3000x3000/-/quality/lighter/');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.team-hero h2 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.team-hero h2 span {
+  color: #ec1d24;
+}
+
+.team-hero p {
+  color: #ffffff;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  margin-top: -30px;
+}
+
+.team-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+.team-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 32px 0;
+  text-align: left;
+  margin-left: 32px;
+  color: #ec1d24;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  align-items: center;
+  justify-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 32px;
+  width: 100%;
+  max-width: 300px;
+  background-color: black;
+}
+
+.team-member img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+.team-member h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 8px 0;
+  color: white;
+}
+
+.team-member h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+  color: #ec1d24;
+}
+
+.team-quote {
+  width: 100%;
+  min-height: 300px;
+  background-image: url('https://i.shgcdn.com/1f9ae6c7-8573-492c-a4fc-eaf186e3d402/-/format/auto/-/preview/3000x3000/-/quality/lighter/');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.team-quote p {
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+  line-height: 1.5;
+  max-width: 80%;
+}
+
+/* New and Enhanced Styles for Full Responsiveness (ADDED/MODIFIED) */
+
+/* Large Screens (>1200px, e.g., 1440p, 4K) */
+@media (min-width: 1201px) {
   .team-section {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 32px;
+    max-width: 90%; /* Fluid width for ultra-wide screens */
   }
-  
-  .team-title {
-    font-size: 32px;
-    font-weight: 700;
-    margin: 32px 0;
-    text-align: left;
-    margin-left: 32px;
-    color: #ec1d24;
-  }
-  
+
   .team-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
-    align-items: center;
-    justify-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 32px;
+    max-width: 100%; /* Allow grid to scale with section */
+    gap: 2rem; /* Relative gap */
+    padding: 0 2rem;
   }
-  
+
   .team-member {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 32px;
-    width: 100%;
-    max-width: 300px;
-    background-color: black;
+    max-width: min(22vw, 350px); /* Scale with viewport, cap at 350px */
   }
-  
-  .team-member img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    margin-bottom: 16px;
+
+  .team-hero {
+    min-height: 24rem; /* Taller hero for larger screens */
   }
-  
-  .team-member h2 {
-    font-size: 24px;
-    font-weight: 700;
-    margin: 8px 0;
-    color: white;
+
+  .team-hero h2 {
+    font-size: clamp(2.25rem, 3vw, 2.5rem); /* Fluid font size */
   }
-  
-  .team-member h3 {
-    font-size: 20px;
-    font-weight: 500;
-    margin: 0;
-    color: #ec1d24;
+
+  .team-hero p {
+    font-size: clamp(1.5rem, 2vw, 1.75rem);
+    margin-top: -1.5rem;
   }
-  
-  .team-quote {
-    width: 100%;
-    min-height: 300px;
-    background-image: url('https://i.shgcdn.com/1f9ae6c7-8573-492c-a4fc-eaf186e3d402/-/format/auto/-/preview/3000x3000/-/quality/lighter/');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  
+
   .team-quote p {
-    padding: 20px;
-    color: white;
-    font-size: 20px;
-    line-height: 1.5;
-    max-width: 80%;
+    font-size: clamp(1.25rem, 1.5vw, 1.5rem);
+    max-width: 70%; /* Tighter content on wide screens */
   }
-  
-  /* ---------- Responsive Media Queries ---------- */
-  
-  /* Tablets (768px to 1024px) */
-  @media (max-width: 1024px) {
-    .team-grid {
-      grid-template-columns: repeat(2, 1fr);
-      padding: 0 24px;
-    }
-  
-    .team-title {
-      font-size: 28px;
-      margin-left: 24px;
-    }
-  
-    .team-hero h2 {
-      font-size: 28px;
-    }
-  
-    .team-hero p {
-      font-size: 20px;
-      margin-top: -20px;
-    }
-  
-    .team-quote p {
-      font-size: 18px;
-      max-width: 90%;
-    }
+}
+
+/* Tablets (768px to 1024px) - Enhanced */
+@media (max-width: 1024px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 24px;
+    gap: 1.5rem; /* Reduced gap for better fit */
   }
-  
-  /* Phones (below 768px) */
-  @media (max-width: 767px) {
-    .team-grid {
-      grid-template-columns: 1fr;
-      padding: 0 16px;
-    }
-  
-    .team-title {
-      font-size: 24px;
-      text-align: center;
-      margin: 24px auto;
-    }
-  
-    .team-hero h2 {
-      font-size: 24px;
-    }
-  
-    .team-hero p {
-      font-size: 18px;
-      margin-top: -16px;
-    }
-  
-    .team-member {
-      max-width: 90%;
-    }
-  
-    .team-quote p {
-      font-size: 16px;
-      padding: 16px;
-    }
+
+  .team-title {
+    font-size: 28px;
+    margin-left: 24px;
   }
-  
+
+  .team-hero h2 {
+    font-size: clamp(1.75rem, 4vw, 2rem); /* Fluid font size */
+  }
+
+  .team-hero p {
+    font-size: clamp(1.25rem, 3vw, 1.5rem);
+    margin-top: -1.25rem;
+  }
+
+  .team-member {
+    max-width: 90%; /* More flexible width */
+  }
+
+  .team-quote p {
+    font-size: clamp(1rem, 2.5vw, 1.125rem);
+    max-width: 90%;
+    padding: 1rem;
+  }
+}
+
+/* Phones (480px to 767px) - Enhanced */
+@media (max-width: 767px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+    padding: 0 16px;
+    gap: 1rem; /* Smaller gap for phones */
+  }
+
+  .team-title {
+    font-size: clamp(1.5rem, 5vw, 1.75rem);
+    text-align: center;
+    margin: 1.5rem auto;
+  }
+
+  .team-hero {
+    min-height: 16rem; /* Shorter hero for phones */
+  }
+
+  .team-hero h2 {
+    font-size: clamp(1.5rem, 5vw, 1.75rem);
+  }
+
+  .team-hero p {
+    font-size: clamp(1rem, 4vw, 1.125rem);
+    margin-top: -1rem;
+  }
+
+  .team-member {
+    max-width: 85%; /* Slightly tighter for smaller screens */
+  }
+
+  .team-member h2 {
+    font-size: clamp(1.25rem, 4vw, 1.5rem);
+  }
+
+  .team-member h3 {
+    font-size: clamp(1rem, 3.5vw, 1.25rem);
+  }
+
+  .team-quote {
+    min-height: 200px; /* Shorter quote section */
+  }
+
+  .team-quote p {
+    font-size: clamp(0.875rem, 3vw, 1rem);
+    padding: 0.75rem;
+    max-width: 95%;
+  }
+}
+
+/* Small Phones (<480px, e.g., iPhone SE, foldables) - New */
+@media (max-width: 479px) {
+  .team-section {
+    padding: 1rem; /* Reduced padding */
+  }
+
+  .team-grid {
+    padding: 0 0.75rem;
+    gap: 0.75rem;
+  }
+
+  .team-title {
+    font-size: clamp(1.25rem, 6vw, 1.5rem);
+    margin: 1rem auto;
+  }
+
+  .team-hero {
+    min-height: 14rem;
+  }
+
+  .team-hero h2 {
+    font-size: clamp(1.25rem, 5.5vw, 1.5rem);
+  }
+
+  .team-hero p {
+    font-size: clamp(0.875rem, 4.5vw, 1rem);
+    margin-top: -0.75rem;
+  }
+
+  .team-member {
+    max-width: 90%;
+  }
+
+  .team-member img {
+    margin-bottom: 0.5rem;
+  }
+
+  .team-member h2 {
+    font-size: clamp(1rem, 4.5vw, 1.25rem);
+  }
+
+  .team-member h3 {
+    font-size: clamp(0.875rem, 4vw, 1rem);
+  }
+
+  .team-quote {
+    min-height: 180px;
+  }
+
+  .team-quote p {
+    font-size: clamp(0.75rem, 3.5vw, 0.875rem);
+    padding: 0.5rem;
+  }
+}
