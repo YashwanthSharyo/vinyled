@@ -1,3 +1,23 @@
+/* Global reset */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Disable horizontal scrolling */
+  font-family: sans-serif;
+  box-sizing: border-box;
+  width: 100%;
+}
+body {
+  margin: 0 !important;
+  display: block !important;
+  place-items: unset !important;
+  min-width: auto !important;
+  min-height: auto !important;
+}
+
+
+
+/* Container */
 .contact-container {
   min-height: 500px;
   background-repeat: no-repeat;
@@ -5,30 +25,32 @@
   background-attachment: fixed;
   background-position: center center;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   position: relative;
   width: 100%;
   padding: 32px;
   box-sizing: border-box;
-  flex-wrap: wrap;
+  overflow: hidden; /* Prevent overflow */
 }
 
+/* Contact Info & Form */
 .contact-info,
 .contact-form {
-  flex: 1;
+  flex: 1 1 100%; /* Make them full-width on smaller screens */
+  max-width: 600px;
+  margin: 30px;
   padding: 32px;
   border-radius: 8px;
-  min-width: 300px;
   box-sizing: border-box;
+  background-color: #fff;
 }
 
+/* Contact Info Styling */
 .contact-info {
-  width: 50%;
   background-color: #f2f2f2;
   color: #000;
-  margin-right: 8px;
 }
 
 .contact-info h2 {
@@ -42,19 +64,11 @@
   font-size: 18px;
   margin-bottom: 16px;
   line-height: 1.5;
-  color: #000;
 }
 
-.contact-form {
-  width: 50%;
-  background-color: #ffffff;
-  margin-left: 8px;
-  margin-top: 80px;
-  padding: 16px;
-}
-
+/* Contact Form Styling */
 .contact-form h1 {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
   margin-bottom: 12px;
   text-align: left;
@@ -78,7 +92,6 @@
   font-size: 14px;
   font-weight: 500;
   margin-bottom: 6px;
-  display: block;
 }
 
 .contact-form input,
@@ -89,15 +102,20 @@
   font-size: 14px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  box-sizing: border-box;
 }
 
 .contact-form textarea {
   min-height: 80px;
+  resize: vertical;
+}
+
+.submit-container {
+  text-align: center;
 }
 
 .contact-form button {
-  padding: 10px 20px;
+  width: 100%;
+  padding: 12px;
   font-size: 14px;
   font-weight: 600;
   background-color: #ec1d24;
@@ -105,33 +123,86 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  transition: background 0.3s;
 }
 
-.contact-form .submit-container {
-  text-align: center;
+.contact-form button:hover {
+  background-color: #c0181e;
 }
 
-/* Responsive styling for mobile & tablet */
-@media (max-width: 768px) {
+/* Responsive styling for all devices */
+
+/* Tablets (portrait) */
+@media (max-width: 1024px) {
   .contact-container {
-    padding: 16px;
-    overflow-x: hidden;
     flex-direction: column;
+    padding: 24px;
   }
 
   .contact-info,
   .contact-form {
     width: 100%;
-    margin: 0 0 20px 0;
-    padding: 20px;
+    max-width: 100%;
+    margin: 8px 0;
   }
 
-  .contact-form {
-    margin-top: 20px;
+  .contact-form h1,
+  .contact-info h2 {
+    text-align: center;
   }
 }
 
-/* Extra global fix (optional but good) */
-html, body {
-  overflow-x: hidden;
+/* Small Tablets (iPad Mini, iPad Air) */
+@media (max-width: 850px) {
+  .contact-container {
+    padding: 20px;
+  }
+
+  .contact-form h1,
+  .contact-info h2 {
+    font-size: 20px;
+  }
+
+  .contact-form p,
+  .contact-info p {
+    font-size: 16px;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 600px) {
+  .contact-container {
+    padding: 16px;
+  }
+
+  .contact-form h1,
+  .contact-info h2 {
+    font-size: 18px;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form select {
+    font-size: 13px;
+  }
+
+  .contact-form p,
+  .contact-info p {
+    font-size: 14px;
+  }
+}
+
+/* Larger screens (Surface Pro 7, iPad Pro Landscape) */
+@media (min-width: 901px) and (max-width: 1368px) and (orientation: landscape) {
+  .contact-container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 80px;
+  }
+
+  .contact-info,
+  .contact-form {
+   
+    flex: 1;
+  }
 }

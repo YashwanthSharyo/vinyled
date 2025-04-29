@@ -1,5 +1,5 @@
 .enhance-container {
-  padding-top: 3.75rem;
+ 
   width: 100%;
   box-sizing: border-box;
 }
@@ -209,7 +209,8 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .enhance-container {
-    padding-top: 2rem;
+  
+    
   }
 
   .enhance-container .banner-container {

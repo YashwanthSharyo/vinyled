@@ -55,7 +55,6 @@ body {
   background-color: white;
   display: flex;
   padding: 60px;
-  height: 100vh;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -189,7 +188,6 @@ body {
   background-color: white;
   display: flex;
   padding: 60px;
-  height: 100vh;
   align-items: center;
   justify-content: center;
   width: 100%;
