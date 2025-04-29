@@ -88,7 +88,6 @@
   flex-direction: column;
   align-items: center;
   color: white;
-  
 }
 
 .service-title {
@@ -98,13 +97,13 @@
   line-height: 1;
   color: black;
   margin: 0;
-  
 }
 
 .image-row img {
   width: 250px;
   height: 300px;
-  object-fit: cover; /* ensures the image fills the box without distortion */
+  object-fit: cover;
+  /* ensures the image fills the box without distortion */
   margin: 10px;
 }
 
@@ -447,7 +446,7 @@
 
 .form-column,
 .location-column {
-  flex: 1;
+  /* flex: 1; */
   padding: 60px 20px;
   min-height: 400px;
   display: flex;
@@ -620,17 +619,19 @@
     align-items: center;
     gap: 16px;
   }
-  
+
   .image-row img {
     width: 100%;
-    max-width: 400px; /* You can adjust the max-width as needed */
-    height: 200px;  /* Set a fixed height to maintain equal image lengths */
-    object-fit: cover; /* This ensures that the images maintain their aspect ratio while filling the height */
+    max-width: 400px;
+    /* You can adjust the max-width as needed */
+    height: 220px;
+    /* Set a fixed height to maintain equal image lengths */
+    object-fit: cover;
+    /* This ensures that the images maintain their aspect ratio while filling the height */
     margin: 0 auto;
     display: block;
     padding: 10px;
   }
-  
 
   .green-bottom {
     flex-direction: column;
@@ -641,7 +642,6 @@
     width: 100%;
     padding: 0px;
   }
-  
 
   .left-title {
     font-size: 32px;
@@ -672,7 +672,7 @@
   }
 
   .left-image {
-    width: 200px;
+    width: 290px;
   }
 
   .right-content-centered {
@@ -701,13 +701,13 @@
     flex-direction: column;
   }
 
-  .contact-section > div {
+  .contact-section>div {
     flex: 1;
     padding: 30px 15px;
     min-height: 300px;
   }
 
-  .contact-section > div > div {
+  .contact-section>div>div {
     max-width: 100%;
   }
 
@@ -729,31 +729,31 @@
     padding: 10px 20px;
   }
 
-  .contact-section > div > div > div {
+  .contact-section>div>div>div {
     flex-direction: column;
     gap: 10px;
     margin-top: 20px;
   }
 
-  .contact-section > div > div > div > div {
+  .contact-section>div>div>div>div {
     flex: none;
   }
 
-  .contact-section > div > div > div p {
+  .contact-section>div>div>div p {
     font-size: 14px;
   }
 
-  .contact-section > div:nth-child(2) > div > div {
+  .contact-section>div:nth-child(2)>div>div {
     width: 100%;
     padding: 15px;
     border-radius: 15px;
   }
 
-  .contact-section > div:nth-child(2) > div > div p {
+  .contact-section>div:nth-child(2)>div>div p {
     font-size: 14px;
   }
 
-  .contact-section > div:nth-child(2) > div > div p span:nth-child(2) {
+  .contact-section>div:nth-child(2)>div>div p span:nth-child(2) {
     margin-left: 20px;
   }
 
@@ -771,6 +771,24 @@
     align-items: center;
   }
 }
+/* For screens smaller than 425px */
+@media (max-width: 425px)  and  (min-width: 426px){
+  .left-image {
+    width: 100%; 
+  }
+
+  .image-row img {
+    width: 100%;
+    max-width: 100%; /* Allow the image to take up full width */
+    height: auto; /* Let the height adjust automatically to maintain aspect ratio */
+    object-fit: cover; /* Maintain aspect ratio */
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
+  }
+}
+
+
 
 @media (min-width: 769px) and (max-width: 1023px) {
   .section {
@@ -935,7 +953,18 @@
     font-weight: bold;
     color: white;
     box-sizing: border-box;
-    
+
+  }
+
+  .form-column,
+
+  .location-column {
+    flex: 1;
+    padding: 60px 20px;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .black {
@@ -970,32 +999,21 @@
 
   .green-top {
     padding: 40px 60px;
-    align-items: flex-start;
-  }
-
- 
-  .service-title {
-    font-family: 'Alatsi', sans-serif;
-    font-weight: 600;
-    font-size: 45px;
-    line-height: 1;
-    color: black;
-    margin: 0;
-    margin-left: 80px;
     
   }
-  .image-row{
-    margin-left: 60px;
+
+  .service-title {
+    font-size: 45px;
+  }
+  .image-row img {
+    width: 270px;
+    height: 340px;
+    object-fit: cover;
+    /* ensures the image fills the box without distortion */
+    margin: 20px;
   }
   
-  .image-row img {
-    width: 250px;
-    height: 300px;
-    object-fit: cover; /* ensures the image fills the box without distortion */
-    margin: 30px;
-  }
 
- 
   .green-bottom {
     flex-direction: row;
   }
@@ -1049,11 +1067,11 @@
     height: auto;
   }
 
-  .contact-section > div:nth-child(1) {
+  .contact-section>div:nth-child(1) {
     flex: 1.14;
   }
 
-  .contact-section > div:nth-child(2) {
+  .contact-section>div:nth-child(2) {
     flex: 1;
   }
 }

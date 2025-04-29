@@ -1,485 +1,485 @@
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.AboutContainer {
+  padding-top: 60px;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.AboutContainer > .AboutHero {
+  min-height: 300px;
+  background-image: url("https://i.shgcdn.com/b17e6cc1-2f0a-43c3-a589-d620600587c0/-/format/auto/-/preview/3000x3000/-/quality/lighter/");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+
+.AboutHero > .AboutHeroContent {
+  text-align: center;
+}
+
+.AboutHeroContent > .AboutHeroTitle {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.AboutHeroTitle > .AboutHighlight {
+  color: #EC1D24;
+}
+
+.AboutHeroContent > .AboutHeroSubtitle {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: -30px;
+}
+
+.AboutContainer > .AboutIntro {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  display: flex;
+  padding: 60px;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.AboutIntro > .AboutIntroImageWrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.AboutIntroImageWrapper > .AboutIntroImage {
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+}
+
+.AboutIntro > .AboutIntroText {
+  flex: 1;
+}
+
+.AboutIntroText > .AboutIntroTitle {
+  color: #ec1d24;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 30px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.AboutIntroText > .AboutIntroParagraph {
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+
+.AboutIntroText > .AboutIntroParagraph.AboutItalic {
+  font-style: italic;
+}
+
+.AboutContainer > .AboutStandards {
+  padding: 40px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.AboutStandards > .AboutStandardsContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.AboutStandardsContent > .AboutStandardsText {
+  flex: 1;
+  min-width: 300px;
+  padding-right: 20px;
+}
+
+.AboutStandardsText > .AboutStandardsTitle {
+  color: #ec1d24;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 30px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.AboutStandardsText > .AboutStandardsList {
+  line-height: 24px;
+  font-size: 16px;
+  padding-left: 20px;
+  max-width: 100%;
+}
+
+.AboutStandardsContent > .AboutStandardsImageWrapper {
+  flex: 1;
+}
+
+.AboutStandardsImageWrapper > .AboutStandardsImage {
+  width: 100%;
+  height: auto;
+  max-height: 480px;
+  object-fit: cover;
+}
+
+.AboutStandardsImageWrapper > .AboutStandardsButtonWrapper {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.AboutStandardsButtonWrapper > .AboutStandardsButton {
+  padding: 12px 30px;
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.AboutContainer > .AboutQuote {
+  width: 100%;
+  max-width: 100%;
+  min-height: 300px;
+  background-image: url("https://i.shgcdn.com/1f9ae6c7-8573-492c-a4fc-eaf186e3d402/-/format/auto/-/preview/3000x3000/-/quality/lighter/");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.AboutQuote > .AboutQuoteContent {
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  max-width: 80%;
+}
+
+.AboutContainer > .AboutFacilities {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  display: flex;
+  padding: 60px;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
   
-  body {
-    overflow-x: hidden;
-  }
-  
-  .AboutContainer {
-    padding-top: 60px;
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-  }
-  
-  .AboutContainer > .AboutHero {
-    min-height: 300px;
-    background-image: url("https://i.shgcdn.com/b17e6cc1-2f0a-43c3-a589-d620600587c0/-/format/auto/-/preview/3000x3000/-/quality/lighter/");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-  }
-  
-  .AboutHero > .AboutHeroContent {
-    text-align: center;
-  }
-  
-  .AboutHeroContent > .AboutHeroTitle {
-    color: #ffffff;
-    font-size: 32px;
-    font-weight: 400;
-  }
-  
-  .AboutHeroTitle > .AboutHighlight {
-    color: #EC1D24;
-  }
-  
-  .AboutHeroContent > .AboutHeroSubtitle {
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: 300;
-    margin-top: -30px;
-  }
-  
+}
+
+.AboutFacilities > .AboutFacilitiesImageWrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.AboutFacilitiesImageWrapper > .AboutFacilitiesImage {
+  width: 350px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.AboutFacilitiesImageWrapper > .AboutFacilitiesButtonWrapper {
+  margin-top: 20px;
+}
+
+.AboutFacilitiesButtonWrapper > .AboutFacilitiesButton {
+  padding: 12px 30px;
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.AboutFacilities > .AboutFacilitiesText {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.AboutFacilitiesText > .AboutFacilitiesTitle {
+  color: #ec1d24;
+}
+
+.AboutFacilitiesText > .AboutFacilitiesParagraph {
+  line-height: 24px;
+}
+
+.AboutFacilitiesText > .AboutFacilitiesList {
+  padding-left: 20px;
+  max-width: 100%;
+}
+
+.AboutContainer > .AboutFooter {
+  background-color: #f0f0f0;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+}
+
+.AboutFooter > .AboutFooterTitle {
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.AboutFooter > .AboutFooterText {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+@media (max-width: 1024px) {
   .AboutContainer > .AboutIntro {
-    font-family: Arial, sans-serif;
-    background-color: white;
-    display: flex;
-    padding: 60px;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-  }
-  
-  .AboutIntro > .AboutIntroImageWrapper {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .AboutIntroImageWrapper > .AboutIntroImage {
-    width: 450px;
-    height: 450px;
-    object-fit: cover;
-  }
-  
-  .AboutIntro > .AboutIntroText {
-    flex: 1;
-  }
-  
-  .AboutIntroText > .AboutIntroTitle {
-    color: #ec1d24;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 30px;
-    text-align: left;
-    margin-bottom: 20px;
-  }
-  
-  .AboutIntroText > .AboutIntroParagraph {
-    line-height: 24px;
-    margin-bottom: 15px;
-  }
-  
-  .AboutIntroText > .AboutIntroParagraph.AboutItalic {
-    font-style: italic;
-  }
-  
-  .AboutContainer > .AboutStandards {
+    flex-direction: column;
+    height: auto;
     padding: 40px;
+  }
+
+  .AboutIntroImageWrapper > .AboutIntroImage {
+    width: 350px;
+    height: 350px;
+  }
+
+  .AboutIntro > .AboutIntroText {
+    margin-top: 20px;
+  }
+
+  .AboutContainer > .AboutFacilities {
+    flex-direction: column;
+    height: auto;
+    padding: 40px;
+  }
+
+  .AboutFacilities > .AboutFacilitiesImageWrapper {
+    margin-top: 0;
+  }
+
+  .AboutFacilitiesImageWrapper > .AboutFacilitiesImage {
+    width: 300px;
+    height: 400px;
+  }
+
+  .AboutFacilities > .AboutFacilitiesText {
+    padding-right: 0;
+    margin-top: 20px;
+  }
+
+  .AboutContainer > .AboutStandards {
+    padding: 20px;
+  }
+
+  .AboutStandards > .AboutStandardsContent {
+    flex-direction: column;
+  }
+
+  .AboutStandardsContent > .AboutStandardsText {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .AboutContainer {
+    padding-top: 40px;
+  }
+
+  .AboutContainer > .AboutHero {
+    min-height: 200px;
+    background-attachment: scroll; /* Fixed background can be problematic on mobile */
     width: 100%;
     max-width: 100%;
   }
-  
-  .AboutStandards > .AboutStandardsContent {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+
+  .AboutHeroContent > .AboutHeroTitle {
+    font-size: 24px;
+  }
+
+  .AboutHeroContent > .AboutHeroSubtitle {
+    font-size: 16px;
+    margin-top: -20px;
+  }
+
+  .AboutContainer > .AboutIntro {
+    padding: 20px;
+    flex-direction: column;
+    height: auto;
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
   }
-  
-  .AboutStandardsContent > .AboutStandardsText {
-    flex: 1;
-    min-width: 300px;
-    padding-right: 20px;
-  }
-  
-  .AboutStandardsText > .AboutStandardsTitle {
-    color: #ec1d24;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 30px;
-    text-align: left;
-    margin-bottom: 20px;
-  }
-  
-  .AboutStandardsText > .AboutStandardsList {
-    line-height: 24px;
-    font-size: 16px;
-    padding-left: 20px;
-    max-width: 100%;
-  }
-  
-  .AboutStandardsContent > .AboutStandardsImageWrapper {
-    flex: 1;
-  }
-  
-  .AboutStandardsImageWrapper > .AboutStandardsImage {
+
+  .AboutIntroImageWrapper > .AboutIntroImage {
     width: 100%;
     height: auto;
-    max-height: 480px;
-    object-fit: cover;
+    max-width: 100%;
   }
-  
-  .AboutStandardsImageWrapper > .AboutStandardsButtonWrapper {
+
+  .AboutIntro > .AboutIntroText {
     margin-top: 20px;
-    text-align: center;
-  }
-  
-  .AboutStandardsButtonWrapper > .AboutStandardsButton {
-    padding: 12px 30px;
-    background-color: transparent;
-    color: black;
-    border: 1px solid black;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    text-transform: uppercase;
-  }
-  
-  .AboutContainer > .AboutQuote {
     width: 100%;
     max-width: 100%;
-    min-height: 300px;
-    background-image: url("https://i.shgcdn.com/1f9ae6c7-8573-492c-a4fc-eaf186e3d402/-/format/auto/-/preview/3000x3000/-/quality/lighter/");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
   }
-  
-  .AboutQuote > .AboutQuoteContent {
+
+  .AboutIntroText > .AboutIntroTitle {
+    font-size: 24px;
+  }
+
+  .AboutIntroText > .AboutIntroParagraph {
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 100%;
+  }
+
+  .AboutContainer > .AboutStandards {
     padding: 20px;
-    color: white;
-    font-size: 20px;
-    font-family: Arial, sans-serif;
-    line-height: 1.5;
-    max-width: 80%;
+    width: 100%;
+    max-width: 100%;
   }
-  
-  .AboutContainer > .AboutFacilities {
-    font-family: Arial, sans-serif;
-    background-color: white;
-    display: flex;
-    padding: 60px;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
+
+  .AboutStandards > .AboutStandardsContent {
+    flex-direction: column;
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
   }
-  
-  .AboutFacilities > .AboutFacilitiesImageWrapper {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 100px;
-  }
-  
-  .AboutFacilitiesImageWrapper > .AboutFacilitiesImage {
-    width: 350px;
-    height: 450px;
-    object-fit: cover;
-  }
-  
-  .AboutFacilitiesImageWrapper > .AboutFacilitiesButtonWrapper {
-    margin-top: 20px;
-  }
-  
-  .AboutFacilitiesButtonWrapper > .AboutFacilitiesButton {
-    padding: 12px 30px;
-    background-color: transparent;
-    color: black;
-    border: 1px solid black;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    text-transform: uppercase;
-  }
-  
-  .AboutFacilities > .AboutFacilitiesText {
-    flex: 1;
-    padding-right: 40px;
-  }
-  
-  .AboutFacilitiesText > .AboutFacilitiesTitle {
-    color: #ec1d24;
-  }
-  
-  .AboutFacilitiesText > .AboutFacilitiesParagraph {
-    line-height: 24px;
-  }
-  
-  .AboutFacilitiesText > .AboutFacilitiesList {
-    padding-left: 20px;
-    max-width: 100%;
-  }
-  
-  .AboutContainer > .AboutFooter {
-    background-color: #f0f0f0;
-    min-height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+
+  .AboutStandardsContent > .AboutStandardsText {
+    min-width: 0;
+    padding-right: 0;
+    margin-bottom: 20px;
     width: 100%;
     max-width: 100%;
   }
-  
+
+  .AboutStandardsText > .AboutStandardsTitle {
+    font-size: 24px;
+  }
+
+  .AboutStandardsText > .AboutStandardsList {
+    font-size: 14px;
+    max-width: 100%;
+  }
+
+  .AboutStandardsImageWrapper > .AboutStandardsImage {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .AboutStandardsButtonWrapper > .AboutStandardsButton {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .AboutContainer > .AboutQuote {
+    min-height: 200px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .AboutQuote > .AboutQuoteContent {
+    font-size: 16px;
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .AboutContainer > .AboutFacilities {
+    padding: 20px;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .AboutFacilitiesImageWrapper > .AboutFacilitiesImage {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .AboutFacilities > .AboutFacilitiesImageWrapper {
+    margin-top: 0;
+  }
+
+  .AboutFacilities > .AboutFacilitiesText {
+    padding-right: 0;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .AboutFacilitiesText > .AboutFacilitiesTitle {
+    font-size: 24px;
+  }
+
+  .AboutFacilitiesText > .AboutFacilitiesParagraph {
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 100%;
+  }
+
+  .AboutFacilitiesText > .AboutFacilitiesList {
+    font-size: 14px;
+    max-width: 100%;
+  }
+
+  .AboutFacilitiesButtonWrapper > .AboutFacilitiesButton {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .AboutContainer > .AboutFooter {
+    min-height: 200px;
+    width: 100%;
+    max-width: 100%;
+  }
+
   .AboutFooter > .AboutFooterTitle {
-    margin: 0;
-    font-size: 28px;
-    font-weight: bold;
+    font-size: 22px;
   }
-  
+
   .AboutFooter > .AboutFooterText {
-    font-size: 18px;
-    margin-top: 10px;
+    font-size: 16px;
   }
-  
-  @media (max-width: 1024px) {
-    .AboutContainer > .AboutIntro {
-      flex-direction: column;
-      height: auto;
-      padding: 40px;
-    }
-  
-    .AboutIntroImageWrapper > .AboutIntroImage {
-      width: 350px;
-      height: 350px;
-    }
-  
-    .AboutIntro > .AboutIntroText {
-      margin-top: 20px;
-    }
-  
-    .AboutContainer > .AboutFacilities {
-      flex-direction: column;
-      height: auto;
-      padding: 40px;
-    }
-  
-    .AboutFacilities > .AboutFacilitiesImageWrapper {
-      margin-top: 0;
-    }
-  
-    .AboutFacilitiesImageWrapper > .AboutFacilitiesImage {
-      width: 300px;
-      height: 400px;
-    }
-  
-    .AboutFacilities > .AboutFacilitiesText {
-      padding-right: 0;
-      margin-top: 20px;
-    }
-  
-    .AboutContainer > .AboutStandards {
-      padding: 20px;
-    }
-  
-    .AboutStandards > .AboutStandardsContent {
-      flex-direction: column;
-    }
-  
-    .AboutStandardsContent > .AboutStandardsText {
-      padding-right: 0;
-      margin-bottom: 20px;
-    }
-  }
-  
-  /* Mobile Responsive Styles */
-  @media (max-width: 768px) {
-    .AboutContainer {
-      padding-top: 40px;
-    }
-  
-    .AboutContainer > .AboutHero {
-      min-height: 200px;
-      background-attachment: scroll; /* Fixed background can be problematic on mobile */
-      width: 100%;
-      max-width: 100%;
-    }
-  
-    .AboutHeroContent > .AboutHeroTitle {
-      font-size: 24px;
-    }
-  
-    .AboutHeroContent > .AboutHeroSubtitle {
-      font-size: 16px;
-      margin-top: -20px;
-    }
-  
-    .AboutContainer > .AboutIntro {
-      padding: 20px;
-      flex-direction: column;
-      height: auto;
-      width: 100%;
-      max-width: 100%;
-      overflow-x: hidden;
-    }
-  
-    .AboutIntroImageWrapper > .AboutIntroImage {
-      width: 100%;
-      height: auto;
-      max-width: 100%;
-    }
-  
-    .AboutIntro > .AboutIntroText {
-      margin-top: 20px;
-      width: 100%;
-      max-width: 100%;
-    }
-  
-    .AboutIntroText > .AboutIntroTitle {
-      font-size: 24px;
-    }
-  
-    .AboutIntroText > .AboutIntroParagraph {
-      font-size: 14px;
-      line-height: 20px;
-      max-width: 100%;
-    }
-  
-    .AboutContainer > .AboutStandards {
-      padding: 20px;
-      width: 100%;
-      max-width: 100%;
-    }
-  
-    .AboutStandards > .AboutStandardsContent {
-      flex-direction: column;
-      width: 100%;
-      max-width: 100%;
-      overflow-x: hidden;
-    }
-  
-    .AboutStandardsContent > .AboutStandardsText {
-      min-width: 0;
-      padding-right: 0;
-      margin-bottom: 20px;
-      width: 100%;
-      max-width: 100%;
-    }
-  
-    .AboutStandardsText > .AboutStandardsTitle {
-      font-size: 24px;
-    }
-  
-    .AboutStandardsText > .AboutStandardsList {
-      font-size: 14px;
-      max-width: 100%;
-    }
-  
-    .AboutStandardsImageWrapper > .AboutStandardsImage {
-      width: 100%;
-      max-width: 100%;
-      height: auto;
-    }
-  
-    .AboutStandardsButtonWrapper > .AboutStandardsButton {
-      padding: 10px 20px;
-      font-size: 14px;
-    }
-  
-    .AboutContainer > .AboutQuote {
-      min-height: 200px;
-      width: 100%;
-      max-width: 100%;
-    }
-  
-    .AboutQuote > .AboutQuoteContent {
-      font-size: 16px;
-      max-width: 100%;
-      padding: 15px;
-    }
-  
-    .AboutContainer > .AboutFacilities {
-      padding: 20px;
-      flex-direction: column;
-      height: auto;
-      width: 100%;
-      max-width: 100%;
-      overflow-x: hidden;
-    }
-  
-    .AboutFacilitiesImageWrapper > .AboutFacilitiesImage {
-      width: 100%;
-      height: auto;
-      max-width: 100%;
-    }
-  
-    .AboutFacilities > .AboutFacilitiesImageWrapper {
-      margin-top: 0;
-    }
-  
-    .AboutFacilities > .AboutFacilitiesText {
-      padding-right: 0;
-      margin-top: 20px;
-      width: 100%;
-      max-width: 100%;
-    }
-  
-    .AboutFacilitiesText > .AboutFacilitiesTitle {
-      font-size: 24px;
-    }
-  
-    .AboutFacilitiesText > .AboutFacilitiesParagraph {
-      font-size: 14px;
-      line-height: 20px;
-      max-width: 100%;
-    }
-  
-    .AboutFacilitiesText > .AboutFacilitiesList {
-      font-size: 14px;
-      max-width: 100%;
-    }
-  
-    .AboutFacilitiesButtonWrapper > .AboutFacilitiesButton {
-      padding: 10px 20px;
-      font-size: 14px;
-    }
-  
-    .AboutContainer > .AboutFooter {
-      min-height: 200px;
-      width: 100%;
-      max-width: 100%;
-    }
-  
-    .AboutFooter > .AboutFooterTitle {
-      font-size: 22px;
-    }
-  
-    .AboutFooter > .AboutFooterText {
-      font-size: 16px;
-    }
-  }
+}
