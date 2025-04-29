@@ -104,7 +104,7 @@
   height: 300px;
   object-fit: cover;
   /* ensures the image fills the box without distortion */
-  margin: 10px;
+  margin: 15px;
 }
 
 
@@ -623,11 +623,8 @@
   .image-row img {
     width: 100%;
     max-width: 400px;
-    /* You can adjust the max-width as needed */
     height: 220px;
-    /* Set a fixed height to maintain equal image lengths */
     object-fit: cover;
-    /* This ensures that the images maintain their aspect ratio while filling the height */
     margin: 0 auto;
     display: block;
     padding: 10px;
@@ -635,12 +632,13 @@
 
   .green-bottom {
     flex-direction: column;
+    
   }
 
   .green-bottom-left,
   .green-bottom-right {
     width: 100%;
-    padding: 0px;
+    padding: 10px;
   }
 
   .left-title {
@@ -655,7 +653,7 @@
     max-width: 100%;
     margin-left: 0;
     text-align: center;
-    padding: 2px;
+    padding: 5px;
   }
 
   .button-container {
@@ -1009,7 +1007,7 @@
     width: 270px;
     height: 340px;
     object-fit: cover;
-    margin: 10px;
+    margin: 15px;
   }
   
 
