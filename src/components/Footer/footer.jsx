@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="left-column">
             <img
               className="logo"
-              src="../Images/vinyled.svg"
+              src="Images/vinyled.svg"
               alt="Company Logo"
             />
 
@@ -19,28 +19,28 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="../Images/youtube.svg" alt="YouTube" />
+                <img src="Images/youtube.svg" alt="YouTube" />
               </a>
               <a
                 href="https://www.facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="../Images/facebook.svg" alt="Facebook" />
+                <img src="Images/facebook.svg" alt="Facebook" />
               </a>
               <a
                 href="https://www.linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="../Images/linkedin.svg" alt="LinkedIn" />
+                <img src="Images/linkedin.svg" alt="LinkedIn" />
               </a>
               <a
                 href="https://www.instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="../Images/twitter.svg" alt="Instagram" />
+                <img src="Images/twitter.svg" alt="Instagram" />
               </a>
             </div>
 

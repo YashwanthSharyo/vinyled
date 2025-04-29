@@ -194,7 +194,7 @@ body {
   justify-content: center;
   width: 100%;
   max-width: 100%;
-  overflow-x: hidden;
+  
 }
 
 .AboutFacilities > .AboutFacilitiesImageWrapper {
@@ -207,7 +207,7 @@ body {
 
 .AboutFacilitiesImageWrapper > .AboutFacilitiesImage {
   width: 350px;
-  height: 450px;
+  height: 400px;
   object-fit: cover;
 }
 

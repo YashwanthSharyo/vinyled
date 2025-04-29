@@ -24,10 +24,10 @@ const HomePage = () => {
         <div className="green-top">
           <h1 className="service-title">Service</h1>
           <div className="image-row">
-            <img src="/Images/carpart1.svg" alt="Service 1" />
-            <img src="/Images/carpart2.svg" alt="Service 2" />
-            <img src="/Images/carpart3.svg" alt="Service 3" />
-            <img src="/Images/carpart4.svg" alt="Service 4" />
+            <img src="Images/carpart1.svg" alt="Service 1" />
+            <img src="Images/carpart2.svg" alt="Service 2" />
+            <img src="Images/carpart3.svg" alt="Service 3" />
+            <img src="Images/carpart4.svg" alt="Service 4" />
           </div>
         </div>
 
@@ -48,7 +48,7 @@ const HomePage = () => {
               </div>
               <div className="left-image-container">
                 <img
-                  src="/Images/carpart5.svg"
+                  src="Images/carpart5.svg"
                   alt="Car Part"
                   className="left-image"
                 />
