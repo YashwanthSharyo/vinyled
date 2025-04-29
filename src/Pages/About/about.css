@@ -322,7 +322,7 @@ body {
   } */
 
   .AboutContainer > .AboutHero {
-    min-height: 200px;
+ 
     background-attachment: scroll; /* Fixed background can be problematic on mobile */
     width: 100%;
     max-width: 100%;

@@ -104,7 +104,7 @@
   height: 300px;
   object-fit: cover;
   /* ensures the image fills the box without distortion */
-  margin: 15px;
+  margin: 10px;
 }
 
 
@@ -438,11 +438,7 @@
   color: white;
 }
 
-.section-container {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-}
+
 
 .form-column,
 .location-column {
@@ -564,6 +560,10 @@
     min-height: auto;
     font-size: 16px;
   }
+  .section-container {
+ 
+    width: 100%;
+  }
 
   /* Black Section */
   .black {
@@ -623,8 +623,11 @@
   .image-row img {
     width: 100%;
     max-width: 400px;
+   
     height: 220px;
+    /* Set a fixed height to maintain equal image lengths */
     object-fit: cover;
+    /* This ensures that the images maintain their aspect ratio while filling the height */
     margin: 0 auto;
     display: block;
     padding: 10px;
@@ -953,7 +956,11 @@
     box-sizing: border-box;
 
   }
-
+  .section-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
   .form-column,
 
   .location-column {
@@ -1007,7 +1014,7 @@
     width: 270px;
     height: 340px;
     object-fit: cover;
-    margin: 15px;
+    margin: 10px;
   }
   
 

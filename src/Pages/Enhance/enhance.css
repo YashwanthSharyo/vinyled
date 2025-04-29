@@ -208,10 +208,10 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .enhance-container {
+  /* .enhance-container {
   
     
-  }
+  } */
 
   .enhance-container .banner-container {
     min-height: 12.5rem;
