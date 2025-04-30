@@ -1,9 +1,12 @@
-.main-container {
-  padding-top: 60px;
+
+/* maintain.css */
+
+.maintain-wrapper {
+  /* padding-top: 60px; */
   font-family: Arial, sans-serif;
 }
 
-.main-container > .hero-section {
+.maintain-wrapper > .maintain-hero {
   min-height: 300px;
   background-image: url("https://i.shgcdn.com/b17e6cc1-2f0a-43c3-a589-d620600587c0/-/format/auto/-/preview/3000x3000/-/quality/lighter/");
   background-repeat: no-repeat;
@@ -17,18 +20,18 @@
   position: relative;
 }
 
-.hero-section > .hero-title {
+.maintain-hero > .maintain-hero__title {
   color: #ffffff;
   text-align: center;
   font-size: 32px;
   font-weight: 400;
 }
 
-.hero-title > .highlight {
+.maintain-hero__title > .maintain-hero__highlight {
   color: #ec1d24;
 }
 
-.hero-section > .hero-subtitle {
+.maintain-hero > .maintain-hero__subtitle {
   color: white;
   text-align: center;
   font-size: 18px;
@@ -37,7 +40,7 @@
   font-family: 'Work Sans', sans-serif;
 }
 
-.hero-section > .tab-nav {
+.maintain-hero > .maintain-tabs {
   display: flex;
   justify-content: center;
   border-bottom: 1px solid #ccc;
@@ -46,7 +49,7 @@
   bottom: 0;
 }
 
-.tab-nav > .tab {
+.maintain-tabs > .maintain-tab {
   padding: 10px 30px;
   cursor: pointer;
   background: white;
@@ -61,26 +64,24 @@
   text-align: center;
 }
 
-.tab-nav > .tab.active {
+.maintain-tabs > .maintain-tab--active {
   background: #dd0000;
   color: white;
   z-index: 2;
 }
 
-.tab-nav > .tab:hover {
+.maintain-tabs > .maintain-tab:hover {
   background: #f0f0f0;
 }
 
-.main-container > .tab-content {
+.maintain-wrapper > .maintain-content {
   background-color: white;
   display: flex;
   justify-content: center;
-  padding: 40px;
 }
 
-.tab-content > .tab-panel {
+.maintain-content > .maintain-panel {
   display: none;
-  gap: 20px;
   border-radius: 5px;
   align-items: center;
   width: 100%;
@@ -88,11 +89,11 @@
   flex-direction: column;
 }
 
-.tab-content > .tab-panel.active {
+.maintain-content > .maintain-panel--active {
   display: flex;
 }
 
-.tab-panel > .tab-title {
+.maintain-panel > .maintain-panel__title {
   color: #ec1d24;
   font-size: 27px;
   text-align: center;
@@ -101,7 +102,7 @@
   font-weight: 400;
 }
 
-.tab-panel > .plan-details {
+.maintain-panel > .maintain-details {
   border: 1px solid #bbb;
   box-sizing: border-box;
   padding: 40px;
@@ -109,7 +110,7 @@
   min-height: 200px;
 }
 
-.plan-details > .plan-content {
+.maintain-details > .maintain-details__content {
   padding: 40px;
   background-color: #fff;
   box-sizing: border-box;
@@ -118,21 +119,22 @@
   flex-wrap: wrap;
 }
 
-.plan-content > .plan-description {
+.maintain-details__content > .maintain-details__description {
   flex: 1 1 60%;
 }
 
-.plan-description > .section-title {
+.maintain-details__description > .maintain-details__section-title {
   font-size: 32px;
   color: #ec1d24;
 }
 
-.plan-description > .description-text {
+.maintain-details__description > .maintain-details__text {
   font-size: 16px;
   line-height: 1.6;
+  text-align: justify;
 }
 
-.plan-content > .plan-image-section {
+.maintain-details__content > .maintain-details__image-section {
   flex: 1 1 35%;
   display: flex;
   justify-content: center;
@@ -140,13 +142,13 @@
   padding: 20px;
 }
 
-.plan-image-section > .plan-image {
+.maintain-details__image-section > .maintain-details__image {
   max-width: 100%;
   border: 1px solid black;
   box-sizing: border-box;
 }
 
-.plan-details > .cleaning-process {
+.maintain-details > .maintain-process {
   border: 1px solid #bbb;
   padding: 20px;
   box-sizing: border-box;
@@ -155,34 +157,39 @@
   margin: 0 auto;
 }
 
-.cleaning-process > .exterior-section {
+.maintain-process > .maintain-process__exterior {
   margin-bottom: 30px;
   padding: 20px;
 }
 
-.exterior-section > .section-title,
-.interior-section > .section-title {
+.maintain-process__exterior > .maintain-details__section-title,
+.maintain-process__interior > .maintain-details__section-title {
   color: #ec1d24;
   font-size: 28px;
   margin-bottom: 15px;
 }
 
-.exterior-section > .process-label {
+.maintain-process__exterior > .maintain-process__label {
   text-transform: uppercase;
   font-weight: bold;
 }
 
-.exterior-section > .process-list,
-.interior-section > .process-list {
+.maintain-process__exterior > .maintain-process__list,
+.maintain-process__interior > .maintain-process__list {
   padding-left: 20px;
   line-height: 1.8;
 }
 
-.main-container > .wash-plan-section {
+.maintain-process__exterior > .maintain-process__list li,
+.maintain-process__interior > .maintain-process__list li {
+  text-align: justify;
+}
+
+.maintain-wrapper > .maintain-plans {
   background-color: white;
 }
 
-.wash-plan-section > .wash-plan-container {
+.maintain-plans > .maintain-plans__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -192,7 +199,7 @@
   background-color: white;
 }
 
-.wash-plan-container > .wash-plan-card {
+.maintain-plans__container > .maintain-plan-card {
   padding: 12px;
   box-sizing: border-box;
   border-radius: 8px;
@@ -205,17 +212,17 @@
   justify-content: space-between;
 }
 
-.wash-plan-card > .card-title {
+.maintain-plan-card > .maintain-plan-card__title {
   font-size: 22px;
   color: #ec1d24;
 }
 
-.wash-plan-card > .card-list {
+.maintain-plan-card > .maintain-plan-card__list {
   line-height: 1.6;
   padding-left: 20px;
 }
 
-.main-container > .banner-section {
+.maintain-wrapper > .maintain-banner {
   position: relative;
   display: flex;
   justify-content: center;
@@ -223,14 +230,14 @@
   box-sizing: border-box;
 }
 
-.banner-section > .banner-image {
+.maintain-banner > .maintain-banner__image {
   width: 100%;
   height: auto;
   max-height: 300px;
   object-fit: cover;
 }
 
-.banner-section > .enquire-button {
+.maintain-banner > .maintain-banner__button {
   position: absolute;
   width: 200px;
   padding: 10px;
@@ -243,12 +250,12 @@
   transition: background-color 0.3s, color 0.3s;
 }
 
-.banner-section > .enquire-button:hover {
+.maintain-banner > .maintain-banner__button:hover {
   background-color: #ec1d24;
   color: white;
 }
 
-.main-container > .image-section {
+.maintain-wrapper > .maintain-image {
   position: relative;
   display: flex;
   justify-content: center;
@@ -256,13 +263,13 @@
   box-sizing: border-box;
 }
 
-.image-section > .section-image {
+.maintain-image > .maintain-image__image {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
-.main-container > .footer-section {
+.maintain-wrapper > .maintain-footer {
   background-color: #f0f0f0;
   min-height: 300px;
   display: flex;
@@ -272,18 +279,18 @@
   text-align: center;
 }
 
-.footer-section > .footer-title {
+.maintain-footer > .maintain-footer__title {
   margin: 0;
   font-size: 28px;
   font-weight: bold;
 }
 
-.footer-section > .footer-text {
+.maintain-footer > .maintain-footer__text {
   font-size: 18px;
   margin-top: 10px;
 }
 
-.main-container > .final-banner {
+.maintain-wrapper > .maintain-final-banner {
   min-height: 300px;
   background-color: red;
   background-image: url("https://i.shgcdn.com/be9ed3b6-2cc1-4ea3-ada7-41e3ca1ab623/-/format/auto/-/preview/3000x3000/-/quality/lighter/");
@@ -294,148 +301,149 @@
 
 /* Tablet Styles (768px to 1023px) */
 @media screen and (max-width: 1023px) {
-  .main-container {
+  /* .maintain-wrapper {
     padding-top: 40px;
-  }
+  } */
 
-  .main-container > .hero-section {
+  .maintain-wrapper > .maintain-hero {
     min-height: 250px;
   }
 
-  .hero-section > .hero-title {
+  .maintain-hero > .maintain-hero__title {
     font-size: 28px;
   }
 
-  .hero-section > .hero-subtitle {
+  .maintain-hero > .maintain-hero__subtitle {
     font-size: 16px;
     max-width: 500px;
     margin-top: -20px;
   }
 
-  .hero-section > .tab-nav {
+  .maintain-hero > .maintain-tabs {
     flex-wrap: wrap;
   }
 
-  .tab-nav > .tab {
+  .maintain-tabs > .maintain-tab {
     min-width: 200px;
     padding: 8px 20px;
     margin-left: -10px;
   }
 
-  .main-container > .tab-content {
+  .maintain-wrapper > .maintain-content {
     padding: 20px;
   }
 
-  .tab-content > .tab-panel {
+  .maintain-content > .maintain-panel {
     padding: 20px;
   }
 
-  .tab-panel > .tab-title {
+  .maintain-panel > .maintain-panel__title {
     font-size: 24px;
   }
 
-  .tab-panel > .plan-details {
+  .maintain-panel > .maintain-details {
     padding: 20px;
   }
 
-  .plan-details > .plan-content {
+  .maintain-details > .maintain-details__content {
     padding: 20px;
     flex-direction: column;
   }
 
-  .plan-content > .plan-description {
+  .maintain-details__content > .maintain-details__description {
     flex: 1 1 100%;
   }
 
-  .plan-content > .plan-image-section {
+  .maintain-details__content > .maintain-details__image-section {
     flex: 1 1 100%;
     padding: 10px;
   }
 
-  .plan-description > .section-title {
+  .maintain-details__description > .maintain-details__section-title {
     font-size: 28px;
   }
 
-  .plan-description > .description-text {
+  .maintain-details__description > .maintain-details__text {
     font-size: 14px;
+    text-align: justify;
   }
 
-  .plan-details > .cleaning-process {
+  .maintain-details > .maintain-process {
     padding: 15px;
     max-width: 100%;
   }
 
-  .cleaning-process > .exterior-section {
+  .maintain-process > .maintain-process__exterior {
     padding: 15px;
   }
 
-  .exterior-section > .section-title,
-  .interior-section > .section-title {
+  .maintain-process__exterior > .maintain-details__section-title,
+  .maintain-process__interior > .maintain-details__section-title {
     font-size: 24px;
   }
 
-  .wash-plan-section > .wash-plan-container {
+  .maintain-plans > .maintain-plans__container {
     max-width: 700px;
     padding: 5px;
   }
 
-  .wash-plan-container > .wash-plan-card {
+  .maintain-plans__container > .maintain-plan-card {
     flex: 1 1 100%;
     margin: 5px 0;
   }
 
-  .wash-plan-card > .card-title {
+  .maintain-plan-card > .maintain-plan-card__title {
     font-size: 20px;
   }
 
-  .banner-section > .enquire-button {
+  .maintain-banner > .maintain-banner__button {
     width: 150px;
     font-size: 14px;
     padding: 8px;
   }
 
-  .footer-section > .footer-title {
+  .maintain-footer > .maintain-footer__title {
     font-size: 24px;
   }
 
-  .footer-section > .footer-text {
+  .maintain-footer > .maintain-footer__text {
     font-size: 16px;
   }
 
-  .main-container > .final-banner {
+  .maintain-wrapper > .maintain-final-banner {
     min-height: 200px;
   }
 }
 
 /* Mobile Styles (below 768px) */
 @media screen and (max-width: 767px) {
-  .main-container {
+  /* .maintain-wrapper {
     padding-top: 20px;
-  }
+  } */
 
-  .main-container > .hero-section {
+  .maintain-wrapper > .maintain-hero {
     min-height: 200px;
     background-attachment: scroll; /* Fixed background can be problematic on mobile */
   }
 
-  .hero-section > .hero-title {
+  .maintain-hero > .maintain-hero__title {
     font-size: 24px;
   }
 
-  .hero-section > .hero-subtitle {
+  .maintain-hero > .maintain-hero__subtitle {
     font-size: 14px;
     max-width: 90%;
     margin-top: -15px;
   }
 
-  .hero-section > .tab-nav {
+  .maintain-hero > .maintain-tabs {
     flex-direction: column;
     align-items: center;
     position: static;
     border-bottom: none;
   }
 
-  .tab-nav > .tab {
+  .maintain-tabs > .maintain-tab {
     min-width: 75%;
     margin-left: 0;
     border-radius: 5px 5px 0 0;
@@ -447,134 +455,133 @@
     cursor: pointer;
     transition: background 0.3s;
   }
-  
-  .main-container > .tab-content {
-    padding: 10px;
-  }
-  .tab-nav > .tab.active {
+
+  .maintain-tabs > .maintain-tab--active {
     background: red;
     color: white;
   }
-  
 
-  .tab-content > .tab-panel {
+  .maintain-wrapper > .maintain-content {
+    padding: 10px;
+  }
+
+  .maintain-content > .maintain-panel {
     padding: 15px;
   }
 
-  .tab-panel > .tab-title {
+  .maintain-panel > .maintain-panel__title {
     font-size: 20px;
   }
 
-  .tab-panel > .plan-details {
-    padding: 15px;
-    border: none;
-  }
+  /* .maintain-panel > .maintain-details {
+  } */
 
-  .plan-details > .plan-content {
-    padding: 10px;
+  .maintain-details > .maintain-details__content {
+    padding: 0px;
     flex-direction: column;
   }
 
-  .plan-content > .plan-description {
+  .maintain-details__content > .maintain-details__description {
     flex: 1 1 100%;
   }
 
-  .plan-content > .plan-image-section {
+  .maintain-details__content > .maintain-details__image-section {
     flex: 1 1 100%;
     padding: 5px;
   }
 
-  .plan-description > .section-title {
+  .maintain-details__description > .maintain-details__section-title {
     font-size: 24px;
   }
 
-  .plan-description > .description-text {
+  .maintain-details__description > .maintain-details__text {
     font-size: 13px;
     line-height: 1.5;
+    text-align: justify;
   }
 
-  .plan-details > .cleaning-process {
+  .maintain-details > .maintain-process {
     padding: 10px;
     border: none;
     background-color: transparent;
   }
 
-  .cleaning-process > .exterior-section {
+  .maintain-process > .maintain-process__exterior {
     padding: 10px;
     margin-bottom: 20px;
   }
 
-  .exterior-section > .section-title,
-  .interior-section > .section-title {
+  .maintain-process__exterior > .maintain-details__section-title,
+  .maintain-process__interior > .maintain-details__section-title {
     font-size: 20px;
   }
 
-  .exterior-section > .process-label {
+  .maintain-process__exterior > .maintain-process__label {
     font-size: 14px;
   }
 
-  .exterior-section > .process-list,
-  .interior-section > .process-list {
+  .maintain-process__exterior > .maintain-process__list,
+  .maintain-process__interior > .maintain-process__list {
     padding-left: 15px;
     font-size: 13px;
     line-height: 1.6;
   }
 
-  .wash-plan-section > .wash-plan-container {
+  .maintain-plans > .maintain-plans__container {
     max-width: 100%;
     padding: 5px;
   }
 
-  .wash-plan-container > .wash-plan-card {
+  .maintain-plans__container > .maintain-plan-card {
     flex: 1 1 100%;
     margin: 5px 0;
     padding: 10px;
   }
 
-  .wash-plan-card > .card-title {
+  .maintain-plan-card > .maintain-plan-card__title {
     font-size: 18px;
   }
 
-  .wash-plan-card > .card-list {
+  .maintain-plan-card > .maintain-plan-card__list {
     font-size: 13px;
     padding-left: 15px;
   }
 
-  .main-container > .banner-section {
+  .maintain-wrapper > .maintain-banner {
     min-height: 150px;
   }
 
-  .banner-section > .banner-image {
+  .maintain-banner > .maintain-banner__image {
     max-height: 200px;
   }
 
-  .banner-section > .enquire-button {
+  .maintain-banner > .maintain-banner__button {
     width: 120px;
     font-size: 12px;
     padding: 6px;
   }
 
-  .main-container > .image-section {
+  .maintain-wrapper > .maintain-image {
     min-height: 150px;
   }
 
-  .image-section > .section-image {
+  .maintain-image > .maintain-image__image {
     max-height: 200px;
   }
 
-  .main-container > .footer-section {
+  .maintain-wrapper > .maintain-footer {
     min-height: 200px;
   }
 
-  .footer-section > .footer-title {
+  .maintain-footer > .maintain-footer__title {
     font-size: 20px;
   }
 
-  .footer-section > .footer-text {
+  .maintain-footer > .maintain-footer__text {
     font-size: 14px;
   }
 
-  .main-container > .final-banner {
+  .maintain-wrapper > .maintain-final-banner {
     min-height: 150px;
   }
 }

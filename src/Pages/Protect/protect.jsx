@@ -28,10 +28,26 @@ export default function Protect() {
   };
 
   const tabs = [
-    { title: "Level 1", id: "tab-573030cc-5fb9-46ac-ad58-20ed5df58f19", panelId: "panel-573030cc-5fb9-46ac-ad58-20ed5df58f19" },
-    { title: "Level 2", id: "tab-f896e550-9cc2-4a44-a198-e518295d247b", panelId: "panel-f896e550-9cc2-4a44-a198-e518295d247b" },
-    { title: "Level 3", id: "tab-86b7ae01-e158-4f5a-82c1-2d117ae57b92", panelId: "panel-86b7ae01-e158-4f5a-82c1-2d117ae57b92" },
-    { title: "Level 4", id: "tab-12df755b-0f93-412a-ac18-7198e4e26a37", panelId: "panel-12df755b-0f93-412a-ac18-7198e4e26a37" },
+    {
+      title: "Level 1",
+      id: "tab-573030cc-5fb9-46ac-ad58-20ed5df58f19",
+      panelId: "panel-573030cc-5fb9-46ac-ad58-20ed5df58f19",
+    },
+    {
+      title: "Level 2",
+      id: "tab-f896e550-9cc2-4a44-a198-e518295d247b",
+      panelId: "panel-f896e550-9cc2-4a44-a198-e518295d247b",
+    },
+    {
+      title: "Level 3",
+      id: "tab-86b7ae01-e158-4f5a-82c1-2d117ae57b92",
+      panelId: "panel-86b7ae01-e158-4f5a-82c1-2d117ae57b92",
+    },
+    {
+      title: "Level 4",
+      id: "tab-12df755b-0f93-412a-ac18-7198e4e26a37",
+      panelId: "panel-12df755b-0f93-412a-ac18-7198e4e26a37",
+    },
   ];
 
   return (
@@ -43,11 +59,17 @@ export default function Protect() {
           </h2>
           <p className="banner-subtitle">Four Protection Kits</p>
         </div>
-        <ul className="shogun-tabs shogun-modern" role="tablist" data-vthemes='{"default":"shogun-modern"}'>
+        <ul
+          className="shogun-tabs shogun-modern"
+          role="tablist"
+          data-vthemes='{"default":"shogun-modern"}'
+        >
           {tabs.map((tab, index) => (
             <li
               key={tab.id}
-              className={`shogun-tab ${activeTab === index ? "shogun-tab-active" : ""}`}
+              className={`shogun-tab ${
+                activeTab === index ? "shogun-tab-active" : ""
+              }`}
               id={tab.id}
               role="tab"
               aria-controls={tab.panelId}
@@ -73,27 +95,35 @@ export default function Protect() {
             aria-labelledby={tab.id}
             style={{ display: activeTab === index ? "flex" : "none" }}
           >
-            <div className="tab-image-container">
-              <img
-                src="https://files.widgetic.com/file/widgetic-Uploads/app/6092a03fecb2a1363a8b4569/kp6ozbom-2p1z2rw.png"
-                alt={`${tab.title} Service`}
-                className="tab-image"
-              />
-            </div>
-            <div className="tab-details">
-              <div className="service-specification">
-                <p className="section-title">Service Specification</p>
-                <div className="spec-item">
-                  <strong>Service Duration: 6–8 Hours</strong>
-                </div>
-                <div className="spec-item">
-                  Includes: Front bumper, Headlights, and Wing mirrors.
-                </div>
+            <div className="service-section">
+              <div className="service-image-wrapper">
+                <img
+                  src="https://files.widgetic.com/file/widgetic-uploads/app/6092a03fecb2a1363a8b4569/kp6ozbom-2p1z2rw.png"
+                  alt="Vehicle"
+                  className="service-image"
+                />
               </div>
-              <div className="service-description">
-                <p className="section-title">Service Description</p>
-                <div className="description-text">
-                  Installing self-healing film on the highlighted areas.
+
+              <div className="service-info-container">
+                <div className="service-info-box">
+                  <h2 className="info-heading">Service Specification</h2>
+                  <div className="info-content">
+                    <p>
+                      <strong>Service Duration: 6–8 Hours</strong>
+                    </p>
+                    <p>Includes: Front bumper, Headlights and wing mirrors.</p>
+                  </div>
+
+                  <h2 className="info-heading">Service Description</h2>
+                  <div className="info-content">
+                    <p>
+                      Installing self-healing film on the highlighted areas.
+                    </p>
+                  </div>
+
+                  <div className="info-price">
+                    <p>From £1500 + VAT</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -129,7 +159,9 @@ export default function Protect() {
             >
               <div className="faq-question">
                 {faq.question}
-                <span className="faq-icon">{activeIndex === index ? "−" : "+"}</span>
+                <span className="faq-icon">
+                  {activeIndex === index ? "−" : "+"}
+                </span>
               </div>
               {activeIndex === index && (
                 <p className="faq-answer">{faq.answer}</p>

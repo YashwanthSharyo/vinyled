@@ -33,17 +33,17 @@ export default function Maintain() {
   ];
 
   return (
-    <div className="main-container">
-      <div className="hero-section">
-        <h2 className="hero-title">
-          <span className="highlight">/</span> MAINTAIN
+    <div className="maintain-wrapper">
+      <div className="maintain-hero">
+        <h2 className="maintain-hero__title">
+          <span className="maintain-hero__highlight">/</span> MAINTAIN
         </h2>
-        <p className="hero-subtitle">Topaz Wash Plans</p>
-        <div className="tab-nav">
+        <p className="maintain-hero__subtitle">Topaz Wash Plans</p>
+        <div className="maintain-tabs">
           {[1, 2].map((tabNumber) => (
             <div
               key={tabNumber}
-              className={`tab ${activeTab === tabNumber ? 'active' : ''}`}
+              className={`maintain-tab ${activeTab === tabNumber ? 'maintain-tab--active' : ''}`}
               onClick={() => handleTabClick(tabNumber)}
             >
               Tab {tabNumber}
@@ -52,25 +52,25 @@ export default function Maintain() {
         </div>
       </div>
 
-      <div className="tab-content">
+      <div className="maintain-content">
         {[1, 2].map((tab) => (
           <div
             key={tab}
-            className={`tab-panel ${activeTab === tab ? 'active' : ''}`}
+            className={`maintain-panel ${activeTab === tab ? 'maintain-panel--active' : ''}`}
           >
-            <h2 className="tab-title">Wash Plan Options</h2>
-            <div className="plan-details">
-              <div className="plan-content">
-                <div className="plan-description">
-                  <h2 className="section-title">Wash Plan Details</h2>
-                  <p className="description-text">
+            <h2 className="maintain-panel__title">Wash Plan Options</h2>
+            <div className="maintain-details">
+              <div className="maintain-details__content">
+                <div className="maintain-details__description">
+                  <h2 className="maintain-details__section-title">Wash Plan Details</h2>
+                  <p className="maintain-details__text">
                     The maintenance washes are a crucial part in maintaining the
                     integrity of your initial treatment. The ongoing washes include
                     all the processes necessary to maintain the longevity of the
                     protective layers. They also prevent any further damage to your
                     vehicle’s paint finish, such as scratches and scrapes.
                   </p>
-                  <p className="description-text">
+                  <p className="maintain-details__text">
                     Paying for your wash plan in advance enables you to make
                     significant savings on normal retail prices. You’ll save 27% on
                     your washes, and 38% on the Level 2 detail at six months, which
@@ -86,19 +86,19 @@ export default function Maintain() {
                     </strong>
                   </p>
                 </div>
-                <div className="plan-image-section">
+                <div className="maintain-details__image-section">
                   <img
                     src="https://i.shgcdn.com/0ac37343-348c-42a4-be54-5482fa41e95e/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
                     alt="Wash Plan"
-                    className="plan-image"
+                    className="maintain-details__image"
                   />
                 </div>
               </div>
-              <div className="cleaning-process">
-                <div className="exterior-section">
-                  <h2 className="section-title">Exterior</h2>
-                  <p className="process-label">21 Stage Topaz Cleaning Process Including:</p>
-                  <ul className="process-list">
+              <div className="maintain-process">
+                <div className="maintain-process__exterior">
+                  <h2 className="maintain-details__section-title">Exterior</h2>
+                  <p className="maintain-process__label">21 Stage Topaz Cleaning Process Including:</p>
+                  <ul className="maintain-process__list">
                     <li>
                       The vehicle is washed using PH neutral shampoo using twin grit
                       guard bucket system to prevent any stones and sharp edge
@@ -121,9 +121,9 @@ export default function Maintain() {
                     </li>
                   </ul>
                 </div>
-                <div className="interior-section">
-                  <h2 className="section-title">Interior</h2>
-                  <ul className="process-list">
+                <div className="maintain-process__interior">
+                  <h2 className="maintain-details__section-title">Interior</h2>
+                  <ul className="maintain-process__list">
                     <li>Windows are cleaned on the inside.</li>
                     <li>
                       Interior trim and surfaces are all cleaned using aerospace–grade
@@ -137,12 +137,12 @@ export default function Maintain() {
         ))}
       </div>
 
-      <div className="wash-plan-section">
-        <div className="wash-plan-container">
+      <div className="maintain-plans">
+        <div className="maintain-plans__container">
           {washPlans.map((plan, index) => (
-            <div key={index} className="wash-plan-card">
-              <p className="card-title">{plan.title}</p>
-              <ul className="card-list">
+            <div key={index} className="maintain-plan-card">
+              <p className="maintain-plan-card__title">{plan.title}</p>
+              <ul className="maintain-plan-card__list">
                 <li>{plan.description}</li>
               </ul>
             </div>
@@ -150,29 +150,29 @@ export default function Maintain() {
         </div>
       </div>
 
-      <div className="banner-section">
+      <div className="maintain-banner">
         <img
           src="https://i.shgcdn.com/1f9ae6c7-8573-492c-a4fc-eaf186e3d402/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
           alt="Topaz Service"
-          className="banner-image"
+          className="maintain-banner__image"
         />
-        <button className="enquire-button">Enquire Now</button>
+        <button className="maintain-banner__button">Enquire Now</button>
       </div>
 
-      <div className="image-section">
+      <div className="maintain-image">
         <img
           src="https://i.shgcdn.com/5f9018c8-5862-475b-834a-337690d76a2a/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
           alt="Topaz Service"
-          className="section-image"
+          className="maintain-image__image"
         />
       </div>
 
-      <div className="footer-section">
-        <h2 className="footer-title">Vinyled.in</h2>
-        <p className="footer-text">Follow Us @vinyled</p>
+      <div className="maintain-footer">
+        <h2 className="maintain-footer__title">Vinyled.in</h2>
+        <p className="maintain-footer__text">Follow Us @vinyled</p>
       </div>
 
-      <div className="final-banner"></div>
+      <div className="maintain-final-banner"></div>
     </div>
   );
 }

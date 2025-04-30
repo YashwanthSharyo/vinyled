@@ -7,32 +7,32 @@ export default function Customise() {
   const [isHovered3, setIsHovered3] = useState(false);
 
   return (
-    <div className="main-container">
-      <div className="hero-section">
-        <div className="hero-content">
-          <h2 className="hero-title">
-            <span className="highlight">/</span>CUSTOMISE
+    <div className="customise-wrapper">
+      <div className="customise-hero">
+        <div className="customise-hero__content">
+          <h2 className="customise-hero__title">
+            <span className="customise-hero__highlight">/</span>CUSTOMISE
           </h2>
-          <p className="hero-subtitle">with Vinyled</p>
+          <p className="customise-hero__subtitle">with Vinyled</p>
         </div>
       </div>
 
-      <div className="customisation-section">
-        <h2 className="section-title">Select a Customisation Type</h2>
-        <div className="customisation-options">
+      <div className="customise-options">
+        <h2 className="customise-options__title">Select a Customisation Type</h2>
+        <div className="customise-options__cards">
           <div
-            className="option-card"
+            className="customise-card"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
-            <div className="overlay"></div>
-            <div className="option-title">
+            <div className="customise-card__overlay"></div>
+            <div className="customise-card__title">
               <h2>
-                <span className="highlight">/</span> COLOURED PPF
+                <span className="customise-hero__highlight">/</span> COLOURED PPF
               </h2>
             </div>
             <div
-              className="hover-text"
+              className="customise-card__hover-text"
               style={{
                 visibility: isHovered ? 'visible' : 'hidden',
                 opacity: isHovered ? 1 : 0,
@@ -47,18 +47,18 @@ export default function Customise() {
           </div>
 
           <div
-            className="option-card vinyl-decals"
+            className="customise-card customise-card--vinyl-decals"
             onMouseEnter={() => setIsHovered2(true)}
             onMouseLeave={() => setIsHovered2(false)}
           >
-            <div className="overlay"></div>
-            <div className="option-title">
+            <div className="customise-card__overlay"></div>
+            <div className="customise-card__title">
               <h2>
-                <span className="highlight">/</span> VINYL AND DECALS
+                <span className="customise-hero__highlight">/</span> VINYL AND DECALS
               </h2>
             </div>
             <div
-              className="hover-text"
+              className="customise-card__hover-text"
               style={{
                 visibility: isHovered2 ? 'visible' : 'hidden',
                 opacity: isHovered2 ? 1 : 0,
@@ -73,18 +73,18 @@ export default function Customise() {
           </div>
 
           <div
-            className="option-card resprays-interiors"
+            className="customise-card customise-card--resprays-interiors"
             onMouseEnter={() => setIsHovered3(true)}
             onMouseLeave={() => setIsHovered3(false)}
           >
-            <div className="overlay"></div>
-            <div className="option-title">
+            <div className="customise-card__overlay"></div>
+            <div className="customise-card__title">
               <h2>
-                <span className="highlight">/</span> RESPRAYS & INTERIORS
+                <span className="customise-hero__highlight">/</span> RESPRAYS & INTERIORS
               </h2>
             </div>
             <div
-              className="hover-text"
+              className="customise-card__hover-text"
               style={{
                 visibility: isHovered3 ? 'visible' : 'hidden',
                 opacity: isHovered3 ? 1 : 0,
@@ -99,18 +99,18 @@ export default function Customise() {
         </div>
       </div>
 
-      <div className="video-section">
+      <div className="customise-video">
         <iframe
           src="https://www.youtube.com/embed/t9-cMiEDNyk"
           title="YouTube video player"
-          className="video-iframe"
+          className="customise-video__iframe"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
         ></iframe>
       </div>
 
-      <div className="banner-section"></div>
+      <div className="customise-banner"></div>
     </div>
   );
 }
