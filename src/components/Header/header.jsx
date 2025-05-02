@@ -36,45 +36,66 @@ const Header = () => {
 
       <ul className={`menu ${isMenuOpen ? "open" : ""}`}>
         <li>
-          <Link to="/" onClick={handleMenuItemClick}>HOME</Link>
+          <Link to="/" onClick={handleMenuItemClick}>
+            HOME
+          </Link>
         </li>
         <li className="dropdown">
-          <a href="#service" >
-            SERVICE<span className="icon">˅</span>
+          <a href="#service">
+            SERVICE <i class="fa fa-caret-down"></i>
           </a>
           <ul className="dropdown-menu">
             <li>
-              <Link to="/enhance" onClick={handleMenuItemClick}>ENHANCE</Link>
+              <Link to="/enhance" onClick={handleMenuItemClick}>
+                ENHANCE
+              </Link>
             </li>
             <li>
-              <Link to="/protect" onClick={handleMenuItemClick}>PROTECT</Link>
+              <Link to="/protect" onClick={handleMenuItemClick}>
+                PROTECT
+              </Link>
             </li>
             <li>
-              <Link to="/maintain" onClick={handleMenuItemClick}>MAINTAIN</Link>
+              <Link to="/maintain" onClick={handleMenuItemClick}>
+                MAINTAIN
+              </Link>
             </li>
             <li>
-              <Link to="/customise" onClick={handleMenuItemClick}>CUSTOMISE</Link>
+              <Link to="/customise" onClick={handleMenuItemClick}>
+                CUSTOMISE
+              </Link>
             </li>
           </ul>
         </li>
         <li className="dropdown">
-          <a href="#about" >
-            ABOUT US<span className="icon">˅</span>
+          <a href="#about">
+            ABOUT US <i class="fa fa-caret-down"></i>
           </a>
+
           <ul className="dropdown-menu">
             <li>
-              <Link to="/about" onClick={handleMenuItemClick}>About Vinyled</Link>
+              <Link to="/about" onClick={handleMenuItemClick}>
+                About Vinyled
+              </Link>
             </li>
             <li>
-              <Link to="/team" onClick={handleMenuItemClick}>The Team</Link>
+              <Link to="/team" onClick={handleMenuItemClick}>
+                The Team
+              </Link>
             </li>
           </ul>
         </li>
         <li>
-          <Link to="/contact-us" onClick={handleMenuItemClick}>CONTACT US</Link>
+          <Link to="/contact-us" onClick={handleMenuItemClick}>
+            CONTACT US
+          </Link>
         </li>
         <li className="shop-item">
-          <Link to="/shop-products" className="shop-link" onClick={handleMenuItemClick}>
+          <Link
+            to="/shop-products"
+            className="shop-link"
+            onClick={handleMenuItemClick}
+          >
             SHOP PRODUCTS
           </Link>
         </li>
