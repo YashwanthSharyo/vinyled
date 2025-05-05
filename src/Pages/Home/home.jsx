@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import "./home.css";
 
@@ -9,10 +7,14 @@ const HomePage = () => {
       <section className="section black">
         <div className="black-content">
           <div className="text">
-          <h1>Transform Your Ride with Vinyl'ed</h1>
-          <p>
-    Revamp your vehicle with Vinyl'ed’s expert car wraps, premium paint protection films, and bespoke graphics. Since 2018, our Bangalore team has delivered standout style at our new Chelekere, Kalyannagar facility. Trust us to transform your car or bike with top-tier materials and unmatched craftsmanship.
-  </p>
+            <h1>Transform Your Ride with Vinyl'ed</h1>
+            <p>
+              Revamp your vehicle with Vinyl'ed’s expert car wraps, premium
+              paint protection films, and bespoke graphics. Since 2018, our
+              Bangalore team has delivered standout style at our new Chelekere,
+              Kalyannagar facility. Trust us to transform your car or bike with
+              top-tier materials and unmatched craftsmanship.
+            </p>
             <button className="action-btn">Get started</button>
           </div>
         </div>
@@ -74,58 +76,76 @@ const HomePage = () => {
         </div>
 
         <div className="section-container">
-      {/* Left Column - Contact Form */}
-      <div className="form-column">
-        <div className="form-content">
-          <h2 className="form-heading">Get in Touch</h2>
+          {/* Left Column - Contact Form */}
+          <div className="form-column">
+            <div className="form-content">
+              <h2 className="form-heading">Get in Touch</h2>
 
-          <input type="text" placeholder="Name" className="form-input" />
-          <input type="email" placeholder="Email" className="form-input" />
-          <input type="tel" placeholder="Phone Number" className="form-input" />
+              <input type="text" placeholder="Name" className="form-input" />
+              <input type="email" placeholder="Email" className="form-input" />
+              <input
+                type="tel"
+                placeholder="Phone Number"
+                className="form-input"
+              />
 
-          <select className="form-select">
-            <option value="">How did you find us?</option>
-            <option value="google">Google</option>
-            <option value="friend">Friend</option>
-            <option value="social_media">Social Media</option>
-            <option value="ad">Advertisement</option>
-            <option value="other">Other</option>
-          </select>
+              <select className="form-select">
+                <option value="">How did you find us?</option>
+                <option value="google">Google</option>
+                <option value="friend">Friend</option>
+                <option value="social_media">Social Media</option>
+                <option value="ad">Advertisement</option>
+                <option value="other">Other</option>
+              </select>
 
-          <button className="submit-btn">Submit</button>
+              <button className="submit-btn">Submit</button>
 
-          <div className="contact-details">
-            <div className="contact-box">
-              <p className="contact-label">&#9742; PHONE</p>
-              <p className="contact-text">9999999999</p>
+              <div className="contact-details">
+                <div className="contact-box">
+                  <p className="contact-label">&#9742; PHONE</p>
+                  <p className="contact-text">9999999999</p>
+                </div>
+                <div className="contact-box">
+                  <p className="contact-label">&#9993; EMAIL</p>
+                  <p className="contact-text">info@vinyled.in</p>
+                </div>
+              </div>
             </div>
-            <div className="contact-box">
-              <p className="contact-label">&#9993; EMAIL</p>
-              <p className="contact-text">info@vinyled.in</p>
+          </div>
+
+          {/* Right Column - Location Info */}
+          <div className="location-column">
+            <div className="location-content">
+              <h2 className="location-heading">Location</h2>
+
+              <div className="location-box">
+                <p className="location-item">
+                  📞<span>9999999999</span>
+                </p>
+                <p className="location-item">
+                  📧<span>info@vinyled.in</span>
+                </p>
+                <p className="location-item">
+                  📍
+                  <span>#609 AECS layout, Kundalahalli, Karnataka, India</span>
+                </p>
+              </div>
+
+              <div className="location-box">
+                <p className="location-item">
+                  📞<span>9999999999</span>
+                </p>
+                <p className="location-item">
+                  📧<span>info@vinyled.in</span>
+                </p>
+                <p className="location-item">
+                  📍
+                  <span>#609 AECS layout, Kundalahalli, Karnataka, India</span>
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-
-      {/* Right Column - Location Info */}
-      <div className="location-column">
-        <div className="location-content" >
-          <h2 className="location-heading" >Location</h2>
-
-          <div className="location-box">
-            <p className="location-item">📞<span>9999999999</span></p>
-            <p className="location-item">📧<span>info@vinyled.in</span></p>
-            <p className="location-item">📍<span>#609 AECS layout, Kundalahalli, Karnataka, India</span></p>
-          </div>
-
-          <div className="location-box">
-            <p className="location-item">📞<span>9999999999</span></p>
-            <p className="location-item">📧<span>info@vinyled.in</span></p>
-            <p className="location-item">📍<span>#609 AECS layout, Kundalahalli, Karnataka, India</span></p>
-          </div>
-        </div>
-      </div>
-    </div>
       </section>
     </div>
   );

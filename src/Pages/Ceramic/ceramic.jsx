@@ -91,316 +91,86 @@ export default function Ceramic() {
         handleTabMouseLeave={handleTabMouseLeave}
       />
 
-<div
-  style={{
-    fontFamily: "Arial, sans-serif",
-    backgroundColor: "white",
-    display: "flex",
-    justifyContent: "center",
-    padding: "2.5rem",
-  }}
->
-  {[1, 2].map((tab) => (
-    <div
-      key={tab}
-      style={{
-        display: activeTab === tab ? "flex" : "none",
-        flexDirection: "row",
-        gap: "1.25rem",
-        borderRadius: "0.3125rem",
-        padding: "1.875rem",
-        flexWrap: "wrap",
-        justifyContent: "center",
-        alignItems: "flex-start",
-      }}
-    >
-      {/* Image Section */}
-      <div
-        style={{
-          flex: 1,
-          minWidth: "300px",
-        }}
-      >
-        <img
-          src={
-            tab === 1
-              ? "https://media.istockphoto.com/id/1273682054/photo/car-service-worker-applying-nano-coating-on-a-car-detail.jpg?s=612x612&w=0&k=20&c=w2YoGPnv24lcITfiH7jnTYLAj9xCXUrlbHn33lxcd2U="  // Replace with actual Ceramic image
-              : "https://thumbs.dreamstime.com/z/process-nano-coating-motorcycle-applying-soft-fiber-sponge-298512272.jpg?ct=jpeg" // Replace with actual Ceramic bike image
-          }
-          alt={tab === 1 ? "Ceramic Car Illustration" : "Ceramic Bike Illustration"}
-          style={{
-            width: "100%",
-            height: "auto",
-            minHeight: "25rem",
-            borderRadius: "0.3125rem",
-            objectFit: "cover",
-          }}
-        />
-      </div>
+<div className="tab-content-container">
+      {[1, 2].map((tab) => (
+        <div
+          key={tab}
+          className={`tab-content ${activeTab === tab ? "active" : ""}`}
+          role="tabpanel"
+          aria-hidden={activeTab !== tab}
+        >
+          {/* Image Section */}
+          <div className="image-section">
+            <img
+              src={
+                tab === 1
+                  ? "https://media.istockphoto.com/id/1273682054/photo/car-service-worker-applying-nano-coating-on-a-car-detail.jpg?s=612x612&w=0&k=20&c=w2YoGPnv24lcITfiH7jnTYLAj9xCXUrlbHn33lxcd2U="
+                  : "https://thumbs.dreamstime.com/z/process-nano-coating-motorcycle-applying-soft-fiber-sponge-298512272.jpg?ct=jpeg"
+              }
+              alt={tab === 1 ? "Ceramic Car Illustration" : "Ceramic Bike Illustration"}
+              className="tab-image"
+            />
+          </div>
 
-      {/* Text Section */}
-      <div
-        style={{
-          flex: 1,
-          minWidth: "300px",
-        }}
-      >
-        {tab === 1 ? (
-          <>
-            <h2
-              style={{
-                color: "#ec1d24",
-                fontWeight: "normal",
-                fontStyle: "normal",
-                fontSize: "2.4375rem",
-                textAlign: "justify",
-                margin: "0 0 0.5rem 0",
-              }}
-            >
-              CAR: Ceramic Protection Detail
-            </h2>
-            <h3
-              style={{
-                color: "#ec1d24",
-                fontWeight: "normal",
-                fontStyle: "normal",
-                fontSize: "1.5625rem",
-                textAlign: "justify",
-                margin: "0 0 0.5rem 0",
-              }}
-            >
-              Exterior – Cleaning and Ceramic Coating
-            </h3>
-            <h4
-              style={{
-                color: "#3a3a3a",
-                fontSize: "1.25rem",
-                fontWeight: "bold",
-                textAlign: "justify",
-                margin: "0 0 0.5rem 0",
-              }}
-            >
-              Ceramic Coating Process:
-            </h4>
-            <ul
-              style={{
-                paddingLeft: "1.25rem",
-                fontSize: "0.875rem",
-                textAlign: "justify",
-                margin: "0 0 0.5rem 0",
-              }}
-            >
-              <li
-                style={{
-                  marginBottom: "0.1875rem",
-                }}
-              >
-                Washed with pH-neutral shampoo and two-bucket system.
-              </li>
-              <li
-                style={{
-                  marginBottom: "0.1875rem",
-                }}
-              >
-                Decontaminated with clay bar to remove embedded contaminants.
-              </li>
-              <li
-                style={{
-                  marginBottom: "0.1875rem",
-                }}
-              >
-                Applied ceramic coating for long-lasting protection.
-              </li>
-              <li
-                style={{
-                  marginBottom: "0.1875rem",
-                }}
-              >
-                Sealed to provide hydrophobic and scratch-resistant finish.
-              </li>
-            </ul>
+          {/* Text Section */}
+          <div className="text-section">
+            {tab === 1 ? (
+              <>
+                <h2 className="section-title">CAR: Ceramic Protection Detail</h2>
+                <h3 className="section-subtitle">Exterior – Cleaning and Ceramic Coating</h3>
+                <h4 className="process-title">Ceramic Coating Process:</h4>
+                <ul className="process-list">
+                  <li>Washed with pH-neutral shampoo and two-bucket system.</li>
+                  <li>Decontaminated with clay bar to remove embedded contaminants.</li>
+                  <li>Applied ceramic coating for long-lasting protection.</li>
+                  <li>Sealed to provide hydrophobic and scratch-resistant finish.</li>
+                </ul>
+                <p className="highlight-text">Why Choose Ceramic Coating?</p>
+                <p className="description">
+                  Ceramic coatings protect your vehicle from environmental
+                  contaminants, making it easier to clean, maintain a glossy finish, and
+                  maintain long-term durability.
+                </p>
+              </>
+            ) : (
+              <>
+                <h2 className="section-title">BIKE: Ceramic Protection Detail</h2>
+                <h3 className="section-subtitle">What is Ceramic Coating for Bikes?</h3>
+                <p className="description">
+                  Ceramic coating is a hydrophobic protective layer that shields your
+                  bike's paint from dirt, water, and scratches while giving it a long-lasting
+                  glossy finish.
+                </p>
+                <h3 className="section-subtitle">Benefits of Ceramic Coating for Bikes</h3>
+                <ul className="process-list">
+                  <li>Protects the bike from road debris and scratches.</li>
+                  <li>Maintains the original paint quality and enhances shine.</li>
+                  <li>Easier to clean and maintain the bike's appearance.</li>
+                  <li>Offers UV protection to prevent paint fading.</li>
+                </ul>
+                <p className="highlight-text">Ceramic Coverage Options</p>
+                <ul className="process-list">
+                  <li>Full Bike Protection</li>
+                  <li>Partial Kit: Tank, Fairings, Mudguard</li>
+                  <li>Helmet & Accessory Coverage</li>
+                </ul>
+                <p className="description">
+                  Contact us for a personalized ceramic coating package suited to your bike.
+                </p>
+              </>
+            )}
+          </div>
 
-            <p
-              style={{
-                fontWeight: "bold",
-                textTransform: "uppercase",
-                fontSize: "0.875rem",
-                textAlign: "justify",
-                margin: "0 0 0.5rem 0",
-                color: "#ec1d24",
-              }}
-            >
-              Why Choose Ceramic Coating?
-            </p>
-            <p
-              style={{
-                fontSize: "0.875rem",
-                color: "#333333",
-                textAlign: "justify",
-                margin: "0 0 0.5rem 0",
-              }}
-            >
-              Ceramic coatings protect your vehicle from environmental
-              contaminants, making it easier to clean, maintain a glossy finish, and
-              maintain long-term durability.
-            </p>
-          </>
-        ) : (
-          <>
-            <h2
-              style={{
-                color: "#ec1d24",
-                fontWeight: "normal",
-                fontStyle: "normal",
-                fontSize: "2.4375rem",
-                textAlign: "justify",
-                margin: "0 0 0.5rem 0",
-              }}
-            >
-              BIKE: Ceramic Protection Detail
-            </h2>
-            <h3
-              style={{
-                color: "#ec1d24",
-                fontWeight: "normal",
-                fontStyle: "normal",
-                fontSize: "1.5625rem",
-                textAlign: "justify",
-                margin: "0 0 0.5rem 0",
-              }}
-            >
-              What is Ceramic Coating for Bikes?
-            </h3>
-            <p
-              style={{
-                fontSize: "0.875rem",
-                color: "#333333",
-                textAlign: "justify",
-                margin: "0 0 0.5rem 0",
-              }}
-            >
-              Ceramic coating is a hydrophobic protective layer that shields your
-              bike's paint from dirt, water, and scratches while giving it a long-lasting
-              glossy finish.
-            </p>
-
-            <h3
-              style={{
-                color: "#ec1d24",
-                fontWeight: "normal",
-                fontStyle: "normal",
-                fontSize: "1.5625rem",
-                textAlign: "justify",
-                margin: "0 0 0.5rem 0",
-              }}
-            >
-              Benefits of Ceramic Coating for Bikes
-            </h3>
-            <ul
-              style={{
-                paddingLeft: "1.25rem",
-                fontSize: "0.875rem",
-                textAlign: "justify",
-                margin: "0 0 0.5rem 0",
-              }}
-            >
-              <li
-                style={{
-                  marginBottom: "0.1875rem",
-                }}
-              >
-                Protects the bike from road debris and scratches.
-              </li>
-              <li
-                style={{
-                  marginBottom: "0.1875rem",
-                }}
-              >
-                Maintains the original paint quality and enhances shine.
-              </li>
-              <li
-                style={{
-                  marginBottom: "0.1875rem",
-                }}
-              >
-                Easier to clean and maintain the bike's appearance.
-              </li>
-              <li
-                style={{
-                  marginBottom: "0.1875rem",
-                }}
-              >
-                Offers UV protection to prevent paint fading.
-              </li>
-            </ul>
-
-            <p
-              style={{
-                fontWeight: "bold",
-                textTransform: "uppercase",
-                fontSize: "0.875rem",
-                textAlign: "justify",
-                margin: "0 0 0.5rem 0",
-                color: "#ec1d24",
-              }}
-            >
-              Ceramic Coverage Options
-            </p>
-            <ul
-              style={{
-                paddingLeft: "1.25rem",
-                fontSize: "0.875rem",
-                textAlign: "justify",
-                margin: "0 0 0.5rem 0",
-              }}
-            >
-              <li
-                style={{
-                  marginBottom: "0.1875rem",
-                }}
-              >
-                Full Bike Protection
-              </li>
-              <li
-                style={{
-                  marginBottom: "0.1875rem",
-                }}
-              >
-                Partial Kit: Tank, Fairings, Mudguard
-              </li>
-              <li
-                style={{
-                  marginBottom: "0.1875rem",
-                }}
-              >
-                Helmet & Accessory Coverage
-              </li>
-            </ul>
-
-            <p
-              style={{
-                fontSize: "0.875rem",
-                color: "#333333",
-                textAlign: "justify",
-                margin: "0 0 0.5rem 0",
-              }}
-            >
-              Contact us for a personalized ceramic coating package suited to your bike.
-            </p>
-          </>
-        )}
-      </div>
-
-      {/* First Gallery Section */}
-      {(tab === 1 || tab === 2) && (
-        <Gallery
-          images={galleryData[tab].images}
-          largeImage={galleryData[tab].largeImage}
-        />
-      )}
+          {/* Gallery Section */}
+          {(tab === 1 || tab === 2) && (
+            <Gallery
+              images={galleryData[tab].images}
+              largeImage={galleryData[tab].largeImage}
+            />
+          )}
+        </div>
+      ))}
     </div>
-  ))}
-</div>
 
     </div>
   );

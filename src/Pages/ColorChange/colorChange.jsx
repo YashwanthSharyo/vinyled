@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./colorChange.css";
 
 import Service from "../../components/Service/service";
 import Gallery from "../../components/Gallery/gallery";
@@ -86,313 +87,72 @@ export default function ColorChangeWrap() {
       handleTabMouseLeave={handleTabMouseLeave}
     />
   
-    <div
-      style={{
-        fontFamily: "Arial, sans-serif",
-        backgroundColor: "white",
-        display: "flex",
-        justifyContent: "center",
-        padding: "2.5rem",
-      }}
-    >
+  <div className="color-change-container">
       {[1, 2].map((tab) => (
         <div
           key={tab}
-          style={{
-            display: activeTab === tab ? "flex" : "none",
-            flexDirection: "row",
-            gap: "1.25rem",
-            borderRadius: "0.3125rem",
-            padding: "1.875rem",
-            flexWrap: "wrap",
-            justifyContent: "center",
-            alignItems: "flex-start",
-          }}
+          className={`tab-content ${activeTab === tab ? "active" : ""}`}
+          role="tabpanel"
+          aria-hidden={activeTab !== tab}
         >
           {/* Image Section */}
-          <div
-            style={{
-              flex: 1,
-              minWidth: "300px",
-            }}
-          >
+          <div className="image-section">
             <img
               src={
                 tab === 1
                   ? "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1weBUB_bYbgQj6DUmQv3vV-L6tc9154KWBQ&s"
                   : "https://thumbs.dreamstime.com/z/process-nano-coating-motorcycle-applying-soft-fiber-sponge-298512272.jpg?ct=jpeg"
               }
-              alt={
-                tab === 1
-                  ? "Car Color Change Wrap"
-                  : "Bike Color Change Wrap"
-              }
-              style={{
-                width: "100%",
-                height: "auto",
-                minHeight: "25rem",
-                borderRadius: "0.3125rem",
-                objectFit: "cover",
-              }}
+              alt={tab === 1 ? "Car Color Change Wrap" : "Bike Color Change Wrap"}
+              className="tab-image"
             />
           </div>
-  
+
           {/* Text Section */}
-          <div
-            style={{
-              flex: 1,
-              minWidth: "300px",
-            }}
-          >
+          <div className="text-section">
             {tab === 1 ? (
               <>
-                <h2
-                  style={{
-                    color: "#ec1d24",
-                    fontWeight: "normal",
-                    fontStyle: "normal",
-                    fontSize: "2.4375rem",
-                    textAlign: "justify",
-                    margin: "0 0 0.5rem 0",
-                  }}
-                >
-                  CAR: Color Change Wrap Detail
-                </h2>
-                <h3
-                  style={{
-                    color: "#ec1d24",
-                    fontWeight: "normal",
-                    fontStyle: "normal",
-                    fontSize: "1.5625rem",
-                    textAlign: "justify",
-                    margin: "0 0 0.5rem 0",
-                  }}
-                >
-                  Exterior – Custom Color Wrapping for Vehicles
-                </h3>
-                <h4
-                  style={{
-                    color: "#3a3a3a",
-                    fontSize: "1.25rem",
-                    fontWeight: "bold",
-                    textAlign: "justify",
-                    margin: "0 0 0.5rem 0",
-                  }}
-                >
-                  Color Change Wrap Process:
-                </h4>
-                <ul
-                  style={{
-                    paddingLeft: "1.25rem",
-                    fontSize: "0.875rem",
-                    textAlign: "justify",
-                    margin: "0 0 0.5rem 0",
-                  }}
-                >
-                  <li
-                    style={{
-                      marginBottom: "0.1875rem",
-                    }}
-                  >
-                    Thoroughly cleaned and prepped for vinyl application.
-                  </li>
-                  <li
-                    style={{
-                      marginBottom: "0.1875rem",
-                    }}
-                  >
-                    High-quality vinyl wrap applied to cover all exterior
-                    surfaces.
-                  </li>
-                  <li
-                    style={{
-                      marginBottom: "0.1875rem",
-                    }}
-                  >
-                    Seamless installation to ensure a flawless, uniform look.
-                  </li>
-                  <li
-                    style={{
-                      marginBottom: "0.1875rem",
-                    }}
-                  >
-                    Custom designs and finishes available for a unique appearance.
-                  </li>
+                <h2 className="section-title">CAR: Color Change Wrap Detail</h2>
+                <h3 className="section-subtitle">Exterior – Custom Color Wrapping for Vehicles</h3>
+                <h4 className="process-title">Color Change Wrap Process:</h4>
+                <ul className="process-list">
+                  <li>Thoroughly cleaned and prepped for vinyl application.</li>
+                  <li>High-quality vinyl wrap applied to cover all exterior surfaces.</li>
+                  <li>Seamless installation to ensure a flawless, uniform look.</li>
+                  <li>Custom designs and finishes available for a unique appearance.</li>
                 </ul>
-  
-                <p
-                  style={{
-                    fontWeight: "bold",
-                    textTransform: "uppercase",
-                    fontSize: "0.875rem",
-                    textAlign: "justify",
-                    margin: "0 0 0.5rem 0",
-                    color: "#ec1d24",
-                  }}
-                >
-                  Why Choose a Color Change Wrap?
-                </p>
-                <p
-                  style={{
-                    fontSize: "0.875rem",
-                    color: "#333333",
-                    textAlign: "justify",
-                    margin: "0 0 0.5rem 0",
-                  }}
-                >
-                  A color change wrap provides a unique look, protects the
-                  original paint, and allows for easier maintenance and
-                  customization.
+                <p className="highlight-text">Why Choose a Color Change Wrap?</p>
+                <p className="description">
+                  A color change wrap provides a unique look, protects the original paint, and allows for easier maintenance and customization.
                 </p>
               </>
             ) : (
               <>
-                <h2
-                  style={{
-                    color: "#ec1d24",
-                    fontWeight: "normal",
-                    fontStyle: "normal",
-                    fontSize: "2.4375rem",
-                    textAlign: "justify",
-                    margin: "0 0 0.5rem 0",
-                  }}
-                >
-                  BIKE: Color Change Wrap Detail
-                </h2>
-                <h3
-                  style={{
-                    color: "#ec1d24",
-                    fontWeight: "normal",
-                    fontStyle: "normal",
-                    fontSize: "1.5625rem",
-                    textAlign: "justify",
-                    margin: "0 0 0.5rem 0",
-                  }}
-                >
-                  What is a Color Change Wrap for Bikes?
-                </h3>
-                <p
-                  style={{
-                    fontSize: "0.875rem",
-                    color: "#333333",
-                    textAlign: "justify",
-                    margin: "0 0 0.5rem 0",
-                  }}
-                >
-                  A color change wrap for bikes involves applying a custom vinyl
-                  wrap to your bike, allowing for a completely new look while
-                  preserving the original paint.
+                <h2 className="section-title">BIKE: Color Change Wrap Detail</h2>
+                <h3 className="section-subtitle">What is a Color Change Wrap for Bikes?</h3>
+                <p className="description">
+                  A color change wrap for bikes involves applying a custom vinyl wrap to your bike, allowing for a completely new look while preserving the original paint.
                 </p>
-  
-                <h3
-                  style={{
-                    color: "#ec1d24",
-                    fontWeight: "normal",
-                    fontStyle: "normal",
-                    fontSize: "1.5625rem",
-                    textAlign: "justify",
-                    margin: "0 0 0.5rem 0",
-                  }}
-                >
-                  Benefits of a Color Change Wrap for Bikes
-                </h3>
-                <ul
-                  style={{
-                    paddingLeft: "1.25rem",
-                    fontSize: "0.875rem",
-                    textAlign: "justify",
-                    margin: "0 0 0.5rem 0",
-                  }}
-                >
-                  <li
-                    style={{
-                      marginBottom: "0.1875rem",
-                    }}
-                  >
-                    Provides a sleek, personalized look for your bike.
-                  </li>
-                  <li
-                    style={{
-                      marginBottom: "0.1875rem",
-                    }}
-                  >
-                    Offers protection for your bike's paintwork from minor
-                    scratches and UV damage.
-                  </li>
-                  <li
-                    style={{
-                      marginBottom: "0.1875rem",
-                    }}
-                  >
-                    Easy to remove or replace, without damaging the original paint.
-                  </li>
-                  <li
-                    style={{
-                      marginBottom: "0.1875rem",
-                    }}
-                  >
-                    Wide variety of colors and finishes available for customization.
-                  </li>
+                <h3 className="section-subtitle">Benefits of a Color Change Wrap for Bikes</h3>
+                <ul className="process-list">
+                  <li>Provides a sleek, personalized look for your bike.</li>
+                  <li>Offers protection for your bike's paintwork from minor scratches and UV damage.</li>
+                  <li>Easy to remove or replace, without damaging the original paint.</li>
+                  <li>Wide variety of colors and finishes available for customization.</li>
                 </ul>
-  
-                <p
-                  style={{
-                    fontWeight: "bold",
-                    textTransform: "uppercase",
-                    fontSize: "0.875rem",
-                    textAlign: "justify",
-                    margin: "0 0 0.5rem 0",
-                    color: "#ec1d24",
-                  }}
-                >
-                  Custom Color Options for Your Bike
-                </p>
-                <ul
-                  style={{
-                    paddingLeft: "1.25rem",
-                    fontSize: "0.875rem",
-                    textAlign: "justify",
-                    margin: "0 0 0.5rem 0",
-                  }}
-                >
-                  <li
-                    style={{
-                      marginBottom: "0.1875rem",
-                    }}
-                  >
-                    Full Bike Wrap
-                  </li>
-                  <li
-                    style={{
-                      marginBottom: "0.1875rem",
-                    }}
-                  >
-                    Partial Wrap: Fuel Tank, Frame, Mudguard
-                  </li>
-                  <li
-                    style={{
-                      marginBottom: "0.1875rem",
-                    }}
-                  >
-                    Unique Custom Designs & Graphics
-                  </li>
+                <p className="highlight-text">Custom Color Options for Your Bike</p>
+                <ul className="process-list">
+                  <li>Full Bike Wrap</li>
+                  <li>Partial Wrap: Fuel Tank, Frame, Mudguard</li>
+                  <li>Unique Custom Designs & Graphics</li>
                 </ul>
-  
-                <p
-                  style={{
-                    fontSize: "0.875rem",
-                    color: "#333333",
-                    textAlign: "justify",
-                    margin: "0 0 0.5rem 0",
-                  }}
-                >
-                  Reach out to us for a personalized color change wrap package
-                  tailored to your bike's needs.
+                <p className="description">
+                  Reach out to us for a personalized color change wrap package tailored to your bike's needs.
                 </p>
               </>
             )}
           </div>
-  
+
           {/* Gallery Section */}
           {(tab === 1 || tab === 2) && (
             <Gallery

@@ -7,8 +7,6 @@ export default function PPF() {
   const [activeTab, setActiveTab] = useState(1);
   const [hoveredTab, setHoveredTab] = useState(null);
 
-
-
   const handleTabClick = (tabNumber) => {
     setActiveTab(tabNumber);
   };
@@ -72,7 +70,6 @@ export default function PPF() {
     },
   };
 
-
   return (
     <div
       style={{
@@ -88,36 +85,16 @@ export default function PPF() {
         handleTabMouseLeave={handleTabMouseLeave}
       />
 
-      <div
-        style={{
-          fontFamily: "Arial, sans-serif",
-          backgroundColor: "white",
-          display: "flex",
-          justifyContent: "center",
-          padding: "2.5rem",
-        }}
-      >
+      <div className="protection-container">
         {[1, 2].map((tab) => (
           <div
             key={tab}
-            style={{
-              display: activeTab === tab ? "flex" : "none",
-              flexDirection: "row",
-              gap: "1.25rem",
-              borderRadius: "0.3125rem",
-              padding: "1.875rem",
-              flexWrap: "wrap",
-              justifyContent: "center",
-              alignItems: "flex-start",
-            }}
+            className={`tab-content ${activeTab === tab ? "active" : ""}`}
+            role="tabpanel"
+            aria-hidden={activeTab !== tab}
           >
             {/* Image Section */}
-            <div
-              style={{
-                flex: 1,
-                minWidth: "300px",
-              }}
-            >
+            <div className="image-section">
               <img
                 src={
                   tab === 1
@@ -125,221 +102,60 @@ export default function PPF() {
                     : "https://tasdetailing.in/static/a0f140055db123cacdd4612735d7934e/5ba4c/DSC_3522.webp"
                 }
                 alt={tab === 1 ? "Car illustration" : "Bike illustration"}
-                style={{
-                  width: "100%",
-                  height: "auto",
-                  minHeight: "25rem",
-                  borderRadius: "0.3125rem",
-                  objectFit: "cover",
-                }}
+                className="tab-image"
               />
             </div>
 
             {/* Text Section */}
-            <div
-              style={{
-                flex: 1,
-                minWidth: "300px",
-              }}
-            >
+            <div className="text-section">
               {tab === 1 ? (
                 <>
-                  <h2
-                    style={{
-                      color: "#ec1d24",
-                      fontWeight: "normal",
-                      fontStyle: "normal",
-                      fontSize: "2.4375rem",
-                      textAlign: "justify",
-                      margin: "0 0 0.5rem 0",
-                    }}
-                  >
+                  <h2 className="section-title">
                     CAR: Level 1 - Protection Detail
                   </h2>
-                  <h3
-                    style={{
-                      color: "#ec1d24",
-                      fontWeight: "normal",
-                      fontStyle: "normal",
-                      fontSize: "1.5625rem",
-                      textAlign: "justify",
-                      margin: "0 0 0.5rem 0",
-                    }}
-                  >
+                  <h3 className="section-subtitle">
                     Exterior – Cleaning/Cleansing/Decontamination
                   </h3>
-                  <h4
-                    style={{
-                      color: "#3a3a3a",
-                      fontSize: "1.25rem",
-                      fontWeight: "bold",
-                      textAlign: "justify",
-                      margin: "0 0 0.5rem 0",
-                    }}
-                  >
+                  <h4 className="process-title">
                     21 STAGE TOPAZ CLEANING PROCESS INCLUDING:
                   </h4>
-                  <ul
-                    style={{
-                      paddingLeft: "1.25rem",
-                      fontSize: "0.875rem",
-                      textAlign: "justify",
-                      margin: "0 0 0.5rem 0",
-                    }}
-                  >
-                    <li
-                      style={{
-                        marginBottom: "0.1875rem",
-                      }}
-                    >
+                  <ul className="process-list">
+                    <li>
                       Washed using pH neutral shampoo with twin grit guard
                       buckets.
                     </li>
-                    <li
-                      style={{
-                        marginBottom: "0.1875rem",
-                      }}
-                    >
+                    <li>
                       Wheels cleaned with citrus-based cleaner and horsehair
                       brushes.
                     </li>
-                    <li
-                      style={{
-                        marginBottom: "0.1875rem",
-                      }}
-                    >
+                    <li>
                       Door shuts, arches, petrol cap cleaned (where accessible).
                     </li>
-                    <li
-                      style={{
-                        marginBottom: "0.1875rem",
-                      }}
-                    >
-                      Dried with deep-pile microfibre towels.
-                    </li>
-                    <li
-                      style={{
-                        marginBottom: "0.1875rem",
-                      }}
-                    >
-                      Clay bar treatment to remove bonded contaminants.
-                    </li>
-                    <li
-                      style={{
-                        marginBottom: "0.1875rem",
-                      }}
-                    >
+                    <li>Dried with deep-pile microfibre towels.</li>
+                    <li>Clay bar treatment to remove bonded contaminants.</li>
+                    <li>
                       Body solvent removes tar, grime, bugs.
-                      <ul
-                        style={{
-                          paddingLeft: "1.25rem",
-                          margin: "0.1875rem 0",
-                        }}
-                      >
-                        <li
-                          style={{
-                            marginBottom: "0.1875rem",
-                          }}
-                        >
-                          Tyres dressed.
-                        </li>
+                      <ul className="sub-list">
+                        <li>Tyres dressed.</li>
                       </ul>
                     </li>
-                    <li
-                      style={{
-                        marginBottom: "0.1875rem",
-                      }}
-                    >
-                      Exterior plastics and door trims dressed.
-                    </li>
+                    <li>Exterior plastics and door trims dressed.</li>
                   </ul>
-                  <p
-                    style={{
-                      fontWeight: "bold",
-                      textTransform: "uppercase",
-                      fontSize: "0.875rem",
-                      textAlign: "justify",
-                      margin: "0 0 0.5rem 0",
-                      color: "#ec1d24",
-                    }}
-                  >
-                    Sealant
-                  </p>
-                  <p
-                    style={{
-                      fontSize: "0.875rem",
-                      color: "#333333",
-                      textAlign: "justify",
-                      margin: "0 0 0.5rem 0",
-                    }}
-                  >
+                  <p className="highlight-text">Sealant</p>
+                  <p className="description">
                     Speak to our team for ceramic coating options for paint,
                     glass, and wheels.
                   </p>
-
-                  <h3
-                    style={{
-                      color: "#ec1d24",
-                      fontWeight: "normal",
-                      fontStyle: "normal",
-                      fontSize: "1.5625rem",
-                      textAlign: "justify",
-                      margin: "0 0 0.5rem 0",
-                    }}
-                  >
-                    Interior
-                  </h3>
-                  <ul
-                    style={{
-                      paddingLeft: "1.25rem",
-                      fontSize: "0.875rem",
-                      textAlign: "justify",
-                      margin: "0 0 0.5rem 0",
-                    }}
-                  >
-                    <li
-                      style={{
-                        marginBottom: "0.1875rem",
-                      }}
-                    >
-                      Carpets vacuumed.
-                    </li>
-                    <li
-                      style={{
-                        marginBottom: "0.1875rem",
-                      }}
-                    >
-                      Interior windows cleaned.
-                    </li>
-                    <li
-                      style={{
-                        marginBottom: "0.1875rem",
-                      }}
-                    >
+                  <h3 className="section-subtitle">Interior</h3>
+                  <ul className="process-list">
+                    <li>Carpets vacuumed.</li>
+                    <li>Interior windows cleaned.</li>
+                    <li>
                       Trim and surfaces cleaned with aerospace-grade products.
                     </li>
                   </ul>
-
-                  <h3
-                    style={{
-                      color: "#ec1d24",
-                      fontWeight: "normal",
-                      fontStyle: "normal",
-                      fontSize: "1.5625rem",
-                      textAlign: "justify",
-                      margin: "0 0 0.5rem 0",
-                    }}
-                  >
-                    Why choose Level 1?
-                  </h3>
-                  <p
-                    style={{
-                      fontSize: "0.875rem",
-                      color: "#333333",
-                      textAlign: "justify",
-                      margin: "0 0 0.5rem 0",
-                    }}
-                  >
+                  <h3 className="section-subtitle">Why choose Level 1?</h3>
+                  <p className="description">
                     A Level 1 Detail is designed to decontaminate paint/PPF and
                     is ideal for satin finishes or regular maintenance without
                     paint correction.
@@ -347,151 +163,38 @@ export default function PPF() {
                 </>
               ) : (
                 <>
-                  <h2
-                    style={{
-                      color: "#ec1d24",
-                      fontWeight: "normal",
-                      fontStyle: "normal",
-                      fontSize: "2.4375rem",
-                      textAlign: "justify",
-                      margin: "0 0 0.5rem 0",
-                    }}
-                  >
-                    BIKE: PPF Protection Detail
-                  </h2>
-                  <h3
-                    style={{
-                      color: "#ec1d24",
-                      fontWeight: "normal",
-                      fontStyle: "normal",
-                      fontSize: "1.5625rem",
-                      textAlign: "justify",
-                      margin: "0 0 0.5rem 0",
-                    }}
-                  >
-                    What is PPF?
-                  </h3>
-                  <p
-                    style={{
-                      fontSize: "0.875rem",
-                      color: "#333333",
-                      textAlign: "justify",
-                      margin: "0 0 0.5rem 0",
-                    }}
-                  >
+                  <h2 className="section-title">BIKE: PPF Protection Detail</h2>
+                  <h3 className="section-subtitle">What is PPF?</h3>
+                  <p className="description">
                     Paint Protection Film (PPF) is a self-healing transparent
                     film that shields your bike from chips, scratches, and UV
                     damage while preserving the paint.
                   </p>
-
-                  <h3
-                    style={{
-                      color: "#ec1d24",
-                      fontWeight: "normal",
-                      fontStyle: "normal",
-                      fontSize: "1.5625rem",
-                      textAlign: "justify",
-                      margin: "0 0 0.5rem 0",
-                    }}
-                  >
+                  <h3 className="section-subtitle">
                     Why choose PPF for bikes?
                   </h3>
-                  <ul
-                    style={{
-                      paddingLeft: "1.25rem",
-                      fontSize: "0.875rem",
-                      textAlign: "justify",
-                      margin: "0 0 0.5rem 0",
-                    }}
-                  >
-                    <li
-                      style={{
-                        marginBottom: "0.1875rem",
-                      }}
-                    >
-                      Protects tank and fairings from road debris.
-                    </li>
-                    <li
-                      style={{
-                        marginBottom: "0.1875rem",
-                      }}
-                    >
-                      Maintains original paint finish and resale value.
-                    </li>
-                    <li
-                      style={{
-                        marginBottom: "0.1875rem",
-                      }}
-                    >
+                  <ul className="process-list">
+                    <li>Protects tank and fairings from road debris.</li>
+                    <li>Maintains original paint finish and resale value.</li>
+                    <li>
                       Self-healing surface repairs minor scuffs automatically.
                     </li>
-                    <li
-                      style={{
-                        marginBottom: "0.1875rem",
-                      }}
-                    >
-                      Precision-cut templates for seamless installation.
-                    </li>
+                    <li>Precision-cut templates for seamless installation.</li>
                   </ul>
-
-                  <p
-                    style={{
-                      fontWeight: "bold",
-                      textTransform: "uppercase",
-                      fontSize: "0.875rem",
-                      textAlign: "justify",
-                      margin: "0 0 0.5rem 0",
-                      color: "#ec1d24",
-                    }}
-                  >
-                    Coverage Options
-                  </p>
-                  <ul
-                    style={{
-                      paddingLeft: "1.25rem",
-                      fontSize: "0.875rem",
-                      textAlign: "justify",
-                      margin: "0 0 0.5rem 0",
-                    }}
-                  >
-                    <li
-                      style={{
-                        marginBottom: "0.1875rem",
-                      }}
-                    >
-                      Full Bike Protection
-                    </li>
-                    <li
-                      style={{
-                        marginBottom: "0.1875rem",
-                      }}
-                    >
-                      Partial Kit: Tank, Fairings, Mudguard
-                    </li>
-                    <li
-                      style={{
-                        marginBottom: "0.1875rem",
-                      }}
-                    >
-                      Helmet & Accessory Coverage
-                    </li>
+                  <p className="highlight-text">Coverage Options</p>
+                  <ul className="process-list">
+                    <li>Full Bike Protection</li>
+                    <li>Partial Kit: Tank, Fairings, Mudguard</li>
+                    <li>Helmet & Accessory Coverage</li>
                   </ul>
-
-                  <p
-                    style={{
-                      fontSize: "0.875rem",
-                      color: "#333333",
-                      textAlign: "justify",
-                      margin: "0 0 0.5rem 0",
-                    }}
-                  >
-                    Contact us for a customized PPF package suited Coppa bike.
+                  <p className="description">
+                    Contact us for a customized PPF package suited to your bike.
                   </p>
                 </>
               )}
             </div>
 
-            {/* First Gallery Section */}
+            {/* Gallery Section */}
             {(tab === 1 || tab === 2) && (
               <Gallery
                 images={galleryData[tab].images}
