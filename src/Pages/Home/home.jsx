@@ -9,12 +9,10 @@ const HomePage = () => {
       <section className="section black">
         <div className="black-content">
           <div className="text">
-            <h1>Elementum felis, sed ullamcorpe</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum
-              felis, sed ullamcorper tempus faucibus in imperdiet. Semper justo
-              mauris sed fusce erat aenean tristique.
-            </p>
+          <h1>Transform Your Ride with Vinyl'ed</h1>
+          <p>
+    Revamp your vehicle with Vinyl'ed’s expert car wraps, premium paint protection films, and bespoke graphics. Since 2018, our Bangalore team has delivered standout style at our new Chelekere, Kalyannagar facility. Trust us to transform your car or bike with top-tier materials and unmatched craftsmanship.
+  </p>
             <button className="action-btn">Get started</button>
           </div>
         </div>

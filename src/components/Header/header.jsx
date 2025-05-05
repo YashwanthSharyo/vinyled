@@ -3,15 +3,12 @@ import "./header.css";
 import { Link } from "react-router-dom";
 
 const Header = () => {
-  // State to track whether the menu is open or closed
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Toggle menu open/close state
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  // Close the menu when a list item is clicked
   const handleMenuItemClick = () => {
     setIsMenuOpen(false);
   };
@@ -22,7 +19,6 @@ const Header = () => {
         <img src="Images/vinyled.svg" alt="Vinyled Logo" className="logo-img" />
       </Link>
 
-      {/* Menu checkbox to control the open/close state */}
       <input
         type="checkbox"
         className="menu-btn"
@@ -40,54 +36,69 @@ const Header = () => {
             HOME
           </Link>
         </li>
+        <li>
+          <Link to="/" onClick={handleMenuItemClick}>
+            OUR CLIENTS
+          </Link>
+        </li>
         <li className="dropdown">
-          <a href="#service">
-            SERVICE <i class="fa fa-caret-down"></i>
+          <a>
+            VINYLED SERVICE <i class="fa fa-caret-down"></i>
           </a>
           <ul className="dropdown-menu">
             <li>
-              <Link to="/enhance" onClick={handleMenuItemClick}>
-                ENHANCE
+              <Link to="/ppf" onClick={handleMenuItemClick}>
+                PPF
               </Link>
             </li>
             <li>
-              <Link to="/protect" onClick={handleMenuItemClick}>
-                PROTECT
+              <Link to="/ceramic" onClick={handleMenuItemClick}>
+                CERAMIC
               </Link>
             </li>
             <li>
-              <Link to="/maintain" onClick={handleMenuItemClick}>
-                MAINTAIN
+              <Link to="/color-change-wrap" onClick={handleMenuItemClick}>
+                Colour Change Wrap
+              </Link>
+            </li>
+            <li>
+              <Link to="/custom-design" onClick={handleMenuItemClick}>
+                CUSTOM DESIGNS
               </Link>
             </li>
             <li>
               <Link to="/customise" onClick={handleMenuItemClick}>
-                CUSTOMISE
+                CUSTOM PROJECTS
+              </Link>
+            </li>
+            <li>
+              <Link to="/customise" onClick={handleMenuItemClick}>
+                BRANDING
               </Link>
             </li>
           </ul>
         </li>
         <li className="dropdown">
-          <a href="#about">
-            ABOUT US <i class="fa fa-caret-down"></i>
+          <a>
+            CONTENT <i class="fa fa-caret-down"></i>
           </a>
 
           <ul className="dropdown-menu">
             <li>
               <Link to="/about" onClick={handleMenuItemClick}>
-                About Vinyled
+                ABOUT US
               </Link>
             </li>
             <li>
               <Link to="/team" onClick={handleMenuItemClick}>
-                The Team
+                OUR PROCESS
               </Link>
             </li>
           </ul>
         </li>
         <li>
           <Link to="/contact-us" onClick={handleMenuItemClick}>
-            CONTACT US
+            CONTACT US / LOCATION
           </Link>
         </li>
         <li className="shop-item">

@@ -3,14 +3,16 @@ import Header from "../../components/Header/header";
 import React from "react";
 import Footer from "../../components/Footer/footer";
 import HomePage from "../../Pages/Home/home";
-import Enhance from "../../Pages/Enhance/enhance";
-import Customise from "../../Pages/Customise/customise";
-import Maintain from "../../Pages/Maintain/maintain";
+
 import Protect from "../../Pages/Protect/protect";
 import About from "../../Pages/About/about";
 import Team from "../../Pages/Team/team";
 import Contact from "../../Pages/Contact/contact";
 import ShopProducts from "../../Pages/ShopProducts/shopproducts";
+import PPF from "../../Pages/PPF/ppf";
+import Ceramic from "../../Pages/Ceramic/ceramic";
+import ColorChangeWrap from "../../Pages/ColorChange/colorChange";
+import CustomDesign from "../../Pages/CustomDesign/customDesign";
 
 function Navigation() {
     return (
@@ -20,10 +22,11 @@ function Navigation() {
                 <Routes>
                    
                     <Route path="/" element={<HomePage />} />
-                    <Route path="/enhance" element={<Enhance />} />
-                    <Route path="/customise" element={<Customise />} />
-                    <Route path="/maintain" element={<Maintain />} />
-                    <Route path="/protect" element={<Protect />} />
+                    <Route path="/ppf" element={<PPF />} />
+                    <Route path="/color-change-wrap" element={<ColorChangeWrap />} />
+                    <Route path="/ceramic" element={<Ceramic />} />
+                    
+                    <Route path="/custom-design" element={<CustomDesign/>} />
                     <Route path="/about" element={<About />} />
                     <Route path="/team" element={<Team />} />
                     <Route path="/contact-us" element={<Contact />} />
