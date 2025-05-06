@@ -67,12 +67,12 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link to="/customise" onClick={handleMenuItemClick}>
+              <Link to="/custom-project" onClick={handleMenuItemClick}>
                 CUSTOM PROJECTS
               </Link>
             </li>
             <li>
-              <Link to="/customise" onClick={handleMenuItemClick}>
+              <Link to="/branding" onClick={handleMenuItemClick}>
                 BRANDING
               </Link>
             </li>

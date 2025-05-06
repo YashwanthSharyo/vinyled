@@ -36,7 +36,7 @@
 .tab-container .tab {
   padding: 10px 30px;
   cursor: pointer;
-  background: white;
+  background: white; /* Default background for non-active tabs */
   color: black;
   margin-left: -20px;
   z-index: 1;
@@ -49,16 +49,16 @@
 }
 
 .tab-container .tab.active {
-  background: #DD0000;
+  background: #DD0000; /* Active tab background */
   color: black;
 }
 
 .tab-container .tab:hover {
-  background: #f0f0f0;
+  background: #f0f0f0; /* Hover effect for non-active tabs */
 }
 
 .tab-container .tab.active:hover {
-  background: #DD0000;
+  background: #DD0000; /* Ensure active tab stays red on hover */
 }
 
 /* Responsive Design */
@@ -98,7 +98,7 @@
   .tab-container .tab {
     padding: 10px 30px;
     cursor: pointer;
-    background: white;
+    background: white; /* Default background for non-active tabs */
     color: black;
     margin-left: -20px;
     z-index: 1;

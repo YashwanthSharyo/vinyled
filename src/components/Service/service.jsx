@@ -26,10 +26,6 @@ const Service = ({
               handleTabMouseEnter && handleTabMouseEnter(`tab-${tabNumber}`)
             }
             onMouseLeave={handleTabMouseLeave}
-            onMouseOut={(e) => {
-              e.target.style.background =
-                activeTab !== tabNumber ? "white" : "#DD0000";
-            }}
             role="tab"
             aria-selected={activeTab === tabNumber}
           >
