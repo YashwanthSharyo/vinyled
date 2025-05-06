@@ -36,12 +36,13 @@ const HomePage = () => {
             <div className="left-content">
               <h2 className="left-title">About Us</h2>
               <p className="left-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Elementum felis, sed ullamcorper tempus faucibus in imperdiet.
-                Semper justo mauris sed fusce erat aenean tristique. Lorem ipsum
-                dolor sit amet, consectetur adipiscing elit. Elementum felis,
-                sed ullamcorper tempus faucibus in imperdiet. Semper justo
-                mauris sed fusce erat aenean tristique.
+                Automotive Restoration Service is our go-to auto styling shop in
+                Bangalore, offering professional services for both cars and
+                bikes. We specialize in colour change wraps, paint protection
+                film (PPF), detailing, and chrome delete. Located in Chelekere,
+                Kalyan Nagar, we take pride in delivering high-quality finishes
+                with expert precision and care. Whether it’s for protection or
+                style, we help your vehicle stand out on the road.
               </p>
               <div className="button-container">
                 <button className="left-button">Know More</button>
@@ -131,17 +132,19 @@ const HomePage = () => {
                 </p>
               </div>
 
-              <div className="location-box">
-                <p className="location-item">
-                  📞<span>9999999999</span>
-                </p>
-                <p className="location-item">
-                  📧<span>info@vinyled.in</span>
-                </p>
-                <p className="location-item">
-                  📍
-                  <span>#609 AECS layout, Kundalahalli, Karnataka, India</span>
-                </p>
+              <div className=".location-map">
+                <div className="map-wrapper">
+                  <iframe
+                    title="Vinyled Location"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.1174215027766!2d77.63773461434949!3d13.028764817118106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae179c2c4039cd%3A0x3b62ea9297f3e28!2sChelekere%20Village%2C%20Kalyan%20Nagar%2C%20Bengaluru%2C%20Karnataka%20560043!5e0!3m2!1sen!2sin!4v1714985800025!5m2!1sen!2sin"
+                    width="100%"
+                    height="300"
+                    style={{ border: 0, marginTop: "1rem" }}
+                    allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
               </div>
             </div>
           </div>
