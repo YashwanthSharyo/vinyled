@@ -153,6 +153,23 @@
     .tab-content .image-section {
       min-width: 100%;
     }
+    .tab-container .tab.active {
+        background: #DD0000;
+        color: black;
+      }
+    
+      .tab-container .tab:not(.active) {
+        background: white;
+        color: black;
+      }
+    
+      .tab-container .tab:hover {
+        background: #f0f0f0;
+      }
+    
+      .tab-container .tab.active:hover {
+        background: #DD0000;
+      }
   
     .image-section .tab-image {
       min-height: 15rem;
