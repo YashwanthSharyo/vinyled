@@ -1,7 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import "./home.css";
+import { useNavigate } from "react-router-dom";
 
 const HomePage = () => {
+  const [hovered, setHovered] = useState(null);
+  const navigate = useNavigate();
+
+  const handleMouseEnter = (index) => {
+    setHovered(index);
+  };
+
+  const handleMouseLeave = () => {
+    setHovered(null);
+  };
+
+  const serviceLinks = {
+    1: '/ppf',
+    2: '/ceramic',
+    3: '/custom-design',
+    4: '/branding',
+  };
+
+  const handleClick = (index) => {
+    setTimeout(() => {
+      navigate(serviceLinks[index]);
+    }, 500);
+  };
+
   return (
     <div className="home-page">
       <section className="section black">
@@ -20,17 +45,113 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className="section green">
-        <div className="green-top">
-          <h1 className="service-title">Service</h1>
-          <div className="image-row">
-            <img src="Images/carpart1.svg" alt="Service 1" />
-            <img src="Images/carpart2.svg" alt="Service 2" />
-            <img src="Images/carpart3.svg" alt="Service 3" />
-            <img src="Images/carpart4.svg" alt="Service 4" />
+      <section className="service-section">
+        <div className="service-container">
+          <h2 className="service-title">Service</h2>
+          <div className="service-grid">
+            {/* Image 1 - PPF and Wraps */}
+            <div
+              className="service-item"
+              onMouseEnter={() => handleMouseEnter(1)}
+              onMouseLeave={handleMouseLeave}
+              onClick={() => handleClick(1)}
+            >
+              <img
+                src="Images/carpart1.svg"
+                alt="Service 1"
+                className="service-image"
+              />
+              <div className="service-overlay" />
+              <div
+                className={`service-description ${
+                  hovered === 1 ? "visible" : ""
+                }`}
+              >
+                Paint Protection Film (PPF) shields vehicles from scratches,
+                chips, and UV damage, preserving paint and resale value.
+              </div>
+              <div className="service-label">PPF and Wraps</div>
+            </div>
+
+            {/* Image 2 - Ceramic / Graphene Coating */}
+            <div
+              className="service-item"
+              onMouseEnter={() => handleMouseEnter(2)}
+              onMouseLeave={handleMouseLeave}
+              onClick={() => handleClick(2)}
+            >
+              <img
+                src="Images/carpart2.svg"
+                alt="Service 2"
+                className="service-image"
+              />
+              <div className="service-overlay" />
+              <div
+                className={`service-description ${
+                  hovered === 2 ? "visible" : ""
+                }`}
+              >
+                Ceramic and graphene coatings create a durable, hydrophobic
+                shield on a vehicle's surface, protecting against UV rays,
+                chemical stains, and minor scratches.
+              </div>
+              <div className="service-label">Ceramic / Graphene Coating</div>
+            </div>
+
+            {/* Image 3 - Custom Design */}
+            <div
+              className="service-item"
+              onMouseEnter={() => handleMouseEnter(3)}
+              onMouseLeave={handleMouseLeave}
+              onClick={() => handleClick(3)}
+            >
+              <img
+                src="Images/carpart3.svg"
+                alt="Service 3"
+                className="service-image"
+              />
+              <div className="service-overlay" />
+              <div
+                className={`service-description ${
+                  hovered === 3 ? "visible" : ""
+                }`}
+              >
+                Custom design for vehicles offers bespoke vinyl wraps, decals,
+                or paint protection film patterns tailored to individual style
+                preferences.
+              </div>
+              <div className="service-label">Custom Design</div>
+            </div>
+
+            {/* Image 4 - Branding */}
+            <div
+              className="service-item"
+              onMouseEnter={() => handleMouseEnter(4)}
+              onMouseLeave={handleMouseLeave}
+              onClick={() => handleClick(4)}
+            >
+              <img
+                src="Images/carpart4.svg"
+                alt="Service 4"
+                className="service-image"
+              />
+              <div className="service-overlay" />
+              <div
+                className={`service-description ${
+                  hovered === 4 ? "visible" : ""
+                }`}
+              >
+                Vehicle branding transforms cars, trucks, or fleets into mobile
+                advertisements with custom vinyl wraps, decals, or logos
+                tailored to your business identity.
+              </div>
+              <div className="service-label">Branding</div>
+            </div>
           </div>
         </div>
+      </section>
 
+      <section className="section green">
         <div className="green-bottom">
           <div className="green-bottom-left">
             <div className="left-content">

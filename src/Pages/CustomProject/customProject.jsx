@@ -12,7 +12,7 @@ const CustomProject = () => {
           </p>
         </div>
         <div className="visual-area">
-          <img src="https://sdmntprnorthcentralus.oaiusercontent.com/files/00000000-ea7c-622f-8223-92d6d38016dc/raw?se=2025-05-06T06%3A22%3A03Z&sp=r&sv=2024-08-04&sr=b&scid=fa5d6fed-da95-5bb6-8948-2a965e51fd68&skoid=3f3a9132-9530-48ef-96b7-fee5a811733f&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-05-06T03%3A15%3A23Z&ske=2025-05-07T03%3A15%3A23Z&sks=b&skv=2024-08-04&sig=nmhUqvCfa/GCoZOiN6iduDCB8gvXK83OnUBgKfmgOhM%3D" alt="Custom Vinyl Wrap" />
+          <img src="https://sdmntprnorthcentralus.oaiusercontent.com/files/00000000-ea7c-622f-8223-92d6d38016dc/raw?se=2025-05-06T08%3A16%3A21Z&sp=r&sv=2024-08-04&sr=b&scid=421ae036-4a7a-5799-b13e-869b086f5e45&skoid=a3336399-497e-45e5-8f28-4b88ecca3d1f&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-05-06T03%3A17%3A40Z&ske=2025-05-07T03%3A17%3A40Z&sks=b&skv=2024-08-04&sig=OBJhUMrGfOGGbpkLjwfs0l2/tyF83XVwc0frzqHwX6g%3D" alt="Custom Vinyl Wrap" />
         </div>
       </div>
 

@@ -84,30 +84,124 @@
   width: 100%;
 }
 
-.green-top {
-  background-color: #FFFFFF;
+.service-section {
+  min-height: 50px;
+  background-color: white;
+  background-attachment: scroll;
   width: 100%;
+}
+
+.service-section .service-container {
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  color: white;
+  width: 100%;
+  padding: 20px;
 }
 
-.service-title {
-  font-family: 'Alatsi', sans-serif;
-  font-weight: 600;
-  font-size: 45px;
-  line-height: 1;
-  color: black;
-  margin: 0;
+.service-section .service-title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-left: 50px;
 }
 
-.image-row img {
-  width: 250px;
-  height: 300px;
+.service-section .service-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0px;
+}
+
+.service-section .service-item {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.service-section .service-item .service-image {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  margin: 10px;
 }
+
+.service-section .service-item .service-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.service-section .service-item .service-description {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  width: 90%;
+  text-align: center;
+  padding: 0 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s ease;
+}
+
+.service-section .service-item .service-description.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.service-section .service-item .service-label {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  .service-section .service-container {
+    padding: 0px;
+  }
+
+  .service-section .service-title {
+    font-size: 28px;
+    padding-left: 20px;
+    margin-bottom: 15px;
+  }
+
+  .service-section .service-grid {
+    gap: 0.2px;
+  }
+
+  .service-section .service-item {
+    width: calc(50% - 4px); /* Two items per row with gap */
+    height: 250px;
+  }
+
+  .service-section .service-item .service-description {
+    font-size: 10px;
+    padding: 0 5px;
+  }
+
+  .service-section .service-item .service-label {
+    font-size: 12px;
+    bottom: 20px;
+  }
+}
+
+
 
 .green-bottom {
   height: auto;
@@ -613,34 +707,8 @@
   }
 
   /* Green Section */
-  .green-top {
-    align-items: center;
-    width: 100%;
-    padding:20px;
-  }
+ 
 
-  .service-title {
-    font-size: 32px;
-    text-align: center;
-    margin-top: 10px;
-    padding:20px;
-  }
-
-  .image-row {
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-  }
-
-  .image-row img {
-    width: 100%;
-    max-width: 400px;
-    height: 220px;
-    object-fit: cover;
-    margin: 0 auto;
-    display: block;
-    padding: 10px;
-  }
 
   .green-bottom {
     flex-direction: column;
@@ -686,7 +754,6 @@
 
   .right-content-centered {
     max-width: 100%;
-    padding: 10px;
   }
 
   .faq-title {
@@ -788,15 +855,8 @@
     width: 100%;
   }
 
-  .image-row img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-    margin: 0 auto;
-    display: block;
-    padding: 10px;
-  }
+  
+  
 }
 
 @media (min-width: 769px) and (max-width: 1023px) {
@@ -837,25 +897,11 @@
   }
 
   /* Green Section */
-  .green-top {
-    padding: 30px 40px;
-  }
+ 
 
-  .service-title {
-    font-size: 40px;
-    padding:20px;
-  }
 
-  .image-row {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
 
-  .image-row img {
-    width: 200px;
-    height: 240px;
-    padding: 12px;
-  }
+  
 
   .green-bottom {
     flex-direction: row;
@@ -1009,19 +1055,8 @@
     font-size: 16px;
   }
 
-  .green-top {
-    padding: 40px 60px;
-  }
 
-  .service-title {
-    font-size: 45px;
-  }
-  .image-row img {
-    width: 270px;
-    height: 340px;
-    object-fit: cover;
-    margin: 10px;
-  }
+
 
   .green-bottom {
     flex-direction: row;

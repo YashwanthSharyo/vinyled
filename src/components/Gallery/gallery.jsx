@@ -14,9 +14,9 @@ const Gallery = ({ images, largeImage }) => {
 
   return (
     <div className="gallery">
-      {/* Left Side (4 images) */}
+      {/* Left Side (6 images, updated from 4) */}
       <div className="image-grid">
-        {images.map((img, index) => {
+        {images.slice(0, 6).map((img, index) => {
           const imgId = `img-${index + 1}`;
           return (
             <img
@@ -29,17 +29,6 @@ const Gallery = ({ images, largeImage }) => {
             />
           );
         })}
-      </div>
-
-      {/* Right Side (1 large image) */}
-      <div className="large-image-container">
-        <img
-          src={largeImage.src}
-          alt={largeImage.alt}
-          className={`large-image ${hoveredImg === "large" ? "hovered" : ""}`}
-          onMouseEnter={() => handleMouseEnter("large")}
-          onMouseLeave={handleMouseLeave}
-        />
       </div>
     </div>
   );

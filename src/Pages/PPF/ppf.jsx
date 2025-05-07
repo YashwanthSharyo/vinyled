@@ -109,88 +109,92 @@ export default function PPF() {
             {/* Text Section */}
             <div className="text-section">
               {tab === 1 ? (
-                <>
-                  <h2 className="section-title">
-                    CAR: Level 1 - Protection Detail
-                  </h2>
-                  <h3 className="section-subtitle">
-                    Exterior – Cleaning/Cleansing/Decontamination
-                  </h3>
-                  <h4 className="process-title">
-                    21 STAGE TOPAZ CLEANING PROCESS INCLUDING:
-                  </h4>
-                  <ul className="process-list">
-                    <li>
-                      Washed using pH neutral shampoo with twin grit guard
-                      buckets.
-                    </li>
-                    <li>
-                      Wheels cleaned with citrus-based cleaner and horsehair
-                      brushes.
-                    </li>
-                    <li>
-                      Door shuts, arches, petrol cap cleaned (where accessible).
-                    </li>
-                    <li>Dried with deep-pile microfibre towels.</li>
-                    <li>Clay bar treatment to remove bonded contaminants.</li>
-                    <li>
-                      Body solvent removes tar, grime, bugs.
-                      <ul className="sub-list">
-                        <li>Tyres dressed.</li>
-                      </ul>
-                    </li>
-                    <li>Exterior plastics and door trims dressed.</li>
-                  </ul>
-                  <p className="highlight-text">Sealant</p>
-                  <p className="description">
-                    Speak to our team for ceramic coating options for paint,
-                    glass, and wheels.
-                  </p>
-                  <h3 className="section-subtitle">Interior</h3>
-                  <ul className="process-list">
-                    <li>Carpets vacuumed.</li>
-                    <li>Interior windows cleaned.</li>
-                    <li>
-                      Trim and surfaces cleaned with aerospace-grade products.
-                    </li>
-                  </ul>
-                  <h3 className="section-subtitle">Why choose Level 1?</h3>
-                  <p className="description">
-                    A Level 1 Detail is designed to decontaminate paint/PPF and
-                    is ideal for satin finishes or regular maintenance without
-                    paint correction.
-                  </p>
-                </>
+               <>
+               <h2 className="section-title">CAR: Paint Protection Film (PPF) Service</h2>
+             
+               <h3 className="section-subtitle">What is PPF?</h3>
+               <p className="description">
+                 PPF is a special clear film that we put on your car to protect the paint. It helps stop scratches, stone chips, bird droppings, and other things that can damage your car’s shine. It’s like an invisible shield!
+               </p>
+             
+               <h3 className="section-subtitle">How We Apply the Film</h3>
+               <ul className="process-list">
+                 <li>
+                   <strong>1. Clean the Car:</strong> We wash the car very well so there’s no dirt, dust, or marks left.
+                 </li>
+                 <li>
+                   <strong>2. Smooth the Paint:</strong> We make the surface smooth so the film can stick properly.
+                 </li>
+                 <li>
+                   <strong>3. Put the Film On:</strong> We gently place the clear film on the car and move it into the right position.
+                 </li>
+                 <li>
+                   <strong>4. Remove Water & Air:</strong> We use a soft tool to push out any bubbles or water under the film.
+                 </li>
+                 <li>
+                   <strong>5. Seal the Edges:</strong> We heat and press the edges so the film stays tight and clean.
+                 </li>
+                 <li>
+                   <strong>6. Check Everything:</strong> We check every part to make sure it looks perfect with no bubbles or folds.
+                 </li>
+               </ul>
+             
+               <h3 className="section-subtitle">Why People Love PPF</h3>
+               <ul className="process-list">
+                 <li>Keeps your car looking brand new</li>
+                 <li>Stops small scratches and stone chips</li>
+                 <li>Protects the paint from the sun and weather</li>
+                 <li>Makes cleaning your car easier</li>
+                 <li>Increases resale value of your car</li>
+               </ul>
+             
+               <p className="highlight-text">Aftercare Tips</p>
+               <p className="description">
+                 Don’t wash your car for 2–3 days after the film is applied. After that, use soft cloths and gentle shampoo. Avoid strong water jets near the film’s edges.
+               </p>
+             
+               <h3 className="section-subtitle">Extra Options</h3>
+               <ul className="process-list">
+                 <li>PPF for the full car or only the front parts (like bumper and bonnet)</li>
+                 <li>Special ceramic coating to add extra shine and water protection</li>
+                 <li>Matte (non-shiny) film for a stylish look</li>
+               </ul>
+             
+               <h3 className="section-subtitle">Is It Worth It?</h3>
+               <p className="description">
+                 Yes! PPF protects your car for years. It’s perfect if you love your car and want to keep it looking fresh and beautiful for a long time.
+               </p>
+             </>
+             
               ) : (
                 <>
-                  <h2 className="section-title">BIKE: PPF Protection Detail</h2>
-                  <h3 className="section-subtitle">What is PPF?</h3>
-                  <p className="description">
-                    Paint Protection Film (PPF) is a self-healing transparent
-                    film that shields your bike from chips, scratches, and UV
-                    damage while preserving the paint.
-                  </p>
-                  <h3 className="section-subtitle">
-                    Why choose PPF for bikes?
-                  </h3>
-                  <ul className="process-list">
-                    <li>Protects tank and fairings from road debris.</li>
-                    <li>Maintains original paint finish and resale value.</li>
-                    <li>
-                      Self-healing surface repairs minor scuffs automatically.
-                    </li>
-                    <li>Precision-cut templates for seamless installation.</li>
-                  </ul>
-                  <p className="highlight-text">Coverage Options</p>
-                  <ul className="process-list">
-                    <li>Full Bike Protection</li>
-                    <li>Partial Kit: Tank, Fairings, Mudguard</li>
-                    <li>Helmet & Accessory Coverage</li>
-                  </ul>
-                  <p className="description">
-                    Contact us for a customized PPF package suited to your bike.
-                  </p>
-                </>
+                <h2 className="section-title">BIKE: PPF Protection Detail</h2>
+                
+                <h3 className="section-subtitle">What is PPF?</h3>
+                <p className="description">
+                  Paint Protection Film (PPF) is a transparent, self-healing film that protects your bike from chips, scratches, and UV damage while keeping the paint looking fresh and glossy.
+                </p>
+              
+                <h3 className="section-subtitle">Why Choose PPF for Bikes?</h3>
+                <ul className="process-list">
+                  <li>Protects the tank and fairings from road debris and stone chips.</li>
+                  <li>Preserves the original paint finish, maintaining your bike’s resale value.</li>
+                  <li>Self-healing properties that automatically repair minor scuffs and scratches.</li>
+                  <li>Precision-cut templates ensure a seamless and perfect fit on your bike.</li>
+                </ul>
+              
+                <p className="highlight-text">Coverage Options</p>
+                <ul className="process-list">
+                  <li>Full Bike Protection – covering the entire bike for maximum safety.</li>
+                  <li>Partial Kit – protect key areas like the tank, fairings, and mudguard.</li>
+                  <li>Helmet & Accessory Coverage – extra protection for helmets, mirrors, and other accessories.</li>
+                </ul>
+              
+                <p className="description">
+                  Contact us to create a customized PPF package tailored to your bike’s needs. Let us help you keep your ride looking like new!
+                </p>
+              </>
+              
               )}
             </div>
 

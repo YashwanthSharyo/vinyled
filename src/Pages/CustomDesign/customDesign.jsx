@@ -86,82 +86,158 @@ export default function CustomDesign() {
         handleTabMouseLeave={handleTabMouseLeave}
       />
 
-<div className="custom-design-container">
-      {[1, 2].map((tab) => (
-        <div
-          key={tab}
-          className={`tab-content ${activeTab === tab ? "active" : ""}`}
-          role="tabpanel"
-          aria-hidden={activeTab !== tab}
-        >
-          {/* Image Section */}
-          <div className="image-section">
-            <img
-              src={
-                tab === 1
-                  ? "https://assets.grok.com/users/d008ba0b-9248-430b-8962-9021a7a88c8a/generated/P0cXcMhAE5ReAJY2/image.jpg"
-                  : "https://www.acmegraphic.com/wp-content/uploads/2021/08/motorcycle-decal-wrap.jpg"
-              }
-              alt={tab === 1 ? "Car Color Change Wrap" : "Bike Color Change Wrap"}
-              className="tab-image"
-            />
-          </div>
+      <div className="custom-design-container">
+        {[1, 2].map((tab) => (
+          <div
+            key={tab}
+            className={`tab-content ${activeTab === tab ? "active" : ""}`}
+            role="tabpanel"
+            aria-hidden={activeTab !== tab}
+          >
+            {/* Image Section */}
+            <div className="image-section">
+              <img
+                src={
+                  tab === 1
+                    ? "https://assets.grok.com/users/d008ba0b-9248-430b-8962-9021a7a88c8a/generated/P0cXcMhAE5ReAJY2/image.jpg"
+                    : "https://www.acmegraphic.com/wp-content/uploads/2021/08/motorcycle-decal-wrap.jpg"
+                }
+                alt={
+                  tab === 1 ? "Car Color Change Wrap" : "Bike Color Change Wrap"
+                }
+                className="tab-image"
+              />
+            </div>
 
-          {/* Text Section */}
-          <div className="text-section">
-            {tab === 1 ? (
-              <>
-                <h2 className="section-title">CAR: Custom Design Wrap Detail</h2>
-                <h3 className="section-subtitle">Exterior – Personalized Graphic Wrapping for Vehicles</h3>
-                <h4 className="process-title">Custom Design Wrap Process:</h4>
-                <ul className="process-list">
-                  <li>Collaborative consultation to capture your vision and branding.</li>
-                  <li>Creation of unique graphics tailored to your vehicle's contours.</li>
-                  <li>High-resolution printing on premium vinyl materials.</li>
-                  <li>Professional installation ensuring seamless integration of the design.</li>
-                </ul>
-                <p className="highlight-text">Why Opt for a Custom Design Wrap?</p>
-                <p className="description">
-                  Custom design wraps offer a distinctive appearance, allowing for brand promotion, personal expression, and protection of the original paintwork.
-                </p>
-              </>
-            ) : (
-              <>
-                <h2 className="section-title">BIKE: Custom Design Wrap Detail</h2>
-                <h3 className="section-subtitle">What is a Custom Design Wrap for Bikes?</h3>
-                <p className="description">
-                  A custom design wrap for bikes involves applying personalized graphics and patterns to your bike, reflecting your unique style while safeguarding the original finish.
-                </p>
-                <h3 className="section-subtitle">Benefits of a Custom Design Wrap for Bikes</h3>
-                <ul className="process-list">
-                  <li>Showcases your individuality with bespoke designs.</li>
-                  <li>Protects against minor abrasions and environmental elements.</li>
-                  <li>Easily removable, allowing for design updates or restoration.</li>
-                  <li>Wide array of colors, textures, and finishes for customization.</li>
-                </ul>
-                <p className="highlight-text">Custom Design Options for Your Bike</p>
-                <ul className="process-list">
-                  <li>Full Bike Wrap with personalized graphics.</li>
-                  <li>Partial Wrap: Targeted areas like fuel tank, frame, or mudguard.</li>
-                  <li>Unique Custom Designs & Graphics tailored to your preferences.</li>
-                </ul>
-                <p className="description">
-                  Contact us to craft a custom design wrap package that aligns with your bike's aesthetics and your personal style.
-                </p>
-              </>
+            {/* Text Section */}
+            <div className="text-section">
+              {tab === 1 ? (
+                <>
+                  <h2 className="section-title">
+                    CAR: Custom Design Wrap Detail
+                  </h2>
+                  <h3 className="section-subtitle">
+                    Exterior – Personalized Graphic Wrapping for Vehicles
+                  </h3>
+                  <h4 className="process-title">Custom Design Wrap Process:</h4>
+                  <ul className="process-list">
+                    <li>
+                      Clean the car thoroughly with soap and isopropyl alcohol
+                      for a flawless base.
+                    </li>
+                    <li>
+                      Design and cut high-quality vinyl (e.g., 3M or Avery
+                      Dennison) with custom graphics, allowing 2–3 inch overlap.
+                    </li>
+                    <li>
+                      Apply vinyl with a squeegee, aligning designs precisely,
+                      using heat for curves.
+                    </li>
+                    <li>
+                      Trim excess vinyl and tuck edges into seams for a
+                      seamless, vibrant finish.
+                    </li>
+                    <li>
+                      Heat lightly (around 200°F) to set the adhesive, ensuring
+                      long-lasting designs.
+                    </li>
+                  </ul>
+                  <h3 className="section-subtitle">
+                    Tips for a Stunning Custom Wrap
+                  </h3>
+                  <ul className="process-list">
+                    <li>
+                      Start with flat panels like the hood to practice graphic
+                      alignment.
+                    </li>
+                    <li>
+                      Work with our designers to create unique patterns or
+                      logos.
+                    </li>
+                    <li>
+                      Use a partner to handle large vinyl sheets for accuracy.
+                    </li>
+                    <li>
+                      Lift and reapply with heat to fix any bubbles or wrinkles.
+                    </li>
+                  </ul>
+                  <p className="highlight-text">
+                    Why Opt for a Custom Design Wrap?
+                  </p>
+                  <p className="description">
+                    Custom design wraps let you express your style or promote
+                    your brand with bold, personalized graphics. They protect
+                    your car’s paint, last 5–7 years, and cost $500–$2,000. DIY
+                    for a creative challenge or contact our pros for a flawless
+                    result!
+                  </p>
+                </>
+              ) : (
+                <>
+                  <h2 className="section-title">
+                    BIKE: Custom Design Wrap Detail
+                  </h2>
+                  <h3 className="section-subtitle">
+                    What is a Custom Design Wrap for Bikes?
+                  </h3>
+                  <p className="description">
+                    A custom design wrap transforms your bike with personalized
+                    graphics and patterns, showcasing your unique style while
+                    protecting the original paint.
+                  </p>
+                  <h3 className="section-subtitle">
+                    Benefits of a Custom Design Wrap for Bikes
+                  </h3>
+                  <ul className="process-list">
+                    <li>
+                      Reflects your individuality with bespoke colors and
+                      designs.
+                    </li>
+                    <li>
+                      Shields paint from scratches, UV rays, and minor
+                      abrasions.
+                    </li>
+                    <li>
+                      Fully removable, allowing for easy updates or restoration.
+                    </li>
+                    <li>
+                      Offers diverse finishes (matte, gloss, metallic) for
+                      customization.
+                    </li>
+                  </ul>
+                  <h3 className="section-subtitle">
+                    Custom Design Options for Your Bike
+                  </h3>
+                  <ul className="process-list">
+                    <li>Full bike wrap with vibrant, personalized graphics.</li>
+                    <li>
+                      Partial wrap: Fuel tank, frame, or fairings for targeted
+                      style.
+                    </li>
+                    <li>
+                      Unique patterns, logos, or graphics tailored to your
+                      vision.
+                    </li>
+                  </ul>
+                  <p className="description">
+                    Contact us to create a custom design wrap package that
+                    brings your bike’s aesthetics to life, or try our DIY tips
+                    for a bold transformation.
+                  </p>
+                </>
+              )}
+            </div>
+
+            {/* Gallery Section */}
+            {(tab === 1 || tab === 2) && (
+              <Gallery
+                images={galleryData[tab].images}
+                largeImage={galleryData[tab].largeImage}
+              />
             )}
           </div>
-
-          {/* Gallery Section */}
-          {(tab === 1 || tab === 2) && (
-            <Gallery
-              images={galleryData[tab].images}
-              largeImage={galleryData[tab].largeImage}
-            />
-          )}
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
     </div>
   );
 }

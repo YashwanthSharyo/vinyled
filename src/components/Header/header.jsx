@@ -53,7 +53,7 @@ const Header = () => {
             </li>
             <li>
               <Link to="/ceramic" onClick={handleMenuItemClick}>
-                CERAMIC
+              Ceramic / Graphene Coating
               </Link>
             </li>
             <li>
@@ -105,7 +105,8 @@ const Header = () => {
           <Link
             to="/shop-products"
             className="shop-link"
-            onClick={handleMenuItemClick}
+            // onClick={handleMenuItemClick}
+            onClick={(e) => {e.preventDefault();}} 
           >
             SHOP PRODUCTS
           </Link>
