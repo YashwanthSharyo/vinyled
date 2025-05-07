@@ -72,6 +72,14 @@ export default function Ceramic() {
           src: "https://thumbs.dreamstime.com/b/process-nano-coating-motorcycle-applying-soft-fiber-sponge-292064974.jpg?w=768",
           alt: "Nano coating on motorcycle 4",
         },
+        {
+          src: "https://thumbs.dreamstime.com/b/process-nano-coating-motorcycle-applying-soft-fiber-sponge-292065684.jpg?w=768",
+          alt: "Nano coating on motorcycle 1",
+        },
+        {
+          src: "https://carmica.in/wp-content/uploads/2024/08/IMG_7036-768x768.jpg",
+          alt: "Bike nano coating application 2",
+        }
       ],
       largeImage: {
         src: "https://thumbs.dreamstime.com/b/process-nano-coating-motorcycle-applying-soft-fiber-sponge-300123612.jpg?w=768",

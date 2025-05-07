@@ -43,7 +43,7 @@ const Header = () => {
         </li>
         <li className="dropdown">
           <a>
-            VINYLED SERVICE <i class="fa fa-caret-down"></i>
+            VINYLED SERVICE <i className="fa fa-caret-down"></i>
           </a>
           <ul className="dropdown-menu">
             <li>
@@ -80,7 +80,7 @@ const Header = () => {
         </li>
         <li className="dropdown">
           <a>
-            CONTENT <i class="fa fa-caret-down"></i>
+            CONTENT <i className="fa fa-caret-down"></i>
           </a>
 
           <ul className="dropdown-menu">

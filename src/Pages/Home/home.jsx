@@ -15,10 +15,12 @@ const HomePage = () => {
   };
 
   const serviceLinks = {
-    1: '/ppf',
-    2: '/ceramic',
-    3: '/custom-design',
-    4: '/branding',
+    1: "/ppf",
+    2: "/ceramic",
+    3: "/custom-design",
+    4: "/branding",
+    5: "/color-change-wrap",
+    6: "/custom-project"
   };
 
   const handleClick = (index) => {
@@ -70,7 +72,7 @@ const HomePage = () => {
                 Paint Protection Film (PPF) shields vehicles from scratches,
                 chips, and UV damage, preserving paint and resale value.
               </div>
-              <div className="service-label">PPF and Wraps</div>
+              <div className="service-label">PPF</div>
             </div>
 
             {/* Image 2 - Ceramic / Graphene Coating */}
@@ -146,6 +148,58 @@ const HomePage = () => {
                 tailored to your business identity.
               </div>
               <div className="service-label">Branding</div>
+            </div>
+
+            {/* Image 5 - Design Project (Duplicate of PPF and Wraps) */}
+            <div
+              className="service-item"
+              onMouseEnter={() => handleMouseEnter(5)}
+              onMouseLeave={handleMouseLeave}
+              onClick={() => handleClick(5)}
+            >
+              <img
+                src="Images/carpart1.svg"
+                alt="Service 5"
+                className="service-image"
+              />
+              <div className="service-overlay" />
+              <div
+                className={`service-description ${
+                  hovered === 5 ? "visible" : ""
+                }`}
+              >
+                Transform your ideas into stunning designs. Our team creates
+                unique visuals tailored to your needs, ensuring a perfect fit
+                for your project, whether it’s branding, marketing, or something
+                else.
+              </div>
+              <div className="service-label">Custom Project</div>
+            </div>
+
+            {/* Image 6 - Wraps (Duplicate of Ceramic / Graphene Coating) */}
+            <div
+              className="service-item"
+              onMouseEnter={() => handleMouseEnter(6)}
+              onMouseLeave={handleMouseLeave}
+              onClick={() => handleClick(6)}
+            >
+              <img
+                src="Images/carpart2.svg"
+                alt="Service 6"
+                className="service-image"
+              />
+              <div className="service-overlay" />
+              <div
+                className={`service-description ${
+                  hovered === 6 ? "visible" : ""
+                }`}
+              >
+                Transform the look and feel of your vehicle with high-quality
+                wraps. Whether you’re looking for a sleek, modern design or a
+                bold, eye-catching graphic, our custom wraps are the perfect
+                solution.
+              </div>
+              <div className="service-label">Wraps</div>
             </div>
           </div>
         </div>

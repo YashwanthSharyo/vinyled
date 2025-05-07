@@ -23,26 +23,31 @@ export default function CustomDesign() {
     1: {
       images: [
         {
-          src: "https://www.wrapstock.com/images/banner_square_1.jpg",
+          src: "https://autodesignmagazine.com/wp-content/uploads/2019/04/Automobili-Pininfarina-Battista_web.jpg",
           alt: "Full color change wrap on car",
         },
         {
-          src: "https://assets.grok.com/users/d008ba0b-9248-430b-8962-9021a7a88c8a/generated/dvstZTctHDcBDWLu/image.jpg",
+          src: "https://autodesignmagazine.com/wp-content/uploads/2019/04/Citroe%E2%95%A0%C3%AAn-C5-Aircross_web.jpg",
           alt: "Car wrap in progress",
         },
         {
-          src: "https://assets.grok.com/users/d008ba0b-9248-430b-8962-9021a7a88c8a/generated/oTCLvsVBIZtlvbYl/image.jpg",
+          src: "https://autodesignmagazine.com/wp-content/uploads/2019/04/Ferrari-F8-tributo_web.jpg",
           alt: "Vinyl car wrap application",
         },
         {
-          src: "https://assets.grok.com/users/d008ba0b-9248-430b-8962-9021a7a88c8a/generated/MvfYWMWUXldE50qq/image.jpg",
+          src: "https://autodesignmagazine.com/wp-content/uploads/2019/04/Polestar-2_web.jpg",
           alt: "Sporty blue color racing wrap design",
         },
+        {
+          src: "https://autodesignmagazine.com/wp-content/uploads/2019/04/Automobili-Pininfarina-Battista_web.jpg",
+          alt: "Full color change wrap on car",
+        },
+        {
+          src: "https://autodesignmagazine.com/wp-content/uploads/2019/04/Citroe%E2%95%A0%C3%AAn-C5-Aircross_web.jpg",
+          alt: "Car wrap in progress",
+        }
       ],
-      largeImage: {
-        src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1VSjwskuXjorAzQ7K-vSRau2qt17cg_Q8gw&s",
-        alt: "High gloss car color wrap finish",
-      },
+      
     },
 
     2: {
@@ -63,11 +68,16 @@ export default function CustomDesign() {
           src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPXqm9tprxCmyfbCOu0Qun6ZgPesX1LvVtyA&s",
           alt: "Motorbike with racing wrap",
         },
+        {
+          src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj1FeZ4HLXRUmucKRrLDLpHoSMtZmxbCli4g&s",
+          alt: "Motorcycle with custom wrap design 1",
+        },
+        {
+          src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnl_0CXCf6jx5kBYTRDcKfewmxY17NPg4ekg&s",
+          alt: "Sport bike wrapped with color graphics",
+        }
       ],
-      largeImage: {
-        src: "https://www.shutterstock.com/shutterstock/photos/1654567075/display_1500/stock-vector-motorcycle-wrap-decal-and-vinyl-sticker-design-vector-illustration-1654567075.jpg",
-        alt: "Motorcycle wrap decal design illustration",
-      },
+      
     },
   };
 
@@ -99,7 +109,7 @@ export default function CustomDesign() {
               <img
                 src={
                   tab === 1
-                    ? "https://assets.grok.com/users/d008ba0b-9248-430b-8962-9021a7a88c8a/generated/P0cXcMhAE5ReAJY2/image.jpg"
+                    ? "https://autodesignmagazine.com/wp-content/uploads/2019/04/Renault-Clio_web.jpg"
                     : "https://www.acmegraphic.com/wp-content/uploads/2021/08/motorcycle-decal-wrap.jpg"
                 }
                 alt={

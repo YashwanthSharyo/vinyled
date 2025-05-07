@@ -13,6 +13,7 @@ import ColorChangeWrap from "../../Pages/ColorChange/colorChange";
 import CustomDesign from "../../Pages/CustomDesign/customDesign";
 import CustomProject from "../../Pages/CustomProject/customProject";
 import Branding from "../../Pages/Branding/branding";
+import WhatsApp from "../../components/WhatsApp/whatsApp";
 
 function Navigation() {
     return (
@@ -32,6 +33,7 @@ function Navigation() {
                     <Route path="/team" element={<Team />} />
                     <Route path="/contact-us" element={<Contact />} />
                     <Route path="/shop-products" element={<ShopProducts />} />
+                    <Route path="/whats-app" element={<WhatsApp />} />
                 </Routes>
                 <Footer />
                 <Routes>

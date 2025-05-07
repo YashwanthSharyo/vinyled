@@ -38,11 +38,16 @@ export default function PPF() {
           src: "https://www.shutterstock.com/shutterstock/photos/2367802613/display_1500/stock-photo-dubai-united-arab-emirates-september-th-paint-protection-film-ppf-applied-on-the-hood-2367802613.jpg",
           alt: "PPF application on car hood",
         },
+        {
+          src: "https://www.shutterstock.com/shutterstock/photos/2367800287/display_1500/stock-photo-dubai-united-arab-emirates-september-th-paint-protection-film-applied-on-the-hood-of-a-2367800287.jpg",
+          alt: "PPF on car hood",
+        },
+        {
+          src: "https://www.shutterstock.com/shutterstock/photos/2470779147/display_1500/stock-photo-worker-hands-installation-on-luxury-car-headlights-tpu-premium-ppf-film-ppf-cutting-software-2470779147.jpg",
+          alt: "PPF on car headlights",
+        }
       ],
-      largeImage: {
-        src: "https://www.shutterstock.com/shutterstock/photos/2367800283/display_1500/stock-photo-dubai-united-arab-emirates-september-th-paint-protection-film-applied-on-the-hood-of-a-2367800283.jpg",
-        alt: "Large PPF on car hood",
-      },
+      
     },
     2: {
       images: [
@@ -62,11 +67,16 @@ export default function PPF() {
           src: "https://cdn.dotpe.in/longtail/store-items/7253175/FgVDP6qU.webp",
           alt: "Bike PPF application 4",
         },
+        {
+          src: "https://www.carzspa.com/wp-content/uploads/2024/12/dec-blog-2.webp",
+          alt: "Bike PPF application 1",
+        },
+        {
+          src: "https://cdn.dotpe.in/longtail/store-items/7253175/zHnHNwh8.webp",
+          alt: "Bike PPF application 2",
+        }
       ],
-      largeImage: {
-        src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv_sf1no4u5GLawfq0D23-9yl43XnMFlqtTg&s",
-        alt: "Large Bike PPF application",
-      },
+      
     },
   };
 

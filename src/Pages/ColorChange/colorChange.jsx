@@ -39,11 +39,16 @@ export default function ColorChangeWrap() {
           src: "https://www.shutterstock.com/image-vector/exclusive-sporty-blue-color-racing-600nw-2533122201.jpg",
           alt: "Sporty blue color racing wrap design",
         },
+        {
+          src: "https://i0.wp.com/www.atlanticcustomwraps.com/wp-content/uploads/2021/08/Full-color-change-wrap0006.jpg?w=800&ssl=1",
+          alt: "Full color change wrap on car",
+        },
+        {
+          src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh67NC5qLHYSfrDix1q-CUHw0W8rLjS18YXg&s",
+          alt: "Car wrap in progress",
+        }
       ],
-      largeImage: {
-        src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1VSjwskuXjorAzQ7K-vSRau2qt17cg_Q8gw&s",
-        alt: "High gloss car color wrap finish",
-      },
+      
     },
 
     2: {
@@ -64,11 +69,15 @@ export default function ColorChangeWrap() {
           src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPXqm9tprxCmyfbCOu0Qun6ZgPesX1LvVtyA&s",
           alt: "Motorbike with racing wrap",
         },
+        {
+          src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj1FeZ4HLXRUmucKRrLDLpHoSMtZmxbCli4g&s",
+          alt: "Motorcycle with custom wrap design 1",
+        },
+        {
+          src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnl_0CXCf6jx5kBYTRDcKfewmxY17NPg4ekg&s",
+          alt: "Sport bike wrapped with color graphics",
+        }
       ],
-      largeImage: {
-        src: "https://www.shutterstock.com/shutterstock/photos/1654567075/display_1500/stock-vector-motorcycle-wrap-decal-and-vinyl-sticker-design-vector-illustration-1654567075.jpg",
-        alt: "Motorcycle wrap decal design illustration",
-      },
     },
   };
 
