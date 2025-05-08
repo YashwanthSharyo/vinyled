@@ -35,16 +35,16 @@ export default function Branding() {
         handleTabMouseLeave={handleTabMouseLeave}
       />
 
-      <div className="color-change-container">
+      <div className="wrap-container">
         {[1, 2].map((tab) => (
           <div
             key={tab}
-            className={`tab-content ${activeTab === tab ? "active" : ""}`}
+            className={`content-tab ${activeTab === tab ? "active" : ""}`}
             role="tabpanel"
             aria-hidden={activeTab !== tab}
           >
             {/* Image Section */}
-            <div className="image-section">
+            <div className="content-image">
               <img
                 src={
                   tab === 1
@@ -54,22 +54,22 @@ export default function Branding() {
                 alt={
                   tab === 1 ? "Car Color Change Wrap" : "Bike Color Change Wrap"
                 }
-                className="tab-image"
+                className="image"
               />
             </div>
 
             {/* Text Section */}
-            <div className="text-section">
+            <div className="content-text">
               {tab === 1 ? (
                 <>
-                  <h2 className="section-title">
+                  <h2 className="title">
                     CAR: Custom Branding Solutions
                   </h2>
-                  <h3 className="section-subtitle">
+                  <h3 className="subtitle">
                     Elevate Your Brand on the Road
                   </h3>
-                  <h4 className="process-title">Car Branding Process:</h4>
-                  <ul className="process-list">
+                  <h4 className="process-heading">Car Branding Process:</h4>
+                  <ul className="list">
                     <li>
                       Clean the car with soap and isopropyl alcohol to prepare
                       for custom vinyl graphics.
@@ -92,10 +92,10 @@ export default function Branding() {
                       durability and vibrancy.
                     </li>
                   </ul>
-                  <h3 className="section-subtitle">
+                  <h3 className="subtitle">
                     Tips for Stunning Car Branding
                   </h3>
-                  <ul className="process-list">
+                  <ul className="list">
                     <li>
                       Start with flat areas like doors or hoods for easier
                       graphic placement.
@@ -111,8 +111,8 @@ export default function Branding() {
                       Fix bubbles by lifting vinyl and reapplying with heat.
                     </li>
                   </ul>
-                  <p className="highlight-text">Why Choose Car Branding?</p>
-                  <p className="description">
+                  <p className="highlight">Why Choose Car Branding?</p>
+                  <p className="text">
                     Car branding transforms your vehicle into a mobile
                     billboard, boosting visibility while protecting the original
                     paint. Custom vinyl wraps (matte, gloss, or metallic) last
@@ -122,14 +122,14 @@ export default function Branding() {
                 </>
               ) : (
                 <>
-                  <h2 className="section-title">
+                  <h2 className="title">
                     BIKE: Custom Branding Solutions
                   </h2>
-                  <h3 className="section-subtitle">
+                  <h3 className="subtitle">
                     Showcase Your Brand with Style
                   </h3>
-                  <h4 className="process-title">Bike Branding Process:</h4>
-                  <ul className="process-list">
+                  <h4 className="process-heading">Bike Branding Process:</h4>
+                  <ul className="list">
                     <li>
                       Wash and degrease the bike with soap and isopropyl alcohol
                       for perfect graphic adhesion.
@@ -151,10 +151,10 @@ export default function Branding() {
                       branding.
                     </li>
                   </ul>
-                  <h3 className="section-subtitle">
+                  <h3 className="subtitle">
                     Tips for Bold Bike Branding
                   </h3>
-                  <ul className="process-list">
+                  <ul className="list">
                     <li>
                       Begin with the fuel tank or fairings for easier
                       application.
@@ -168,8 +168,8 @@ export default function Branding() {
                     </li>
                     <li>Practice on scrap parts to perfect your technique.</li>
                   </ul>
-                  <p className="highlight-text">Why Choose Bike Branding?</p>
-                  <p className="description">
+                  <p className="highlight">Why Choose Bike Branding?</p>
+                  <p className="text">
                     Bike branding turns your motorcycle into a dynamic marketing
                     tool, offering bold visibility and paint protection. With
                     custom designs for $100–$500, wraps are removable and

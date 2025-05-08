@@ -60,7 +60,7 @@ const Header = () => {
             </li>
             <li>
               <Link to="/ceramic" onClick={() => handleMenuItemClick("/ceramic")}>
-                Ceramic / Graphene Coating
+                CERAMIC /  GRAPHENE COATING
               </Link>
             </li>
             <li>
@@ -68,7 +68,7 @@ const Header = () => {
                 to="/color-change-wrap"
                 onClick={() => handleMenuItemClick("/color-change-wrap")}
               >
-                Colour Change Wrap
+                COLOUR WRAP
               </Link>
             </li>
             <li>

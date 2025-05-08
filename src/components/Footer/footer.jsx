@@ -27,38 +27,39 @@ const Footer = () => {
               />
               <div className="social-icons">
                 <a
-                  href="https://www.youtube.com"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    handleServiceClick("https://www.youtube.com");
-                  }}
+                  onClick={() =>
+                    window.open(
+                      "https://www.youtube.com/@vinyled7482",
+                      "_blank"
+                    )
+                  }
                 >
                   <img src="Images/youtube.svg" alt="YouTube" />
                 </a>
                 <a
-                  href="https://www.facebook.com"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    handleServiceClick("https://www.facebook.com");
-                  }}
+                  onClick={() =>
+                    window.open("https://www.facebook.com/vinyled", "_blank")
+                  }
                 >
                   <img src="Images/facebook.svg" alt="Facebook" />
                 </a>
                 <a
-                  href="https://www.linkedin.com"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    handleServiceClick("https://www.linkedin.com");
-                  }}
+                  onClick={() =>
+                    window.open(
+                      "https://in.linkedin.com/in/vaibhav-vel-457a46133",
+                      "_blank"
+                    )
+                  }
                 >
                   <img src="Images/linkedin.svg" alt="LinkedIn" />
                 </a>
                 <a
-                  href="https://www.instagram.com"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    handleServiceClick("https://www.instagram.com");
-                  }}
+                  onClick={() =>
+                    window.open(
+                      "https://www.instagram.com/vinyled.in",
+                      "_blank"
+                    )
+                  }
                 >
                   <img src="Images/twitter.svg" alt="Instagram" />
                 </a>
@@ -77,24 +78,29 @@ const Footer = () => {
               <div className="link" onClick={() => handleServiceClick("/")}>
                 Home
               </div>
-              <div className="link" onClick={() => handleServiceClick("/about")}>
+              <div
+                className="link"
+                onClick={() => handleServiceClick("/about")}
+              >
                 About Us
               </div>
               <div
                 className="link"
-                onClick={() => handleServiceClick("/color-change-wrap")}
+                onClick={() => handleServiceClick("/team")}
               >
                 Our Process
               </div>
               <div
                 className="link"
-                onClick={() => handleServiceClick("/custom-design")}
+                onClick={() => handleServiceClick("contact-us")}
               >
                 Contact Us
               </div>
               <div className="link">Privacy and Policy</div>
-
             </div>
+
+
+
             <div className="right-column">
               <p className="title">VinyLed Service</p>
               <div className="link" onClick={() => handleServiceClick("/ppf")}>
@@ -116,21 +122,24 @@ const Footer = () => {
                 className="link"
                 onClick={() => handleServiceClick("/custom-design")}
               >
-                CUSTOM DESIGNS
+                Custom Design
               </div>
               <div
                 className="link"
                 onClick={() => handleServiceClick("/custom-project")}
               >
-                CUSTOM PROJECTS
+                Custom Projects
               </div>
               <div
                 className="link"
                 onClick={() => handleServiceClick("/branding")}
               >
-                BRANDING
+                Branding
               </div>
             </div>
+
+
+
             <div className="right-column">
               <p className="title">Have a Question?</p>
               <div className="link">

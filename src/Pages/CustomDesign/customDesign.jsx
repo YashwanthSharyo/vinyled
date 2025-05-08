@@ -47,7 +47,6 @@ export default function CustomDesign() {
           alt: "Car wrap in progress",
         }
       ],
-      
     },
 
     2: {
@@ -77,7 +76,6 @@ export default function CustomDesign() {
           alt: "Sport bike wrapped with color graphics",
         }
       ],
-      
     },
   };
 
@@ -96,16 +94,16 @@ export default function CustomDesign() {
         handleTabMouseLeave={handleTabMouseLeave}
       />
 
-      <div className="custom-design-container">
+      <div className="wrap-container">
         {[1, 2].map((tab) => (
           <div
             key={tab}
-            className={`tab-content ${activeTab === tab ? "active" : ""}`}
+            className={`content-tab ${activeTab === tab ? "active" : ""}`}
             role="tabpanel"
             aria-hidden={activeTab !== tab}
           >
             {/* Image Section */}
-            <div className="image-section">
+            <div className="content-image">
               <img
                 src={
                   tab === 1
@@ -115,22 +113,22 @@ export default function CustomDesign() {
                 alt={
                   tab === 1 ? "Car Color Change Wrap" : "Bike Color Change Wrap"
                 }
-                className="tab-image"
+                className="image"
               />
             </div>
 
             {/* Text Section */}
-            <div className="text-section">
+            <div className="content-text">
               {tab === 1 ? (
                 <>
-                  <h2 className="section-title">
+                  <h2 className="title">
                     CAR: Custom Design Wrap Detail
                   </h2>
-                  <h3 className="section-subtitle">
+                  <h3 className="subtitle">
                     Exterior – Personalized Graphic Wrapping for Vehicles
                   </h3>
-                  <h4 className="process-title">Custom Design Wrap Process:</h4>
-                  <ul className="process-list">
+                  <h4 className="process-heading">Custom Design Wrap Process:</h4>
+                  <ul className="list">
                     <li>
                       Clean the car thoroughly with soap and isopropyl alcohol
                       for a flawless base.
@@ -152,10 +150,10 @@ export default function CustomDesign() {
                       long-lasting designs.
                     </li>
                   </ul>
-                  <h3 className="section-subtitle">
+                  <h3 className="subtitle">
                     Tips for a Stunning Custom Wrap
                   </h3>
-                  <ul className="process-list">
+                  <ul className="list">
                     <li>
                       Start with flat panels like the hood to practice graphic
                       alignment.
@@ -171,10 +169,10 @@ export default function CustomDesign() {
                       Lift and reapply with heat to fix any bubbles or wrinkles.
                     </li>
                   </ul>
-                  <p className="highlight-text">
+                  <p className="highlight">
                     Why Opt for a Custom Design Wrap?
                   </p>
-                  <p className="description">
+                  <p className="text">
                     Custom design wraps let you express your style or promote
                     your brand with bold, personalized graphics. They protect
                     your car’s paint, last 5–7 years, and cost $500–$2,000. DIY
@@ -184,21 +182,21 @@ export default function CustomDesign() {
                 </>
               ) : (
                 <>
-                  <h2 className="section-title">
+                  <h2 className="title">
                     BIKE: Custom Design Wrap Detail
                   </h2>
-                  <h3 className="section-subtitle">
+                  <h3 className="subtitle">
                     What is a Custom Design Wrap for Bikes?
                   </h3>
-                  <p className="description">
+                  <p className="text">
                     A custom design wrap transforms your bike with personalized
                     graphics and patterns, showcasing your unique style while
                     protecting the original paint.
                   </p>
-                  <h3 className="section-subtitle">
+                  <h3 className="subtitle">
                     Benefits of a Custom Design Wrap for Bikes
                   </h3>
-                  <ul className="process-list">
+                  <ul className="list">
                     <li>
                       Reflects your individuality with bespoke colors and
                       designs.
@@ -215,10 +213,10 @@ export default function CustomDesign() {
                       customization.
                     </li>
                   </ul>
-                  <h3 className="section-subtitle">
+                  <h3 className="subtitle">
                     Custom Design Options for Your Bike
                   </h3>
-                  <ul className="process-list">
+                  <ul className="list">
                     <li>Full bike wrap with vibrant, personalized graphics.</li>
                     <li>
                       Partial wrap: Fuel tank, frame, or fairings for targeted
@@ -229,7 +227,7 @@ export default function CustomDesign() {
                       vision.
                     </li>
                   </ul>
-                  <p className="description">
+                  <p className="text">
                     Contact us to create a custom design wrap package that
                     brings your bike’s aesthetics to life, or try our DIY tips
                     for a bold transformation.

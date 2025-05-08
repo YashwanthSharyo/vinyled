@@ -68,7 +68,7 @@ export default function About() {
         <div className="AboutIntroText">
           <h2 className="AboutIntroTitle">Who are we</h2>
           <p className="AboutIntroParagraph">
-            Topaz Detailing is the world's most exclusive detailing and paint
+            VinyLed Detailing is the world's most exclusive detailing and paint
             protection film specialist, handling the largest volume of supercars
             anywhere in the world.
           </p>
@@ -79,14 +79,14 @@ export default function About() {
             clients the highest possible quality.
           </p>
           <p className="AboutIntroParagraph">
-            At Topaz we offer a total car care solution package, incorporating
+            At VinyLed we offer a total car care solution package, incorporating
             everything from{' '}
             <a
               href="https://topazdetailing.com/services/enhance/"
               target="_blank"
               rel="noreferrer"
             >
-              enhancement
+              VinyLed enhancement
             </a>{' '}
             and{' '}
             <a
@@ -94,7 +94,7 @@ export default function About() {
               target="_blank"
               rel="noreferrer"
             >
-              protection
+              VinyLed protection
             </a>{' '}
             through to{' '}
             <a
@@ -102,7 +102,7 @@ export default function About() {
               target="_blank"
               rel="noreferrer"
             >
-              maintenance
+              VinyLed maintenance
             </a>
             .
           </p>
@@ -110,7 +110,7 @@ export default function About() {
             “The perfect marriage between science and art”
           </p>
           <p className="AboutIntroParagraph">
-            Topaz Detailing exists in order to trigger positive emotions; the
+            VinyLed Detailing exists in order to trigger positive emotions; the
             company was born to rewrite how car owners should maintain the
             appearance of their vehicles, to recreate car presentation results
             that will satisfy even the most discerning clients.
@@ -126,7 +126,7 @@ export default function About() {
             </h4>
             <ul className="AboutStandardsList">
               <li>
-                <strong>Topaz Design:</strong> Every process and technique is
+                <strong>VinyLed Design:</strong> Every process and technique is
                 developed in-house, from our detailing stages and specially
                 blended compounds through to our dedicated PPF design team. Each
                 panel of every kit is patterned, designed and produced at our HQ
@@ -134,13 +134,13 @@ export default function About() {
                 anywhere else.
               </li>
               <li>
-                <strong>Topaz Quality:</strong> Every car passes through our Topaz
+                <strong>VinyLed Quality:</strong> Every car passes through our VinyLed
                 Control stages, starting from the first contact, ensuring the
                 correct assessment, best advice and unparalleled quality control
                 every time.
               </li>
               <li>
-                <strong>Topaz Warranty:</strong> We stand by our work, Topaz
+                <strong>VinyLed Warranty:</strong> We stand by our work, VinyLed
                 provide the most comprehensive warranty and aftercare programme in
                 the industry, administered by our HQ. This means should there ever
                 be an issue or question we are able to assist efficiently and
@@ -151,7 +151,7 @@ export default function About() {
           <div className="AboutStandardsImageWrapper">
             <img
               src="https://i.shgcdn.com/8dc7e943-6a3d-43a1-b17a-d36e113fc2f2/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
-              alt="Topaz Example"
+              alt="VinyLed Example"
               className="AboutStandardsImage"
             />
             <div className="AboutStandardsButtonWrapper">
@@ -186,7 +186,7 @@ export default function About() {
         <div className="AboutFacilitiesText">
           <h3 className="AboutFacilitiesTitle">Our Facilities</h3>
           <p className="AboutFacilitiesParagraph">
-            Topaz has developed purpose built facilities to conduct its treatments.
+            VinyLed has developed purpose built facilities to conduct its treatments.
             Workshops are conveniently located in London NW10, Bristol, Bahrain,
             Leeds, Midlands & Qatar offering its clients easy access, convenience
             and unmatched security.
@@ -194,8 +194,8 @@ export default function About() {
           <p className="AboutFacilitiesParagraph">
             We offer a relaxed friendly environment for our clients, as well as the
             working environment in something as delicate as{' '}
-            <a href="https://topazdetailing.com/services/enhance/">DETAILING</a>{' '}
-            and <a href="https://topazdetailing.com/services/protect/">PPF</a>{' '}
+            <a href="https://topazdetailing.com/services/enhance/">VinyLed DETAILING</a>{' '}
+            and <a href="https://topazdetailing.com/services/protect/">VinyLed PPF</a>{' '}
             requires optimal conditions to achieve the desired results. The
             materials, products and operations involved within our work are
             sensitive to temperature, humidity and dust. Some of these
