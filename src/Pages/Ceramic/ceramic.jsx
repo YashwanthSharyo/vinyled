@@ -103,16 +103,16 @@ export default function Ceramic() {
         handleTabMouseLeave={handleTabMouseLeave}
       />
 
-      <div className="tab-content-container">
+      <div className="ceramic-tab-content-container">
         {[1, 2].map((tab) => (
           <div
             key={tab}
-            className={`tab-content ${activeTab === tab ? "active" : ""}`}
+            className={`ceramic-tab-content ${activeTab === tab ? "active" : ""}`}
             role="tabpanel"
             aria-hidden={activeTab !== tab}
           >
             {/* Image Section */}
-            <div className="image-section">
+            <div className="ceramic-image-section">
               <img
                 src={
                   tab === 1
@@ -124,23 +124,23 @@ export default function Ceramic() {
                     ? "Ceramic Car Illustration"
                     : "Ceramic Bike Illustration"
                 }
-                className="tab-image"
+                className="ceramic-tab-image"
               />
             </div>
 
             {/* Text Section */}
-            <div className="text-section">
+            <div className="ceramic-text-section">
               {tab === 1 ? (
                 <>
-                  <h2 className="section-title">
+                  <h2 className="ceramic-section-title">
                     CAR: Ceramic Protection Detail
                   </h2>
 
-                  <h3 className="section-subtitle">
+                  <h3 className="ceramic-section-subtitle">
                     Exterior – Cleaning and Ceramic Coating
                   </h3>
-                  <h4 className="process-title">Ceramic Coating Process:</h4>
-                  <ul className="process-list">
+                  <h4 className="ceramic-process-title">Ceramic Coating Process:</h4>
+                  <ul className="ceramic-process-list">
                     <li>Wash with pH-neutral shampoo and two-bucket system.</li>
                     <li>
                       Use a clay bar to remove contaminants and smooth the
@@ -155,8 +155,8 @@ export default function Ceramic() {
                     </li>
                   </ul>
 
-                  <p className="highlight-text">Why Choose Ceramic Coating?</p>
-                  <ul className="process-list">
+                  <p className="ceramic-highlight-text">Why Choose Ceramic Coating?</p>
+                  <ul className="ceramic-process-list">
                     <li>Repels water, dirt, and stains for easy cleaning.</li>
                     <li>Enhances the paint’s depth and gloss.</li>
                     <li>Protects against UV rays, preventing paint fading.</li>
@@ -168,14 +168,14 @@ export default function Ceramic() {
                 </>
               ) : (
                 <>
-                  <h2 className="section-title">
+                  <h2 className="ceramic-section-title">
                     BIKE: Ceramic Protection Detail
                   </h2>
 
-                  <h3 className="section-subtitle">
+                  <h3 className="ceramic-section-subtitle">
                     What is Ceramic Coating for Bikes?
                   </h3>
-                  <p className="description">
+                  <p className="ceramic-description">
                     Ceramic coating is a hydrophobic layer that provides
                     long-lasting protection to your motorcycle’s paint. It helps
                     repel water, dirt, and road debris, while preserving a
@@ -183,10 +183,10 @@ export default function Ceramic() {
                     scratches and UV damage.
                   </p>
 
-                  <h3 className="section-subtitle">
+                  <h3 className="ceramic-section-subtitle">
                     Benefits of Ceramic Coating for Bikes
                   </h3>
-                  <ul className="process-list">
+                  <ul className="ceramic-process-list">
                     <li>
                       Protects against road grime, dirt, and small scratches.
                     </li>
@@ -211,8 +211,8 @@ export default function Ceramic() {
                     </li>
                   </ul>
 
-                  <p className="highlight-text">Ceramic Coverage Options</p>
-                  <ul className="process-list">
+                  <p className="ceramic-highlight-text">Ceramic Coverage Options</p>
+                  <ul className="ceramic-process-list">
                     <li>
                       Full Bike Protection (includes tank, fairings, wheels, and
                       exhaust)
@@ -225,7 +225,7 @@ export default function Ceramic() {
                     </li>
                   </ul>
 
-                  <p className="description">
+                  <p className="ceramic-description">
                     Get in touch for a tailored ceramic coating package that
                     suits your motorcycle’s needs and enhances its protection.
                   </p>
