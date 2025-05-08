@@ -14,7 +14,11 @@ const Gallery = ({ images, largeImage }) => {
 
   return (
     <div className="gallery">
-      {/* Left Side (6 images, updated from 4) */}
+      {/* Added horizontal line and text */}
+      <hr className="gallery-divider" />
+      <p className="gallery-text">Work Done By Vinyled</p>
+
+      {/* Left Side (6 images, unchanged) */}
       <div className="image-grid">
         {images.slice(0, 6).map((img, index) => {
           const imgId = `img-${index + 1}`;

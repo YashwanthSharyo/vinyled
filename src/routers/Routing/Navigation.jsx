@@ -17,17 +17,16 @@ import WhatsApp from "../../components/WhatsApp/whatsApp";
 
 function Navigation() {
     return (
-        <Router basename="/vinyled/"> {/* Pass the base path here */}
+        <Router basename="/vinyled/">
             <div>
                 <Header />
                 <Routes>
-                   
                     <Route path="/" element={<HomePage />} />
                     <Route path="/ppf" element={<PPF />} />
                     <Route path="/color-change-wrap" element={<ColorChangeWrap />} />
                     <Route path="/ceramic" element={<Ceramic />} />
-                    <Route path="/custom-design" element={<CustomDesign/>} />
-                    <Route path="/custom-project" element={<CustomProject />}  />
+                    <Route path="/custom-design" element={<CustomDesign />} />
+                    <Route path="/custom-project" element={<CustomProject />} />
                     <Route path="/branding" element={<Branding />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/team" element={<Team />} />
@@ -36,9 +35,6 @@ function Navigation() {
                     <Route path="/whats-app" element={<WhatsApp />} />
                 </Routes>
                 <Footer />
-                <Routes>
-                  
-                </Routes>
             </div>
         </Router>
     );

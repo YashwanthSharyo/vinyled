@@ -1,10 +1,38 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import "./home.css";
 import { useNavigate } from "react-router-dom";
 
 const HomePage = () => {
   const [hovered, setHovered] = useState(null);
   const navigate = useNavigate();
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    referral: "",
+  });
+  const getInTouchRef = useRef(null);
+
+  // Function to handle the button click and scroll
+  const scrollToGetInTouch = () => {
+    getInTouchRef.current.scrollIntoView({
+      behavior: "smooth", // Smooth scrolling
+      block: "start", // Scroll to the top of the section
+    });
+  };
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const generateMailtoLink = () => {
+    return `mailto:venagantiyashwanth@gmail.com
+      ?subject=Contact Form
+      &body=Name: ${formData.name}%0AEmail: ${formData.email}%0APhone: ${formData.phone}%0AReferral: ${formData.referral}`.replace(
+      /\s+/g,
+      ""
+    );
+  };
 
   const handleMouseEnter = (index) => {
     setHovered(index);
@@ -20,7 +48,7 @@ const HomePage = () => {
     3: "/custom-design",
     4: "/branding",
     5: "/color-change-wrap",
-    6: "/custom-project"
+    6: "/custom-project",
   };
 
   const handleClick = (index) => {
@@ -42,7 +70,7 @@ const HomePage = () => {
               Kalyannagar facility. Trust us to transform your car or bike with
               top-tier materials and unmatched craftsmanship.
             </p>
-            <button className="action-btn">Get started</button>
+            <button className="action-btn" onClick={scrollToGetInTouch}>Get started</button>
           </div>
         </div>
       </section>
@@ -220,7 +248,7 @@ const HomePage = () => {
                 style, we help your vehicle stand out on the road.
               </p>
               <div className="button-container">
-                <button className="left-button">Know More</button>
+                <button className="left-button" onClick={() => navigate("/about")}>Know More</button>
               </div>
               <div className="left-image-container">
                 <img
@@ -253,28 +281,52 @@ const HomePage = () => {
 
         <div className="section-container">
           {/* Left Column - Contact Form */}
-          <div className="form-column">
+          <div className="form-column" ref={getInTouchRef}>
             <div className="form-content">
               <h2 className="form-heading">Get in Touch</h2>
 
-              <input type="text" placeholder="Name" className="form-input" />
-              <input type="email" placeholder="Email" className="form-input" />
+              <input
+                type="text"
+                placeholder="Name"
+                className="form-input"
+                name="name"
+                onChange={handleChange}
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                className="form-input"
+                name="email"
+                onChange={handleChange}
+              />
               <input
                 type="tel"
                 placeholder="Phone Number"
                 className="form-input"
+                name="phone"
+                onChange={handleChange}
               />
 
-              <select className="form-select">
+              <select
+                className="form-select"
+                name="referral"
+                onChange={handleChange}
+              >
                 <option value="">How did you find us?</option>
-                <option value="google">Google</option>
-                <option value="friend">Friend</option>
-                <option value="social_media">Social Media</option>
-                <option value="ad">Advertisement</option>
-                <option value="other">Other</option>
+                <option value="Google">Google</option>
+                <option value="Friend">Friend</option>
+                <option value="Social Media">Social Media</option>
+                <option value="Advertisement">Advertisement</option>
+                <option value="Other">Other</option>
               </select>
 
-              <button className="submit-btn">Submit</button>
+              <a
+                href={generateMailtoLink()}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="submit-btn">Submit</button>
+              </a>
 
               <div className="contact-details">
                 <div className="contact-box">

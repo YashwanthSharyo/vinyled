@@ -13,10 +13,10 @@
 
 .banner .title {
   color: #ffffff;
-  text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 1.25rem;
   font-weight: 400;
+  margin-left: 50px;
 }
 
 .banner .title .title-highlight {
@@ -62,12 +62,23 @@
 }
 
 /* Responsive Design */
+@media (min-width: 769px) {
+  .banner .title {
+    text-align: left;
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
 @media (max-width: 768px) {
   .banner {
     min-height: 15rem;
   }
 
   .banner .title {
+    text-align: center;
     font-size: 1.5rem;
     margin-bottom: 1rem;
   }
@@ -91,8 +102,10 @@
   }
 
   .banner .title {
+    text-align: center;
     font-size: 1.2rem;
     margin-bottom: 0.75rem;
+    margin-left: 10px;
   }
 
   .tab-container .tab {

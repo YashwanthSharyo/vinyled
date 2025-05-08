@@ -1,21 +1,28 @@
 import React, { useState } from "react";
 import "./header.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate(); // Get navigate function from useNavigate hook
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const handleMenuItemClick = () => {
+  const handleMenuItemClick = (path) => {
     setIsMenuOpen(false);
+    navigate(path, { replace: true }); // Navigate and replace history entry
+    window.scrollTo(0, 0); // Scroll to the top of the page
   };
 
   return (
     <header className="header">
-      <Link to="/" className="logo">
+      <Link
+        to="/"
+        className="logo"
+        onClick={() => handleMenuItemClick("/")}
+      >
         <img src="Images/vinyled.svg" alt="Vinyled Logo" className="logo-img" />
       </Link>
 
@@ -32,12 +39,12 @@ const Header = () => {
 
       <ul className={`menu ${isMenuOpen ? "open" : ""}`}>
         <li>
-          <Link to="/" onClick={handleMenuItemClick}>
+          <Link to="/" onClick={() => handleMenuItemClick("/")}>
             HOME
           </Link>
         </li>
         <li>
-          <Link to="/" onClick={handleMenuItemClick}>
+          <Link to="/" onClick={() => handleMenuItemClick("/")}>
             OUR CLIENTS
           </Link>
         </li>
@@ -47,37 +54,50 @@ const Header = () => {
           </a>
           <ul className="dropdown-menu">
             <li>
-              <Link to="/ppf" onClick={handleMenuItemClick}>
+              <Link to="/ppf" onClick={() => handleMenuItemClick("/ppf")}>
                 PPF
               </Link>
             </li>
             <li>
-              <Link to="/ceramic" onClick={handleMenuItemClick}>
-              Ceramic / Graphene Coating
+              <Link to="/ceramic" onClick={() => handleMenuItemClick("/ceramic")}>
+                Ceramic / Graphene Coating
               </Link>
             </li>
             <li>
-              <Link to="/color-change-wrap" onClick={handleMenuItemClick}>
+              <Link
+                to="/color-change-wrap"
+                onClick={() => handleMenuItemClick("/color-change-wrap")}
+              >
                 Colour Change Wrap
               </Link>
             </li>
             <li>
-              <Link to="/custom-design" onClick={handleMenuItemClick}>
+              <Link
+                to="/custom-design"
+                onClick={() => handleMenuItemClick("/custom-design")}
+              >
                 CUSTOM DESIGNS
               </Link>
             </li>
             <li>
-              <Link to="/custom-project" onClick={handleMenuItemClick}>
+              <Link
+                to="/custom-project"
+                onClick={() => handleMenuItemClick("/custom-project")}
+              >
                 CUSTOM PROJECTS
               </Link>
             </li>
             <li>
-              <Link to="/branding" onClick={handleMenuItemClick}>
+              <Link
+                to="/branding"
+                onClick={() => handleMenuItemClick("/branding")}
+              >
                 BRANDING
               </Link>
             </li>
           </ul>
         </li>
+
         <li className="dropdown">
           <a>
             CONTENT <i className="fa fa-caret-down"></i>
@@ -85,35 +105,35 @@ const Header = () => {
 
           <ul className="dropdown-menu">
             <li>
-              <Link to="/about" onClick={handleMenuItemClick}>
+              <Link to="/about" onClick={() => handleMenuItemClick("/about")}>
                 ABOUT US
               </Link>
             </li>
             <li>
-              <Link to="/team" onClick={handleMenuItemClick}>
+              <Link to="/team" onClick={() => handleMenuItemClick("/team")}>
                 OUR PROCESS
               </Link>
             </li>
           </ul>
         </li>
         <li>
-          <Link to="/contact-us" onClick={handleMenuItemClick}>
-            CONTACT US / LOCATION
-          </Link>
-        </li>
-        <li className="shop-item">
           <Link
-            to="/shop-products"
-            className="shop-link"
-            // onClick={handleMenuItemClick}
-            onClick={(e) => {e.preventDefault();}} 
+            to="/contact-us"
+            onClick={() => handleMenuItemClick("/contact-us")}
           >
-            SHOP PRODUCTS
+            CONTACT US / LOCATION
           </Link>
         </li>
       </ul>
 
-      <a href="#flag" className="flag-icon">
+      <a
+        href="#flag"
+        className="flag-icon"
+        onClick={(e) => {
+          e.preventDefault();
+          handleMenuItemClick("/"); // Assuming flag click navigates to home
+        }}
+      >
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_India.svg"
           alt="Indian Flag"
