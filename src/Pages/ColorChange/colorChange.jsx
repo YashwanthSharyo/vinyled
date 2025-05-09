@@ -69,7 +69,7 @@ export default function ColorChangeWrap() {
           alt: "Motorbike with racing wrap",
         },
         {
-          src: "https://encrypted-tbn0.gstatic.com/images?q,pp:ANd9GcTj1FeZ4HLXRUmucKRrLDLpHoSMtZmxbCli4g&s",
+          src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj1FeZ4HLXRUmucKRrLDLpHoSMtZmxbCli4g&s",
           alt: "Motorcycle with custom wrap design 1",
         },
         {
@@ -95,16 +95,16 @@ export default function ColorChangeWrap() {
         handleTabMouseLeave={handleTabMouseLeave}
       />
 
-      <div className="wrap-container">
+      <div className="ColorChangeWrap-wrap-container">
         {[1, 2].map((tab) => (
           <div
             key={tab}
-            className={`content-tab ${activeTab === tab ? "active" : ""}`}
+            className={`ColorChangeWrap-content-tab ${activeTab === tab ? "active" : ""}`}
             role="tabpanel"
             aria-hidden={activeTab !== tab}
           >
             {/* Image Section */}
-            <div className="content-image">
+            <div className="ColorChangeWrap-content-image">
               <img
                 src={
                   tab === 1
@@ -114,24 +114,24 @@ export default function ColorChangeWrap() {
                 alt={
                   tab === 1 ? "Car Color Change Wrap" : "Bike Color Change Wrap"
                 }
-                className="image"
+                className="ColorChangeWrap-image"
               />
             </div>
 
             {/* Text Section */}
-            <div className="content-text">
+            <div className="ColorChangeWrap-content-text">
               {tab === 1 ? (
                 <>
-                  <h2 className="title">
+                  <h2 className="ColorChangeWrap-title">
                     CAR: Color Change Wrap Guide
                   </h2>
-                  <h3 className="subtitle">
+                  <h3 className="ColorChangeWrap-subtitle">
                     Transform Your Vehicle with a Custom Vinyl Wrap
                   </h3>
-                  <h4 className="process-heading">
+                  <h4 className="ColorChangeWrap-process-heading">
                     Easy Color Change Wrap Process:
                   </h4>
-                  <ul className="list">
+                  <ul className="ColorChangeWrap-list">
                     <li>
                       Clean the car thoroughly with soap and isopropyl alcohol
                       to ensure a grease-free surface.
@@ -153,10 +153,10 @@ export default function ColorChangeWrap() {
                       adhesive and prevent peeling.
                     </li>
                   </ul>
-                  <h3 className="subtitle">
+                  <h3 className="ColorChangeWrap-subtitle">
                     Beginner Tips for a Flawless Wrap
                   </h3>
-                  <ul className="list">
+                  <ul className="ColorChangeWrap-list">
                     <li>
                       Start with flat surfaces like the hood or roof to build
                       confidence.
@@ -172,28 +172,28 @@ export default function ColorChangeWrap() {
                       Use a felt-edged squeegee to avoid scratching the vinyl.
                     </li>
                   </ul>
-                  <p className="text">
+                  <p className="ColorChangeWrap-text">
                     A color change wrap provides a bold, custom look while
                     protecting your car's paint from scratches and UV damage.
                   </p>
                 </>
               ) : (
                 <>
-                  <h2 className="title">
+                  <h2 className="ColorChangeWrap-title">
                     BIKE: Color Change Wrap Guide
                   </h2>
-                  <h3 className="subtitle">
+                  <h3 className="ColorChangeWrap-subtitle">
                     Revamp Your Motorcycle with a Vinyl Wrap
                   </h3>
-                  <p className="text">
+                  <p className="ColorChangeWrap-text">
                     A color change wrap gives your bike a fresh, custom
                     appearance while safeguarding its paint from scratches and
                     UV damage.
                   </p>
-                  <h3 className="subtitle">
+                  <h3 className="ColorChangeWrap-subtitle">
                     Easy Color Change Wrap Process
                   </h3>
-                  <ul className="list">
+                  <ul className="ColorChangeWrap-list">
                     <li>
                       Wash and degrease the bike with soap and isopropyl alcohol
                       for perfect adhesion.
@@ -215,10 +215,10 @@ export default function ColorChangeWrap() {
                       intricate parts.
                     </li>
                   </ul>
-                  <p className="highlight">
+                  <p className="ColorChangeWrap-highlight">
                     Benefits of Wrapping Your Bike
                   </p>
-                  <ul className="list">
+                  <ul className="ColorChangeWrap-list">
                     <li>
                       Personalized style with vibrant colors and unique
                       finishes.
@@ -230,7 +230,7 @@ export default function ColorChangeWrap() {
                       wraps (e.g., tank, frame).
                     </li>
                   </ul>
-                  <p className="text">
+                  <p className="ColorChangeWrap-text">
                     Ready to transform your bike? Contact us for a custom wrap
                     package or try our DIY tips for a stunning result.
                   </p>

@@ -1,4 +1,4 @@
-.ceramic-tab-content-container {
+.Ceramic-wrap-container {
   font-family: Arial, sans-serif;
   background-color: white;
   display: flex;
@@ -6,7 +6,7 @@
   padding: 2.5rem;
 }
 
-.ceramic-tab-content-container .ceramic-tab-content {
+.Ceramic-wrap-container .Ceramic-content-tab {
   display: none;
   flex-direction: row;
   gap: 1.25rem;
@@ -17,29 +17,29 @@
   align-items: flex-start;
 }
 
-.ceramic-tab-content-container .ceramic-tab-content.active {
+.Ceramic-wrap-container .Ceramic-content-tab.active {
   display: flex;
 }
 
-.ceramic-tab-content .ceramic-image-section {
-  min-width: 300px;
-  display: flex;
-  
-}
-
-.ceramic-image-section .ceramic-tab-image {
-  width: 100%;
-  height: 100%;
-  border-radius: 0.3125rem;
-  object-fit: cover;
-}
-
-.ceramic-tab-content .ceramic-text-section {
+.Ceramic-content-tab .Ceramic-content-image {
   flex: 1;
   min-width: 300px;
 }
 
-.ceramic-text-section .ceramic-section-title {
+.Ceramic-content-image .Ceramic-image {
+  width: 100%;
+  height: auto;
+  min-height: 31rem;
+  border-radius: 0.3125rem;
+  object-fit: cover;
+}
+
+.Ceramic-content-tab .Ceramic-content-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.Ceramic-content-text .Ceramic-title {
   color: #ec1d24;
   font-weight: normal;
   font-style: normal;
@@ -48,7 +48,7 @@
   margin: 0 0 0.5rem 0;
 }
 
-.ceramic-text-section .ceramic-section-subtitle {
+.Ceramic-content-text .Ceramic-subtitle {
   color: #ec1d24;
   font-weight: normal;
   font-style: normal;
@@ -57,7 +57,7 @@
   margin: 0 0 0.5rem 0;
 }
 
-.ceramic-text-section .ceramic-process-title {
+.Ceramic-content-text .Ceramic-process-heading {
   color: #3a3a3a;
   font-size: 1.25rem;
   font-weight: bold;
@@ -65,18 +65,18 @@
   margin: 0 0 0.5rem 0;
 }
 
-.ceramic-text-section .ceramic-process-list {
+.Ceramic-content-text .Ceramic-list {
   padding-left: 1.25rem;
   font-size: 0.875rem;
   text-align: justify;
   margin: 0 0 0.5rem 0;
 }
 
-.ceramic-process-list li {
+.Ceramic-list li {
   margin-bottom: 0.1875rem;
 }
 
-.ceramic-text-section .ceramic-highlight-text {
+.Ceramic-content-text .Ceramic-highlight {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 0.875rem;
@@ -85,7 +85,7 @@
   color: #ec1d24;
 }
 
-.ceramic-text-section .ceramic-description {
+.Ceramic-content-text .Ceramic-text {
   font-size: 0.875rem;
   color: #333333;
   text-align: justify;
@@ -93,114 +93,96 @@
 }
 
 /* Responsive Design */
-@media (min-width: 769px) {
-  .ceramic-tab-content-container .ceramic-tab-content {
-    align-items: stretch;
-  }
-
-  .ceramic-tab-content .ceramic-image-section {
-    height: auto;
-  }
-
-  .ceramic-tab-content .ceramic-text-section {
-    height: auto;
-  }
-}
-
 @media (max-width: 768px) {
-  .ceramic-tab-content-container {
+  .Ceramic-wrap-container {
     padding: 1.5rem;
   }
 
-  .ceramic-tab-content-container .ceramic-tab-content {
+  .Ceramic-wrap-container .Ceramic-content-tab {
     padding: 1.25rem;
     gap: 1rem;
-    flex-direction: column;
-    align-items: flex-start;
   }
 
-  .ceramic-tab-content .ceramic-image-section {
+  .Ceramic-content-tab .Ceramic-content-image {
     min-width: 250px;
   }
 
-  .ceramic-image-section .ceramic-tab-image {
-    min-height: 20rem;
+  .Ceramic-content-image .Ceramic-image {
+    min-height: 30rem;
   }
 
-  .ceramic-tab-content .ceramic-text-section {
+  .Ceramic-content-tab .Ceramic-content-text {
     min-width: 250px;
   }
 
-  .ceramic-text-section .ceramic-section-title {
+  .Ceramic-content-text .Ceramic-title {
     font-size: 1.875rem;
   }
 
-  .ceramic-text-section .ceramic-section-subtitle {
+  .Ceramic-content-text .Ceramic-subtitl {
     font-size: 1.25rem;
   }
 
-  .ceramic-text-section .ceramic-process-title {
+  .Ceramic-content-text .Ceramic-process-heading {
     font-size: 1rem;
   }
 
-  .ceramic-text-section .ceramic-process-list {
+  .Ceramic-content-text .Ceramic-list {
     font-size: 0.8125rem;
   }
 
-  .ceramic-text-section .ceramic-highlight-text {
+  .Ceramic-content-text .Ceramic-highlight {
     font-size: 0.8125rem;
   }
 
-  .ceramic-text-section .ceramic-description {
+  .Ceramic-content-text .Ceramic-text {
     font-size: 0.8125rem;
   }
 }
 
 @media (max-width: 480px) {
-  .ceramic-tab-content-container {
-    padding: 1rem;
+  .Ceramic-wrap-container {
+    padding: 0.20rem;
   }
 
-  .ceramic-tab-content-container .ceramic-tab-content {
+  .Ceramic-wrap-container .Ceramic-content-tab {
     padding: 0.25rem;
     gap: 0.75rem;
-    width: 100%;
-    flex-direction: column;
   }
 
-  .ceramic-tab-content .ceramic-image-section {
+  .Ceramic-content-tab .Ceramic-content-image {
     min-width: 100%;
   }
 
-  .ceramic-image-section .ceramic-tab-image {
+  .Ceramic-content-image .Ceramic-image {
     min-height: 15rem;
   }
 
-  .ceramic-tab-content .ceramic-text-section {
+  .Ceramic-content-tab .Ceramic-content-text {
     min-width: 100%;
   }
 
-  .ceramic-text-section .ceramic-section-title {
+  .Ceramic-content-text .Ceramic-title {
     font-size: 1.5rem;
   }
 
-  .ceramic-text-section .ceramic-section-subtitle {
+  .Ceramic-content-text .Ceramic-subtitle {
     font-size: 1rem;
   }
 
-  .ceramic-text-section .ceramic-process-title {
+  .Ceramic-content-text .Ceramic-process-heading {
     font-size: 0.875rem;
   }
 
-  .ceramic-text-section .ceramic-process-list {
+  .Ceramic-content-text .Ceramic-list {
     font-size: 0.75rem;
   }
 
-  .ceramic-text-section .ceramic-highlight-text {
+  .Ceramic-content-text .Ceramic-highlight {
     font-size: 0.75rem;
   }
 
-  .ceramic-text-section .ceramic-description {
+  .Ceramic-content-text .Ceramic-text {
     font-size: 0.75rem;
   }
 }

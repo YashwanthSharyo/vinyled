@@ -36,13 +36,13 @@ export default function Team() {
         </div>
         <div className="vehicle-gallery">
           <div className="vehicle-gallery__item">
-          <img src="https://img.freepik.com/free-photo/selective-focus-shot-man-cleaning-car-s-back-headlight-with-microfiber-cloth_181624-46344.jpg?t=st=1746608554~exp=1746612154~hmac=b95bd9718bcd5f81c4aa298c6a66812de3e9f9e5c13827c062ab2c3a2a7588b7&w=740" alt="Before PPF" />
+          <img src="./Images/ppfbefore.jpg" alt="Before PPF" />
 
 
             <p>Before</p>
           </div>
           <div className="vehicle-gallery__item">
-            <img src="https://via.placeholder.com/400x300?text=After+PPF" alt="After PPF" />
+            <img src="./Images/ppf after.jpg" alt="After PPF" />
             <p>After</p>
           </div>
         </div>
@@ -73,11 +73,11 @@ export default function Team() {
         </div>
         <div className="vehicle-gallery">
           <div className="vehicle-gallery__item">
-            <img src="https://via.placeholder.com/400x300?text=Before+Ceramic" alt="Before Ceramic" />
+            <img src="./Images/ceramic before .jpg" alt="Before Ceramic" />
             <p>Before</p>
           </div>
           <div className="vehicle-gallery__item">
-            <img src="https://via.placeholder.com/400x300?text=After+Ceramic" alt="After Ceramic" />
+            <img src="./Images/ceramic after.jpg" alt="After Ceramic" />
             <p>After</p>
           </div>
         </div>
@@ -108,11 +108,11 @@ export default function Team() {
         </div>
         <div className="vehicle-gallery">
           <div className="vehicle-gallery__item">
-            <img src="https://via.placeholder.com/400x300?text=Before+Wrap" alt="Before Wrap" />
+            <img src="./Images/color before.jpg" alt="Before Wrap" />
             <p>Before</p>
           </div>
           <div className="vehicle-gallery__item">
-            <img src="https://via.placeholder.com/400x300?text=After+Wrap" alt="After Wrap" />
+            <img src="./Images/color after.jpg" alt="After Wrap" />
             <p>After</p>
           </div>
         </div>

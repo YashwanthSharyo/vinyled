@@ -77,6 +77,17 @@ a {
   color: red;
   background-color: transparent;
 }
+/* Main menu hover - including dropdown */
+.header > .menu > li > a:hover,
+.header > .menu > .dropdown:hover > a {
+  color: red;
+}
+
+/* Submenu items hover */
+.header > .menu > .dropdown > .dropdown-menu > li > a:hover {
+  color: red;
+  background-color: transparent; /* optional */
+}
 
 .header > .menu > .dropdown {
   position: relative;
@@ -110,9 +121,7 @@ a {
   line-height: 100%;
 }
 
-.header > .menu > .dropdown > .dropdown-menu > li > a:hover {
-  background-color: #f4f4f4;
-}
+
 
 .header > .menu > .dropdown > a > .icon {
   font-size: 14px;

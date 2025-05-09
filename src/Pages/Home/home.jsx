@@ -87,7 +87,7 @@ const HomePage = () => {
               onClick={() => handleClick(1)}
             >
               <img
-                src="Images/carpart1.svg"
+                src="https://www.shutterstock.com/shutterstock/photos/2417345281/display_1500/stock-photo-protective-vinyl-film-for-car-with-from-gravel-chips-and-scratches-transparent-protection-for-2417345281.jpg"
                 alt="Service 1"
                 className="service-image"
               />
@@ -111,7 +111,7 @@ const HomePage = () => {
               onClick={() => handleClick(2)}
             >
               <img
-                src="Images/carpart2.svg"
+                src="https://www.shutterstock.com/shutterstock/photos/2585199805/display_1500/stock-photo-ceramic-or-graphene-coating-on-white-paint-2585199805.jpg"
                 alt="Service 2"
                 className="service-image"
               />
@@ -136,10 +136,11 @@ const HomePage = () => {
               onClick={() => handleClick(3)}
             >
               <img
-                src="Images/carpart3.svg"
-                alt="Service 3"
-                className="service-image"
-              />
+  src="./Images/car2.svg"
+  alt="Service 3"
+  className="service-image"
+/>
+
               <div className="service-overlay" />
               <div
                 className={`service-description ${
@@ -161,7 +162,7 @@ const HomePage = () => {
               onClick={() => handleClick(4)}
             >
               <img
-                src="Images/carpart4.svg"
+                src="https://www.shutterstock.com/shutterstock/photos/1471205783/display_1500/stock-photo-august-san-jose-ca-usa-nestle-pure-life-truck-making-deliveries-of-purified-filtered-1471205783.jpg"
                 alt="Service 4"
                 className="service-image"
               />
@@ -186,7 +187,7 @@ const HomePage = () => {
               onClick={() => handleClick(5)}
             >
               <img
-                src="Images/carpart1.svg"
+                src="https://www.shutterstock.com/shutterstock/photos/1428558152/display_1500/stock-photo-kiev-ukraine-september-lowered-bmw-series-e-on-static-suspension-wide-wheels-and-1428558152.jpg"
                 alt="Service 5"
                 className="service-image"
               />
@@ -212,7 +213,7 @@ const HomePage = () => {
               onClick={() => handleClick(6)}
             >
               <img
-                src="Images/carpart2.svg"
+                src="./Images/wrap.jpg"
                 alt="Service 6"
                 className="service-image"
               />

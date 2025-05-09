@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import './about.css';
+import { useNavigate } from 'react-router-dom';
 
 export default function About() {
   const [activeTab, setActiveTab] = useState(1);
   const [openIndex, setOpenIndex] = useState(0);
+
+  const navigate = useNavigate(); 
 
   const toggleAccordion = (index) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -155,7 +158,7 @@ export default function About() {
               className="AboutStandardsImage"
             />
             <div className="AboutStandardsButtonWrapper">
-              <button className="AboutStandardsButton">Request Call Back</button>
+              <button className="AboutStandardsButton" onClick={() => navigate('/contact-us')}>Request Call Back</button>
             </div>
           </div>
         </div>
@@ -180,7 +183,7 @@ export default function About() {
             className="AboutFacilitiesImage"
           />
           <div className="AboutFacilitiesButtonWrapper">
-            <button className="AboutFacilitiesButton">Get In Touch</button>
+            <button className="AboutFacilitiesButton" onClick={() => navigate('/contact-us')}>Get In Touch</button>
           </div>
         </div>
         <div className="AboutFacilitiesText">

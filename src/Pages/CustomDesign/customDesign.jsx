@@ -107,8 +107,8 @@ export default function CustomDesign() {
               <img
                 src={
                   tab === 1
-                    ? "https://autodesignmagazine.com/wp-content/uploads/2019/04/Renault-Clio_web.jpg"
-                    : "https://www.acmegraphic.com/wp-content/uploads/2021/08/motorcycle-decal-wrap.jpg"
+                    ? "./Images/customDesign.jpg"
+                    : "./Images/customDesignBike.jpg"
                 }
                 alt={
                   tab === 1 ? "Car Color Change Wrap" : "Bike Color Change Wrap"
@@ -165,20 +165,9 @@ export default function CustomDesign() {
                     <li>
                       Use a partner to handle large vinyl sheets for accuracy.
                     </li>
-                    <li>
-                      Lift and reapply with heat to fix any bubbles or wrinkles.
-                    </li>
+                    
                   </ul>
-                  <p className="highlight">
-                    Why Opt for a Custom Design Wrap?
-                  </p>
-                  <p className="text">
-                    Custom design wraps let you express your style or promote
-                    your brand with bold, personalized graphics. They protect
-                    your car’s paint, last 5–7 years, and cost $500–$2,000. DIY
-                    for a creative challenge or contact our pros for a flawless
-                    result!
-                  </p>
+                  
                 </>
               ) : (
                 <>
@@ -229,8 +218,7 @@ export default function CustomDesign() {
                   </ul>
                   <p className="text">
                     Contact us to create a custom design wrap package that
-                    brings your bike’s aesthetics to life, or try our DIY tips
-                    for a bold transformation.
+                    brings your bike’s aesthetics to life.
                   </p>
                 </>
               )}

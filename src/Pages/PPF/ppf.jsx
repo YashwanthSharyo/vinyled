@@ -149,31 +149,12 @@ export default function PPF() {
                  </li>
                </ul>
              
-               <h3 className="ppf-section-subtitle">Why People Love PPF</h3>
-               <ul className="ppf-process-list">
-                 <li>Keeps your car looking brand new</li>
-                 <li>Stops small scratches and stone chips</li>
-                 <li>Protects the paint from the sun and weather</li>
-                 <li>Makes cleaning your car easier</li>
-                 <li>Increases resale value of your car</li>
-               </ul>
+              
              
-               <p className="ppf-highlight-text">Aftercare Tips</p>
-               <p className="ppf-description">
-                 Don’t wash your car for 2–3 days after the film is applied. After that, use soft cloths and gentle shampoo. Avoid strong water jets near the film’s edges.
-               </p>
              
-               <h3 className="ppf-section-subtitle">Extra Options</h3>
-               <ul className="ppf-process-list">
-                 <li>PPF for the full car or only the front parts (like bumper and bonnet)</li>
-                 <li>Special ceramic coating to add extra shine and water protection</li>
-                 <li>Matte (non-shiny) film for a stylish look</li>
-               </ul>
+              
              
-               <h3 className="ppf-section-subtitle">Is It Worth It?</h3>
-               <p className="ppf-description">
-                 Yes! PPF protects your car for years. It’s perfect if you love your car and want to keep it looking fresh and beautiful for a long time.
-               </p>
+               
              </>
              
               ) : (
