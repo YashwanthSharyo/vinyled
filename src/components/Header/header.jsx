@@ -23,7 +23,7 @@ const Header = () => {
         className="logo"
         onClick={() => handleMenuItemClick("/")}
       >
-        <img src="Images/vinyled.svg" alt="Vinyled Logo" className="logo-img" />
+        <img src="Images/vinyled_logo.svg" alt="Vinyled Logo" className="logo-img" />
       </Link>
 
       <input

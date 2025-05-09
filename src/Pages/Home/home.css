@@ -1084,7 +1084,7 @@
   transform: translateX(-50%);
   color: white;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 500;
   text-align: center;
 }
 
@@ -1115,7 +1115,7 @@
   }
 
   .service-section .service-item .service-label {
-    font-size: 12px;
+    font-size: 16px;
     bottom: 20px;
   }
 }
