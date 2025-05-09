@@ -40,7 +40,7 @@ a {
 }
 
 .header > .logo > .logo-img {
-  width: 135px;
+  width: 150px;
   height: 60px;
   object-fit: contain;
 }
@@ -242,7 +242,11 @@ a {
     background: transparent;
     width: auto;
   }
-
+  .header>.logo>.logo-img {
+    width: 168px;
+    height: 59px;
+    object-fit: contain;
+}
   .header > .menu > li {
     float: left;
   }
@@ -265,6 +269,7 @@ a {
   .header {
     position: relative;
   }
+  
 
   .header > .menu {
     display: none;
