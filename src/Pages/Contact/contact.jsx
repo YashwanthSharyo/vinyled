@@ -70,7 +70,7 @@ export default function Contact() {
 
       {/* Right Section: Contact Form and Appointment Booking */}
       <div className="contact-form-section">
-        <h1>/ REQUEST A CALL BACK OR MAKE A BOOKING</h1>
+        <h1>REQUEST A CALL BACK OR MAKE A BOOKING</h1>
         <p>Use the form below to request a call back or book an appointment:</p>
         <div className="toggle-buttons">
           <button

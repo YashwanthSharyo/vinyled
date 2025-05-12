@@ -14,7 +14,7 @@ const Service = ({
   return (
     <div className="banner" style={{ backgroundImage: `url(${backgroundUrl})` }}>
       <h2 className="title">
-        <span className="title-highlight">/</span> {title}
+        <span className="title-highlight"></span> {title}
       </h2>
       <div className="tab-container">
         {[1, 2].map((tabNumber) => (

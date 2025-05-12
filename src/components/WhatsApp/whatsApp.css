@@ -1,12 +1,13 @@
-.chat-widget {
+.chatbot-widget {
   position: fixed;
-  bottom: 1rem;
-  right: 1rem;
+  bottom: 0;
+  right: 0;
+  width: 100%;
   z-index: 9999;
 }
 
-.chat-toggle {
-  background-color: #25d366;
+.chatbot-toggle {
+  background: red;
   color: white;
   border: none;
   border-radius: 50%;
@@ -15,19 +16,29 @@
   font-size: 1.5rem;
   cursor: pointer;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
 }
 
-.chat-box {
-  width: 300px;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+.chatbot-box {
+  width: 100%;
+  max-width: 300px;
+  height: 75vh;
+  
+  color: white;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 -4px 20px rgba(255, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
-  margin-bottom: 1rem;
+  position: fixed;
+  bottom: 5px;
+  right: 30px
 }
 
-.chat-header {
-  background: #25d366;
+.chatbot-header {
+  background: red;
   color: white;
   padding: 0.75rem;
   font-weight: bold;
@@ -36,35 +47,50 @@
   align-items: center;
 }
 
-.chat-body {
+.chatbot-body {
   padding: 1rem;
-  display: flex;
-  flex-direction: column;
+  flex: 1;
+  overflow-y: auto;
+  background: white;
 }
 
-.chat-body textarea {
-  resize: none;
-  height: 60px;
-  padding: 0.5rem;
-  font-size: 1rem;
+.message {
   margin-bottom: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  padding: 0.5rem;
+  border-radius: 8px;
+  max-width: 80%;
 }
 
-.chat-body button {
-  background: #25d366;
+.message.bot {
+  background: #333;
+  align-self: flex-start;
+}
+
+.message.user {
+  background: red;
+  color: white;
+  align-self: flex-end;
+}
+
+.chatbot-input {
+  display: flex;
+  padding: 0.5rem;
+  background: #000;
+}
+
+.chatbot-input input {
+  flex: 1;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.chatbot-input button {
+  background: red;
   color: white;
   border: none;
-  padding: 0.5rem;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.chat-toggle {
-  background: transparent;
-  border: none;
-  width: 3.5rem;
-  height: 3.5rem;
-  padding: 0;
+  padding: 0 1rem;
+  border-radius: 0 5px 5px 0;
   cursor: pointer;
 }
