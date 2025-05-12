@@ -16,7 +16,7 @@ const Gallery = ({ images, largeImage }) => {
     <div className="gallery">
       {/* Added horizontal line and text */}
       <hr className="gallery-divider" />
-      <p className="gallery-text">Work Done By Vinyled</p>
+      <p className="gallery-text">Work Done By Us</p>
 
       {/* Left Side (6 images, unchanged) */}
       <div className="image-grid">

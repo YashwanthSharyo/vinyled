@@ -65,9 +65,7 @@ const HomePage = () => {
             <h1>Transform Your Ride with Vinyl'ed</h1>
             <p>
               Revamp your vehicle with Vinyl'ed’s expert car wraps, premium
-              paint protection films, and bespoke graphics. Since 2018, our
-              Bangalore team has delivered standout style at our new Chelekere,
-              Kalyannagar facility. Trust us to transform your car or bike with
+              paint protection films, and bespoke graphics. Our Bangalore team has been delivering excellence for decades. Trust us to transform your car or bike with
               top-tier materials and unmatched craftsmanship.
             </p>
             <button className="action-btn" onClick={scrollToGetInTouch}>Get started</button>

@@ -15,11 +15,9 @@ body {
   min-height: auto !important;
 }
 
-
-
 /* Container */
 .contact-container {
-  min-height: 500px;
+  min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -27,7 +25,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   position: relative;
   width: 100%;
   padding: 32px;
@@ -35,39 +33,53 @@ body {
   overflow: hidden; /* Prevent overflow */
 }
 
-/* Contact Info & Form */
-.contact-info,
-.contact-form {
-  flex: 1 1 100%; /* Make them full-width on smaller screens */
+/* Map and Address Section */
+.map-address-section {
+  flex: 1 1 100%; /* Full width on smaller screens */
   max-width: 600px;
   margin: 30px;
-  padding: 32px;
-  border-radius: 8px;
-  box-sizing: border-box;
-  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-/* Contact Info Styling */
-.contact-info {
+.map-container {
+  height: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.address-info {
+  padding: 32px;
+  border-radius: 8px;
   background-color: #f2f2f2;
   color: #000;
 }
 
-.contact-info h2 {
+.address-info h2 {
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 24px;
   color: #ec1d24;
 }
 
-.contact-info p {
+.address-info p {
   font-size: 18px;
   margin-bottom: 16px;
   line-height: 1.5;
 }
 
-/* Contact Form Styling */
-.contact-form h1 {
+/* Contact Form Section */
+.contact-form-section {
+  flex: 1 1 100%; /* Full width on smaller screens */
+  max-width: 600px;
+  margin: 30px;
+  padding: 32px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.contact-form-section h1 {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 12px;
@@ -75,28 +87,28 @@ body {
   color: #000;
 }
 
-.contact-form p {
+.contact-form-section p {
   font-size: 16px;
   color: #000;
   margin-bottom: 20px;
   text-align: left;
 }
 
-.contact-form form {
+.contact-form-section form {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-.contact-form label {
+.contact-form-section label {
   font-size: 14px;
   font-weight: 500;
   margin-bottom: 6px;
 }
 
-.contact-form input,
-.contact-form textarea,
-.contact-form select {
+.contact-form-section input,
+.contact-form-section textarea,
+.contact-form-section select {
   width: 100%;
   padding: 10px;
   font-size: 14px;
@@ -104,7 +116,7 @@ body {
   border-radius: 4px;
 }
 
-.contact-form textarea {
+.contact-form-section textarea {
   min-height: 80px;
   resize: vertical;
 }
@@ -113,7 +125,7 @@ body {
   text-align: center;
 }
 
-.contact-form button {
+.contact-form-section button {
   width: 100%;
   padding: 12px;
   font-size: 14px;
@@ -126,8 +138,49 @@ body {
   transition: background 0.3s;
 }
 
-.contact-form button:hover {
+.contact-form-section button:hover {
   background-color: #c0181e;
+}
+
+/* Toggle Buttons */
+.toggle-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.toggle-buttons button {
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.toggle-buttons button.active {
+  background-color: #ec1d24;
+  color: white;
+  border-color: #ec1d24;
+}
+
+.toggle-buttons button:hover:not(.active) {
+  background-color: #e0e0e0;
+}
+
+.calendly-widget {
+  margin-top: 20px;
+}
+
+.calendly-widget h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #ec1d24;
 }
 
 /* Responsive styling for all devices */
@@ -139,15 +192,16 @@ body {
     padding: 24px;
   }
 
-  .contact-info,
-  .contact-form {
+  .map-address-section,
+  .contact-form-section {
     width: 100%;
     max-width: 100%;
     margin: 8px 0;
   }
 
-  .contact-form h1,
-  .contact-info h2 {
+  .contact-form-section h1,
+  .address-info h2,
+  .calendly-widget h2 {
     text-align: center;
   }
 }
@@ -158,13 +212,14 @@ body {
     padding: 20px;
   }
 
-  .contact-form h1,
-  .contact-info h2 {
+  .contact-form-section h1,
+  .address-info h2,
+  .calendly-widget h2 {
     font-size: 20px;
   }
 
-  .contact-form p,
-  .contact-info p {
+  .contact-form-section p,
+  .address-info p {
     font-size: 16px;
   }
 }
@@ -175,20 +230,34 @@ body {
     padding: 16px;
   }
 
-  .contact-form h1,
-  .contact-info h2 {
+  .contact-form-section h1,
+  .address-info h2,
+  .calendly-widget h2 {
     font-size: 18px;
   }
 
-  .contact-form input,
-  .contact-form textarea,
-  .contact-form select {
+  .contact-form-section input,
+  .contact-form-section textarea,
+  .contact-form-section select {
     font-size: 13px;
   }
 
-  .contact-form p,
-  .contact-info p {
+  .contact-form-section p,
+  .address-info p {
     font-size: 14px;
+  }
+
+  .map-container {
+    height: 200px;
+  }
+
+  .toggle-buttons {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .toggle-buttons button {
+    width: 100%;
   }
 }
 
@@ -200,9 +269,8 @@ body {
     padding: 80px;
   }
 
-  .contact-info,
-  .contact-form {
-   
+  .map-address-section,
+  .contact-form-section {
     flex: 1;
   }
 }
