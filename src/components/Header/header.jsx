@@ -43,11 +43,11 @@ const Header = () => {
         <li className="dropdown">
           <a>SERVICES <i className="fa fa-caret-down"></i></a>
           <ul className="dropdown-menu">
-            <li><Link to="/ppf" onClick={() => handleMenuItemClick("/ppf")}>ENHANCE</Link></li>
-            <li><Link to="/ceramic" onClick={() => handleMenuItemClick("/ceramic")}>PROTECT</Link></li>
-            <li><Link to="/color-change-wrap" onClick={() => handleMenuItemClick("/color-change-wrap")}>MAINTAIN</Link></li>
-            <li><Link to="/custom-design" onClick={() => handleMenuItemClick("/custom-design")}>PERSONALIZATION</Link></li>
-            <li><Link to="/custom-project" onClick={() => handleMenuItemClick("/custom-project")}>CUSTOM PROJECTS</Link></li>
+            <li><Link to="/enhance" onClick={() => handleMenuItemClick("/enhance")}>ENHANCE</Link></li>
+            <li><Link to="/protect" onClick={() => handleMenuItemClick("/protect")}>PROTECT</Link></li>
+            <li><Link to="/maintain" onClick={() => handleMenuItemClick("/maintain")}>MAINTAIN</Link></li>
+            <li><Link to="/personolization" onClick={() => handleMenuItemClick("/personolization")}>PERSONALIZATION</Link></li>
+            <li><Link to="/custom-project" onClick={() => handleMenuItemClick("/custom-project")}>CUSTOM PROJECT</Link></li>
             <li><Link to="/branding" onClick={() => handleMenuItemClick("/branding")}>BRANDING</Link></li>
           </ul>
         </li>

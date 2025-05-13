@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import "./protect.css";
-
+import "./personolization.css";
 import Service from "../../components/Service/service";
 import Gallery from "../../components/Gallery/gallery";
 
-export default function Protect() {
+export default function Personolization() {
   const [activeTab, setActiveTab] = useState(1);
   const [hoveredTab, setHoveredTab] = useState(null);
 
@@ -13,14 +12,14 @@ export default function Protect() {
   };
 
   const handleTabMouseEnter = (tabNumber) => {
-    setHoveredTab(tabNumber);
+    setHoveredTab(tabNumber); 
   };
 
   const handleTabMouseLeave = (tabNumber) => {
-    setHoveredTab(null);
+    setHoveredTab(null); 
   };
 
-  const tabs = ["PPF", "Ceramic", "Graphene Coating"];
+  const tabs = ["Color Change Wrap", "Color PPF", "Livery & Decals"]; 
 
   const galleryData = {
     1: {
@@ -117,7 +116,7 @@ export default function Protect() {
       }}
     >
       <Service
-        title="Protect"
+        title="Personalization"
         activeTab={activeTab}
         handleTabClick={handleTabClick}
         handleTabMouseEnter={handleTabMouseEnter}
@@ -160,309 +159,247 @@ export default function Protect() {
               <div className="content-text">
                 {tab === 1 ? (
                   <>
-                    <h2 className="title">PPF</h2>
-                    <h3 className="subtitle">Paint Protection Film</h3>
+                    <h2 className="title">Color Change Wrap</h2>
+                    <h3 className="subtitle">Personalized Vehicle Wrapping</h3>
                     <p className="text">
-                      Paint Protection Film (PPF) is a transparent, durable
-                      layer that safeguards your vehicle’s paint from damage
-                      while preserving its original finish.
+                      A color change wrap transforms your vehicle’s appearance
+                      with high-quality vinyl, offering a custom look without
+                      permanent paint changes.
                     </p>
 
-                    <h3 className="subtitle">PPF Application Process</h3>
+                    <h3 className="subtitle">Color Change Wrap Process</h3>
                     <ul className="list">
                       <li>
-                        Clean the vehicle with soap and isopropyl alcohol for
-                        optimal adhesion.
+                        Clean the vehicle thoroughly with soap and isopropyl
+                        alcohol for a flawless base.
                       </li>
                       <li>
-                        Cut high-quality PPF (e.g., XPEL or 3M) to fit panels
-                        using precision templates.
+                        Design and cut high-quality vinyl (e.g., 3M or Avery
+                        Dennison) with custom colors, allowing 2–3 inch overlap.
                       </li>
                       <li>
-                        Apply the film with a squeegee, smoothing bubbles and
-                        aligning edges.
+                        Apply vinyl with a squeegee, aligning designs precisely,
+                        using heat for curves.
                       </li>
                       <li>
-                        Seal edges with heat for a durable, seamless bond.
+                        Trim excess vinyl and tuck edges into seams for a
+                        seamless, vibrant finish.
                       </li>
                       <li>
-                        Inspect the vehicle to ensure a flawless, self-healing
-                        finish.
+                        Heat lightly (around 200°F) to set the adhesive,
+                        ensuring long-lasting designs.
                       </li>
                     </ul>
 
-                    <h3 className="subtitle">Benefits of PPF</h3>
+                    <h3 className="subtitle">
+                      {" "}
+                      Benefits of a Color Change Wrap
+                    </h3>
                     <ul className="list">
                       <li>
-                        Protects against scratches, stone chips, bug splatter,
-                        and UV damage.
+                        Personalized style with vibrant colors or custom
+                        graphics.
                       </li>
                       <li>
-                        Self-healing technology repairs minor scratches with
-                        heat.
+                        Protects original paint from scratches and UV rays.
                       </li>
                       <li>
-                        Preserves resale value by protecting the original paint.
+                        Removable without damaging paint, preserving resale
+                        value.
+                      </li>
+                      <li>Cost-effective alternative to a full repaint.</li>
+                      <li>Quick process, completed in a few days.</li>
+                    </ul>
+
+                    <h3 className="subtitle">Application Areas</h3>
+                    <ul className="list">
+                      <li>
+                        Full vehicle wrap for a complete color transformation.
                       </li>
                       <li>
-                        Invisible finish maintains the vehicle’s natural shine.
+                        Partial wrap on hood, roof, tank, or fairings for
+                        accents.
+                      </li>
+                      <li>Interior panels or trim for a unified aesthetic.</li>
+                      <li>
+                        Smaller parts like mirrors or spoilers for added flair.
                       </li>
                       <li>
-                        Long-lasting durability with warranties up to 7–10
-                        years.
+                        Applied in a controlled, clean facility for precision.
+                      </li>
+                    </ul>
+
+                    <h3 className="subtitle">
+                      Tips for a Stunning Color Change Wrap
+                    </h3>
+                    <ul className="list">
+                      <li>
+                        Start with flat panels like the hood to practice graphic
+                        alignment.
+                      </li>
+                      <li>
+                        Work with our designers to select vibrant or unique
+                        color palettes.
+                      </li>
+                      <li>
+                        Use a partner to handle large vinyl sheets for accuracy.
+                      </li>
+                    </ul>
+
+                    <p className="text">
+                      Contact us to create a custom color change wrap that
+                      brings your vision to life!
+                    </p>
+                  </>
+                ) : tab === 2 ? (
+                  <>
+                    <h2 className="title">Color PPF</h2>
+                    <h3 className="subtitle">What is Color PPF?</h3>
+                    <p className="text">
+                      Color Paint Protection Film (PPF) combines the protective
+                      qualities of traditional PPF with vibrant, custom colors,
+                      shielding your vehicle’s paint while transforming its
+                      appearance.
+                    </p>
+
+                    <h3 className="subtitle">Color PPF Application Process</h3>
+                    <ul className="list">
+                      <li>
+                        Clean the vehicle to remove dirt and contaminants.
+                      </li>
+                      <li>
+                        Cut colored PPF to fit specific panels using precision
+                        templates.
+                      </li>
+                      <li>
+                        Apply the film, smoothing out bubbles and aligning
+                        edges.
+                      </li>
+                      <li>
+                        Seal edges with heat for a durable, seamless look.
+                      </li>
+                    </ul>
+
+                    <h3 className="subtitle">Benefits of Color PPF</h3>
+                    <ul className="list">
+                      <li>
+                        Protects against scratches, stone chips, and UV damage.
+                      </li>
+                      <li>
+                        Offers glossy or matte colored finishes without
+                        permanent paint changes.
+                      </li>
+                      <li>
+                        Self-healing properties repair minor scuffs with heat.
+                      </li>
+                      <li>Removable, preserving original paint for resale.</li>
+                      <li>
+                        Versatile finishes with a range of colors and textures.
                       </li>
                     </ul>
 
                     <h3 className="subtitle">Application Areas</h3>
                     <ul className="list">
                       <li>
-                        Full vehicle coverage for comprehensive protection.
+                        Full vehicle coverage for comprehensive protection and
+                        color change.
                       </li>
                       <li>
-                        High-impact zones like hood, front bumper, tank, or
-                        fairings.
+                        High-impact areas like hood, bumpers, tank, or fairings.
                       </li>
                       <li>
-                        Side panels and mirrors to guard against road debris.
+                        Accents on mirrors, side panels, or handlebars for
+                        customization.
                       </li>
+                      <li>Interior trim or panels for a cohesive aesthetic.</li>
                       <li>
-                        Interior accents like glossy trim for added durability.
-                      </li>
-                      <li>
-                        Installed in a controlled, clean facility for precision.
-                      </li>
-                    </ul>
-
-                    <h3 className="subtitle">Tips for Maintaining PPF</h3>
-                    <ul className="list">
-                      <li>
-                        Wash regularly with mild soap to keep the film clean and
-                        effective.
-                      </li>
-                      <li>
-                        Avoid abrasive cleaners or brushes that could damage the
-                        film.
-                      </li>
-                      <li>
-                        Apply heat (e.g., warm water) to activate self-healing
-                        for minor scratches.
+                        Installed in a clean, professional facility for
+                        precision.
                       </li>
                     </ul>
 
                     <p className="text">
-                      Contact us to protect your vehicle with a custom PPF
-                      solution!
-                    </p>
-                  </>
-                ) : tab === 2 ? (
-                  <>
-                    <h2 className="title">Ceramic</h2>
-                    <h3 className="subtitle">Ceramic Coating</h3>
-                    <p className="text">
-                      Ceramic coatings provide a durable, hydrophobic layer that
-                      protects your vehicle’s paint and enhances its shine,
-                      offering long-lasting beauty and ease of maintenance.
-                    </p>
-
-                    <h3 className="subtitle">
-                      How: Ceramic Coating Application Process
-                    </h3>
-                    <ul className="list">
-                      <li>
-                        Wash, decontaminate, and polish the vehicle to ensure a
-                        smooth base.
-                      </li>
-                      <li>
-                        Correct minor scratches and blemishes for optimal
-                        coating adhesion.
-                      </li>
-                      <li>
-                        Apply high-quality ceramic coating (e.g., Gtechniq,
-                        Ceramic Pro) in even layers.
-                      </li>
-                      <li>
-                        Allow the coating to cure for 24–48 hours in a
-                        controlled environment.
-                      </li>
-                      <li>
-                        Inspect for a glossy, protected finish, adding layers if
-                        needed.
-                      </li>
-                    </ul>
-
-                    <h3 className="subtitle">
-                      Why: Benefits of Ceramic Coating
-                    </h3>
-                    <ul className="list">
-                      <li>
-                        Protects against UV rays, oxidation, bird droppings, and
-                        chemical stains.
-                      </li>
-                      <li>
-                        Hydrophobic properties repel water, dirt, and grime for
-                        easy cleaning.
-                      </li>
-                      <li>
-                        Enhances paint depth and shine for a showroom-quality
-                        appearance.
-                      </li>
-                      <li>
-                        Durable protection lasting 2–7 years, reducing waxing
-                        needs.
-                      </li>
-                      <li>
-                        Saves on maintenance costs by minimizing cleaning time.
-                      </li>
-                    </ul>
-
-                    <h3 className="subtitle">Where: Application Areas</h3>
-                    <ul className="list">
-                      <li>
-                        Full exterior coverage for comprehensive protection and
-                        gloss.
-                      </li>
-                      <li>
-                        High-exposure areas like hoods, bumpers, tanks, or
-                        fairings.
-                      </li>
-                      <li>
-                        Wheels and calipers to resist brake dust and grime.
-                      </li>
-                      <li>Glass and trim to repel water and resist fading.</li>
-                      <li>
-                        Applied in a controlled, dust-free studio for precision.
-                      </li>
-                    </ul>
-
-                    <h3 className="subtitle">
-                      Tips for Maintaining Ceramic Coating
-                    </h3>
-                    <ul className="list">
-                      <li>
-                        Wash with pH-neutral soap to preserve the coating’s
-                        integrity.
-                      </li>
-                      <li>
-                        Use a microfiber cloth to avoid scratches during
-                        cleaning.
-                      </li>
-                      <li>
-                        Apply a ceramic booster every 3–6 months to enhance
-                        hydrophobicity.
-                      </li>
-                    </ul>
-
-                    <p className="text">
-                      Contact us to elevate your vehicle with a premium ceramic
-                      coating!
+                      Contact us to explore color PPF options for your car or
+                      bike!
                     </p>
                   </>
                 ) : (
                   <>
-                    <h2 className="title">Graphene Coating</h2>
-                    <h3 className="subtitle">What is Graphene Coating?</h3>
+                    <h2 className="title">Livery & Decals</h2>
+                    <h3 className="subtitle">What are Livery & Decals?</h3>
                     <p className="text">
-                      Graphene Coating is an advanced protective layer infused
-                      with graphene nanoparticles, offering superior durability,
-                      hydrophobicity, and shine compared to traditional
-                      coatings, protecting your vehicle while enhancing its
-                      appearance.
+                      Livery and decals involve applying custom graphics, logos,
+                      or racing-inspired designs to vehicles, enhancing their
+                      visual appeal and brand identity.
                     </p>
 
                     <h3 className="subtitle">
-                      How: Graphene Coating Application Process
+                      How: Livery & Decals Application Process
                     </h3>
                     <ul className="list">
                       <li>
-                        Wash, decontaminate, and polish the vehicle to create a
-                        pristine base.
+                        Collaborate to design custom graphics or logos using
+                        in-house tools.
                       </li>
                       <li>
-                        Correct minor scratches and blemishes for optimal
-                        adhesion.
+                        Select high-quality vinyl or paint for vibrant, durable
+                        finishes.
                       </li>
                       <li>
-                        Apply premium graphene coating (e.g., Adam’s Graphene,
-                        Ethos) in even layers.
+                        Clean the vehicle with isopropyl alcohol for a flawless
+                        base.
                       </li>
                       <li>
-                        Allow the coating to cure for 24–48 hours in a dust-free
-                        environment.
+                        Apply graphics with precision templates, using heat for
+                        curves.
                       </li>
                       <li>
-                        Inspect for a glossy, protected finish, adding layers if
-                        needed.
+                        Trim edges and seal with optional clear coats for a
+                        factory-like finish.
                       </li>
                     </ul>
 
                     <h3 className="subtitle">
-                      Why: Benefits of Graphene Coating
+                      Why: Benefits of Livery & Decals
                     </h3>
                     <ul className="list">
+                      <li>Unique, eye-catching designs for cars or bikes.</li>
                       <li>
-                        Unmatched durability, resisting scratches and chemicals
-                        for 7–10 years.
+                        Professional branding for racing teams or personal
+                        expression.
+                      </li>
+                      <li>Durable vinyl withstands weather and wear.</li>
+                      <li>
+                        Removable for design updates without damaging paint.
                       </li>
                       <li>
-                        Superior hydrophobicity for easy cleaning and water
-                        repellency.
-                      </li>
-                      <li>
-                        Enhanced gloss and depth for a premium, showroom-quality
-                        shine.
-                      </li>
-                      <li>
-                        Thermal resistance protects against heat and UV
-                        degradation.
-                      </li>
-                      <li>
-                        Reduced maintenance saves time and costs on cleaning.
+                        Pair with interior retrims (e.g., leather, alcantara)
+                        for a cohesive look.
                       </li>
                     </ul>
 
                     <h3 className="subtitle">Where: Application Areas</h3>
                     <ul className="list">
                       <li>
-                        Full exterior coverage for comprehensive protection and
-                        shine.
+                        Full vehicle livery for a complete transformation.
                       </li>
                       <li>
-                        High-wear areas like hoods, bumpers, tanks, or fairings.
+                        Decals on hoods, tanks, fairings, or side panels for
+                        accents.
                       </li>
                       <li>
-                        Wheels and exhausts to resist brake dust, heat, and
-                        corrosion.
+                        Sponsor logos on doors, bumpers, or frames for racing.
                       </li>
                       <li>
-                        Glass and plastic trim to improve water repellency and
-                        resist fading.
+                        Interior panels or steering wheels with decals or
+                        retrims.
                       </li>
-                      <li>
-                        Applied in a controlled, clean studio for precision.
-                      </li>
-                    </ul>
-
-                    <h3 className="subtitle">
-                      Tips for Maintaining Graphene Coating
-                    </h3>
-                    <ul className="list">
-                      <li>
-                        Wash with pH-neutral soap to preserve the coating’s
-                        performance.
-                      </li>
-                      <li>
-                        Use microfiber towels to avoid micro-scratches during
-                        cleaning.
-                      </li>
-                      <li>
-                        Apply a graphene maintenance spray every 4–6 months to
-                        boost protection.
-                      </li>
+                      <li>Applied in our in-house facility for precision.</li>
                     </ul>
 
                     <p className="text">
-                      Contact us to safeguard your vehicle with a
-                      state-of-the-art graphene coating!
+                      Let us design a livery or decal package that makes your
+                      vehicle stand out!
                     </p>
                   </>
                 )}

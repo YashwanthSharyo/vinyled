@@ -62,9 +62,9 @@ const HomePage = () => {
       <section className="section black">
         <div className="black-content">
           <div className="text">
-            <h1>Transform Your Ride with Vinyl'ed</h1>
+            <h1>Transform Your Ride with VINYLE'D</h1>
             <p>
-              Revamp your vehicle with Vinyl'ed’s expert car wraps, premium
+              Revamp your vehicle with VINYLE'Ds expert car wraps, premium
               paint protection films, and bespoke graphics. Our Bangalore team has been delivering excellence for decades. Trust us to transform your car or bike with
               top-tier materials and unmatched craftsmanship.
             </p>
@@ -263,7 +263,7 @@ const HomePage = () => {
             <div className="right-content-centered">
               <h2 className="faq-title">Frequently Asked Questions</h2>
               <p className="faq-subtext">
-                Everything you need to know about Vinyled. Can’t find the answer
+                Everything you need to know about VINYLE'D. Can’t find the answer
                 you’re looking for?
               </p>
               <p className="faq-contact">

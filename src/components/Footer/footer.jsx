@@ -102,7 +102,7 @@ const Footer = () => {
 
 
             <div className="right-column">
-              <p className="title">VinyLed Service</p>
+              <p className="title">VINYLE'D Service</p>
               <div className="link" onClick={() => handleServiceClick("/ppf")}>
                 PPF
               </div>
@@ -154,7 +154,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="footer-divider" />
-          <p className="footer-copy">© 2025 Vinyled All Rights Reserved.</p>
+          <p className="footer-copy">© 2025 VINYLE'D All Rights Reserved.</p>
         </div>
       </footer>
     </div>

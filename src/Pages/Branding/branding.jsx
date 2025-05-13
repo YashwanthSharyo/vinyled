@@ -20,6 +20,8 @@ export default function Branding() {
     setHoveredTab(null);
   };
 
+  const tabs = ["Car", "Bike"];
+
   return (
     <div
       style={{
@@ -33,6 +35,8 @@ export default function Branding() {
         handleTabClick={handleTabClick}
         handleTabMouseEnter={handleTabMouseEnter}
         handleTabMouseLeave={handleTabMouseLeave}
+        tabs={tabs}
+        tabWidth="400px"
       />
 
       <div className="Branding-wrap-container">

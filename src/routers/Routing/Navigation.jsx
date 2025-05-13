@@ -6,15 +6,15 @@ import HomePage from "../../Pages/Home/home";
 import About from "../../Pages/About/about";
 import Contact from "../../Pages/Contact/contact";
 import ShopProducts from "../../Pages/ShopProducts/shopproducts";
-import PPF from "../../Pages/PPF/ppf";
-import Ceramic from "../../Pages/Ceramic/ceramic";
-import ColorChangeWrap from "../../Pages/ColorChange/colorChange";
-import CustomDesign from "../../Pages/CustomDesign/customDesign";
 import CustomProject from "../../Pages/CustomProject/customProject";
 import Branding from "../../Pages/Branding/branding";
 import WhatsApp from "../../components/WhatsApp/whatsApp";
 import Process from "../../Pages/Process/process";
 import Team from "../../Pages/Team/team";
+import Personolization from "../../Pages/Personolization/personolization";
+import Protect from "../../Pages/Protect/protect";
+import Enhance from "../../Pages/Enhance/enhance";
+import Maintain from "../../Pages/Maintain/maintain";
 
 function Navigation() {
     return (
@@ -23,11 +23,12 @@ function Navigation() {
                 <Header />
                 <Routes>
                     <Route path="/" element={<HomePage />} />
-                    <Route path="/ppf" element={<PPF />} />
-                    <Route path="/color-change-wrap" element={<ColorChangeWrap />} />
-                    <Route path="/ceramic" element={<Ceramic />} />
-                    <Route path="/custom-design" element={<CustomDesign />} />
+                    <Route path="/enhance" element={<Enhance />} />
+                    <Route path="/maintain" element={<Maintain />} />
+                    <Route path="/protect" element={<Protect />} />
+                    <Route path="/personolization" element={<Personolization />} />
                     <Route path="/custom-project" element={<CustomProject />} />
+                    <Route path="/protect" element={<Protect />} />
                     <Route path="/branding" element={<Branding />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/our-process" element={<Process />} />

@@ -34,31 +34,31 @@
 }
 
 .tab-container .tab {
-  padding: 10px 30px;
+  padding: 8px 15px;
   cursor: pointer;
-  background: white; /* Default background for non-active tabs */
+  background: white;
   color: black;
-  margin-left: -20px;
+  margin-left: -15px;
   z-index: 1;
   position: relative;
   border-radius: 5px 5px 0 0;
   transition: background 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
   clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
-  min-width: 400px;
   text-align: center;
+  
 }
 
 .tab-container .tab.active {
-  background: #DD0000; /* Active tab background */
+  background: #DD0000;
   color: black;
 }
 
 .tab-container .tab:hover {
-  background: #f0f0f0; /* Hover effect for non-active tabs */
+  background: #f0f0f0;
 }
 
 .tab-container .tab.active:hover {
-  background: #DD0000; /* Ensure active tab stays red on hover */
+  background: #DD0000;
 }
 
 /* Responsive Design */
@@ -70,6 +70,8 @@
     top: 50%;
     transform: translateY(-50%);
   }
+ 
+
 }
 
 @media (max-width: 768px) {
@@ -89,16 +91,15 @@
   }
 
   .tab-container .tab {
-    min-width: 40%;
+    padding: 8px 15px;
     margin-left: -10px;
-    padding: 8px 20px;
     font-size: 0.9rem;
   }
 }
 
 @media (max-width: 480px) {
   .banner {
-    min-height: 12rem;
+    min-height: 20rem;
   }
 
   .banner .title {
@@ -109,17 +110,12 @@
   }
 
   .tab-container .tab {
-    padding: 10px 30px;
-    cursor: pointer;
-    background: white; /* Default background for non-active tabs */
-    color: black;
-    margin-left: -20px;
-    z-index: 1;
-    position: relative;
+    padding: 8px 12px;
+    margin-left: -10px;
+    font-size: 0.8rem;
     border-radius: 5px 5px 0 0;
     transition: background 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
     clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
-    min-width: 300px;
     text-align: center;
   }
 }
