@@ -15,6 +15,7 @@ import Personolization from "../../Pages/Personolization/personolization";
 import Protect from "../../Pages/Protect/protect";
 import Enhance from "../../Pages/Enhance/enhance";
 import Maintain from "../../Pages/Maintain/maintain";
+import Client from "../../Pages/Clients/clients";
 
 function Navigation() {
     return (
@@ -33,6 +34,7 @@ function Navigation() {
                     <Route path="/about" element={<About />} />
                     <Route path="/our-process" element={<Process />} />
                     <Route path="/team" element={<Team />} />
+                    <Route path="/our-clients" element={<Client />} />
                     <Route path="/contact-us" element={<Contact />} />
                     <Route path="/shop-products" element={<ShopProducts />} />
                     <Route path="/whats-app" element={<WhatsApp />} />

@@ -42,7 +42,7 @@ export default function Enhance() {
         handleTabMouseEnter={handleTabMouseEnter}
         handleTabMouseLeave={handleTabMouseLeave}
         tabs={tabs}
-        tabWidth="200px"
+        tabWidth="230px"
       />
 
       {activeTab === 1 && (
