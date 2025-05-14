@@ -44,7 +44,6 @@
   font-weight: normal;
   font-style: normal;
   font-size: 2.4375rem;
-  text-align: justify;
   margin: 0 0 0.5rem 0;
 }
 
@@ -117,6 +116,7 @@
 
   .Branding-content-text .Branding-title {
       font-size: 1.875rem;
+      text-align: left;
   }
 
   .Branding-content-text .Branding-subtitle {

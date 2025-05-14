@@ -35,7 +35,7 @@ export default function Maintain() {
         handleTabMouseEnter={handleTabMouseEnter}
         handleTabMouseLeave={handleTabMouseLeave}
         tabs={tabs}
-        tabWidth="400px"
+        tabWidth="300px"
       />
 
       {activeTab === 1 && (

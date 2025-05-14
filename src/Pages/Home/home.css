@@ -211,9 +211,9 @@
 }
 
 .contact-link {
-  color: #4B94E7;
+  color: #0d53a3;
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .contact-link:hover {
@@ -340,7 +340,7 @@
 .faq-contact-link {
   color: #4B94E7;
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .faq-contact-link:hover {
@@ -511,7 +511,7 @@
   text-align: left;
   font-family: 'Manrope', sans-serif;
   color: #444;
-  width: 85%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -556,11 +556,11 @@
     background-size: cover; /* Full width, height auto */
     background-position: center bottom; /* Adjusted for smaller screens */
     justify-content: center;
-    height: auto;
+    
   }
 
   .black-content {
-    margin-top: 65px;
+    margin-top: 200px;
     width: 90%;
     height: auto;
     padding: 20px;
@@ -642,6 +642,7 @@
   .faq-title {
     font-size: 32px;
     margin-bottom: 16px;
+    font-weight: bold;
   }
 
   .faq-subtext,
@@ -1096,12 +1097,13 @@
 
   .service-section .service-title {
     font-size: 28px;
-    padding-left: 20px;
+   
     margin-bottom: 15px;
   }
 
   .service-section .service-grid {
-    gap: 0.2px;
+    gap: 0px;
+    width: 103%;
   }
 
   .service-section .service-item {

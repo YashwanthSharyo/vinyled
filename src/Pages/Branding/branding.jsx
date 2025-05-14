@@ -36,7 +36,7 @@ export default function Branding() {
         handleTabMouseEnter={handleTabMouseEnter}
         handleTabMouseLeave={handleTabMouseLeave}
         tabs={tabs}
-        tabWidth="400px"
+        tabWidth="300px"
       />
 
       <div className="Branding-wrap-container">

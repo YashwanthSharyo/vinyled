@@ -95,7 +95,7 @@ export default function CustomProject() {
         handleTabMouseEnter={handleTabMouseEnter}
         handleTabMouseLeave={handleTabMouseLeave}
         tabs={tabs}
-        tabWidth={"400px"}
+        tabWidth={"300px"}
       />
 
       <div className="customProject-container">
