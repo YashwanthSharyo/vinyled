@@ -1,4 +1,6 @@
-/* Base Styles */
+*{
+  font-family: 'Work Sans', sans-serif;
+}
 .home-page {
   width: 100%;
   scroll-behavior: smooth;
@@ -177,12 +179,13 @@
 }
 
 .faq-title {
-  font-family: 'Alatsi', sans-serif;
+  
   font-weight: 400;
   font-size: 55px;
   margin-bottom: 24px;
   width: 100%;
   text-align: center;
+  color: white;
 }
 
 .faq-subtext,
@@ -643,6 +646,7 @@
     font-size: 32px;
     margin-bottom: 16px;
     font-weight: bold;
+    color: white;
   }
 
   .faq-subtext,
@@ -820,6 +824,7 @@
   .faq-title {
     font-size: 40px;
     margin-bottom: 20px;
+    color: white;
   }
 
   .faq-subtext,
@@ -975,6 +980,7 @@
   .faq-title {
     font-size: 55px;
     margin-bottom: 24px;
+    color: white;
   }
 
   .faq-subtext,

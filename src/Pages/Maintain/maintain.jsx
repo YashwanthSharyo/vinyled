@@ -29,7 +29,7 @@ export default function Maintain() {
       }}
     >
       <Service
-        title="Maintain"
+        title="MAINTAIN"
         activeTab={activeTab}
         handleTabClick={handleTabClick}
         handleTabMouseEnter={handleTabMouseEnter}

@@ -86,7 +86,7 @@ const Footer = () => {
               </div>
               <div
                 className="link"
-                onClick={() => handleServiceClick("/team")}
+                onClick={() => handleServiceClick("/our-process")}
               >
                 Our Process
               </div>
@@ -103,26 +103,26 @@ const Footer = () => {
 
             <div className="right-column">
               <p className="title">VINYLE'D Service</p>
-              <div className="link" onClick={() => handleServiceClick("/ppf")}>
-                PPF
+              <div className="link" onClick={() => handleServiceClick("/enhance")}>
+                Enhance
               </div>
               <div
                 className="link"
-                onClick={() => handleServiceClick("/ceramic")}
+                onClick={() => handleServiceClick("/protect")}
               >
-                Ceramic / Graphene Coating
+                Protect
               </div>
               <div
                 className="link"
-                onClick={() => handleServiceClick("/color-change-wrap")}
+                onClick={() => handleServiceClick("/maintain")}
               >
-                Colour Change Wrap
+                Maintain
               </div>
               <div
                 className="link"
-                onClick={() => handleServiceClick("/custom-design")}
+                onClick={() => handleServiceClick("/personolization")}
               >
-                Custom Design
+                Personalization
               </div>
               <div
                 className="link"

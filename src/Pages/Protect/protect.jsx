@@ -117,7 +117,7 @@ export default function Protect() {
       }}
     >
       <Service
-        title="Protect"
+        title="PROTECT"
         activeTab={activeTab}
         handleTabClick={handleTabClick}
         handleTabMouseEnter={handleTabMouseEnter}

@@ -36,7 +36,7 @@ export default function Enhance() {
       }}
     >
       <Service
-        title="Enhance"
+        title="ENHANCE"
         activeTab={activeTab}
         handleTabClick={handleTabClick}
         handleTabMouseEnter={handleTabMouseEnter}
@@ -46,21 +46,21 @@ export default function Enhance() {
       />
 
       {activeTab === 1 && (
-        <div className="tab-content">
+        <div className="enhance-tab-content">
           <img
             src="https://i.shgcdn.com/8152b67e-9de6-4ffc-a37c-25cb1217482c/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
             alt="PPF on car hood"
-            className="tab-image"
+            className="enhance-tab-image"
           />
-          <div className="text-section">
-            <h2 className="main-title">Stage 1 - Protection Detail</h2>
-            <h2 className="section-title">
+          <div className="enhance-text-section">
+            <h2 className="enhance-main-title">Stage 1 - Protection Detail</h2>
+            <h2 className="enhance-section-title">
               Exterior – Cleaning/Cleansing/Decontamination
             </h2>
-            <h4 className="sub-title">
+            <h4 className="enhance-sub-title">
               21 STAGE VINYLE'D CLEANING PROCESS INCLUDING:
             </h4>
-            <ul className="process-list">
+            <ul className="enhance-process-list">
               <li>
                 The vehicle is washed using PH neutral shampoo using twin grit
                 guard bucket system to prevent any stones and sharp edged
@@ -89,13 +89,13 @@ export default function Enhance() {
               <li>Tyres are dressed.</li>
               <li>Exterior plastics and door trims are dressed.</li>
             </ul>
-            <p className="sealant-title">SEALANT</p>
-            <p className="sealant-text">
+            <p className="enhance-sealant-title">SEALANT</p>
+            <p className="enhance-sealant-text">
               Speak to our team for recommendations on ceramic coatings for the
               paintwork, windows, and wheels.
             </p>
-            <h2 className="section-title">Interior</h2>
-            <ul className="process-list interior-list">
+            <h2 className="enhance-section-title">Interior</h2>
+            <ul className="enhance-process-list enhance-interior-list">
               <li>Carpets vacuumed.</li>
               <li>Windows are cleaned on the inside.</li>
               <li>
@@ -103,7 +103,7 @@ export default function Enhance() {
                 products.
               </li>
             </ul>
-            <h2 className="section-title">
+            <h2 className="enhance-section-title">
               Why choose the Stage 1 Protection Detail?
             </h2>
 
@@ -119,21 +119,21 @@ export default function Enhance() {
         </div>
       )}
       {activeTab === 2 && (
-        <div className="tab-content">
+        <div className="enhance-tab-content">
           <img
             src="https://i.shgcdn.com/297bf929-a9fe-4ae1-afdc-acb9b92042f7/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
             alt="Enhancement Detail on car"
-            className="tab-image"
+            className="enhance-tab-image"
           />
-          <div className="text-section">
-            <h2 className="main-title">Stage 2 - Enhancement Detail</h2>
-            <h2 className="section-title">
+          <div className="enhance-text-section">
+            <h2 className="enhance-main-title">Stage 2 - Enhancement Detail</h2>
+            <h2 className="enhance-section-title">
               Exterior – Cleaning/Cleansing/Decontamination
             </h2>
-            <h4 className="sub-title">
+            <h4 className="enhance-sub-title">
               24 STAGE VINYLE'D CLEANING PROCESS INCLUDING:
             </h4>
-            <ul className="process-list">
+            <ul className="enhance-process-list">
               <li>
                 A layer of thick white foam is applied to the vehicle to help
                 loosen, lift and remove dirt particles from the paintwork
@@ -146,10 +146,10 @@ export default function Enhance() {
               </li>
               <li>The engine bay is cleaned.</li>
             </ul>
-            <h4 className="sub-title">
+            <h4 className="enhance-sub-title">
               PAINT CORRECTION – 70-80% CORRECTION FACTOR
             </h4>
-            <ul className="process-list">
+            <ul className="enhance-process-list">
               <li>
                 Paintwork is treated to a one-to-two stage correction process,
                 to remove light paint imperfections, such as minor swirl marks
@@ -160,13 +160,13 @@ export default function Enhance() {
               </li>
               <li>All light clusters are treated and protected.</li>
             </ul>
-            <h2 className="section-title">Interior</h2>
+            <h2 className="enhance-section-title">Interior</h2>
             <p>
               The vehicle is deodorised using specially designed anti-bacterial
               treatment, which breaks down and eliminates bad odour and bacteria
               instead of masking them.
             </p>
-            <h2 className="section-title">
+            <h2 className="enhance-section-title">
               Why choose the Stage 2 Enhancement Detail?
             </h2>
 
@@ -179,7 +179,7 @@ export default function Enhance() {
               any deeper scratches.
             </p>
 
-            <p className="sealant-text">
+            <p className="enhance-sealant-text">
               To seal freshly corrected paintwork we recommend Ceramic Coating
               for added glossiness, hydrophobic properties and easier
               maintenance or PPF for ultimate protection.
@@ -189,21 +189,21 @@ export default function Enhance() {
       )}
 
       {activeTab === 3 && (
-        <div className="tab-content">
+        <div className="enhance-tab-content">
           <img
             src="https://i.shgcdn.com/f432b83b-7fb0-4201-8036-08b66e7933c0/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
             alt="Correction Detail on car"
-            className="tab-image"
+            className="enhance-tab-image"
           />
-          <div className="text-section">
-            <h2 className="main-title">Stage 3 - Correction Detail</h2>
-            <h2 className="section-title">
+          <div className="enhance-text-section">
+            <h2 className="enhance-main-title">Stage 3 - Correction Detail</h2>
+            <h2 className="enhance-section-title">
               Exterior – Cleaning/Cleansing/Decontamination
             </h2>
-            <h4 className="sub-title">
+            <h4 className="enhance-sub-title">
               PAINT CORRECTION – 80-95% CORRECTION FACTOR
             </h4>
-            <ul className="process-list">
+            <ul className="enhance-process-list">
               <li>
                 Paint thickness is measured using an ultrasonic paint depth
                 gauge.
@@ -220,8 +220,8 @@ export default function Enhance() {
                 metal compounds. Glass is treated with nano polish.
               </li>
             </ul>
-            <h2 className="section-title">Interior</h2>
-            <ul className="process-list interior-list">
+            <h2 className="enhance-section-title">Interior</h2>
+            <ul className="enhance-process-list enhance-interior-list">
               <li>
                 Carpets are shampooed if necessary and dried using a wet suction
                 vacuum cleaner.
@@ -236,7 +236,7 @@ export default function Enhance() {
                 brushes.
               </li>
             </ul>
-            <h2 className="section-title">
+            <h2 className="enhance-section-title">
               Why choose the Stage 3 Correction Detail?
             </h2>
 
@@ -265,7 +265,7 @@ export default function Enhance() {
               </em>
             </p>
 
-            <p className="sealant-text bold">
+            <p className="enhance-sealant-text enhance-bold">
               To seal freshly corrected paintwork we recommend Ceramic Coating
               for added glossiness, hydrophobic properties and easier
               maintenance or PPF for ultimate protection.
@@ -274,18 +274,18 @@ export default function Enhance() {
         </div>
       )}
       {activeTab === 4 && (
-        <div className="tab-content">
+        <div className="enhance-tab-content">
           <img
             src="https://i.shgcdn.com/f84730ff-b168-4edf-bf06-55cb317626d5/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
             alt="Ultimate Detail on car"
-            className="tab-image"
+            className="enhance-tab-image"
           />
-          <div className="text-section">
-            <h2 className="main-title">Stage 4 - Ultimate Detail</h2>
-            <h2 className="section-title">
+          <div className="enhance-text-section">
+            <h2 className="enhance-main-title">Stage 4 - Ultimate Detail</h2>
+            <h2 className="enhance-section-title">
               Exterior – Cleaning/Cleansing/Decontamination
             </h2>
-            <ul className="process-list">
+            <ul className="enhance-process-list">
               <li>Door shuts are cleansed.</li>
               <li>
                 Wheels are removed, cleaned on the inside and cleansed, then all
@@ -295,10 +295,10 @@ export default function Enhance() {
               <li>Wheels are cleansed, polished and sealed inside and out.</li>
               <li>Engine bay is detailed.</li>
             </ul>
-            <h4 className="sub-title paint-correction">
+            <h4 className="enhance-sub-title enhance-paint-correction">
               PAINT CORRECTION – 95%-99% CORRECTION FACTOR
             </h4>
-            <ul className="process-list">
+            <ul className="enhance-process-list">
               <li>Alloy wheels paint corrected.</li>
               <li>
                 Paintwork is treated to a three-to-five stage paint correction
@@ -311,15 +311,15 @@ export default function Enhance() {
                 microscope in specific areas.
               </li>
             </ul>
-            <h2 className="section-title">Interior</h2>
-            <ul className="process-list interior-list">
+            <h2 className="enhance-section-title">Interior</h2>
+            <ul className="enhance-process-list enhance-interior-list">
               <li>Safety belts are steam cleaned.</li>
               <li>
                 All leather surfaces are cleaned, de-glossed, fed with essential
                 oils and then protected with leather guard.
               </li>
             </ul>
-            <h2 className="section-title">
+            <h2 className="enhance-section-title">
               Why choose the Stage 4 Ultimate Detail?
             </h2>
 
@@ -333,7 +333,7 @@ export default function Enhance() {
               rejuvenate paintwork and create a ‘better than new’ finish.
             </p>
 
-            <p className="sealant-text bold">
+            <p className="enhance-sealant-text enhance-bold">
               To seal freshly corrected paintwork we recommend Ceramic Coating
               for added glossiness, hydrophobic properties and easier
               maintenance or PPF for ultimate protection.
@@ -342,18 +342,18 @@ export default function Enhance() {
         </div>
       )}
       {activeTab === 5 && (
-        <div className="tab-content">
+        <div className="enhance-tab-content">
           <img
             src="https://i.shgcdn.com/509fdfbc-571b-4fc3-8ed7-efcc314d7ee4/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
             alt="Signature Detail on car"
-            className="tab-image"
+            className="enhance-tab-image"
           />
-          <div className="text-section">
-            <h2 className="main-title">Stage 5 - Signature Detail</h2>
-            <h4 className="sub-title">
+          <div className="enhance-text-section">
+            <h2 className="enhance-main-title">Stage 5 - Signature Detail</h2>
+            <h4 className="enhance-sub-title">
               Paint Distortion (Orange Peel) Removal
             </h4>
-            <h4 className="sub-title">UP TO 100% CORRECTION FACTOR</h4>
+            <h4 className="enhance-sub-title">UP TO 100% CORRECTION FACTOR</h4>
             <p>
               The focus of this service is to eliminate the inconsistent,
               distorted finish found in modern clear coats. Our Signature
@@ -369,7 +369,7 @@ export default function Enhance() {
               Our expertise, knowledge and years of experience combine to give
               the VINYLE'D Signature treatment its 100% success rate.
             </p>
-            <h2 className="section-title">
+            <h2 className="enhance-section-title">
               Why choose the Stage 5 Signature Detail?
             </h2>
 
@@ -388,7 +388,7 @@ export default function Enhance() {
               many years.
             </p>
 
-            <p className="sealant-text bold">
+            <p className="enhance-sealant-text enhance-bold">
               To seal freshly corrected paintwork we recommend Ceramic Coating
               for added glossiness, hydrophobic properties and easier
               maintenance or PPF for ultimate protection.
@@ -397,15 +397,15 @@ export default function Enhance() {
         </div>
       )}
       {activeTab === 6 && (
-        <div className="tab-content">
+        <div className="enhance-tab-content">
           <img
             src="https://i.shgcdn.com/43a7dc26-3cf8-4f01-a723-a5b1e692d684/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
             alt="Sub Zero Detail on car"
-            className="tab-image"
+            className="enhance-tab-image"
           />
-          <div className="text-section">
-            <h2 className="main-title">Stage 6 - Dry Ice Blasting</h2>
-            <h4 className="sub-title">
+          <div className="enhance-text-section">
+            <h2 className="enhance-main-title">Stage 6 - Dry Ice Blasting</h2>
+            <h4 className="enhance-sub-title">
               Underbody/Engine Bay – Cleaning/Restoration
             </h4>
             <p>
@@ -418,7 +418,7 @@ export default function Enhance() {
               of road grime from the underbody, engine bay and suspension
               components, in many cases making them look like brand new again.
             </p>
-            <h4 className="sub-title">What is Dry Ice Blasting?</h4>
+            <h4 className="enhance-sub-title">What is Dry Ice Blasting?</h4>
             <p>
               Dry Ice Blasting is able to remove everything from dirt, grime and
               grease to rust/oxidisation, overspray and coatings (when desired).
@@ -436,7 +436,7 @@ export default function Enhance() {
               underbody coatings/sealants to make sure your car stays corrosion
               free and looking fresh, even underneath!
             </p>
-            <h2 className="section-title">Why choose the Sub Zero Detail?</h2>
+            <h2 className="enhance-section-title">Why choose the Sub Zero Detail?</h2>
 
             <p>
               Dry ice blasting is not a new craft, however, at VINYLE'D we have
@@ -456,7 +456,7 @@ export default function Enhance() {
               looked so good!
             </p>
 
-            <p className="sealant-text">
+            <p className="enhance-sealant-text">
               Currently we are offering our Sub Zero Detail at our HQ in North
               London, and to date we have transformed everything from classic
               911s to the latest Ferrari hypercars. Contact our team to find out
