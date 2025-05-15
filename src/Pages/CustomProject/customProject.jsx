@@ -252,7 +252,7 @@ export default function CustomProject() {
                     </p>
 
                     <h3 className="customProject-sectionTitle">
-                      How: ReSpray Application Process
+                      ReSpray Application Process
                     </h3>
                     <ul className="customProject-infoList">
                       <li>
@@ -277,7 +277,7 @@ export default function CustomProject() {
                     </ul>
 
                     <h3 className="customProject-sectionTitle">
-                      Why: Benefits of a Full Respray
+                      Benefits of a Full Respray
                     </h3>
                     <ul className="customProject-infoList">
                       <li>

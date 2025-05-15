@@ -1,5 +1,5 @@
 .banner {
-  min-height: 18.75rem;
+  min-height: 370px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -34,10 +34,10 @@
 }
 
 .tab-container .tab {
-  padding: 8px 15px;
+  height:45px;
   cursor: pointer;
   background: white;
-  color: black;
+  color: #555;
   margin-left: -15px;
   z-index: 1;
   position: relative;
@@ -45,12 +45,16 @@
   transition: background 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
   clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
   text-align: center;
-  
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 
 .tab-container .tab.active {
   background: #DD0000;
-  color: black;
+  color: white;
 }
 
 .tab-container .tab:hover {

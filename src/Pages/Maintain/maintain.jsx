@@ -68,7 +68,7 @@ export default function Maintain() {
                     <br />
                     <strong>
                       ALL MAINTENANCE TREATMENTS ARE CURRENTLY ONLY AVAILABLE AT
-                      TOPAZ DETAILING CENTRES.
+                      VINYLE'D DETAILING CENTRES.
                     </strong>
                     <br />
                     <br />
@@ -87,7 +87,7 @@ export default function Maintain() {
               <h2 className="section-title">Exterior</h2>
               <div>
                 <p className="sub-title">
-                  21 STAGE TOPAZ CLEANING PROCESS INCLUDING:
+                  21 STAGE VINYLE'D CLEANING PROCESS INCLUDING:
                 </p>
                 <ul className="process-list">
                   <li>
@@ -158,14 +158,91 @@ export default function Maintain() {
                 </div>
               </div>
             </div>
-
-
         </>
       )}
 
-      <div className="tab-content">
-        {/* Placeholder for other tab content (e.g., Detailing) */}
-      </div>
+      {activeTab === 2 && (
+        <>
+          <div className="title-container">
+            <h2 className="wash-title">Detailing Plan Options</h2>
+          </div>
+          <div className="detailing-content">
+            <div className="detailing-row">
+              <div className="detailing-text-section">
+                <h2 className="wash-plan-details-title">Detailing Plan Details</h2>
+                <div className="wash-plan-text">
+                  <p>
+                    Our maintenance detailing plans are designed to keep your vehicle in pristine condition, preserving the results of your initial treatment. These plans include comprehensive cleaning, decontamination, and protection processes to maintain the integrity of your vehicle’s paint, PPF, or ceramic coatings, while preventing damage like swirl marks or scratches.
+                  </p>
+                  <p>
+                    By subscribing to a detailing plan, you benefit from significant cost savings compared to individual services. You’ll save <strong>25%</strong> on detailing sessions and <strong>35%</strong> on a Level 2 enhancement detail every six months, ensuring your vehicle’s protective layers are refreshed and maintained. Our plans allow us to thoroughly decontaminate, polish, and seal your car, keeping it looking showroom-ready.
+                    <br />
+                    <br />
+                    <strong>
+                      ALL MAINTENANCE DETAILING TREATMENTS ARE CURRENTLY ONLY AVAILABLE AT VINYLE'D DETAILING CENTRES.
+                    </strong>
+                    <br />
+                    <br />
+                  </p>
+                </div>
+              </div>
+              <div className="detailing-image-section">
+                <img
+                  src="https://i.shgcdn.com/297bf929-a9fe-4ae1-afdc-acb9b92042f7/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
+                  alt="Detailing Plan"
+                  className="wash-image"
+                />
+              </div>
+            </div>
+            <div className="wash-details-section">
+              <h2 className="section-title">Exterior</h2>
+              <div>
+                <p className="sub-title">
+                  24 STAGE VINYLE'D DETAILING PROCESS INCLUDING:
+                </p>
+                <ul className="process-list">
+                  <li>
+                    Pre-wash with snow foam to lift dirt and contaminants from the paintwork.
+                  </li>
+                  <li>
+                    Vehicle washed with pH-neutral shampoo using a twin grit guard bucket system to prevent scratches.
+                  </li>
+                  <li>
+                    Wheels cleaned with non-acidic citrus-based cleaner and horsehair brushes for delicate surfaces.
+                  </li>
+                  <li>
+                    Chemical decontamination using a clay bar to remove bonded contaminants like tar and tree sap.
+                  </li>
+                  <li>
+                    Vehicle dried with high-powered air dryer to eliminate water spots.
+                  </li>
+                  <li>
+                    Application of a quick detailer or sealant to enhance gloss and protect the paint.
+                  </li>
+                </ul>
+              </div>
+              <h2 className="section-title">Interior</h2>
+              <div>
+                <ul className="process-list">
+                  <li>
+                    Vacuuming of carpets, seats, and trunk to remove dust and debris.
+                  </li>
+                  <li>
+                    Interior surfaces cleaned with aerospace-grade products for a spotless finish.
+                  </li>
+                  <li>
+                    Leather surfaces cleaned and conditioned to prevent cracking.
+                  </li>
+                  <li>
+                    Windows polished for crystal-clear visibility.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+        </>
+      )}
     </div>
   );
 }

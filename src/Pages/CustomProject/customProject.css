@@ -1,5 +1,10 @@
+*{
+  font-family: 'Work Sans', sans-serif;
+}
+
+
 .customProject-container {
-  font-family: Arial, sans-serif;
+  font-family: 'Work Sans', sans-serif;
   background-color: white;
   display: flex;
   justify-content: center;
@@ -41,19 +46,18 @@
 
 .customProject-tabText .customProject-mainTitle {
   color: #ec1d24;
-  font-weight: normal;
+  font-weight: 500;
   font-style: normal;
-  font-size: 2.2375rem;
-  
+  font-size: 39px;
   margin: 0 0 0.5rem 0;
+  text-align: left;
 }
 
 .customProject-tabText .customProject-sectionTitle {
   color: #ec1d24;
   font-weight: normal;
   font-style: normal;
-  font-size: 1.5625rem;
-  
+  font-size: 25px;
   margin: 0 0 0.5rem 0;
 }
 
@@ -67,7 +71,7 @@
 
 .customProject-tabText .customProject-infoList {
   padding-left: 1.25rem;
-  font-size: 0.875rem;
+  font-size: 15px;
   /* text-align: justify; */
   margin: 0 0 0.5rem 0;
 }
@@ -86,7 +90,7 @@
 }
 
 .customProject-tabText .customProject-description {
-  font-size: 0.875rem;
+  font-size: 15px;
   color: #333333;
   /* text-align: justify; */
   margin: 0 0 0.5rem 0;
@@ -116,19 +120,19 @@
   }
 
   .customProject-tabText .customProject-mainTitle {
-      font-size: 1.875rem;
+      font-size: 37px;
   }
 
   .customProject-tabText .customProject-sectionTitle {
-      font-size: 1.25rem;
+      font-size: 29px;
   }
 
   .customProject-tabText .customProject-processTitle {
-      font-size: 1rem;
+      font-size: 20px;
   }
 
   .customProject-tabText .customProject-infoList {
-      font-size: 0.8125rem;
+      font-size: 15px;
   }
 
   .customProject-tabText .customProject-highlightText {
@@ -163,19 +167,19 @@
   }
 
   .customProject-tabText .customProject-mainTitle {
-      font-size: 1.5rem;
+      font-size: 30px;
   }
 
   .customProject-tabText .customProject-sectionTitle {
-      font-size: 1rem;
+      font-size: 20px;
   }
 
   .customProject-tabText .customProject-processTitle {
-      font-size: 0.875rem;
+      font-size: 15px;
   }
 
   .customProject-tabText .customProject-infoList {
-      font-size: 0.75rem;
+      font-size: 15px;
   }
 
   .customProject-tabText .customProject-highlightText {
@@ -183,6 +187,6 @@
   }
 
   .customProject-tabText .customProject-description {
-      font-size: 0.75rem;
+      font-size: 15px;
   }
 }

@@ -1,5 +1,10 @@
+*{
+  font-family: 'Work Sans', sans-serif;
+}
+
+
 .wrap-container {
-  font-family: Arial, sans-serif;
+ 
   background-color: white;
   display: flex;
   justify-content: center;
@@ -41,10 +46,9 @@
 
 .content-text .title {
   color: #ec1d24;
-  font-weight: normal;
+  font-weight: 500;
   font-style: normal;
-  font-size: 2.4375rem;
-  text-align: justify;
+  font-size: 39px;
   margin: 0 0 0.5rem 0;
 }
 
@@ -52,8 +56,8 @@
   color: #ec1d24;
   font-weight: normal;
   font-style: normal;
-  font-size: 1.5625rem;
-  text-align: justify;
+  font-size: 25px;
+  
   margin: 0 0 0.5rem 0;
 }
 
@@ -61,34 +65,34 @@
   color: #3a3a3a;
   font-size: 1.25rem;
   font-weight: bold;
-  text-align: justify;
+ 
   margin: 0 0 0.5rem 0;
 }
 
 .content-text .list {
   padding-left: 1.25rem;
   font-size: 0.875rem;
-  text-align: justify;
+
   margin: 0 0 0.5rem 0;
 }
 
 .list li {
   margin-bottom: 0.1875rem;
+  font-size: 15px;
 }
 
 .content-text .highlight {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 0.875rem;
-  text-align: justify;
   margin: 0 0 0.5rem 0;
   color: #ec1d24;
 }
 
 .content-text .text {
-  font-size: 0.875rem;
+  font-size: 15px;
   color: #333333;
-  text-align: justify;
+  font-weight: 400;
   margin: 0 0 0.5rem 0;
 }
 
@@ -101,7 +105,7 @@
   .wrap-container .content-tab.active {
       display: grid; /* Ensure grid for active tab on smaller screens */
   }
-  
+
   .wrap-container .content-tab {
       padding: 1.25rem;
       gap: 1rem;
@@ -120,11 +124,11 @@
   }
 
   .content-text .title {
-      font-size: 1.875rem;
+      font-size: 27px;
   }
 
   .content-text .subtitle {
-      font-size: 1.25rem;
+      font-size: 25px;
   }
 
   .content-text .process-heading {
@@ -170,11 +174,11 @@
   }
 
   .content-text .title {
-      font-size: 1.5rem;
+      font-size: 27px;
   }
 
   .content-text .subtitle {
-      font-size: 1rem;
+      font-size: 25px;
   }
 
   .content-text .process-heading {
@@ -190,6 +194,11 @@
   }
 
   .content-text .text {
-      font-size: 0.75rem;
+      font-size: 14px;
   }
+  
+.list li {
+  margin-bottom: 0.1875rem;
+  font-size: 14px;
+}
 }

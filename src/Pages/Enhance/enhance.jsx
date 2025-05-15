@@ -42,7 +42,7 @@ export default function Enhance() {
         handleTabMouseEnter={handleTabMouseEnter}
         handleTabMouseLeave={handleTabMouseLeave}
         tabs={tabs}
-        tabWidth="230px"
+        tabWidth="200px"
       />
 
       {activeTab === 1 && (
@@ -53,12 +53,12 @@ export default function Enhance() {
             className="tab-image"
           />
           <div className="text-section">
-            <h2 className="main-title">Level 1 - Protection Detail</h2>
+            <h2 className="main-title">Stage 1 - Protection Detail</h2>
             <h2 className="section-title">
               Exterior – Cleaning/Cleansing/Decontamination
             </h2>
             <h4 className="sub-title">
-              21 STAGE TOPAZ CLEANING PROCESS INCLUDING:
+              21 STAGE VINYLE'D CLEANING PROCESS INCLUDING:
             </h4>
             <ul className="process-list">
               <li>
@@ -104,12 +104,12 @@ export default function Enhance() {
               </li>
             </ul>
             <h2 className="section-title">
-              Why choose the Level 1 Protection Detail?
+              Why choose the Stage 1 Protection Detail?
             </h2>
 
             <p>
-              The purpose of a Level 1 Detail is to decontaminate the paintwork
-              or PPF (Paint Protection Film). Most commonly, a Level 1 Detail is
+              The purpose of a Stage 1 Detail is to decontaminate the paintwork
+              or PPF (Paint Protection Film). Most commonly, a Stage 1 Detail is
               used to detail satin paint (which cannot be machine polished) or
               as an ongoing maintenance detail. It doesn’t involve paint
               correction, and instead, is a thorough deep clean involving both
@@ -126,12 +126,12 @@ export default function Enhance() {
             className="tab-image"
           />
           <div className="text-section">
-            <h2 className="main-title">Level 2 - Enhancement Detail</h2>
+            <h2 className="main-title">Stage 2 - Enhancement Detail</h2>
             <h2 className="section-title">
               Exterior – Cleaning/Cleansing/Decontamination
             </h2>
             <h4 className="sub-title">
-              24 STAGE TOPAZ CLEANING PROCESS INCLUDING:
+              24 STAGE VINYLE'D CLEANING PROCESS INCLUDING:
             </h4>
             <ul className="process-list">
               <li>
@@ -167,11 +167,11 @@ export default function Enhance() {
               instead of masking them.
             </p>
             <h2 className="section-title">
-              Why choose the Level 2 Enhancement Detail?
+              Why choose the Stage 2 Enhancement Detail?
             </h2>
 
             <p>
-              This is our entry level paint correction detail, which removes
+              This is our entry stage paint correction detail, which removes
               minor imperfections including fine swirls/scratches in the
               clearcoat/topcoat of the paint. It is perfect for new cars, or
               cars with dulled paint that need a refresh. This process results
@@ -196,7 +196,7 @@ export default function Enhance() {
             className="tab-image"
           />
           <div className="text-section">
-            <h2 className="main-title">Level 3 - Correction Detail</h2>
+            <h2 className="main-title">Stage 3 - Correction Detail</h2>
             <h2 className="section-title">
               Exterior – Cleaning/Cleansing/Decontamination
             </h2>
@@ -237,7 +237,7 @@ export default function Enhance() {
               </li>
             </ul>
             <h2 className="section-title">
-              Why choose the Level 3 Correction Detail?
+              Why choose the Stage 3 Correction Detail?
             </h2>
 
             <p>
@@ -247,7 +247,7 @@ export default function Enhance() {
               results in 80% to 95% 'correction factor'.
             </p>
             <p>
-              The Level 3 Detail also includes a thorough rejuvenation of all
+              The Stage 3 Detail also includes a thorough rejuvenation of all
               chromatic and metal elements, e.g. the exhaust tips, door shuts,
               light and air clusters, washing of the interior and deodorisation,
               leather protection, nano polish of the glass inside and out, and
@@ -260,7 +260,7 @@ export default function Enhance() {
             </p>
             <p>
               <em>
-                This detailing level doesn't remove any scratches that have gone
+                This detailing stage doesn't remove any scratches that have gone
                 all the way through the paint.
               </em>
             </p>
@@ -281,7 +281,7 @@ export default function Enhance() {
             className="tab-image"
           />
           <div className="text-section">
-            <h2 className="main-title">Level 4 - Ultimate Detail</h2>
+            <h2 className="main-title">Stage 4 - Ultimate Detail</h2>
             <h2 className="section-title">
               Exterior – Cleaning/Cleansing/Decontamination
             </h2>
@@ -306,7 +306,7 @@ export default function Enhance() {
                 holograms and minor scratches.
               </li>
               <li>
-                Deeper surface scratches are leveled using specifically designed
+                Deeper surface scratches are stageed using specifically designed
                 finishing papers. Paintwork is checked using a digital
                 microscope in specific areas.
               </li>
@@ -320,13 +320,13 @@ export default function Enhance() {
               </li>
             </ul>
             <h2 className="section-title">
-              Why choose the Level 4 Ultimate Detail?
+              Why choose the Stage 4 Ultimate Detail?
             </h2>
 
             <p>
-              This detailing level is ideal if you wish to bring your car’s
+              This detailing stage is ideal if you wish to bring your car’s
               paint back to life. In addition to what we offer in our lower
-              detailing levels, our Level 4 Detail includes an engine bay
+              detailing stages, our Stage 4 Detail includes an engine bay
               detail, underbody clean, wheels removed and polished and much
               more. With up to five stages of correction we can achieve up to a
               99% ‘correction factor’. This is the best possible detail to
@@ -349,7 +349,7 @@ export default function Enhance() {
             className="tab-image"
           />
           <div className="text-section">
-            <h2 className="main-title">Level 5 - Signature Detail</h2>
+            <h2 className="main-title">Stage 5 - Signature Detail</h2>
             <h4 className="sub-title">
               Paint Distortion (Orange Peel) Removal
             </h4>
@@ -361,28 +361,28 @@ export default function Enhance() {
               superior standard.
             </p>
             <p>
-              The process includes levelling the clear coat (lacquer) using a
+              The process includes stageling the clear coat (lacquer) using a
               variety of specialist tools and eliminating the high points found
               on modern paint systems.
             </p>
             <p>
               Our expertise, knowledge and years of experience combine to give
-              the Topaz Signature treatment its 100% success rate.
+              the VINYLE'D Signature treatment its 100% success rate.
             </p>
             <h2 className="section-title">
-              Why choose the Level 5 Signature Detail?
+              Why choose the Stage 5 Signature Detail?
             </h2>
 
             <p>
               If you are striving for perfection in your paintwork then our
               Signature Detail is for you. ‘Orange peel’ or peaks and troughs in
               the clear coat add unwanted, distortion, texture and dullness to
-              the paint. The Topaz Signature Detail will remove unwanted ‘orange
+              the paint. The VINYLE'D Signature Detail will remove unwanted ‘orange
               peel’ texture achieving a glass like finish.
             </p>
             <p>
-              Our Level 5 Detail is our Signature Detail which completely
-              relevels the clear coat, refining and polishing it in five stages.
+              Our Stage 5 Detail is our Signature Detail which completely
+              restages the clear coat, refining and polishing it in five stages.
               This involves dry sanding, wet sanding, and paint correction. This
               treatment is perfect for a car you want to keep and cherish for
               many years.
@@ -404,14 +404,14 @@ export default function Enhance() {
             className="tab-image"
           />
           <div className="text-section">
-            <h2 className="main-title">Level 6 - Dry Ice Blasting</h2>
+            <h2 className="main-title">Stage 6 - Dry Ice Blasting</h2>
             <h4 className="sub-title">
               Underbody/Engine Bay – Cleaning/Restoration
             </h4>
             <p>
-              At Topaz we are known for our detailing, having offered our Level
+              At VINYLE'D we are known for our detailing, having offered our Stage
               1 to 5 Details for over 12 years. In 2023 we took detailing to the
-              next level: Sub Zero. Our Sub Zero detail is a form of ‘dry ice
+              next stage: Sub Zero. Our Sub Zero detail is a form of ‘dry ice
               blasting’ which uses frozen CO2 pellets to transform your car,
               without damaging it. However, we are not talking about paintwork
               here, our Sub Zero detail goes underneath your car, removing years
@@ -439,9 +439,9 @@ export default function Enhance() {
             <h2 className="section-title">Why choose the Sub Zero Detail?</h2>
 
             <p>
-              Dry ice blasting is not a new craft, however, at Topaz we have
+              Dry ice blasting is not a new craft, however, at VINYLE'D we have
               finessed the technique to guarantee that the service is always
-              offered at the uncompromising Topaz standard, in line with our
+              offered at the uncompromising VINYLE'D standard, in line with our
               paint correction and paint protection services. We have the latest
               state of the art equipment coupled with a years of experimentation
               and testing to be able to offer the Ice Blasting like you’ve never

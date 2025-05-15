@@ -1,15 +1,22 @@
+*{
+  font-family: 'Work Sans', sans-serif;
+  
+}
+
 .enhance-container {
   width: 100%;
   box-sizing: border-box;
+  
 }
 
 .tab-content {
   display: flex;
   align-items: stretch;
   padding: 2rem;
-  gap: 2rem;
+  gap: 3rem;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 40px;
 }
 
 .tab-image {
@@ -23,7 +30,7 @@
 .text-section {
   flex: 1;
   font-size: 1rem;
-  line-height: 1.6;
+  line-height: 1.5;
   color: #333;
   display: flex;
   flex-direction: column;
@@ -33,20 +40,24 @@
 
 .main-title {
   color: #ec1d24;
-  font-weight: normal;
   font-style: normal;
-  font-size: 2.5rem;
+  font-size: 39px;
   text-align: left;
   margin-bottom: 0.625rem;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400; /* or try 300 */
 }
+
 
 .section-title {
   color: #ec1d24;
   font-weight: normal;
   font-style: normal;
-  font-size: 1.5625rem;
+  font-size: 25px;
   text-align: left;
   margin-bottom: 1rem;
+  font-family: 'Work Sans', sans-serif;
+
 }
 
 .section-title.interior-title {
@@ -60,6 +71,9 @@
 .sub-title {
   margin-bottom: 0.5rem;
   color: #000;
+
+  font-size: 15;
+  font-weight: 700;
 }
 
 .sub-title.paint-correction {
@@ -67,9 +81,8 @@
 }
 
 .process-list {
-  padding-left: 1.5rem;
-  margin-top: -0.5rem;
-  color: #333;
+ font-weight: 400;
+  color: #333333;
 }
 
 .process-list li {
@@ -115,7 +128,11 @@
   }
 
   .main-title {
-    font-size: 2rem;
+   color: #ec1d24;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 39px;
+    text-align: left;
   }
 
   .section-title {

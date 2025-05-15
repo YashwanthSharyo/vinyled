@@ -265,7 +265,7 @@ export default function Protect() {
                     </p>
 
                     <h3 className="subtitle">
-                      How: Ceramic Coating Application Process
+                      Ceramic Coating Application Process
                     </h3>
                     <ul className="list">
                       <li>
@@ -291,7 +291,7 @@ export default function Protect() {
                     </ul>
 
                     <h3 className="subtitle">
-                      Why: Benefits of Ceramic Coating
+                      Benefits of Ceramic Coating
                     </h3>
                     <ul className="list">
                       <li>
@@ -315,7 +315,7 @@ export default function Protect() {
                       </li>
                     </ul>
 
-                    <h3 className="subtitle">Where: Application Areas</h3>
+                    <h3 className="subtitle">Application Areas</h3>
                     <ul className="list">
                       <li>
                         Full exterior coverage for comprehensive protection and
@@ -370,7 +370,7 @@ export default function Protect() {
                     </p>
 
                     <h3 className="subtitle">
-                      How: Graphene Coating Application Process
+                      Graphene Coating Application Process
                     </h3>
                     <ul className="list">
                       <li>
@@ -396,7 +396,7 @@ export default function Protect() {
                     </ul>
 
                     <h3 className="subtitle">
-                      Why: Benefits of Graphene Coating
+                      Benefits of Graphene Coating
                     </h3>
                     <ul className="list">
                       <li>
@@ -420,7 +420,7 @@ export default function Protect() {
                       </li>
                     </ul>
 
-                    <h3 className="subtitle">Where: Application Areas</h3>
+                    <h3 className="subtitle">Application Areas</h3>
                     <ul className="list">
                       <li>
                         Full exterior coverage for comprehensive protection and

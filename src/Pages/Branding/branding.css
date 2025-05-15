@@ -1,5 +1,8 @@
+*{
+  font-family: 'Work Sans', sans-serif;
+}
+
 .Branding-wrap-container {
-  font-family: Arial, sans-serif;
   background-color: white;
   display: flex;
   justify-content: center;
@@ -41,9 +44,10 @@
 
 .Branding-content-text .Branding-title {
   color: #ec1d24;
-  font-weight: normal;
+  font-weight: 500;
   font-style: normal;
-  font-size: 2.4375rem;
+  text-align: left;
+  font-size: 39px;
   margin: 0 0 0.5rem 0;
 }
 
@@ -51,7 +55,7 @@
   color: #ec1d24;
   font-weight: normal;
   font-style: normal;
-  font-size: 1.5625rem;
+  font-size: 25px;
   text-align: justify;
   margin: 0 0 0.5rem 0;
 }
@@ -66,7 +70,7 @@
 
 .Branding-content-text .Branding-list {
   padding-left: 1.25rem;
-  font-size: 0.875rem;
+  font-size: 15px;
   text-align: justify;
   margin: 0 0 0.5rem 0;
 }
@@ -76,16 +80,16 @@
 }
 
 .Branding-content-text .Branding-highlight {
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 0.875rem;
+  font-weight: 500;
+  
+  font-size: 25px;
   text-align: justify;
   margin: 0 0 0.5rem 0;
   color: #ec1d24;
 }
 
 .Branding-content-text .Branding-text {
-  font-size: 0.875rem;
+  font-size: 15px;
   color: #333333;
   text-align: justify;
   margin: 0 0 0.5rem 0;
@@ -115,28 +119,28 @@
   }
 
   .Branding-content-text .Branding-title {
-      font-size: 1.875rem;
+      font-size: 30px;
       text-align: left;
   }
 
   .Branding-content-text .Branding-subtitle {
-      font-size: 1.25rem;
+      font-size: 20px;
   }
 
   .Branding-content-text .Branding-process-heading {
-      font-size: 1rem;
+      font-size: 17px;
   }
 
   .Branding-content-text .Branding-list {
-      font-size: 0.8125rem;
+      font-size: 15px;
   }
 
   .Branding-content-text .Branding-highlight {
-      font-size: 0.8125rem;
+      font-size: 20px;
   }
 
   .Branding-content-text .Branding-text {
-      font-size: 0.8125rem;
+      font-size: 15px;
   }
 }
 
@@ -181,26 +185,26 @@
   }
 
   .Branding-content-text .Branding-title {
-      font-size: 1.5rem;
+      font-size: 27px;
   }
 
   .Branding-content-text .Branding-subtitle {
-      font-size: 1rem;
+      font-size: 20px;
   }
 
   .Branding-content-text .Branding-process-heading {
-      font-size: 0.875rem;
+      font-size: 17px;
   }
 
   .Branding-content-text .Branding-list {
-      font-size: 0.75rem;
+      font-size: 15px;
   }
 
   .Branding-content-text .Branding-highlight {
-      font-size: 0.75rem;
+      font-size: 20px;
   }
 
   .Branding-content-text .Branding-text {
-      font-size: 0.75rem;
+      font-size:15px;
   }
 }

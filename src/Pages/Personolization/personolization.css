@@ -1,3 +1,8 @@
+*{
+  font-family: 'Work Sans', sans-serif;;
+}
+
+
 .wrap-container {
   font-family: Arial, sans-serif;
   background-color: white;
@@ -43,8 +48,9 @@
   color: #ec1d24;
   font-weight: normal;
   font-style: normal;
-  font-size: 2.4375rem;
-  text-align: justify;
+  font-size: 30px;
+  text-align: left ;
+
   margin: 0 0 0.5rem 0;
 }
 
@@ -52,8 +58,8 @@
   color: #ec1d24;
   font-weight: normal;
   font-style: normal;
-  font-size: 1.5625rem;
-  text-align: justify;
+  font-size: 27px;
+  
   margin: 0 0 0.5rem 0;
 }
 
@@ -67,8 +73,9 @@
 
 .content-text .list {
   padding-left: 1.25rem;
-  font-size: 0.875rem;
+  color: #333333;
   text-align: justify;
+  font-size: 15px;
   margin: 0 0 0.5rem 0;
 }
 
@@ -86,9 +93,8 @@
 }
 
 .content-text .text {
-  font-size: 0.875rem;
+  font-size: 15px;
   color: #333333;
-  text-align: justify;
   margin: 0 0 0.5rem 0;
 }
 
@@ -128,7 +134,10 @@
   }
 
   .content-text .list {
-      font-size: 0.8125rem;
+      
+      color: #333333;
+ 
+  font-size: 15px;
   }
 
   .content-text .highlight {
@@ -136,7 +145,8 @@
   }
 
   .content-text .text {
-      font-size: 0.8125rem;
+      font-size:15px;
+      color: #333333;
   }
 }
 
@@ -146,7 +156,7 @@
   }
 
   .wrap-container .content-tab {
-      padding: 0.25rem;
+      padding: 0px;
       gap: 0.75rem;
   }
 
@@ -165,6 +175,10 @@
   .content-text .title {
       font-size: 1.5rem;
   }
+  .content-text .text {
+      font-size:15px;
+      color: #333333;
+  }
 
   .content-text .subtitle {
       font-size: 1rem;
@@ -175,7 +189,8 @@
   }
 
   .content-text .list {
-      font-size: 0.75rem;
+      font-size: 15px;
+      color: #333333;
   }
 
   .content-text .highlight {
@@ -183,6 +198,7 @@
   }
 
   .content-text .text {
-      font-size: 0.75rem;
+      font-size: 15px;
+      color: #333333;
   }
 }
