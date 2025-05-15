@@ -1,9 +1,8 @@
-*{
-  font-family: 'Work Sans', sans-serif;;
+* {
+  font-family: 'Work Sans', sans-serif;
 }
 
-
-.wrap-container {
+.personalization-wrap-container {
   font-family: Arial, sans-serif;
   background-color: white;
   display: flex;
@@ -11,7 +10,7 @@
   padding: 2.5rem;
 }
 
-.wrap-container .content-tab {
+.personalization-wrap-container .personalization-content-tab {
   display: none;
   flex-direction: row;
   gap: 1.25rem;
@@ -22,16 +21,16 @@
   align-items: flex-start;
 }
 
-.wrap-container .content-tab.active {
+.personalization-wrap-container .personalization-content-tab.personalization-active {
   display: flex;
 }
 
-.content-tab .content-image {
+.personalization-content-tab .personalization-content-image {
   flex: 1;
   min-width: 300px;
 }
 
-.content-image .image {
+.personalization-content-image .personalization-image {
   width: 100%;
   height: auto;
   min-height: 25rem;
@@ -39,31 +38,29 @@
   object-fit: cover;
 }
 
-.content-tab .content-text {
+.personalization-content-tab .personalization-content-text {
   flex: 1;
   min-width: 300px;
 }
 
-.content-text .title {
+.personalization-content-text .personalization-title {
   color: #ec1d24;
   font-weight: normal;
   font-style: normal;
   font-size: 30px;
-  text-align: left ;
-
+  text-align: left;
   margin: 0 0 0.5rem 0;
 }
 
-.content-text .subtitle {
+.personalization-content-text .personalization-subtitle {
   color: #ec1d24;
   font-weight: normal;
   font-style: normal;
   font-size: 27px;
-  
   margin: 0 0 0.5rem 0;
 }
 
-.content-text .process-heading {
+.personalization-content-text .personalization-process-heading {
   color: #3a3a3a;
   font-size: 1.25rem;
   font-weight: bold;
@@ -71,7 +68,7 @@
   margin: 0 0 0.5rem 0;
 }
 
-.content-text .list {
+.personalization-content-text .personalization-list {
   padding-left: 1.25rem;
   color: #333333;
   text-align: justify;
@@ -79,11 +76,11 @@
   margin: 0 0 0.5rem 0;
 }
 
-.list li {
+.personalization-list li {
   margin-bottom: 0.1875rem;
 }
 
-.content-text .highlight {
+.personalization-content-text .personalization-highlight {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 0.875rem;
@@ -92,7 +89,7 @@
   color: #ec1d24;
 }
 
-.content-text .text {
+.personalization-content-text .personalization-text {
   font-size: 15px;
   color: #333333;
   margin: 0 0 0.5rem 0;
@@ -100,105 +97,360 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .wrap-container {
-      padding: 1.5rem;
+  .personalization-wrap-container {
+    padding: 1.5rem;
   }
 
-  .wrap-container .content-tab {
-      padding: 1.25rem;
-      gap: 1rem;
+  .personalization-wrap-container .personalization-content-tab {
+    padding: 1.25rem;
+    gap: 1rem;
   }
 
-  .content-tab .content-image {
-      min-width: 250px;
+  .personalization-content-tab .personalization-content-image {
+    min-width: 250px;
   }
 
-  .content-image .image {
-      min-height: 20rem;
+  .personalization-content-image .personalization-image {
+    min-height: 20rem;
   }
 
-  .content-tab .content-text {
-      min-width: 250px;
+  .personalization-content-tab .personalization-content-text {
+    min-width: 250px;
   }
 
-  .content-text .title {
-      font-size: 1.875rem;
+  .personalization-content-text .personalization-title {
+    font-size: 1.875rem;
   }
 
-  .content-text .subtitle {
-      font-size: 1.25rem;
+  .personalization-content-text .personalization-subtitle {
+    font-size: 1.25rem;
   }
 
-  .content-text .process-heading {
-      font-size: 1rem;
+  .personalization-content-text .personalization-process-heading {
+    font-size: 1rem;
   }
 
-  .content-text .list {
-      
-      color: #333333;
- 
-  font-size: 15px;
+  .personalization-content-text .personalization-list {
+    color: #333333;
+    font-size: 15px;
   }
 
-  .content-text .highlight {
-      font-size: 0.8125rem;
+  .personalization-content-text .personalization-highlight {
+    font-size: 0.8125rem;
   }
 
-  .content-text .text {
-      font-size:15px;
-      color: #333333;
+  .personalization-content-text .personalization-text {
+    font-size: 15px;
+    color: #333333;
   }
 }
 
 @media (max-width: 480px) {
-  .wrap-container {
-      padding: 1rem;
+  .personalization-wrap-container {
+    padding: 1rem;
   }
 
-  .wrap-container .content-tab {
-      padding: 0px;
-      gap: 0.75rem;
+  .personalization-wrap-container .personalization-content-tab {
+    padding: 0px;
+    gap: 0.75rem;
   }
 
-  .content-tab .content-image {
-      min-width: 100%;
+  .personalization-content-tab .personalization-content-image {
+    min-width: 100%;
   }
 
-  .content-image .image {
-      min-height: 15rem;
+  .personalization-content-image .personalization-image {
+    min-height: 15rem;
   }
 
-  .content-tab .content-text {
-      min-width: 100%;
+  .personalization-content-tab .personalization-content-text {
+    min-width: 100%;
   }
 
-  .content-text .title {
-      font-size: 1.5rem;
-  }
-  .content-text .text {
-      font-size:15px;
-      color: #333333;
+  .personalization-content-text .personalization-title {
+    font-size: 1.5rem;
   }
 
-  .content-text .subtitle {
-      font-size: 1rem;
+  .personalization-content-text .personalization-text {
+    font-size: 15px;
+    color: #333333;
   }
 
-  .content-text .process-heading {
-      font-size: 0.875rem;
+  .personalization-content-text .personalization-subtitle {
+    font-size: 1rem;
   }
 
-  .content-text .list {
-      font-size: 15px;
-      color: #333333;
+  .personalization-content-text .personalization-process-heading {
+    font-size: 0.875rem;
   }
 
-  .content-text .highlight {
-      font-size: 0.75rem;
+  .personalization-content-text .personalization-list {
+    font-size: 15px;
+    color: #333333;
   }
 
-  .content-text .text {
-      font-size: 15px;
-      color: #333333;
+  .personalization-content-text .personalization-highlight {
+    font-size: 0.75rem;
+  }
+
+  .personalization-content-text .personalization-text {
+    font-size: 15px;
+    color: #333333;
+  }
+}
+
+/* Specific media query for devices with 640x360 resolution */
+@media (max-width: 640px) and (max-height: 360px) {
+  .personalization-wrap-container .personalization-content-tab.personalization-active {
+    display: grid;
+  }
+}
+* {
+  font-family: 'Work Sans', sans-serif;
+}
+
+.personalization-wrap-container {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 2.5rem;
+}
+
+.personalization-wrap-container .personalization-content-tab {
+  display: none;
+  flex-direction: row;
+  gap: 1.25rem;
+  border-radius: 0.3125rem;
+  padding: 1.875rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.personalization-wrap-container .personalization-content-tab.personalization-active {
+  display: flex;
+}
+
+.personalization-content-tab .personalization-content-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.personalization-content-image .personalization-image {
+  width: 100%;
+  height: auto;
+  min-height: 25rem;
+  border-radius: 0.3125rem;
+  object-fit: cover;
+}
+
+.personalization-content-tab .personalization-content-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.personalization-content-text .personalization-title {
+  color: #ec1d24;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 30px;
+  text-align: left;
+  margin: 0 0 0.5rem 0;
+}
+
+.personalization-content-text .personalization-subtitle {
+  color: #ec1d24;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 27px;
+  margin: 0 0 0.5rem 0;
+}
+
+.personalization-content-text .personalization-process-heading {
+  color: #3a3a3a;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: justify;
+  margin: 0 0 0.5rem 0;
+}
+
+.personalization-content-text .personalization-list {
+  padding-left: 1.25rem;
+  color: #333333;
+  text-align: justify;
+  font-size: 15px;
+  margin: 0 0 0.5rem 0;
+}
+
+.personalization-list li {
+  margin-bottom: 0.1875rem;
+}
+
+.personalization-content-text .personalization-highlight {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  text-align: justify;
+  margin: 0 0 0.5rem 0;
+  color: #ec1d24;
+}
+
+.personalization-content-text .personalization-text {
+  font-size: 15px;
+  color: #333333;
+  margin: 0 0 0.5rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .personalization-wrap-container {
+    padding: 1.5rem;
+  }
+
+  .personalization-wrap-container .personalization-content-tab {
+    padding: 1.25rem;
+    gap: 1rem;
+  }
+
+  .personalization-content-tab .personalization-content-image {
+    min-width: 250px;
+  }
+
+  .personalization-content-image .personalization-image {
+    min-height: 20rem;
+  }
+
+  .personalization-content-tab .personalization-content-text {
+    min-width: 250px;
+  }
+
+  .personalization-content-text .personalization-title {
+    font-size: 1.875rem;
+  }
+
+  .personalization-content-text .personalization-subtitle {
+    font-size: 1.25rem;
+  }
+
+  .personalization-content-text .personalization-process-heading {
+    font-size: 1rem;
+  }
+
+  .personalization-content-text .personalization-list {
+    color: #333333;
+    font-size: 15px;
+  }
+
+  .personalization-content-text .personalization-highlight {
+    font-size: 0.8125rem;
+  }
+
+  .personalization-content-text .personalization-text {
+    font-size: 15px;
+    color: #333333;
+  }
+}
+
+@media (max-width: 480px) {
+  .personalization-wrap-container {
+    padding: 1rem;
+  }
+
+  .personalization-wrap-container .personalization-content-tab {
+    padding: 0px;
+    gap: 0.75rem;
+  }
+
+  .personalization-content-tab .personalization-content-image {
+    min-width: 100%;
+  }
+
+  .personalization-content-image .personalization-image {
+    min-height: 15rem;
+  }
+
+  .personalization-content-tab .personalization-content-text {
+    min-width: 100%;
+  }
+
+  .personalization-content-text .personalization-title {
+    font-size: 1.5rem;
+  }
+
+  .personalization-content-text .personalization-text {
+    font-size: 15px;
+    color: #333333;
+  }
+
+  .personalization-content-text .personalization-subtitle {
+    font-size: 1rem;
+  }
+
+  .personalization-content-text .personalization-process-heading {
+    font-size: 0.875rem;
+  }
+
+  .personalization-content-text .personalization-list {
+    font-size: 15px;
+    color: #333333;
+  }
+
+  .personalization-content-text .personalization-highlight {
+    font-size: 0.75rem;
+  }
+
+  .personalization-content-text .personalization-text {
+    font-size: 15px;
+    color: #333333;
+  }
+}
+
+/* Media queries for specific resolutions */
+@media (max-width: 640px) and (max-height: 360px) {
+  .personalization-wrap-container .personalization-content-tab.personalization-active {
+    display: grid;
+  }
+}
+
+@media (max-width: 712px) and (max-height: 1138px) {
+  .personalization-wrap-container .personalization-content-tab.personalization-active {
+    display: grid;
+  }
+}
+
+@media (max-width: 800px) and (max-height: 1280px) {
+  .personalization-wrap-container .personalization-content-tab.personalization-active {
+    display: grid;
+  }
+}
+
+@media (max-width: 768px) and (max-height: 1024px) {
+  .personalization-wrap-container .personalization-content-tab.personalization-active {
+    display: grid;
+  }
+}
+
+@media (max-width: 820px) and (max-height: 1180px) {
+  .personalization-wrap-container .personalization-content-tab.personalization-active {
+    display: grid;
+  }
+}
+
+@media (max-width: 912px) and (max-height: 1368px) {
+  .personalization-wrap-container .personalization-content-tab.personalization-active {
+    display: grid;
+  }
+}
+
+@media (max-width: 853px) and (max-height: 1280px) {
+  .personalization-wrap-container .personalization-content-tab.personalization-active {
+    display: grid;
+  }
+}
+
+@media (max-width: 1024px) and (max-height: 1366px) {
+  .personalization-wrap-container .personalization-content-tab.personalization-active {
+    display: grid;
   }
 }

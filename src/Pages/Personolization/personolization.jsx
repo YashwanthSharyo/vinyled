@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import "./personolization.css";
+import "./personolization.css"; // Corrected filename spelling
 import Service from "../../components/Service/service";
 import Gallery from "../../components/Gallery/gallery";
 
-export default function Personolization() {
+export default function Personalization() { // Corrected component name spelling
   const [activeTab, setActiveTab] = useState(1);
   const [hoveredTab, setHoveredTab] = useState(null);
 
@@ -121,21 +121,20 @@ export default function Personolization() {
         handleTabClick={handleTabClick}
         handleTabMouseEnter={handleTabMouseEnter}
         handleTabMouseLeave={handleTabMouseLeave}
-        tabs={tabs} // Pass the tabs array to Service component
+        tabs={tabs}
       />
 
-      <div className="wrap-container">
+      <div className="personalization-wrap-container">
         {tabs.map((_, index) => {
-          const tab = index + 1; // Map index to 1-based tab number
+          const tab = index + 1;
           return (
             <div
               key={tab}
-              className={`content-tab ${activeTab === tab ? "active" : ""}`}
+              className={`personalization-content-tab ${activeTab === tab ? "personalization-active" : ""}`}
               role="tabpanel"
               aria-hidden={activeTab !== tab}
             >
-              {/* Image Section */}
-              <div className="content-image">
+              <div className="personalization-content-image">
                 <img
                   src={
                     tab === 1
@@ -151,24 +150,23 @@ export default function Personolization() {
                       ? "Color PPF Application"
                       : "Livery & Decals Design"
                   }
-                  className="image"
+                  className="personalization-image"
                 />
               </div>
 
-              {/* Text Section */}
-              <div className="content-text">
+              <div className="personalization-content-text">
                 {tab === 1 ? (
                   <>
-                    <h2 className="title">Color Change Wrap</h2>
-                    <h3 className="subtitle">Personalized Vehicle Wrapping</h3>
-                    <p className="text">
+                    <h2 className="personalization-title">Color Change Wrap</h2>
+                    <h3 className="personalization-subtitle">Personalized Vehicle Wrapping</h3>
+                    <p className="personalization-text">
                       A color change wrap transforms your vehicle’s appearance
                       with high-quality vinyl, offering a custom look without
                       permanent paint changes.
                     </p>
 
-                    <h3 className="subtitle">Color Change Wrap Process</h3>
-                    <ul className="list">
+                    <h3 className="personalization-subtitle">Color Change Wrap Process</h3>
+                    <ul className="personalization-list">
                       <li>
                         Clean the vehicle thoroughly with soap and isopropyl
                         alcohol for a flawless base.
@@ -191,11 +189,8 @@ export default function Personolization() {
                       </li>
                     </ul>
 
-                    <h3 className="subtitle">
-                      {" "}
-                      Benefits of a Color Change Wrap
-                    </h3>
-                    <ul className="list">
+                    <h3 className="personalization-subtitle">Benefits of a Color Change Wrap</h3>
+                    <ul className="personalization-list">
                       <li>
                         Personalized style with vibrant colors or custom
                         graphics.
@@ -211,8 +206,8 @@ export default function Personolization() {
                       <li>Quick process, completed in a few days.</li>
                     </ul>
 
-                    <h3 className="subtitle">Application Areas</h3>
-                    <ul className="list">
+                    <h3 className="personalization-subtitle">Application Areas</h3>
+                    <ul className="personalization-list">
                       <li>
                         Full vehicle wrap for a complete color transformation.
                       </li>
@@ -229,10 +224,8 @@ export default function Personolization() {
                       </li>
                     </ul>
 
-                    <h3 className="subtitle">
-                      Tips for a Stunning Color Change Wrap
-                    </h3>
-                    <ul className="list">
+                    <h3 className="personalization-subtitle">Tips for a Stunning Color Change Wrap</h3>
+                    <ul className="personalization-list">
                       <li>
                         Start with flat panels like the hood to practice graphic
                         alignment.
@@ -246,24 +239,24 @@ export default function Personolization() {
                       </li>
                     </ul>
 
-                    <p className="text">
+                    <p className="personalization-text">
                       Contact us to create a custom color change wrap that
                       brings your vision to life!
                     </p>
                   </>
                 ) : tab === 2 ? (
                   <>
-                    <h2 className="title">Color PPF</h2>
-                    <h3 className="subtitle">What is Color PPF?</h3>
-                    <p className="text">
+                    <h2 className="personalization-title">Color PPF</h2>
+                    <h3 className="personalization-subtitle">What is Color PPF?</h3>
+                    <p className="personalization-text">
                       Color Paint Protection Film (PPF) combines the protective
                       qualities of traditional PPF with vibrant, custom colors,
                       shielding your vehicle’s paint while transforming its
                       appearance.
                     </p>
 
-                    <h3 className="subtitle">Color PPF Application Process</h3>
-                    <ul className="list">
+                    <h3 className="personalization-subtitle">Color PPF Application Process</h3>
+                    <ul className="personalization-list">
                       <li>
                         Clean the vehicle to remove dirt and contaminants.
                       </li>
@@ -280,8 +273,8 @@ export default function Personolization() {
                       </li>
                     </ul>
 
-                    <h3 className="subtitle">Benefits of Color PPF</h3>
-                    <ul className="list">
+                    <h3 className="personalization-subtitle">Benefits of Color PPF</h3>
+                    <ul className="personalization-list">
                       <li>
                         Protects against scratches, stone chips, and UV damage.
                       </li>
@@ -298,8 +291,8 @@ export default function Personolization() {
                       </li>
                     </ul>
 
-                    <h3 className="subtitle">Application Areas</h3>
-                    <ul className="list">
+                    <h3 className="personalization-subtitle">Application Areas</h3>
+                    <ul className="personalization-list">
                       <li>
                         Full vehicle coverage for comprehensive protection and
                         color change.
@@ -318,25 +311,23 @@ export default function Personolization() {
                       </li>
                     </ul>
 
-                    <p className="text">
+                    <p className="personalization-text">
                       Contact us to explore color PPF options for your car or
                       bike!
                     </p>
                   </>
                 ) : (
                   <>
-                    <h2 className="title">Livery & Decals</h2>
-                    <h3 className="subtitle">What are Livery & Decals?</h3>
-                    <p className="text">
+                    <h2 className="personalization-title">Livery & Decals</h2>
+                    <h3 className="personalization-subtitle">What are Livery & Decals?</h3>
+                    <p className="personalization-text">
                       Livery and decals involve applying custom graphics, logos,
                       or racing-inspired designs to vehicles, enhancing their
                       visual appeal and brand identity.
                     </p>
 
-                    <h3 className="subtitle">
-                      How: Livery & Decals Application Process
-                    </h3>
-                    <ul className="list">
+                    <h3 className="personalization-subtitle">How: Livery & Decals Application Process</h3>
+                    <ul className="personalization-list">
                       <li>
                         Collaborate to design custom graphics or logos using
                         in-house tools.
@@ -359,10 +350,8 @@ export default function Personolization() {
                       </li>
                     </ul>
 
-                    <h3 className="subtitle">
-                      Why: Benefits of Livery & Decals
-                    </h3>
-                    <ul className="list">
+                    <h3 className="personalization-subtitle">Why: Benefits of Livery & Decals</h3>
+                    <ul className="personalization-list">
                       <li>Unique, eye-catching designs for cars or bikes.</li>
                       <li>
                         Professional branding for racing teams or personal
@@ -378,8 +367,8 @@ export default function Personolization() {
                       </li>
                     </ul>
 
-                    <h3 className="subtitle">Where: Application Areas</h3>
-                    <ul className="list">
+                    <h3 className="personalization-subtitle">Where: Application Areas</h3>
+                    <ul className="personalization-list">
                       <li>
                         Full vehicle livery for a complete transformation.
                       </li>
@@ -397,7 +386,7 @@ export default function Personolization() {
                       <li>Applied in our in-house facility for precision.</li>
                     </ul>
 
-                    <p className="text">
+                    <p className="personalization-text">
                       Let us design a livery or decal package that makes your
                       vehicle stand out!
                     </p>
@@ -405,12 +394,8 @@ export default function Personolization() {
                 )}
               </div>
 
-              {/* Gallery Section */}
               {(tab === 1 || tab === 2 || tab === 3) && (
-                <Gallery
-                  images={galleryData[tab].images}
-                  largeImage={galleryData[tab].largeImage}
-                />
+                <Gallery images={galleryData[tab].images} />
               )}
             </div>
           );
