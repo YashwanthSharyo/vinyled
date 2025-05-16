@@ -338,11 +338,11 @@ const HomePage = () => {
               <div className="contact-details">
                 <div className="contact-box">
                   <p className="contact-label">&#9742; PHONE</p>
-                  <p className="contact-text">09066431968</p>
+                  <p className="contact-text"><a href="tel:+919066431968">9066431968</a></p>
                 </div>
                 <div className="contact-box">
                   <p className="contact-label">&#9993; EMAIL</p>
-                  <p className="contact-text">info@vinyled.in</p>
+                  <p className="contact-text"><a href="mailto:info@vinyled.in">info@vinyled.in</a></p>
                 </div>
               </div>
             </div>
@@ -355,10 +355,10 @@ const HomePage = () => {
 
               <div className="location-box">
                 <p className="location-item">
-                  📞<span>090664 31968</span>
+                  📞<span><a href="tel:+919066431968">9066431968</a></span>
                 </p>
                 <p className="location-item">
-                  📧<span>info@vinyled.in</span>
+                  📧<span><a href="mailto:info@vinyled.in">info@vinyled.in</a></span>
                 </p>
                 <p className="location-item">
                   📍

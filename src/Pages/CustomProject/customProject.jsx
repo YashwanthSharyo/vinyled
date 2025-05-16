@@ -89,7 +89,7 @@ export default function CustomProject() {
       }}
     >
       <Service
-        title="Custom Project"
+        title="CUSTOM PROJECT"
         activeTab={activeTab}
         handleTabClick={handleTabClick}
         handleTabMouseEnter={handleTabMouseEnter}

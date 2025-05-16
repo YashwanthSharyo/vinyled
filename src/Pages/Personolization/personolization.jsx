@@ -116,7 +116,7 @@ export default function Personalization() { // Corrected component name spelling
       }}
     >
       <Service
-        title="Personalization"
+        title="PERSONALIZATION"
         activeTab={activeTab}
         handleTabClick={handleTabClick}
         handleTabMouseEnter={handleTabMouseEnter}

@@ -891,7 +891,7 @@
 
 @media (min-width: 1024px) {
   .section {
-   min-height: 100vh; 
+   min-height: 120vh; 
     display: flex;
     align-items: center;
     justify-content: center;
