@@ -60,10 +60,12 @@ export default function Contact() {
     <strong>Address:</strong> No: 4, 88/6, Situated at Chelekere Village, Kalyan Nagar Post, Bangalore East, Karnataka 560043
   </p>
   <p>
-    <strong>Email:</strong> info@vinyled.in
-  </p>
+  <strong>Email: </strong>
+  <a href="mailto:info@vinyled.in">info@vinyled.in</a>
+</p>
+
   <p>
-    <strong>Phone:</strong> +91 90664 31968
+    <strong>Phone:</strong> <a href="tel:+919066431968">+91 90664 31968</a>
   </p>
 </div>
 
