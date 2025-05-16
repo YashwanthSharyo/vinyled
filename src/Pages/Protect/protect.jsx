@@ -125,18 +125,18 @@ export default function Protect() {
         tabs={tabs} // Pass the tabs array to Service component
       />
 
-      <div className="wrap-container">
+      <div className="protect-wrap-container">
         {tabs.map((_, index) => {
           const tab = index + 1; // Map index to 1-based tab number
           return (
             <div
               key={tab}
-              className={`content-tab ${activeTab === tab ? "active" : ""}`}
+              className={`protect-content-tab ${activeTab === tab ? "active" : ""}`}
               role="tabpanel"
               aria-hidden={activeTab !== tab}
             >
               {/* Image Section */}
-              <div className="content-image">
+              <div className="protect-content-image">
                 <img
                   src={
                     tab === 1
@@ -152,24 +152,24 @@ export default function Protect() {
                       ? "Color PPF Application"
                       : "Livery & Decals Design"
                   }
-                  className="image"
+                  className="protect-image"
                 />
               </div>
 
               {/* Text Section */}
-              <div className="content-text">
+              <div className="protect-content-text">
                 {tab === 1 ? (
                   <>
-                    <h2 className="title">PPF</h2>
-                    <h3 className="subtitle">Paint Protection Film</h3>
-                    <p className="text">
+                    <h2 className="protect-title">PPF</h2>
+                    <h3 className="protect-subtitle">Paint Protection Film</h3>
+                    <p className="protect-text">
                       Paint Protection Film (PPF) is a transparent, durable
                       layer that safeguards your vehicle’s paint from damage
                       while preserving its original finish.
                     </p>
 
-                    <h3 className="subtitle">PPF Application Process</h3>
-                    <ul className="list">
+                    <h3 className="protect-subtitle">PPF Application Process</h3>
+                    <ul className="protect-list">
                       <li>
                         Clean the vehicle with soap and isopropyl alcohol for
                         optimal adhesion.
@@ -191,8 +191,8 @@ export default function Protect() {
                       </li>
                     </ul>
 
-                    <h3 className="subtitle">Benefits of PPF</h3>
-                    <ul className="list">
+                    <h3 className="protect-subtitle">Benefits of PPF</h3>
+                    <ul className="protect-list">
                       <li>
                         Protects against scratches, stone chips, bug splatter,
                         and UV damage.
@@ -213,8 +213,8 @@ export default function Protect() {
                       </li>
                     </ul>
 
-                    <h3 className="subtitle">Application Areas</h3>
-                    <ul className="list">
+                    <h3 className="protect-subtitle">Application Areas</h3>
+                    <ul className="protect-list">
                       <li>
                         Full vehicle coverage for comprehensive protection.
                       </li>
@@ -233,8 +233,8 @@ export default function Protect() {
                       </li>
                     </ul>
 
-                    <h3 className="subtitle">Tips for Maintaining PPF</h3>
-                    <ul className="list">
+                    <h3 className="protect-subtitle">Tips for Maintaining PPF</h3>
+                    <ul className="protect-list">
                       <li>
                         Wash regularly with mild soap to keep the film clean and
                         effective.
@@ -249,25 +249,25 @@ export default function Protect() {
                       </li>
                     </ul>
 
-                    <p className="text">
+                    <p className="protect-text">
                       Contact us to protect your vehicle with a custom PPF
                       solution!
                     </p>
                   </>
                 ) : tab === 2 ? (
                   <>
-                    <h2 className="title">Ceramic</h2>
-                    <h3 className="subtitle">Ceramic Coating</h3>
-                    <p className="text">
+                    <h2 className="protect-title">Ceramic</h2>
+                    <h3 className="protect-subtitle">Ceramic Coating</h3>
+                    <p className="protect-text">
                       Ceramic coatings provide a durable, hydrophobic layer that
                       protects your vehicle’s paint and enhances its shine,
                       offering long-lasting beauty and ease of maintenance.
                     </p>
 
-                    <h3 className="subtitle">
+                    <h3 className="protect-subtitle">
                       Ceramic Coating Application Process
                     </h3>
-                    <ul className="list">
+                    <ul className="protect-list">
                       <li>
                         Wash, decontaminate, and polish the vehicle to ensure a
                         smooth base.
@@ -290,10 +290,10 @@ export default function Protect() {
                       </li>
                     </ul>
 
-                    <h3 className="subtitle">
+                    <h3 className="protect-subtitle">
                       Benefits of Ceramic Coating
                     </h3>
-                    <ul className="list">
+                    <ul className="protect-list">
                       <li>
                         Protects against UV rays, oxidation, bird droppings, and
                         chemical stains.
@@ -315,8 +315,8 @@ export default function Protect() {
                       </li>
                     </ul>
 
-                    <h3 className="subtitle">Application Areas</h3>
-                    <ul className="list">
+                    <h3 className="protect-subtitle">Application Areas</h3>
+                    <ul className="protect-list">
                       <li>
                         Full exterior coverage for comprehensive protection and
                         gloss.
@@ -334,10 +334,10 @@ export default function Protect() {
                       </li>
                     </ul>
 
-                    <h3 className="subtitle">
+                    <h3 className="protect-subtitle">
                       Tips for Maintaining Ceramic Coating
                     </h3>
-                    <ul className="list">
+                    <ul className="protect-list">
                       <li>
                         Wash with pH-neutral soap to preserve the coating’s
                         integrity.
@@ -352,16 +352,16 @@ export default function Protect() {
                       </li>
                     </ul>
 
-                    <p className="text">
+                    <p className="protect-text">
                       Contact us to elevate your vehicle with a premium ceramic
                       coating!
                     </p>
                   </>
                 ) : (
                   <>
-                    <h2 className="title">Graphene Coating</h2>
-                    <h3 className="subtitle">What is Graphene Coating?</h3>
-                    <p className="text">
+                    <h2 className="protect-title">Graphene Coating</h2>
+                    <h3 className="protect-subtitle">What is Graphene Coating?</h3>
+                    <p className="protect-text">
                       Graphene Coating is an advanced protective layer infused
                       with graphene nanoparticles, offering superior durability,
                       hydrophobicity, and shine compared to traditional
@@ -369,10 +369,10 @@ export default function Protect() {
                       appearance.
                     </p>
 
-                    <h3 className="subtitle">
+                    <h3 className="protect-subtitle">
                       Graphene Coating Application Process
                     </h3>
-                    <ul className="list">
+                    <ul className="protect-list">
                       <li>
                         Wash, decontaminate, and polish the vehicle to create a
                         pristine base.
@@ -395,10 +395,10 @@ export default function Protect() {
                       </li>
                     </ul>
 
-                    <h3 className="subtitle">
+                    <h3 className="protect-subtitle">
                       Benefits of Graphene Coating
                     </h3>
-                    <ul className="list">
+                    <ul className="protect-list">
                       <li>
                         Unmatched durability, resisting scratches and chemicals
                         for 7–10 years.
@@ -420,8 +420,8 @@ export default function Protect() {
                       </li>
                     </ul>
 
-                    <h3 className="subtitle">Application Areas</h3>
-                    <ul className="list">
+                    <h3 className="protect-subtitle">Application Areas</h3>
+                    <ul className="protect-list">
                       <li>
                         Full exterior coverage for comprehensive protection and
                         shine.
@@ -442,10 +442,10 @@ export default function Protect() {
                       </li>
                     </ul>
 
-                    <h3 className="subtitle">
+                    <h3 className="protect-subtitle">
                       Tips for Maintaining Graphene Coating
                     </h3>
-                    <ul className="list">
+                    <ul className="protect-list">
                       <li>
                         Wash with pH-neutral soap to preserve the coating’s
                         performance.
@@ -460,7 +460,7 @@ export default function Protect() {
                       </li>
                     </ul>
 
-                    <p className="text">
+                    <p className="protect-text">
                       Contact us to safeguard your vehicle with a
                       state-of-the-art graphene coating!
                     </p>

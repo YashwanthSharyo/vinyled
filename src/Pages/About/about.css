@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
 }
 
 body {
@@ -90,10 +91,14 @@ body {
 .AboutIntroText > .AboutIntroParagraph {
   line-height: 24px;
   margin-bottom: 15px;
+  font-size: 15px;
+  color: #333;
 }
 
 .AboutIntroText > .AboutIntroParagraph.AboutItalic {
   font-style: italic;
+  font-size: 15px;
+  color: #333;
 }
 
 .AboutContainer > .AboutStandards {
@@ -129,7 +134,8 @@ body {
 
 .AboutStandardsText > .AboutStandardsList {
   line-height: 24px;
-  font-size: 16px;
+  font-size: 15px;
+  color: #333;
   padding-left: 20px;
   max-width: 100%;
 }
@@ -176,7 +182,7 @@ body {
 
 .AboutQuote > .AboutQuoteContent {
   padding: 20px;
-  color: white;
+  color: #ec1d24;
   font-size: 20px;
   font-family: Arial, sans-serif;
   line-height: 1.5;
@@ -359,13 +365,14 @@ body {
   }
 
   .AboutIntroText > .AboutIntroTitle {
-    font-size: 24px;
+    font-size: 29px;
   }
 
   .AboutIntroText > .AboutIntroParagraph {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 20px;
     max-width: 100%;
+    color: #333;
   }
 
   .AboutContainer > .AboutStandards {
@@ -394,7 +401,8 @@ body {
   }
 
   .AboutStandardsText > .AboutStandardsList {
-    font-size: 14px;
+    font-size: 15px;
+    color: #333;
     max-width: 100%;
   }
 
@@ -448,23 +456,25 @@ body {
   }
 
   .AboutFacilitiesText > .AboutFacilitiesTitle {
-    font-size: 24px;
+    font-size: 29px;
   }
 
   .AboutFacilitiesText > .AboutFacilitiesParagraph {
-    font-size: 14px;
+    font-size: 15px;
+    color: #333;
     line-height: 20px;
     max-width: 100%;
   }
 
   .AboutFacilitiesText > .AboutFacilitiesList {
-    font-size: 14px;
+    font-size: 15px;
+    color: #333;
     max-width: 100%;
   }
 
   .AboutFacilitiesButtonWrapper > .AboutFacilitiesButton {
     padding: 10px 20px;
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .AboutContainer > .AboutFooter {

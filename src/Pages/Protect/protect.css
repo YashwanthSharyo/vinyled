@@ -1,17 +1,15 @@
-*{
+* {
   font-family: 'Work Sans', sans-serif;
 }
 
-
-.wrap-container {
- 
+.protect-wrap-container {
   background-color: white;
   display: flex;
   justify-content: center;
   padding: 1.5rem;
 }
 
-.wrap-container .content-tab {
+.protect-wrap-container .protect-content-tab {
   display: none;
   flex-direction: row;
   gap: 1.25rem;
@@ -22,16 +20,16 @@
   align-items: flex-start;
 }
 
-.wrap-container .content-tab.active {
+.protect-wrap-container .protect-content-tab.active {
   display: flex;
 }
 
-.content-tab .content-image {
+.protect-content-tab .protect-content-image {
   flex: 1;
   min-width: 300px;
 }
 
-.content-image .image {
+.protect-content-image .protect-image {
   width: 100%;
   height: auto;
   min-height: 25rem;
@@ -39,12 +37,12 @@
   object-fit: cover;
 }
 
-.content-tab .content-text {
+.protect-content-tab .protect-content-text {
   flex: 1;
   min-width: 300px;
 }
 
-.content-text .title {
+.protect-content-text .protect-title {
   color: #ec1d24;
   font-weight: 500;
   font-style: normal;
@@ -52,36 +50,33 @@
   margin: 0 0 0.5rem 0;
 }
 
-.content-text .subtitle {
+.protect-content-text .protect-subtitle {
   color: #ec1d24;
   font-weight: normal;
   font-style: normal;
   font-size: 25px;
-  
   margin: 0 0 0.5rem 0;
 }
 
-.content-text .process-heading {
+.protect-content-text .protect-process-heading {
   color: #3a3a3a;
   font-size: 1.25rem;
   font-weight: bold;
- 
   margin: 0 0 0.5rem 0;
 }
 
-.content-text .list {
+.protect-content-text .protect-list {
   padding-left: 1.25rem;
-  font-size: 0.875rem;
-
+  font-size: 15px;
   margin: 0 0 0.5rem 0;
 }
 
-.list li {
+.protect-list li {
   margin-bottom: 0.1875rem;
   font-size: 15px;
 }
 
-.content-text .highlight {
+.protect-content-text .protect-highlight {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 0.875rem;
@@ -89,7 +84,7 @@
   color: #ec1d24;
 }
 
-.content-text .text {
+.protect-content-text .protect-text {
   font-size: 15px;
   color: #333333;
   font-weight: 400;
@@ -98,107 +93,119 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .wrap-container {
+  .protect-wrap-container {
       padding: 1.5rem;
   }
 
-  .wrap-container .content-tab.active {
+  .protect-wrap-container .protect-content-tab.active {
       display: grid; /* Ensure grid for active tab on smaller screens */
   }
 
-  .wrap-container .content-tab {
+  .protect-wrap-container .protect-content-tab {
       padding: 1.25rem;
       gap: 1rem;
   }
 
-  .content-tab .content-image {
+  .protect-content-tab .protect-content-image {
       min-width: 250px;
   }
 
-  .content-image .image {
+  .protect-content-image .protect-image {
       min-height: 20rem;
   }
 
-  .content-tab .content-text {
+  .protect-content-tab .protect-content-text {
       min-width: 250px;
   }
 
-  .content-text .title {
+  .protect-content-text .protect-title {
       font-size: 27px;
   }
 
-  .content-text .subtitle {
+  .protect-content-text .protect-subtitle {
       font-size: 25px;
   }
 
-  .content-text .process-heading {
+  .protect-content-text .protect-process-heading {
       font-size: 1rem;
   }
 
-  .content-text .list {
+  .protect-content-text .protect-list {
+      font-size: 15px;
+  }
+
+  .protect-content-text .protect-highlight {
       font-size: 0.8125rem;
   }
 
-  .content-text .highlight {
-      font-size: 0.8125rem;
-  }
-
-  .content-text .text {
-      font-size: 0.8125rem;
+  .protect-content-text .protect-text {
+      font-size: 15px;
   }
 }
 
 @media (max-width: 480px) {
-  .wrap-container {
+  .protect-wrap-container {
       padding: 4px;
   }
 
-  .wrap-container .content-tab {
+  .protect-wrap-container .protect-content-tab {
       padding: 0.25rem;
       gap: 0.75rem;
   }
-  .wrap-container .content-tab.active {
+  .protect-wrap-container .protect-content-tab.active {
       display: grid; /* Ensure grid for active tab on smaller screens */
   }
 
-  .content-tab .content-image {
+  .protect-content-tab .protect-content-image {
       min-width: 100%;
   }
 
-  .content-image .image {
+  .protect-content-image .protect-image {
       min-height: 15rem;
   }
 
-  .content-tab .content-text {
+  .protect-content-tab .protect-content-text {
       min-width: 100%;
   }
 
-  .content-text .title {
+  .protect-content-text .protect-title {
       font-size: 27px;
   }
 
-  .content-text .subtitle {
+  .protect-content-text .protect-subtitle {
       font-size: 25px;
   }
 
-  .content-text .process-heading {
+  .protect-content-text .protect-process-heading {
       font-size: 0.875rem;
   }
 
-  .content-text .list {
+  .protect-content-text .protect-list {
+      font-size: 15px;
+  }
+
+  .protect-content-text .protect-highlight {
       font-size: 0.75rem;
   }
 
-  .content-text .highlight {
-      font-size: 0.75rem;
-  }
-
-  .content-text .text {
-      font-size: 14px;
+  .protect-content-text .protect-text {
+      font-size: 15px;
   }
   
-.list li {
+.protect-list li {
   margin-bottom: 0.1875rem;
-  font-size: 14px;
+  font-size: 15px;
 }
+}
+
+/* Target specific screen sizes */
+@media (width: 800px) and (height: 1280px),
+       (width: 820px) and (height: 1180px),
+       (width: 1024px) and (height: 1366px),
+       (width: 912px) and (height: 1368px),
+       (width: 853px) and (height: 1280px),
+       (width: 1024px) and (height: 600px) {
+  .protect-wrap-container .protect-content-tab.active {
+    display: grid !important;
+  }
 }

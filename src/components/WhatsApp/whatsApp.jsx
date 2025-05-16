@@ -1,88 +1,31 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 import "./whatsApp.css";
 
 const WhatsApp = () => {
-  const [isOpen, setIsOpen] = useState(false); // Start closed
-  const [messages, setMessages] = useState([
-    { sender: "bot", text: "Hi there! How can I help you today?" }
-  ]);
-  const [input, setInput] = useState("");
-  const audioRef = useRef(null); // Audio reference
-
-  const handleSend = () => {
-    if (!input.trim()) return;
-
-    const userMessage = { sender: "user", text: input };
-    setMessages((prev) => [...prev, userMessage]);
-
-    setTimeout(() => {
-      const botReply = { sender: "bot", text: "Thanks for your message!" };
-      setMessages((prev) => [...prev, botReply]);
-    }, 1000);
-
-    setInput("");
-  };
-
-  const handleKeyPress = (e) => {
-    if (e.key === "Enter") handleSend();
-  };
-
-  useEffect(() => {
-    const chatbotBody = document.querySelector(".chatbot-body");
-    if (chatbotBody) {
-      chatbotBody.scrollTop = chatbotBody.scrollHeight;
-    }
-  }, [messages]);
-
-  // Open chatbot after 10 seconds with sound
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsOpen(true);
-      audioRef.current?.play();
-    }, 10000); // 10 seconds
-
-    return () => clearTimeout(timer);
-  }, []);
+  // Replace with your actual phone number (e.g., +1234567890 without spaces or dashes)
+  const phoneNumber = "1234567890";
+  // Pre-filled message to be sent via WhatsApp
+  const message = "Hello, I'm interested in your services!";
+  const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (
     <div className="chatbot-widget">
-      {/* Notification sound */}
-      <audio ref={audioRef} src="/sounds/notification.mp3" preload="auto" />
-
-      {isOpen ? (
-        <div className="chatbot-box">
-          <div className="chatbot-header">
-            <span>WhatsApp ChatBot</span>
-            <button onClick={() => setIsOpen(false)}>×</button>
-          </div>
-
-          <div className="chatbot-body">
-            {messages.map((msg, idx) => (
-              <div
-                key={idx}
-                className={`message ${msg.sender === "user" ? "user" : "bot"}`}
-              >
-                {msg.text}
-              </div>
-            ))}
-          </div>
-
-          <div className="chatbot-input">
-            <input
-              type="text"
-              value={input}
-              onChange={(e) => setInput(e.target.value)}
-              onKeyDown={handleKeyPress}
-              placeholder="Type your message..."
-            />
-            <button onClick={handleSend}>Send</button>
-          </div>
-        </div>
-      ) : (
-        <button className="chatbot-toggle" onClick={() => setIsOpen(true)}>
-          💬
-        </button>
-      )}
+      <a
+        href={whatsappLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="chatbot-toggle"
+      >
+        {/* 
+          For production, download the official WhatsApp icon from https://www.whatsapp.com/brand 
+          and place it in your project's public folder as 'whatsapp-icon.png', then use src="/whatsapp-icon.png".
+          The below URL is a temporary placeholder from a public source.
+        */}
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/124/124034.png"
+          alt="WhatsApp"
+        />
+      </a>
     </div>
   );
 };

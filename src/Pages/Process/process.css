@@ -1,3 +1,8 @@
+*{
+  font-family: 'Work Sans', sans-serif;
+}
+
+
 
 
 /* Wrapper */
@@ -36,29 +41,33 @@
 
 .vehicle-section__title {
   color: #e53e3e;
-  font-size: clamp(1.4rem, 4vw, 1.7rem);
+  font-size: 39px;
   font-weight: 600;
   margin-bottom: 1rem;
 }
 
 .vehicle-section__content {
-  font-size: 0.95rem;
+  font-size: 15px;
 }
 
 .vehicle-section__content h3 {
   color: #e53e3e;
-  font-size: 1.2rem;
+  font-size: 27px;
   margin: 1.25rem 0 0.5rem;
 }
 
 .vehicle-section__content p {
   margin-bottom: 0.75rem;
+  font-size: 15px;
+  font-weight: normal;
 }
 
 .vehicle-section__content ul,
 .vehicle-section__content ol {
   margin: 0.75rem 0;
   padding-left: 1.5rem;
+  font-size: 15px;
+  color: #333;
 }
 
 .vehicle-section__content li {
@@ -89,7 +98,7 @@
   font-weight: 500;
   color: #4a5568;
   margin-top: 0.5rem;
-  font-size: 0.9rem;
+  font-size: 15px;
 }
 
 /* CTA */
@@ -169,7 +178,7 @@
   }
 
   .vehicle-section__title {
-    font-size: 1.3rem;
+    font-size:27px;
   }
 
   .vehicle-cta__button {
