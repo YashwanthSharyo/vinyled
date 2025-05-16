@@ -117,6 +117,7 @@
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
+  color: #ffffff;
 }
 
 .footer .link {
@@ -201,6 +202,7 @@
 
   .footer .title {
     font-size: 13px;
+    color: #ffffff;
   }
 
   .footer .link {
@@ -282,6 +284,7 @@
 
   .footer .title {
     font-size: 12px;
+    color: #ffffff;
   }
 
   .footer .link {

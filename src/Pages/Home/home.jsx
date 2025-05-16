@@ -64,11 +64,14 @@ const HomePage = () => {
           <div className="text">
             <h1>Transform Your Ride with VINYLE'D</h1>
             <p>
-              Revamp your vehicle with VINYLE'Ds expert car wraps, premium
-              paint protection films, and bespoke graphics. Our Bangalore team has been delivering excellence for decades. Trust us to transform your car or bike with
-              top-tier materials and unmatched craftsmanship.
+              Revamp your vehicle with VINYLE'Ds expert car wraps, premium paint
+              protection films, and bespoke graphics. Our Bangalore team has
+              been delivering excellence for decades. Trust us to transform your
+              car or bike with top-tier materials and unmatched craftsmanship.
             </p>
-            <button className="action-btn" onClick={scrollToGetInTouch}>Get started</button>
+            <button className="action-btn" onClick={scrollToGetInTouch}>
+              Get started
+            </button>
           </div>
         </div>
       </section>
@@ -134,10 +137,10 @@ const HomePage = () => {
               onClick={() => handleClick(3)}
             >
               <img
-  src="./Images/car2.svg"
-  alt="Service 3"
-  className="service-image"
-/>
+                src="./Images/car2.svg"
+                alt="Service 3"
+                className="service-image"
+              />
 
               <div className="service-overlay" />
               <div
@@ -247,7 +250,12 @@ const HomePage = () => {
                 style, we help your vehicle stand out on the road.
               </p>
               <div className="button-container">
-                <button className="left-button" onClick={() => navigate("/about")}>Know More</button>
+                <button
+                  className="left-button"
+                  onClick={() => navigate("/about")}
+                >
+                  Know More
+                </button>
               </div>
               <div className="left-image-container">
                 <img
@@ -263,8 +271,8 @@ const HomePage = () => {
             <div className="right-content-centered">
               <h2 className="faq-title">Frequently Asked Questions</h2>
               <p className="faq-subtext">
-                Everything you need to know about VINYLE'D. Can’t find the answer
-                you’re looking for?
+                Everything you need to know about VINYLE'D. Can’t find the
+                answer you’re looking for?
               </p>
               <p className="faq-contact">
                 Feel free to{" "}
@@ -330,7 +338,7 @@ const HomePage = () => {
               <div className="contact-details">
                 <div className="contact-box">
                   <p className="contact-label">&#9742; PHONE</p>
-                  <p className="contact-text">9999999999</p>
+                  <p className="contact-text">09066431968</p>
                 </div>
                 <div className="contact-box">
                   <p className="contact-label">&#9993; EMAIL</p>
@@ -347,14 +355,18 @@ const HomePage = () => {
 
               <div className="location-box">
                 <p className="location-item">
-                  📞<span>9999999999</span>
+                  📞<span>090664 31968</span>
                 </p>
                 <p className="location-item">
                   📧<span>info@vinyled.in</span>
                 </p>
                 <p className="location-item">
                   📍
-                  <span>#609 AECS layout, Kundalahalli, Karnataka, India</span>
+                  <span>
+                    No: 4, 88/6, Situated at Chelekere Village, Kalyan Nagar
+                    Post, Bangalore East, Karnataka 560043, Bengaluru, Karnataka
+                    560084
+                  </span>
                 </p>
               </div>
 
@@ -362,7 +374,7 @@ const HomePage = () => {
                 <div className="map-wrapper">
                   <iframe
                     title="Vinyled Location"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.1174215027766!2d77.63773461434949!3d13.028764817118106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae179c2c4039cd%3A0x3b62ea9297f3e28!2sChelekere%20Village%2C%20Kalyan%20Nagar%2C%20Bengaluru%2C%20Karnataka%20560043!5e0!3m2!1sen!2sin!4v1714985800025!5m2!1sen!2sin"
+                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7774.2827153716025!2d77.63419702649115!3d13.026668873570573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17ee7674eadb%3A0x9eaf8a9f4430758!2sVinyled%20%7C%20PPF%20%2CWRAP%20%2CSUNFILM%20coating%20for%20car%20in%20Bengaluru!5e0!3m2!1sen!2sin!4v1747321796100!5m2!1sen!2sin"
                     width="100%"
                     height="300"
                     style={{ border: 0, marginTop: "1rem" }}

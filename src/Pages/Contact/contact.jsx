@@ -41,7 +41,7 @@ export default function Contact() {
       <div className="map-address-section">
         <div className="map-container">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.678285496604!2d-0.141890684229785!3d51.50100917963428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604ce37d091cb%3A0x4d3e7f49b3b0f4c8!2s123%20Studio%20Ln%2C%20London%2C%20UK!5e0!3m2!1sen!2sus!4v1697654321890!5m2!1sen!2sus"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7774.2827153716025!2d77.63419702649115!3d13.026668873570573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17ee7674eadb%3A0x9eaf8a9f4430758!2sVinyled%20%7C%20PPF%20%2CWRAP%20%2CSUNFILM%20coating%20for%20car%20in%20Bengaluru!5e0!3m2!1sen!2sin!4v1747321796100!5m2!1sen!2sin"
             width="100%"
             height="100%"
             style={{ border: 0 }}
@@ -52,20 +52,21 @@ export default function Contact() {
           ></iframe>
         </div>
         <div className="address-info">
-          <h2>Contact Information</h2>
-          <p>
-            <strong>Name:</strong> London Studio
-          </p>
-          <p>
-            <strong>Address:</strong> 123 Studio Lane, London, UK
-          </p>
-          <p>
-            <strong>Email:</strong> contact@londonstudio.com
-          </p>
-          <p>
-            <strong>Phone:</strong> +44 123 456 7890
-          </p>
-        </div>
+  <h2>Contact Information</h2>
+  <p>
+    <strong>Name:</strong> Vinyled Studio
+  </p>
+  <p>
+    <strong>Address:</strong> No: 4, 88/6, Situated at Chelekere Village, Kalyan Nagar Post, Bangalore East, Karnataka 560043, Bengaluru, Karnataka 560084
+  </p>
+  <p>
+    <strong>Email:</strong> info@vinyled.in
+  </p>
+  <p>
+    <strong>Phone:</strong> +91 90664 31968
+  </p>
+</div>
+
       </div>
 
       {/* Right Section: Contact Form and Appointment Booking */}
@@ -134,28 +135,7 @@ export default function Contact() {
                 onChange={handleChange}
               />
             </div>
-            <div>
-              <label htmlFor="studio">STUDIO</label>
-              <select
-                name="studio"
-                required
-                value={formData.studio}
-                onChange={handleChange}
-              >
-                <option value="">Select a Studio</option>
-                <option value="Bristol">Bristol</option>
-                <option value="Midlands">Midlands</option>
-                <option value="Leeds">Leeds</option>
-                <option value="London">London</option>
-                <option value="Southampton">Southampton</option>
-                <option value="Bahrain">Bahrain</option>
-                <option value="Dubai">Dubai</option>
-                <option value="Kuwait">Kuwait</option>
-                <option value="Qatar">Qatar</option>
-                <option value="Thailand">Thailand</option>
-                <option value="Taiwan">Taiwan</option>
-              </select>
-            </div>
+          
             <div>
               <label htmlFor="request">REQUEST</label>
               <textarea

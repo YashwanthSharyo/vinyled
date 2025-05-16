@@ -1,4 +1,8 @@
 /* Global reset */
+
+*{
+  font-family: 'Work Sans', sans-serif;
+}
 html, body {
   margin: 0;
   padding: 0;
@@ -59,13 +63,13 @@ body {
 
 .address-info h2 {
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 24px;
   color: #ec1d24;
 }
 
 .address-info p {
-  font-size: 18px;
+  font-size: 15px;
   margin-bottom: 16px;
   line-height: 1.5;
 }
@@ -81,16 +85,16 @@ body {
 }
 
 .contact-form-section h1 {
-  font-size: 22px;
+  font-size: 25px;
   font-weight: 700;
   margin-bottom: 12px;
   text-align: left;
-  color: #000;
+  color: #ec1d24;
 }
 
 .contact-form-section p {
-  font-size: 16px;
-  color: #000;
+  font-size: 19px;
+  color: #ec1d24;
   margin-bottom: 20px;
   text-align: left;
 }
@@ -102,7 +106,7 @@ body {
 }
 
 .contact-form-section label {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
   margin-bottom: 6px;
 }
@@ -112,7 +116,7 @@ body {
 .contact-form-section select {
   width: 100%;
   padding: 10px;
-  font-size: 14px;
+  font-size: 15px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
@@ -129,7 +133,7 @@ body {
 .contact-form-section button {
   width: 100%;
   padding: 12px;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
   background-color: #ec1d24;
   color: white;
@@ -153,7 +157,7 @@ body {
 .toggle-buttons button {
   flex: 1;
   padding: 10px;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -234,7 +238,7 @@ body {
   .contact-form-section h1,
   .address-info h2,
   .calendly-widget h2 {
-    font-size: 18px;
+    font-size: 15px;
   }
 
   .contact-form-section input,
@@ -245,7 +249,7 @@ body {
 
   .contact-form-section p,
   .address-info p {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .map-container {
