@@ -83,30 +83,17 @@ export default function About() {
           </p>
           <p className="AboutIntroParagraph">
             At VINYLE'D we offer a total car care solution package, incorporating
-            everything from{' '}
-            <a
-              href="https://topazdetailing.com/services/enhance/"
-              target="_blank"
-              rel="noreferrer"
-            >
+            everything from  
               VINYLE'D enhancement
-            </a>{' '}
+            {' '}
             and{' '}
-            <a
-              href="https://topazdetailing.com/services/protect/"
-              target="_blank"
-              rel="noreferrer"
-            >
+            
               VINYLE'D protection
-            </a>{' '}
+         {' '}
             through to{' '}
-            <a
-              href="https://topazdetailing.com/services/maintain/"
-              target="_blank"
-              rel="noreferrer"
-            >
+            
               VINYLE'D maintenance
-            </a>
+           
             .
           </p>
           <p className="AboutIntroParagraph AboutItalic">
@@ -197,8 +184,8 @@ export default function About() {
           <p className="AboutFacilitiesParagraph">
             We offer a relaxed friendly environment for our clients, as well as the
             working environment in something as delicate as{' '}
-            <a href="https://topazdetailing.com/services/enhance/">VINYLE'D DETAILING</a>{' '}
-            and <a href="https://topazdetailing.com/services/protect/">VINYLE'D PPF</a>{' '}
+            VINYLE'D DETAILING{' '}
+            and VINYLE'D PPF
             requires optimal conditions to achieve the desired results. The
             materials, products and operations involved within our work are
             sensitive to temperature, humidity and dust. Some of these

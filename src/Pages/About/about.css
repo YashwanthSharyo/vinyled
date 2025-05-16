@@ -166,6 +166,11 @@ body {
   cursor: pointer;
   text-transform: uppercase;
 }
+.AboutStandardsButtonWrapper > .AboutStandardsButton:hover {
+  background-color:  #ec1d24;
+  color: white;
+  border-color:  #ec1d24;
+}
 
 .AboutContainer > .AboutQuote {
   width: 100%;
@@ -230,6 +235,11 @@ body {
   text-transform: uppercase;
 }
 
+.AboutFacilitiesButtonWrapper > .AboutFacilitiesButton:hover {
+  background-color: #ec1d24;
+  color: white;
+  border-color:  #ec1d24;
+}
 .AboutFacilities > .AboutFacilitiesText {
   flex: 1;
   padding-right: 40px;

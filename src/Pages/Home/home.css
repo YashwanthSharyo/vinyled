@@ -194,6 +194,7 @@
   font-weight: 500;
   margin: 8px 0;
   line-height: 1.5;
+  color: white;
 }
 
 .faq-button {
@@ -653,6 +654,7 @@
   .faq-contact {
     font-size: 14px;
     margin: 6px 0;
+    color: white;
   }
 
   .faq-button {
@@ -827,6 +829,7 @@
   .faq-subtext,
   .faq-contact {
     font-size: 15px;
+    color: white;
   }
 
   .faq-button {
@@ -985,6 +988,7 @@
   .faq-contact {
     font-size: 15px;
     margin: 8px 0;
+    color: white;
   }
 
   .faq-button {

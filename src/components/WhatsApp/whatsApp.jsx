@@ -22,7 +22,7 @@ const WhatsApp = () => {
           The below URL is a temporary placeholder from a public source.
         */}
         <img
-          src="https://cdn-icons-png.flaticon.com/512/124/124034.png"
+          src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
           alt="WhatsApp"
         />
       </a>

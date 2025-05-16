@@ -61,7 +61,7 @@ const Footer = () => {
                     )
                   }
                 >
-                  <img src="Images/twitter.svg" alt="Instagram" />
+                  <img src="Images/instagram.svg" alt="Instagram" />
                 </a>
               </div>
               <div className="signup-section">
@@ -99,11 +99,12 @@ const Footer = () => {
               <div className="link">Privacy and Policy</div>
             </div>
 
-
-
             <div className="right-column">
-              <p className="title">VINYLE'D Service</p>
-              <div className="link" onClick={() => handleServiceClick("/enhance")}>
+              <p className="title">VINYLE'D Services</p>
+              <div
+                className="link"
+                onClick={() => handleServiceClick("/enhance")}
+              >
                 Enhance
               </div>
               <div
@@ -138,19 +139,20 @@ const Footer = () => {
               </div>
             </div>
 
-
-
             <div className="right-column">
               <p className="title">Have a Question?</p>
               <div className="link">
-                88/6, Situated at Chelekere Village, Kalyannagar Post,
+                88/6, Situated at Chelekere Village, Kalyannagar Post,Bangalore East, Karnataka 560043,
                 <br />
-                Bangalore East, Karnataka 560043,
-                <br />
-                Bengaluru, Karnataka 560084
+                
               </div>
-              <div className="link">Phone: 90664 31968</div>
-              <div className="link">Email: info@vinyled.in</div>
+              <div className="link">
+                {" "}
+                <a href="tel:9066431968">Phone: 90664 31968</a>
+              </div>
+              <div className="link">
+                <a href="mailto:info@vinyled.in">Email: info@vinyled.in</a>
+              </div>
             </div>
           </div>
           <div className="footer-divider" />

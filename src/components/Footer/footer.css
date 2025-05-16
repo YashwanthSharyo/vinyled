@@ -102,6 +102,17 @@
 .footer .button:focus {
   background-color: #d1d5db;
 }
+.footer .link a {
+  font-size: 12px;
+  color: #FFFFFF99;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer .link a:hover {
+  color: #d1d5db;
+}
+
 
 .footer .right-column {
   display: flex;

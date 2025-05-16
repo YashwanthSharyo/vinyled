@@ -78,7 +78,7 @@ const HomePage = () => {
 
       <section className="service-section">
         <div className="service-container">
-          <h2 className="service-title">Service</h2>
+          <h2 className="service-title">Services</h2>
           <div className="service-grid">
             {/* Image 1 - PPF and Wraps */}
             <div
