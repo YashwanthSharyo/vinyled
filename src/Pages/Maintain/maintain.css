@@ -161,6 +161,7 @@
 }
 
 .detailing-content {
+  border: 1px solid #ccc;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -291,7 +292,7 @@
 
   .detailing-content {
     padding: 0 1rem;
-    border: none;
+    border: 1px solid #ccc;
   }
 
   .detailing-row {
@@ -395,6 +396,7 @@
 
   .detailing-content {
     padding: 0 0.5rem;
+    border: 1px solid #ccc;;
   }
 
   .detailing-row {
@@ -488,6 +490,7 @@
 
   .detailing-content {
     padding: 0 0.25rem;
+    border: 1px solid #ccc;
   }
 
   .detailing-row {

@@ -276,7 +276,7 @@ const HomePage = () => {
               </p>
               <p className="faq-contact">
                 Feel free to{" "}
-                <a href="/contact" className="contact-link">
+                <a href="/contact-us" className="contact-link">
                   contact us
                 </a>
               </p>
@@ -364,8 +364,7 @@ const HomePage = () => {
                   📍
                   <span>
                     No: 4, 88/6, Situated at Chelekere Village, Kalyan Nagar
-                    Post, Bangalore East, Karnataka 560043, Bengaluru, Karnataka
-                    560084
+                    Post, Bangalore East, Karnataka 560043
                   </span>
                 </p>
               </div>

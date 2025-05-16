@@ -57,7 +57,7 @@ export default function Contact() {
     <strong>Name:</strong> Vinyled Studio
   </p>
   <p>
-    <strong>Address:</strong> No: 4, 88/6, Situated at Chelekere Village, Kalyan Nagar Post, Bangalore East, Karnataka 560043, Bengaluru, Karnataka 560084
+    <strong>Address:</strong> No: 4, 88/6, Situated at Chelekere Village, Kalyan Nagar Post, Bangalore East, Karnataka 560043
   </p>
   <p>
     <strong>Email:</strong> info@vinyled.in
@@ -95,7 +95,7 @@ export default function Contact() {
               <label htmlFor="name">NAME</label>
               <input
                 name="name"
-                placeholder="First & last name"
+                placeholder="Enter your name"
                 type="text"
                 required
                 value={formData.name}

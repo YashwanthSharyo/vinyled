@@ -142,7 +142,7 @@ const Footer = () => {
             <div className="right-column">
               <p className="title">Have a Question?</p>
               <div className="link">
-                88/6, Situated at Chelekere Village, Kalyannagar Post,Bangalore East, Karnataka 560043,
+                88/6, Situated at Chelekere Village, Kalyannagar Post, Bangalore East, Karnataka 560043
                 <br />
                 
               </div>

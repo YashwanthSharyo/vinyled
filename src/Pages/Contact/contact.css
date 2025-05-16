@@ -94,7 +94,7 @@ body {
 
 .contact-form-section p {
   font-size: 19px;
-  color: #ec1d24;
+  color: black;
   margin-bottom: 20px;
   text-align: left;
 }
@@ -250,6 +250,9 @@ body {
   .contact-form-section p,
   .address-info p {
     font-size: 15px;
+  }
+  .contact-form-section p{
+    color:#000;
   }
 
   .map-container {

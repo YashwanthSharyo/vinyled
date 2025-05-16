@@ -15,7 +15,7 @@ export default function Team() {
       <div className="team-hero">
         <div>
           <h2>
-            <span>/</span>THE LONDON TEAM
+            OUR TEAM
           </h2>
           <p>Meet the team</p>
         </div>
