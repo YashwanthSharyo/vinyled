@@ -43,13 +43,14 @@ const HomePage = () => {
   };
 
   const serviceLinks = {
-    1: "/ppf",
-    2: "/ceramic",
-    3: "/custom-design",
-    4: "/branding",
-    5: "/color-change-wrap",
-    6: "/custom-project",
-  };
+  1: "/enhance",
+  2: "/protect",
+  3: "/maintain",
+  4: "/personolization",
+  5: "/custom-project",
+  6: "/branding",
+};
+
 
   const handleClick = (index) => {
     setTimeout(() => {

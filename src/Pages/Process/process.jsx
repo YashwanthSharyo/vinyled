@@ -16,7 +16,7 @@ export default function Process() {
         <h2 className="vehicle-section__title">Paint Protection Film (PPF) Process</h2>
         <div className="vehicle-section__content">
           <p>
-            <strong>Paint Protection Film (PPF)</strong>, or clear bra, is a transparent urethane film that protects your vehicle’s paint from scratches, chips, UV rays, and debris. Its self-healing properties fix minor scratches with heat.
+            <strong>Paint Protection Film (PPF)</strong>, is a transparent urethane film that protects your vehicle’s paint from scratches, chips, UV rays, and debris. Its self-healing properties fix minor scratches with heat.
           </p>
           <h3>Steps for PPF Application</h3>
           <ol>
