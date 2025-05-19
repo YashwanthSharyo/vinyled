@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import "./home.css";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const HomePage = () => {
   const [hovered, setHovered] = useState(null);
@@ -276,9 +276,9 @@ const HomePage = () => {
               </p>
               <p className="faq-contact">
                 Feel free to{" "}
-                <a href="/contact-us" className="contact-link">
-                  contact us
-                </a>
+                <Link to="/contact-us" className="contact-link">
+                contact us
+                </Link>
               </p>
 
               <button className="faq-button">FAQ's</button>
