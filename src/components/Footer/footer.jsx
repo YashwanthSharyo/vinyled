@@ -1,16 +1,25 @@
 import React from "react";
 import "./Footer.css";
 import WhatsApp from "../WhatsApp/whatsApp";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 
 const Footer = () => {
-  const navigate = useNavigate(); // Get navigate function from useNavigate hook
+  const navigate = useNavigate();
+  const location = useLocation(); // Added to get current path
 
   const handleServiceClick = (path) => {
-    // Navigate to the path and replace the current history entry
     navigate(path, { replace: true });
-    // Scroll to the top of the page
     window.scrollTo(0, 0);
+  };
+
+  // Handle logo click to scroll to top if on home page
+  const handleLogoClick = () => {
+    if (location.pathname === "/") {
+      window.scrollTo(0, 0); // Scroll to top if already on home page
+    } else {
+      navigate("/", { replace: true }); // Navigate to home if not on home page
+      window.scrollTo(0, 0); // Scroll to top after navigation
+    }
   };
 
   return (
@@ -20,12 +29,13 @@ const Footer = () => {
         <div className="container">
           <div className="grid">
             <div className="left-column">
-              <Link to="/">
-              <img className="logo"
-              src="Images/vinyled.svg"
-              alt="Company Logo"
-              style={{ cursor: 'pointer' }} 
-              />
+              <Link to="/" onClick={handleLogoClick}>
+                <img
+                  className="logo"
+                  src="Images/vinyled.svg"
+                  alt="Company Logo"
+                  style={{ cursor: "pointer" }}
+                />
               </Link>
               <div className="social-icons">
                 <a
@@ -50,7 +60,7 @@ const Footer = () => {
                     window.open(
                       "https://in.linkedin.com/in/vaibhav-vel-457a46133",
                       "_blank"
-                    )
+                              )
                   }
                 >
                   <img src="Images/linkedin.svg" alt="LinkedIn" />
@@ -146,7 +156,6 @@ const Footer = () => {
               <div className="link">
                 88/6, Situated at Chelekere Village, Kalyannagar Post, Bangalore East, Karnataka 560043
                 <br />
-                
               </div>
               <div className="link">
                 {" "}

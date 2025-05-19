@@ -140,9 +140,9 @@
     max-width: 100%;
     flex-direction: column;
     border-bottom: none;
-    position: relative;
-    bottom: auto;
-    padding: 10px 10px;
+    
+   
+    
   }
 
   .tab-container .tab {
@@ -185,9 +185,9 @@
     margin: 15px auto 10px;
   }
 
-  .banner .tab-container {
+  /* .banner .tab-container {
     padding: 5px 5px;
-  }
+  } */
 
   .tab-container .tab {
     height: 40px;
