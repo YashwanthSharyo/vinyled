@@ -12,6 +12,15 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+html,
+body {
+  scroll-behavior: auto;
+}
+
+#root {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
 
 a {
   font-weight: 500;

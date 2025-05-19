@@ -22,8 +22,8 @@
 .team-hero h2 {
   color: #ffffff;
   text-align: center;
-  font-size: 32px;
-  font-weight: 400;
+  font-size: 30px;
+  font-weight: 300;
 }
 
 .team-hero h2 span {
@@ -138,13 +138,14 @@
   }
 
   .team-hero h2 {
-    font-size: clamp(2.25rem, 3vw, 2.5rem); /* Fluid font size */
+    font-size: 30px; /* Fluid font size */
   }
 
   .team-hero p {
-    font-size: clamp(1.5rem, 2vw, 1.75rem);
-    margin-top: -1.5rem;
+    font-size: 24px;
+    
   }
+  
 
   .team-quote p {
     font-size: clamp(1.25rem, 1.5vw, 1.5rem);
@@ -166,7 +167,7 @@
   }
 
   .team-hero h2 {
-    font-size: clamp(1.75rem, 4vw, 2rem); /* Fluid font size */
+    font-size: 30px; /* Fluid font size */
   }
 
   .team-hero p {
@@ -204,7 +205,7 @@
   }
 
   .team-hero h2 {
-    font-size: clamp(1.5rem, 5vw, 1.75rem);
+    font-size: 30px;
   }
 
   .team-hero p {
@@ -256,7 +257,7 @@
   }
 
   .team-hero h2 {
-    font-size: clamp(1.25rem, 5.5vw, 1.5rem);
+    font-size:30px;
   }
 
   .team-hero p {

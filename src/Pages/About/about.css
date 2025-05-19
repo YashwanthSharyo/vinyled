@@ -47,7 +47,7 @@ body {
 
 .AboutHeroContent > .AboutHeroTitle {
   color: #ffffff;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 300;
 }
 
@@ -356,7 +356,7 @@ body {
   }
 
   .AboutHeroContent > .AboutHeroTitle {
-    font-size: 24px;
+    font-size: 30px;
   }
 
   .AboutHeroContent > .AboutHeroSubtitle {
