@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import WhatsApp from "../WhatsApp/whatsApp";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Footer = () => {
   const navigate = useNavigate(); // Get navigate function from useNavigate hook
@@ -20,11 +20,13 @@ const Footer = () => {
         <div className="container">
           <div className="grid">
             <div className="left-column">
-              <img
-                className="logo"
-                src="Images/vinyled.svg"
-                alt="Company Logo"
+              <Link to="/">
+              <img className="logo"
+              src="Images/vinyled.svg"
+              alt="Company Logo"
+              style={{ cursor: 'pointer' }} 
               />
+              </Link>
               <div className="social-icons">
                 <a
                   onClick={() =>

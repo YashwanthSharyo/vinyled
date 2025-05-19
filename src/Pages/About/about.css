@@ -34,21 +34,30 @@ body {
   text-align: center;
 }
 
+
+
+/* .team-hero p {
+  color: #ffffff;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  margin-top: -30px;
+} */
+
+
 .AboutHeroContent > .AboutHeroTitle {
   color: #ffffff;
-  font-size: 32px;
-  font-weight: 400;
+  font-size: 24px;
+  font-weight: 300;
 }
 
-.AboutHeroTitle > .AboutHighlight {
-  color: #EC1D24;
-}
+
 
 .AboutHeroContent > .AboutHeroSubtitle {
   color: #ffffff;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 300;
-  margin-top: -30px;
+  margin-top: -20px;
 }
 
 .AboutContainer > .AboutIntro {
@@ -193,7 +202,9 @@ body {
   line-height: 1.5;
   max-width: 80%;
 }
-
+.AboutQuote > .AboutQuoteContent  p{
+  color: white;
+}
 .AboutContainer > .AboutFacilities {
   font-family: Arial, sans-serif;
   background-color: white;

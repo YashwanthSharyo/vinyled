@@ -69,7 +69,7 @@ export default function About() {
           />
         </div>
         <div className="AboutIntroText">
-          <h2 className="AboutIntroTitle">Who are we ?</h2>
+          <h2 className="AboutIntroTitle">Who are we?</h2>
           <p className="AboutIntroParagraph">
             VINYLE'D Detailing is the world's most exclusive detailing and paint
             protection film specialist, handling the largest volume of supercars
