@@ -47,9 +47,10 @@
   color: #ec1d24;
   font-weight: normal;
   font-style: normal;
-  font-size: 30px;
+  font-size: 39px;
   text-align: left;
   margin: 0 0 0.5rem 0;
+
 }
 
 .personalization-content-text .personalization-subtitle {
@@ -119,7 +120,7 @@
   }
 
   .personalization-content-text .personalization-title {
-    font-size: 1.875rem;
+    font-size: 39px;
   }
 
   .personalization-content-text .personalization-subtitle {
@@ -168,7 +169,7 @@
   }
 
   .personalization-content-text .personalization-title {
-    font-size: 1.5rem;
+    font-size: 39px ;
   }
 
   .personalization-content-text .personalization-text {
@@ -254,7 +255,7 @@
   color: #ec1d24;
   font-weight: normal;
   font-style: normal;
-  font-size: 30px;
+  font-size: 39px;
   text-align: left;
   margin: 0 0 0.5rem 0;
 }
@@ -326,7 +327,7 @@
   }
 
   .personalization-content-text .personalization-title {
-    font-size: 1.875rem;
+    font-size: 39px;
   }
 
   .personalization-content-text .personalization-subtitle {
@@ -375,7 +376,7 @@
   }
 
   .personalization-content-text .personalization-title {
-    font-size: 1.5rem;
+    font-size:39px
   }
 
   .personalization-content-text .personalization-text {

@@ -36,7 +36,6 @@ a {
   color: #000;
   display: flex;
   align-items: center;
-  
 }
 
 .header > .logo > .logo-img {
@@ -46,7 +45,7 @@ a {
 }
 
 .header > .menu {
-  display: flex;
+  display: none; /* Changed: Hidden by default for mobile and tablet */
   justify-content: center;
   align-items: center;
   padding: 0;
@@ -60,7 +59,7 @@ a {
 }
 
 .header > .menu > li {
-  display: inline-block;
+  display: block; /* Changed: Block for mobile and tablet dropdowns */
 }
 
 .header > .menu > li > a {
@@ -77,6 +76,7 @@ a {
   color: red;
   background-color: transparent;
 }
+
 /* Main menu hover - including dropdown */
 .header > .menu > li > a:hover,
 .header > .menu > .dropdown:hover > a {
@@ -86,7 +86,7 @@ a {
 /* Submenu items hover */
 .header > .menu > .dropdown > .dropdown-menu > li > a:hover {
   color: red;
-  background-color: transparent; /* optional */
+  background-color: transparent;
 }
 
 .header > .menu > .dropdown {
@@ -95,20 +95,19 @@ a {
 
 .header > .menu > .dropdown > .dropdown-menu {
   display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
+  position: static; /* Changed: Static for mobile and tablet to avoid overlap */
   background-color: #fff;
-  border: 1px solid #f4f4f4;
+  border: none; /* Simplified for mobile and tablet */
   z-index: 1;
-  min-width: 200px;
+  min-width: 100%; /* Full width for mobile and tablet */
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
+.header > .menu > .dropdown.active > .dropdown-menu,
 .header > .menu > .dropdown:hover > .dropdown-menu {
-  display: block;
+  display: block; /* Show dropdown on hover (desktop) or active (mobile/tablet) */
 }
 
 .header > .menu > .dropdown > .dropdown-menu > li > a {
@@ -120,8 +119,6 @@ a {
   font-size: 12px;
   line-height: 100%;
 }
-
-
 
 .header > .menu > .dropdown > a > .icon {
   font-size: 14px;
@@ -172,7 +169,7 @@ a {
 
 .header > .menu-icon {
   cursor: pointer;
-  display: none;
+  display: inline-block; /* Changed: Visible by default for mobile and tablet */
   padding: 20px 10px;
   user-select: none;
 }
@@ -211,7 +208,19 @@ a {
 
 .header > .menu-btn:checked ~ .menu {
   display: flex;
+  flex-direction: column; /* Vertical menu for mobile and tablet */
   max-height: 400px;
+  position: absolute; /* Position below header */
+  top: 60px;
+  left: 0;
+  right: 0;
+  background: #fff;
+  margin: 0;
+  padding: 10px 0;
+  overflow-y: auto;
+  width: 100%;
+  z-index: 2;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .header > .menu-btn:checked ~ .menu-icon > .navicon {
@@ -231,10 +240,10 @@ a {
   top: 0;
 }
 
-/* Tablet and Laptop (≥ 768px) */
-@media (min-width: 768px) {
+/* Desktop (≥ 1281px) */
+@media (min-width: 1281px) {
   .header > .menu {
-    display: flex;
+    display: flex; /* Show full menu */
     clear: none;
     float: right;
     max-height: none;
@@ -242,21 +251,32 @@ a {
     background: transparent;
     width: auto;
   }
-  .header>.logo>.logo-img {
+
+  .header > .logo > .logo-img {
     width: 168px;
     height: 59px;
     object-fit: contain;
-}
+  }
+
   .header > .menu > li {
-    float: left;
+    float: left; /* Horizontal menu items */
+    display: inline-block;
   }
 
   .header > .menu > li > a {
     padding: 20px 30px;
   }
 
+  .header > .menu > .dropdown > .dropdown-menu {
+    position: absolute; /* Dropdowns appear below */
+    top: 100%;
+    left: 0;
+    border: 1px solid #f4f4f4;
+    min-width: 200px;
+  }
+
   .header > .menu-icon {
-    display: none;
+    display: none; /* Hide menu icon */
   }
 
   .header > .flag-icon {
@@ -264,15 +284,14 @@ a {
   }
 }
 
-/* Mobile (≤ 767px) */
-@media (max-width: 767px) {
+/* Tablet and Mobile (≤ 1280px) */
+@media (max-width: 1280px) {
   .header {
     position: relative;
   }
-  
 
   .header > .menu {
-    display: none;
+    display: none; /* Hidden until toggled */
     position: absolute;
     top: 60px;
     left: 0;
@@ -329,5 +348,10 @@ a {
 
   .header > .flag-icon {
     display: none;
+  }
+
+  .header > .menu-btn:checked ~ .menu {
+    display: flex;
+    max-height: 400px;
   }
 }
