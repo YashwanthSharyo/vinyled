@@ -133,16 +133,19 @@
     max-width: min(22vw, 350px); /* Scale with viewport, cap at 350px */
   }
 
-  .team-hero {
-    min-height: 24rem; /* Taller hero for larger screens */
-  }
+  /* .team-hero {
+    min-height: 24rem; 
+  } */
 
   .team-hero h2 {
     font-size: 30px; /* Fluid font size */
   }
 
   .team-hero p {
+    color: #ffffff;
     font-size: 24px;
+    font-weight: 300;
+    margin-top: -20px;
     
   }
   
