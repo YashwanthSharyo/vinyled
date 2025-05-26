@@ -89,7 +89,7 @@ const HomePage = () => {
               onClick={() => handleClick(1)}
             >
               <img
-                src="https://www.shutterstock.com/shutterstock/photos/2417345281/display_1500/stock-photo-protective-vinyl-film-for-car-with-from-gravel-chips-and-scratches-transparent-protection-for-2417345281.jpg"
+                src="./Images/home_ppf.JPG"
                 alt="Service 1"
                 className="service-image"
               />
@@ -113,7 +113,7 @@ const HomePage = () => {
               onClick={() => handleClick(2)}
             >
               <img
-                src="https://www.shutterstock.com/shutterstock/photos/2585199805/display_1500/stock-photo-ceramic-or-graphene-coating-on-white-paint-2585199805.jpg"
+                src="./Images/home_ceramic_coating.JPG"
                 alt="Service 2"
                 className="service-image"
               />
@@ -138,7 +138,7 @@ const HomePage = () => {
               onClick={() => handleClick(3)}
             >
               <img
-                src="./Images/car2.svg"
+                src="./Images/home_custom_design.JPG"
                 alt="Service 3"
                 className="service-image"
               />
@@ -164,7 +164,7 @@ const HomePage = () => {
               onClick={() => handleClick(4)}
             >
               <img
-                src="https://www.shutterstock.com/shutterstock/photos/1471205783/display_1500/stock-photo-august-san-jose-ca-usa-nestle-pure-life-truck-making-deliveries-of-purified-filtered-1471205783.jpg"
+                src="./Images/home_branding.JPG"
                 alt="Service 4"
                 className="service-image"
               />
@@ -189,7 +189,7 @@ const HomePage = () => {
               onClick={() => handleClick(5)}
             >
               <img
-                src="https://www.shutterstock.com/shutterstock/photos/1428558152/display_1500/stock-photo-kiev-ukraine-september-lowered-bmw-series-e-on-static-suspension-wide-wheels-and-1428558152.jpg"
+                src="./Images/home_custom_project.JPG"
                 alt="Service 5"
                 className="service-image"
               />

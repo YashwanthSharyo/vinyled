@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import './about.css';
-import { useNavigate } from 'react-router-dom';
+import React, { useState } from "react";
+import "./about.css";
+import { useNavigate } from "react-router-dom";
 
 export default function About() {
   const [activeTab, setActiveTab] = useState(1);
   const [openIndex, setOpenIndex] = useState(0);
 
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
 
   const toggleAccordion = (index) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -18,35 +18,35 @@ export default function About() {
 
   const faqData = [
     {
-      question: 'Question 1.1',
+      question: "Question 1.1",
       answer:
-        'Answer to question 1.1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        "Answer to question 1.1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
     {
-      question: 'Question 1.2',
+      question: "Question 1.2",
       answer:
-        'Answer to question 1.2. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        "Answer to question 1.2. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     },
     {
-      question: 'Question 1.3',
+      question: "Question 1.3",
       answer:
-        'Answer to question 1.3. Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
+        "Answer to question 1.3. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
     },
   ];
 
   const tabStyle = (isActive) => ({
-    padding: '10px 20px',
-    cursor: 'pointer',
-    background: isActive ? '#DD0000' : 'white',
-    color: isActive ? 'white' : 'black',
-    marginLeft: '-20px',
+    padding: "10px 20px",
+    cursor: "pointer",
+    background: isActive ? "#DD0000" : "white",
+    color: isActive ? "white" : "black",
+    marginLeft: "-20px",
     zIndex: isActive ? 2 : 1,
-    position: 'relative',
-    borderRadius: '5px 5px 0 0',
-    transition: 'background 0.3s',
-    clipPath: 'polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%)',
-    minWidth: '150px',
-    textAlign: 'center',
+    position: "relative",
+    borderRadius: "5px 5px 0 0",
+    transition: "background 0.3s",
+    clipPath: "polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%)",
+    minWidth: "150px",
+    textAlign: "center",
   });
 
   return (
@@ -63,47 +63,39 @@ export default function About() {
       <div className="AboutIntro">
         <div className="AboutIntroImageWrapper">
           <img
-            src="https://i.shgcdn.com/2e1db7b1-9719-45ec-bbc4-17e3bf5bb974/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
+            src="public/Images/about_us_1.JPG"
             alt="Display"
             className="AboutIntroImage"
           />
         </div>
         <div className="AboutIntroText">
-          <h2 className="AboutIntroTitle">Who are we?</h2>
+          <h2 className="AboutIntroTitle">Who Are We?</h2>
           <p className="AboutIntroParagraph">
-            VINYLE'D Detailing is the world's most exclusive detailing and paint
-            protection film specialist, handling the largest volume of supercars
-            anywhere in the world.
+            VINYLE'D Detailing is Bangalore’s premier destination for automotive
+            detailing and paint protection. We specialize in delivering high-end
+            care for luxury, performance, and exotic vehicles, with precision,
+            passion, and unmatched attention to detail.
           </p>
           <p className="AboutIntroParagraph">
-            Our state of the art facilities house some of the most skilled
-            detailers and paint protection film installers in the world. This
-            environment, coupled with our expertise, allows us to offer our
-            clients the highest possible quality.
+            Our cutting-edge facility is home to a team of highly trained
+            professionals dedicated to restoring and preserving vehicles at the
+            highest standard. From advanced paint correction to expertly applied
+            PPF, every service is executed with technical expertise and artistic
+            flair.
           </p>
           <p className="AboutIntroParagraph">
-            At VINYLE'D we offer a total car care solution package, incorporating
-            everything from  
-              VINYLE'D enhancement
-            {' '}
-            and{' '}
-            
-              VINYLE'D protection
-         {' '}
-            through to{' '}
-            
-              VINYLE'D maintenance
-           
-            .
+            At VINYLE'D, we offer a complete car care experience — including
+            enhancement, protection, and long-term maintenance solutions — all
+            under one roof.
           </p>
           <p className="AboutIntroParagraph AboutItalic">
-            “The perfect marriage between science and art”
+            “Where craftsmanship meets innovation”
           </p>
           <p className="AboutIntroParagraph">
-            VINYLE'D Detailing exists in order to trigger positive emotions; the
-            company was born to rewrite how car owners should maintain the
-            appearance of their vehicles, to recreate car presentation results
-            that will satisfy even the most discerning clients.
+            Our mission is to redefine how vehicle aesthetics are perceived and
+            preserved in India. We create experiences that go beyond
+            surface-level beauty — elevating automotive care into an expression
+            of pride, performance, and passion.
           </p>
         </div>
       </div>
@@ -112,40 +104,45 @@ export default function About() {
         <div className="AboutStandardsContent">
           <div className="AboutStandardsText">
             <h4 className="AboutStandardsTitle">
-              Setting the standard, an industry benchmark:
+              Raising the Bar – Our Commitment to Excellence:
             </h4>
             <ul className="AboutStandardsList">
               <li>
-                <strong>VINYLE'D Design:</strong> Every process and technique is
-                developed in-house, from our detailing stages and specially
-                blended compounds through to our dedicated PPF design team. Each
-                panel of every kit is patterned, designed and produced at our HQ
-                meaning a perfect fit and optimum protection that's not available
-                anywhere else.
+                <strong>Precision-Crafted Processes:</strong> At VINYLE'D, every
+                detailing and PPF technique is carefully developed and refined
+                in-house. From meticulous surface preparation to custom-fit
+                protection films, our team ensures every vehicle receives a
+                tailored treatment that exceeds expectations.
               </li>
               <li>
-                <strong>VINYLE'D Quality:</strong> Every car passes through our VINYLE'D
-                Control stages, starting from the first contact, ensuring the
-                correct assessment, best advice and unparalleled quality control
+                <strong>Uncompromising Quality:</strong> Each vehicle undergoes
+                a multi-stage quality assurance process, starting from the
+                initial assessment to final delivery. Our trained professionals
+                follow strict protocols to ensure consistent, flawless results
                 every time.
               </li>
               <li>
-                <strong>VINYLE'D Warranty:</strong> We stand by our work, VINYLE'D
-                provide the most comprehensive warranty and aftercare programme in
-                the industry, administered by our HQ. This means should there ever
-                be an issue or question we are able to assist efficiently and
-                completely with no delay.
+                <strong>Trusted Assurance:</strong> Our commitment doesn’t end
+                with delivery. VINYLE'D offers a transparent warranty and
+                dedicated aftercare support, ensuring you experience complete
+                peace of mind long after your vehicle leaves our facility.
               </li>
             </ul>
           </div>
+
           <div className="AboutStandardsImageWrapper">
             <img
-              src="https://i.shgcdn.com/8dc7e943-6a3d-43a1-b17a-d36e113fc2f2/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
+              src="public/Images/about_us_2.JPG"
               alt="VINYLE'D Example"
               className="AboutStandardsImage"
             />
             <div className="AboutStandardsButtonWrapper">
-              <button className="AboutStandardsButton" onClick={() => navigate('/contact-us')}>Request Call Back</button>
+              <button
+                className="AboutStandardsButton"
+                onClick={() => navigate("/contact-us")}
+              >
+                Request Call Back
+              </button>
             </div>
           </div>
         </div>
@@ -156,8 +153,8 @@ export default function About() {
           <p>
             One simple philosophy drives our business:
             <br />
-            <strong>“Treat others as you would like to be treated yourself”</strong>
-            <br />- Nabil Naamo
+            <strong>“Excellence is not a skill, it's an attitude.”</strong>
+            <br />- Ralph Marston
           </p>
         </div>
       </div>
@@ -165,51 +162,60 @@ export default function About() {
       <div className="AboutFacilities">
         <div className="AboutFacilitiesImageWrapper">
           <img
-            src="https://i.shgcdn.com/972a6069-729c-4b28-8390-7c9fc43efe82/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
+            src="public/Images/about_us_3.JPG"
             alt="Display"
             className="AboutFacilitiesImage"
           />
           <div className="AboutFacilitiesButtonWrapper">
-            <button className="AboutFacilitiesButton" onClick={() => navigate('/contact-us')}>Get In Touch</button>
+            <button
+              className="AboutFacilitiesButton"
+              onClick={() => navigate("/contact-us")}
+            >
+              Get In Touch
+            </button>
           </div>
         </div>
         <div className="AboutFacilitiesText">
           <h3 className="AboutFacilitiesTitle">Our Facilities</h3>
           <p className="AboutFacilitiesParagraph">
-            VINYLE'D has developed purpose built facilities to conduct its treatments.
-            Workshops are conveniently located in London NW10, Bristol, Bahrain,
-            Leeds, Midlands & Qatar offering its clients easy access, convenience
-            and unmatched security.
+            VINYLE'D operates from a state-of-the-art facility located in the
+            heart of Bangalore, India. Purpose-built for precision and
+            performance, our studio is designed to meet the highest standards in
+            automotive detailing and paint protection services.
           </p>
           <p className="AboutFacilitiesParagraph">
-            We offer a relaxed friendly environment for our clients, as well as the
-            working environment in something as delicate as{' '}
-            VINYLE'D DETAILING{' '}
-            and VINYLE'D PPF
-            requires optimal conditions to achieve the desired results. The
-            materials, products and operations involved within our work are
-            sensitive to temperature, humidity and dust. Some of these
-            considerations are listed below:
+            We provide a comfortable and professional environment for our
+            clients, while ensuring optimal working conditions for our detailing
+            specialists. Every element of our workspace has been carefully
+            engineered to support world-class craftsmanship, with controlled
+            settings that protect and enhance the results of our treatments. Key
+            features of our facility include:
           </p>
           <ul className="AboutFacilitiesList">
             <li>
-              Temperature controlled environment to get the best from our products.
+              Climate-controlled interiors to ensure perfect application of
+              detailing and PPF materials.
             </li>
             <li>
-              Airtight capsule for car storage overnight so that dust particles
-              don’t compromise our work.
+              Dust-free, sealed overnight vehicle storage for maximum
+              protection.
             </li>
             <li>
-              State of the art built-in variable lighting permitting correct paint
-              inspection.
+              Advanced lighting systems for accurate paintwork inspection and
+              correction.
             </li>
             <li>
-              Car lifting systems to assist in tackling our treatments without
-              having to work from awkward angles.
+              Ergonomic car lifting equipment for precise and safe access during
+              treatments.
             </li>
-            <li>Air compressor system.</li>
-            <li>Air suction systems.</li>
-            <li>Softened deionised water to achieve a better finish.</li>
+            <li>High-performance air compressor and filtration systems.</li>
+            <li>
+              Efficient air extraction to maintain a clean and particle-free
+              environment.
+            </li>
+            <li>
+              Softened, deionised water system for a flawless finishing touch.
+            </li>
           </ul>
         </div>
       </div>

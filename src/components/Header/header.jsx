@@ -45,10 +45,10 @@ const Header = () => {
           <ul className="dropdown-menu">
             <li><Link to="/enhance" onClick={() => handleMenuItemClick("/enhance")}>ENHANCE</Link></li>
             <li><Link to="/protect" onClick={() => handleMenuItemClick("/protect")}>PROTECT</Link></li>
-            <li><Link to="/maintain" onClick={() => handleMenuItemClick("/maintain")}>MAINTAIN</Link></li>
+            {/* <li><Link to="/maintain" onClick={() => handleMenuItemClick("/maintain")}>MAINTAIN</Link></li> */}
             <li><Link to="/personolization" onClick={() => handleMenuItemClick("/personolization")}>PERSONALIZATION</Link></li>
-            <li><Link to="/custom-project" onClick={() => handleMenuItemClick("/custom-project")}>CUSTOM PROJECT</Link></li>
-            <li><Link to="/branding" onClick={() => handleMenuItemClick("/branding")}>BRANDING</Link></li>
+            {/* <li><Link to="/custom-project" onClick={() => handleMenuItemClick("/custom-project")}>CUSTOM PROJECT</Link></li> */}
+            <li><Link to="/branding" onClick={() => handleMenuItemClick("/branding")}>FLEET BRANDING</Link></li>
           </ul>
         </li>
 

@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import "./protect.css";
 
@@ -20,90 +21,118 @@ export default function Protect() {
     setHoveredTab(null);
   };
 
-  const tabs = ["PPF", "Ceramic", "Graphene Coating"];
+  const tabs = ["PPF", "Same Colour Wrap", "Colour PPF", "Icon Rock Clear"];
 
   const galleryData = {
     1: {
       images: [
         {
-          src: "https://autodesignmagazine.com/wp-content/uploads/2019/04/Automobili-Pininfarina-Battista_web.jpg",
+          src: "./Images/ppf_1.JPG",
           alt: "Full color change wrap on car",
         },
         {
-          src: "https://autodesignmagazine.com/wp-content/uploads/2019/04/Citroe%E2%95%A0%C3%AAn-C5-Aircross_web.jpg",
+          src: "./Images/ppf_2.JPG",
           alt: "Car wrap in progress",
         },
         {
-          src: "https://autodesignmagazine.com/wp-content/uploads/2019/04/Ferrari-F8-tributo_web.jpg",
+          src: "./Images/ppf_3.JPG",
           alt: "Vinyl car wrap application",
         },
         {
-          src: "https://autodesignmagazine.com/wp-content/uploads/2019/04/Polestar-2_web.jpg",
+          src: "./Images/ppf_4.JPG",
           alt: "Sporty blue color racing wrap design",
         },
         {
-          src: "https://autodesignmagazine.com/wp-content/uploads/2019/04/Automobili-Pininfarina-Battista_web.jpg",
+          src: "./Images/ppf_5.JPG",
           alt: "Full color change wrap on car",
         },
         {
-          src: "https://autodesignmagazine.com/wp-content/uploads/2019/04/Citroe%E2%95%A0%C3%AAn-C5-Aircross_web.jpg",
+          src: "./Images/ppf_6.JPG",
           alt: "Car wrap in progress",
         },
       ],
     },
-    2: {
+ 2: {
       images: [
         {
           src: "https://www.shutterstock.com/shutterstock/photos/2367800287/display_1500/stock-photo-dubai-united-arab-emirates-september-th-paint-protection-film-applied-on-the-hood-of-a-2367800287.jpg",
-          alt: "Color PPF on car hood",
+          alt: "Same colour wrap on car bonnet",
         },
         {
           src: "https://www.shutterstock.com/shutterstock/photos/2470779147/display_1500/stock-photo-worker-hands-installation-on-luxury-car-headlights-tpu-premium-ppf-film-ppf-cutting-software-2470779147.jpg",
-          alt: "Color PPF on car headlights",
+          alt: "Same colour wrap on car headlights",
         },
         {
           src: "https://cdn.dotpe.in/longtail/store-items/7253175/zHnHNwh8.webp",
-          alt: "Color PPF on bike tank",
+          alt: "Same colour wrap on bike tank",
         },
         {
           src: "https://www.shutterstock.com/shutterstock/photos/2367802613/display_1500/stock-photo-dubai-united-arab-emirates-september-th-paint-protection-film-ppf-applied-on-the-hood-2367802613.jpg",
-          alt: "Color PPF application on car hood",
-        },
-        {
-          src: "https://www.shutterstock.com/shutterstock/photos/2367800287/display_1500/stock-photo-dubai-united-arab-emirates-september-th-paint-protection-film-applied-on-the-hood-of-a-2367800287.jpg",
-          alt: "Color PPF on car hood",
+          alt: "Same colour wrap application on car bonnet",
         },
         {
           src: "https://cdn.dotpe.in/longtail/store-items/7253175/IyGuFG0q.webp",
-          alt: "Color PPF on bike fairings",
+          alt: "Same colour wrap on bike fairings",
+        },
+        {
+          src: "https://www.shutterstock.com/shutterstock/photos/2367800293/display_1500/stock-photo-dubai-united-arab-emirates-september-th-vinyl-wrap-applied-on-the-side-panel-of-a-2367800293.jpg",
+          alt: "Same colour wrap on car side panel",
         },
       ],
     },
     3: {
       images: [
         {
-          src: "https://leifalvarssonart.com/cdn/shop/files/kawasaki_ninja_636-kawasaki-funhouse-zx6r-wrap-leif-alvarsson-art-Clown_Wrap.jpg",
-          alt: "Custom livery on Kawasaki Ninja",
+          src: "https://www.shutterstock.com/shutterstock/photos/2367800287/display_1500/stock-photo-dubai-united-arab-emirates-september-th-paint-protection-film-applied-on-the-hood-of-a-2367800287.jpg",
+          alt: "Colour PPF on car bonnet",
         },
         {
-          src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPXqm9tprxCmyfbCOu0Qun6ZgPesX1LvVtyA&s",
-          alt: "Racing decals on motorbike",
+          src: "https://www.shutterstock.com/shutterstock/photos/2470779147/display_1500/stock-photo-worker-hands-installation-on-luxury-car-headlights-tpu-premium-ppf-film-ppf-cutting-software-2470779147.jpg",
+          alt: "Colour PPF on car headlights",
         },
         {
-          src: "https://autodesignmagazine.com/wp-content/uploads/2019/04/Ferrari-F8-tributo_web.jpg",
-          alt: "Car with custom racing livery",
+          src: "https://cdn.dotpe.in/longtail/store-items/7253175/zHnHNwh8.webp",
+          alt: "Colour PPF on bike tank",
         },
         {
-          src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj1FeZ4HLXRUmucKRrLDLpHoSMtZmxbCli4g&s",
-          alt: "Motorcycle with custom decals",
+          src: "https://www.shutterstock.com/shutterstock/photos/2367802613/display_1500/stock-photo-dubai-united-arab-emirates-september-th-paint-protection-film-ppf-applied-on-the-hood-2367802613.jpg",
+          alt: "Colour PPF application on car bonnet",
         },
         {
-          src: "https://leifalvarssonart.com/cdn/shop/files/kawasaki_ninja_636-kawasaki-funhouse-zx6r-wrap-leif-alvarsson-art-Clown_Wrap.jpg",
-          alt: "Custom livery on Kawasaki Ninja",
+          src: "https://cdn.dotpe.in/longtail/store-items/7253175/IyGuFG0q.webp",
+          alt: "Colour PPF on bike fairings",
+        },
+         {
+          src: "https://cdn.dotpe.in/longtail/store-items/7253175/IyGuFG0q.webp",
+          alt: "Colour PPF on bike fairings",
+        },
+      ],
+    },
+    4: {
+      images: [
+        {
+          src: "https://www.shutterstock.com/shutterstock/photos/2367800287/display_1500/stock-photo-dubai-united-arab-emirates-september-th-paint-protection-film-applied-on-the-hood-of-a-2367800287.jpg",
+          alt: "Icon Rock Clear PPF on car bonnet",
         },
         {
-          src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnl_0CXCf6jx5kBYTRDcKfewmxY17NPg4ekg&s",
-          alt: "Sport bike with graphic decals",
+          src: "https://www.shutterstock.com/shutterstock/photos/2470779147/display_1500/stock-photo-worker-hands-installation-on-luxury-car-headlights-tpu-premium-ppf-film-ppf-cutting-software-2470779147.jpg",
+          alt: "Icon Rock Clear PPF on car headlights",
+        },
+        {
+          src: "https://cdn.dotpe.in/longtail/store-items/7253175/zHnHNwh8.webp",
+          alt: "Icon Rock Clear PPF on bike tank",
+        },
+        {
+          src: "https://www.shutterstock.com/shutterstock/photos/2367802613/display_1500/stock-photo-dubai-united-arab-emirates-september-th-paint-protection-film-ppf-applied-on-the-hood-2367802613.jpg",
+          alt: "Icon Rock Clear PPF application on car bonnet",
+        },
+        {
+          src: "https://cdn.dotpe.in/longtail/store-items/7253175/IyGuFG0q.webp",
+          alt: "Icon Rock Clear PPF on bike fairings",
+        },
+        {
+          src: "https://cdn.dotpe.in/longtail/store-items/7253175/IyGuFG0q.webp",
+          alt: "Icon Rock Clear PPF on bike fairings",
         },
       ],
     },
@@ -122,7 +151,8 @@ export default function Protect() {
         handleTabClick={handleTabClick}
         handleTabMouseEnter={handleTabMouseEnter}
         handleTabMouseLeave={handleTabMouseLeave}
-        tabs={tabs} // Pass the tabs array to Service component
+        tabs={tabs}
+        
       />
 
       <div className="protect-wrap-container">
@@ -131,7 +161,9 @@ export default function Protect() {
           return (
             <div
               key={tab}
-              className={`protect-content-tab ${activeTab === tab ? "active" : ""}`}
+              className={`protect-content-tab ${
+                activeTab === tab ? "active" : ""
+              }`}
               role="tabpanel"
               aria-hidden={activeTab !== tab}
             >
@@ -140,17 +172,21 @@ export default function Protect() {
                 <img
                   src={
                     tab === 1
-                      ? "https://autodesignmagazine.com/wp-content/uploads/2019/04/Polestar-2_web.jpg"
+                      ? "./Images/protect_1.jpg"
                       : tab === 2
-                      ? "https://www.shutterstock.com/shutterstock/photos/2367800287/display_1500/stock-photo-dubai-united-arab-emirates-september-th-paint-protection-film-applied-on-the-hood-of-a-2367800287.jpg"
-                      : "https://leifalvarssonart.com/cdn/shop/files/kawasaki_ninja_636-kawasaki-funhouse-zx6r-wrap-leif-alvarsson-art-Clown_Wrap.jpg"
+                      ? "./Images/protect_2.JPG"
+                      : tab === 3
+                      ? "./Images/protect_3.JPG"
+                      : "./Images/protect_4.JPG"
                   }
                   alt={
                     tab === 1
-                      ? "Car Color Change Wrap"
+                      ? "Car PPF Application"
                       : tab === 2
-                      ? "Color PPF Application"
-                      : "Livery & Decals Design"
+                      ? "Same Colour Wrap Application"
+                      : tab === 3
+                      ? "Colour PPF Application"
+                      : "Icon Rock Clear PPF Application"
                   }
                   className="protect-image"
                 />
@@ -163,313 +199,190 @@ export default function Protect() {
                     <h2 className="protect-title">PPF</h2>
                     <h3 className="protect-subtitle">Paint Protection Film</h3>
                     <p className="protect-text">
-                      Paint Protection Film (PPF) is a transparent, durable
-                      layer that safeguards your vehicle’s paint from damage
-                      while preserving its original finish.
+                      Paint Protection Film (PPF) is a transparent, durable layer that safeguards your vehicle’s paint from damage while preserving its original finish.
                     </p>
 
                     <h3 className="protect-subtitle">PPF Application Process</h3>
                     <ul className="protect-list">
-                      <li>
-                        Clean the vehicle with soap and isopropyl alcohol for
-                        optimal adhesion.
-                      </li>
-                      <li>
-                        Cut high-quality PPF (e.g., XPEL or 3M) to fit panels
-                        using precision templates.
-                      </li>
-                      <li>
-                        Apply the film with a squeegee, smoothing bubbles and
-                        aligning edges.
-                      </li>
-                      <li>
-                        Seal edges with heat for a durable, seamless bond.
-                      </li>
-                      <li>
-                        Inspect the vehicle to ensure a flawless, self-healing
-                        finish.
-                      </li>
+                      <li>Clean the vehicle with soap and isopropyl alcohol for optimal adhesion.</li>
+                      <li>Cut high-quality PPF (e.g., XPEL or 3M) to fit panels using precision templates.</li>
+                      <li>Apply the film with a squeegee, smoothing bubbles and aligning edges.</li>
+                      <li>Seal edges with heat for a durable, seamless bond.</li>
+                      <li>Inspect the vehicle to ensure a flawless, self-healing finish.</li>
                     </ul>
 
                     <h3 className="protect-subtitle">Benefits of PPF</h3>
                     <ul className="protect-list">
-                      <li>
-                        Protects against scratches, stone chips, bug splatter,
-                        and UV damage.
-                      </li>
-                      <li>
-                        Self-healing technology repairs minor scratches with
-                        heat.
-                      </li>
-                      <li>
-                        Preserves resale value by protecting the original paint.
-                      </li>
-                      <li>
-                        Invisible finish maintains the vehicle’s natural shine.
-                      </li>
-                      <li>
-                        Long-lasting durability with warranties up to 7–10
-                        years.
-                      </li>
+                      <li>Protects against scratches, stone chips, bug splatter, and UV damage.</li>
+                      <li>Self-healing technology repairs minor scratches with heat.</li>
+                      <li>Preserves resale value by protecting the original paint.</li>
+                      <li>Invisible finish maintains the vehicle’s natural shine.</li>
+                      <li>Long-lasting durability with warranties up to 7–10 years.</li>
                     </ul>
 
                     <h3 className="protect-subtitle">Application Areas</h3>
                     <ul className="protect-list">
-                      <li>
-                        Full vehicle coverage for comprehensive protection.
-                      </li>
-                      <li>
-                        High-impact zones like hood, front bumper, tank, or
-                        fairings.
-                      </li>
-                      <li>
-                        Side panels and mirrors to guard against road debris.
-                      </li>
-                      <li>
-                        Interior accents like glossy trim for added durability.
-                      </li>
-                      <li>
-                        Installed in a controlled, clean facility for precision.
-                      </li>
+                      <li>Full vehicle coverage for comprehensive protection.</li>
+                      <li>High-impact zones like bonnet, front bumper, tank, or fairings.</li>
+                      <li>Side panels and mirrors to guard against road debris.</li>
+                      <li>Interior accents like glossy trim for added durability.</li>
+                      <li>Installed in a controlled, clean facility for precision.</li>
                     </ul>
 
                     <h3 className="protect-subtitle">Tips for Maintaining PPF</h3>
                     <ul className="protect-list">
-                      <li>
-                        Wash regularly with mild soap to keep the film clean and
-                        effective.
-                      </li>
-                      <li>
-                        Avoid abrasive cleaners or brushes that could damage the
-                        film.
-                      </li>
-                      <li>
-                        Apply heat (e.g., warm water) to activate self-healing
-                        for minor scratches.
-                      </li>
+                      <li>Wash regularly with mild soap to keep the film clean and effective.</li>
+                      <li>Avoid abrasive cleaners or brushes that could damage the film.</li>
+                      <li>Apply heat (e.g., warm water) to activate self-healing for minor scratches.</li>
                     </ul>
 
                     <p className="protect-text">
-                      Contact us to protect your vehicle with a custom PPF
-                      solution!
+                      Contact us to protect your vehicle with a custom PPF solution!
                     </p>
                   </>
                 ) : tab === 2 ? (
                   <>
-                    <h2 className="protect-title">Ceramic</h2>
-                    <h3 className="protect-subtitle">Ceramic Coating</h3>
+                    <h2 className="protect-title">Same Colour Wrap</h2>
+                    <h3 className="protect-subtitle">OEM-Style Vinyl Wrapping</h3>
                     <p className="protect-text">
-                      Ceramic coatings provide a durable, hydrophobic layer that
-                      protects your vehicle’s paint and enhances its shine,
-                      offering long-lasting beauty and ease of maintenance.
+                      Same colour wraps give your vehicle a refreshed, factory-finish appearance while protecting the original paint. Ideal for those looking to restore or modernize without changing the original colour.
                     </p>
 
-                    <h3 className="protect-subtitle">
-                      Ceramic Coating Application Process
-                    </h3>
+                    <h3 className="protect-subtitle">Same Colour Wrap Application Process</h3>
                     <ul className="protect-list">
-                      <li>
-                        Wash, decontaminate, and polish the vehicle to ensure a
-                        smooth base.
-                      </li>
-                      <li>
-                        Correct minor scratches and blemishes for optimal
-                        coating adhesion.
-                      </li>
-                      <li>
-                        Apply high-quality ceramic coating (e.g., Gtechniq,
-                        Ceramic Pro) in even layers.
-                      </li>
-                      <li>
-                        Allow the coating to cure for 24–48 hours in a
-                        controlled environment.
-                      </li>
-                      <li>
-                        Inspect for a glossy, protected finish, adding layers if
-                        needed.
-                      </li>
+                      <li>Clean and decontaminate the vehicle surface thoroughly.</li>
+                      <li>Remove or loosen panels and trims for seamless wrap application.</li>
+                      <li>Apply premium vinyl wrap material matching your original paint shade.</li>
+                      <li>Smooth out surfaces with heat guns and squeegees to ensure a paint-like finish.</li>
+                      <li>Post-heat and finish edges to ensure durability and a flawless look.</li>
                     </ul>
 
-                    <h3 className="protect-subtitle">
-                      Benefits of Ceramic Coating
-                    </h3>
+                    <h3 className="protect-subtitle">Benefits of Same Colour Wrap</h3>
                     <ul className="protect-list">
-                      <li>
-                        Protects against UV rays, oxidation, bird droppings, and
-                        chemical stains.
-                      </li>
-                      <li>
-                        Hydrophobic properties repel water, dirt, and grime for
-                        easy cleaning.
-                      </li>
-                      <li>
-                        Enhances paint depth and shine for a showroom-quality
-                        appearance.
-                      </li>
-                      <li>
-                        Durable protection lasting 2–7 years, reducing waxing
-                        needs.
-                      </li>
-                      <li>
-                        Saves on maintenance costs by minimizing cleaning time.
-                      </li>
+                      <li>Maintains your vehicle’s original look while protecting the paint underneath.</li>
+                      <li>Easily removable with no damage to OEM paintwork.</li>
+                      <li>Acts as a barrier against minor scratches, UV rays, and contaminants.</li>
+                      <li>Cost-effective solution compared to a full respray.</li>
+                      <li>Quick turnaround with minimal downtime.</li>
                     </ul>
 
                     <h3 className="protect-subtitle">Application Areas</h3>
                     <ul className="protect-list">
-                      <li>
-                        Full exterior coverage for comprehensive protection and
-                        gloss.
-                      </li>
-                      <li>
-                        High-exposure areas like hoods, bumpers, tanks, or
-                        fairings.
-                      </li>
-                      <li>
-                        Wheels and calipers to resist brake dust and grime.
-                      </li>
-                      <li>Glass and trim to repel water and resist fading.</li>
-                      <li>
-                        Applied in a controlled, dust-free studio for precision.
-                      </li>
+                      <li>Full exterior for a complete factory-style finish.</li>
+                      <li>Select panels like bonnets, roofs, or bumpers to restore worn areas.</li>
+                      <li>Ideal for leased vehicles or restoring resale value.</li>
+                      <li>Suitable for both matte and gloss finish options.</li>
+                      <li>Applied with precision in a controlled studio environment.</li>
                     </ul>
 
-                    <h3 className="protect-subtitle">
-                      Tips for Maintaining Ceramic Coating
-                    </h3>
+                    <h3 className="protect-subtitle">Tips for Maintaining a Vinyl Wrap</h3>
                     <ul className="protect-list">
-                      <li>
-                        Wash with pH-neutral soap to preserve the coating’s
-                        integrity.
-                      </li>
-                      <li>
-                        Use a microfiber cloth to avoid scratches during
-                        cleaning.
-                      </li>
-                      <li>
-                        Apply a ceramic booster every 3–6 months to enhance
-                        hydrophobicity.
-                      </li>
+                      <li>Hand wash regularly using mild soap—avoid high-pressure jets at edges.</li>
+                      <li>Use wrap-safe detailing sprays to maintain sheen and finish.</li>
+                      <li>Park in shade or use a car cover to prolong vinyl life.</li>
                     </ul>
 
                     <p className="protect-text">
-                      Contact us to elevate your vehicle with a premium ceramic
-                      coating!
+                      Reach out today to restore and protect your vehicle with a factory-fresh same colour wrap!
                     </p>
                   </>
-                ) : (
+                ) : tab === 3 ? (
                   <>
-                    <h2 className="protect-title">Graphene Coating</h2>
-                    <h3 className="protect-subtitle">What is Graphene Coating?</h3>
+                    <h2 className="protect-title">Colour PPF</h2>
+                    <h3 className="protect-subtitle">What is Colour PPF?</h3>
                     <p className="protect-text">
-                      Graphene Coating is an advanced protective layer infused
-                      with graphene nanoparticles, offering superior durability,
-                      hydrophobicity, and shine compared to traditional
-                      coatings, protecting your vehicle while enhancing its
-                      appearance.
+                      Colour Paint Protection Film (PPF) provides the dual benefit of restyling your vehicle with vibrant finishes while offering superior protection against scratches, chips, and UV damage. It's a bold way to personalize and preserve.
                     </p>
 
-                    <h3 className="protect-subtitle">
-                      Graphene Coating Application Process
-                    </h3>
+                    <h3 className="protect-subtitle">Colour PPF Application Process</h3>
                     <ul className="protect-list">
-                      <li>
-                        Wash, decontaminate, and polish the vehicle to create a
-                        pristine base.
-                      </li>
-                      <li>
-                        Correct minor scratches and blemishes for optimal
-                        adhesion.
-                      </li>
-                      <li>
-                        Apply premium graphene coating (e.g., Adam’s Graphene,
-                        Ethos) in even layers.
-                      </li>
-                      <li>
-                        Allow the coating to cure for 24–48 hours in a dust-free
-                        environment.
-                      </li>
-                      <li>
-                        Inspect for a glossy, protected finish, adding layers if
-                        needed.
-                      </li>
+                      <li>Begin with a thorough wash and surface decontamination of the vehicle.</li>
+                      <li>Remove key trims and panels for seamless film integration.</li>
+                      <li>Precisely apply premium colour PPF, ensuring a bubble-free, paint-like finish.</li>
+                      <li>Use heat and pressure to conform the film to the body contours.</li>
+                      <li>Post-application inspection to ensure flawless, long-lasting results.</li>
                     </ul>
 
-                    <h3 className="protect-subtitle">
-                      Benefits of Graphene Coating
-                    </h3>
+                    <h3 className="protect-subtitle">Benefits of Colour PPF</h3>
                     <ul className="protect-list">
-                      <li>
-                        Unmatched durability, resisting scratches and chemicals
-                        for 7–10 years.
-                      </li>
-                      <li>
-                        Superior hydrophobicity for easy cleaning and water
-                        repellency.
-                      </li>
-                      <li>
-                        Enhanced gloss and depth for a premium, showroom-quality
-                        shine.
-                      </li>
-                      <li>
-                        Thermal resistance protects against heat and UV
-                        degradation.
-                      </li>
-                      <li>
-                        Reduced maintenance saves time and costs on cleaning.
-                      </li>
+                      <li>Combines paint protection and a custom look in one solution.</li>
+                      <li>Self-healing surface that eliminates light scratches with heat.</li>
+                      <li>Resistant to yellowing, UV rays, stone chips, and environmental contaminants.</li>
+                      <li>Removable without damage to the original paint.</li>
+                      <li>Available in gloss, matte, satin, or metallic finishes for standout style.</li>
                     </ul>
 
                     <h3 className="protect-subtitle">Application Areas</h3>
                     <ul className="protect-list">
-                      <li>
-                        Full exterior coverage for comprehensive protection and
-                        shine.
-                      </li>
-                      <li>
-                        High-wear areas like hoods, bumpers, tanks, or fairings.
-                      </li>
-                      <li>
-                        Wheels and exhausts to resist brake dust, heat, and
-                        corrosion.
-                      </li>
-                      <li>
-                        Glass and plastic trim to improve water repellency and
-                        resist fading.
-                      </li>
-                      <li>
-                        Applied in a controlled, clean studio for precision.
-                      </li>
+                      <li>Full-body wraps for a complete color transformation and protection.</li>
+                      <li>Accent panels such as roofs, mirrors, or bonnets for unique styling.</li>
+                      <li>High-impact zones to preserve against chips and road debris.</li>
+                      <li>Ideal for luxury, sports, and performance vehicles.</li>
+                      <li>Applied in a temperature-controlled dust-free studio for best results.</li>
                     </ul>
 
-                    <h3 className="protect-subtitle">
-                      Tips for Maintaining Graphene Coating
-                    </h3>
+                    <h3 className="protect-subtitle">Tips for Maintaining Colour PPF</h3>
                     <ul className="protect-list">
-                      <li>
-                        Wash with pH-neutral soap to preserve the coating’s
-                        performance.
-                      </li>
-                      <li>
-                        Use microfiber towels to avoid micro-scratches during
-                        cleaning.
-                      </li>
-                      <li>
-                        Apply a graphene maintenance spray every 4–6 months to
-                        boost protection.
-                      </li>
+                      <li>Hand wash with PPF-safe pH-balanced car shampoo.</li>
+                      <li>Avoid harsh chemicals or abrasive tools to maintain clarity and finish.</li>
+                      <li>Use a microfibre drying towel and avoid automated car washes.</li>
                     </ul>
 
                     <p className="protect-text">
-                      Contact us to safeguard your vehicle with a
-                      state-of-the-art graphene coating!
+                      Contact us to transform and protect your vehicle with vibrant Colour PPF technology!
                     </p>
                   </>
-                )}
+                ) : tab === 4 ? (
+                  <>
+                    <h2 className="protect-title">Icon Rock Clear</h2>
+                    <h3 className="protect-subtitle">What is Icon Rock Clear?</h3>
+                    <p className="protect-text">
+                      Icon Rock Clear is a premium, ultra-clear paint protection film (PPF) designed to shield your vehicle’s paint with exceptional clarity and durability while maintaining its original showroom-like finish.
+                    </p>
+
+                    <h3 className="protect-subtitle">Icon Rock Clear Application Process</h3>
+                    <ul className="protect-list">
+                      <li>Thoroughly wash and decontaminate the vehicle to ensure a pristine surface.</li>
+                      <li>Lightly polish the paint to remove minor blemishes for optimal film adhesion.</li>
+                      <li>Apply high-quality Icon Rock Clear PPF with precision for a seamless fit.</li>
+                      <li>Heat and mould the film to contours, ensuring a crystal-clear, invisible finish.</li>
+                      <li>Final inspection to confirm a flawless, protected, showroom-like appearance.</li>
+                    </ul>
+
+                    <h3 className="protect-subtitle">Benefits of Icon Rock Clear</h3>
+                    <ul className="protect-list">
+                      <li>Superior protection against scratches, stone chips, and UV damage.</li>
+                      <li>Advanced self-healing technology repairs minor scratches with heat.</li>
+                      <li>Ultra-clear finish preserves the vehicle’s original paint with no visible film.</li>
+                      <li>Long-lasting durability for 7–10 years, enhancing resale value.</li>
+                      <li>Resistant to yellowing and environmental contaminants for lasting clarity.</li>
+                    </ul>
+
+                    <h3 className="protect-subtitle">Application Areas</h3>
+                    <ul className="protect-list">
+                      <li>Full exterior coverage for comprehensive protection.</li>
+                      <li>High-impact areas like bonnet, front bumper, or side panels for targeted shielding.</li>
+                      <li>Wheels and mirrors to guard against road debris and brake dust.</li>
+                      <li>Interior glossy trim to enhance durability and aesthetics.</li>
+                      <li>Applied in a dust-free, controlled studio for precision and quality.</li>
+                    </ul>
+
+                    <h3 className="protect-subtitle">Tips for Maintaining Icon Rock Clear</h3>
+                    <ul className="protect-list">
+                      <li>Wash with pH-neutral soap and a soft sponge to avoid scratching the film.</li>
+                      <li>Use microfibre cloths for drying to maintain the film’s clarity.</li>
+                      <li>Apply heat (e.g., warm water) to activate self-healing for minor scratches.</li>
+                    </ul>
+
+                    <p className="protect-text">
+                      Contact us to safeguard your vehicle with premium Icon Rock Clear PPF!
+                    </p>
+                  </>
+                ) : null}
               </div>
 
               {/* Gallery Section */}
-              {(tab === 1 || tab === 2 || tab === 3) && (
+              {(tab === 1 || tab === 2 || tab === 3 || tab === 4) && (
                 <Gallery
                   images={galleryData[tab].images}
                   largeImage={galleryData[tab].largeImage}

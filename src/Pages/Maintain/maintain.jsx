@@ -77,7 +77,7 @@ export default function Maintain() {
               </div>
               <div className="wash-image-section">
                 <img
-                  src="https://i.shgcdn.com/0ac37343-348c-42a4-be54-5482fa41e95e/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
+                  src="./Images/maintain_1.JPG"
                   alt="Wash Plan"
                   className="wash-image"
                 />
@@ -188,7 +188,7 @@ export default function Maintain() {
               </div>
               <div className="detailing-image-section">
                 <img
-                  src="https://i.shgcdn.com/297bf929-a9fe-4ae1-afdc-acb9b92042f7/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
+                  src="./Images/maintain_2.jpg"
                   alt="Detailing Plan"
                   className="wash-image"
                 />

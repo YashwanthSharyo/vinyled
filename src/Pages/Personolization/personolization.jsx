@@ -3,7 +3,8 @@ import "./personolization.css"; // Corrected filename spelling
 import Service from "../../components/Service/service";
 import Gallery from "../../components/Gallery/gallery";
 
-export default function Personalization() { // Corrected component name spelling
+export default function Personalization() {
+  // Corrected component name spelling
   const [activeTab, setActiveTab] = useState(1);
   const [hoveredTab, setHoveredTab] = useState(null);
 
@@ -12,40 +13,41 @@ export default function Personalization() { // Corrected component name spelling
   };
 
   const handleTabMouseEnter = (tabNumber) => {
-    setHoveredTab(tabNumber); 
+    setHoveredTab(tabNumber);
   };
 
   const handleTabMouseLeave = (tabNumber) => {
-    setHoveredTab(null); 
+    setHoveredTab(null);
   };
 
-  const tabs = ["Color Change Wrap", "Color PPF", "Livery & Decals"]; 
+  const tabs = ["Printed Partial Graphics", "Full Body Custom Graphics", "Full Body Colour Change", "Colour PPF"];
+
 
   const galleryData = {
     1: {
       images: [
         {
-          src: "https://autodesignmagazine.com/wp-content/uploads/2019/04/Automobili-Pininfarina-Battista_web.jpg",
+          src: "./Images/color_change_1.JPG",
           alt: "Full color change wrap on car",
         },
         {
-          src: "https://autodesignmagazine.com/wp-content/uploads/2019/04/Citroe%E2%95%A0%C3%AAn-C5-Aircross_web.jpg",
+          src: "./Images/color_change_2.JPG",
           alt: "Car wrap in progress",
         },
         {
-          src: "https://autodesignmagazine.com/wp-content/uploads/2019/04/Ferrari-F8-tributo_web.jpg",
+          src: "./Images/color_change_3.JPG",
           alt: "Vinyl car wrap application",
         },
         {
-          src: "https://autodesignmagazine.com/wp-content/uploads/2019/04/Polestar-2_web.jpg",
+          src: "./Images/color_change_4.JPG",
           alt: "Sporty blue color racing wrap design",
         },
         {
-          src: "https://autodesignmagazine.com/wp-content/uploads/2019/04/Automobili-Pininfarina-Battista_web.jpg",
+          src: "./Images/color_change_5.JPG",
           alt: "Full color change wrap on car",
         },
         {
-          src: "https://autodesignmagazine.com/wp-content/uploads/2019/04/Citroe%E2%95%A0%C3%AAn-C5-Aircross_web.jpg",
+          src: "./Images/color_change_6.JPG",
           alt: "Car wrap in progress",
         },
       ],
@@ -53,27 +55,27 @@ export default function Personalization() { // Corrected component name spelling
     2: {
       images: [
         {
-          src: "https://www.shutterstock.com/shutterstock/photos/2367800287/display_1500/stock-photo-dubai-united-arab-emirates-september-th-paint-protection-film-applied-on-the-hood-of-a-2367800287.jpg",
+          src: "./Images/ppf_1.JPG",
           alt: "Color PPF on car hood",
         },
         {
-          src: "https://www.shutterstock.com/shutterstock/photos/2470779147/display_1500/stock-photo-worker-hands-installation-on-luxury-car-headlights-tpu-premium-ppf-film-ppf-cutting-software-2470779147.jpg",
+          src: "./Images/ppf_2.JPG",
           alt: "Color PPF on car headlights",
         },
         {
-          src: "https://cdn.dotpe.in/longtail/store-items/7253175/zHnHNwh8.webp",
+          src: "./Images/ppf_3.JPG",
           alt: "Color PPF on bike tank",
         },
         {
-          src: "https://www.shutterstock.com/shutterstock/photos/2367802613/display_1500/stock-photo-dubai-united-arab-emirates-september-th-paint-protection-film-ppf-applied-on-the-hood-2367802613.jpg",
+          src: "./Images/ppf_4.JPG",
           alt: "Color PPF application on car hood",
         },
         {
-          src: "https://www.shutterstock.com/shutterstock/photos/2367800287/display_1500/stock-photo-dubai-united-arab-emirates-september-th-paint-protection-film-applied-on-the-hood-of-a-2367800287.jpg",
+          src: "./Images/ppf_5.JPG",
           alt: "Color PPF on car hood",
         },
         {
-          src: "https://cdn.dotpe.in/longtail/store-items/7253175/IyGuFG0q.webp",
+          src: "./Images/ppf_6.JPG",
           alt: "Color PPF on bike fairings",
         },
       ],
@@ -81,27 +83,27 @@ export default function Personalization() { // Corrected component name spelling
     3: {
       images: [
         {
-          src: "https://leifalvarssonart.com/cdn/shop/files/kawasaki_ninja_636-kawasaki-funhouse-zx6r-wrap-leif-alvarsson-art-Clown_Wrap.jpg",
+          src: "./Images/coating_1.JPG",
           alt: "Custom livery on Kawasaki Ninja",
         },
         {
-          src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPXqm9tprxCmyfbCOu0Qun6ZgPesX1LvVtyA&s",
+          src: "./Images/coating_2.JPG",
           alt: "Racing decals on motorbike",
         },
         {
-          src: "https://autodesignmagazine.com/wp-content/uploads/2019/04/Ferrari-F8-tributo_web.jpg",
+          src: "./Images/coating_3.JPG",
           alt: "Car with custom racing livery",
         },
         {
-          src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj1FeZ4HLXRUmucKRrLDLpHoSMtZmxbCli4g&s",
+          src: "./Images/coating_4.JPG",
           alt: "Motorcycle with custom decals",
         },
         {
-          src: "https://leifalvarssonart.com/cdn/shop/files/kawasaki_ninja_636-kawasaki-funhouse-zx6r-wrap-leif-alvarsson-art-Clown_Wrap.jpg",
+          src: "./Images/coating_5.JPG",
           alt: "Custom livery on Kawasaki Ninja",
         },
         {
-          src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnl_0CXCf6jx5kBYTRDcKfewmxY17NPg4ekg&s",
+          src: "./Images/coating_6.JPG",
           alt: "Sport bike with graphic decals",
         },
       ],
@@ -130,7 +132,9 @@ export default function Personalization() { // Corrected component name spelling
           return (
             <div
               key={tab}
-              className={`personalization-content-tab ${activeTab === tab ? "personalization-active" : ""}`}
+              className={`personalization-content-tab ${
+                activeTab === tab ? "personalization-active" : ""
+              }`}
               role="tabpanel"
               aria-hidden={activeTab !== tab}
             >
@@ -138,10 +142,10 @@ export default function Personalization() { // Corrected component name spelling
                 <img
                   src={
                     tab === 1
-                      ? "https://autodesignmagazine.com/wp-content/uploads/2019/04/Polestar-2_web.jpg"
+                      ? "./Images/protect_2.JPG"
                       : tab === 2
-                      ? "https://www.shutterstock.com/shutterstock/photos/2367800287/display_1500/stock-photo-dubai-united-arab-emirates-september-th-paint-protection-film-applied-on-the-hood-of-a-2367800287.jpg"
-                      : "https://leifalvarssonart.com/cdn/shop/files/kawasaki_ninja_636-kawasaki-funhouse-zx6r-wrap-leif-alvarsson-art-Clown_Wrap.jpg"
+                      ? "./Images/protect_1.jpg"
+                      : "./Images/about_us_3.JPG"
                   }
                   alt={
                     tab === 1
@@ -154,244 +158,192 @@ export default function Personalization() { // Corrected component name spelling
                 />
               </div>
 
-              <div className="personalization-content-text">
+            <div className="personalization-content-text">
                 {tab === 1 ? (
                   <>
-                    <h2 className="personalization-title">Color Change Wrap</h2>
-                    <h3 className="personalization-subtitle">Personalized Vehicle Wrapping</h3>
+                    <h2 className="personalization-title">Printed Partial Graphics</h2>
+                    <h3 className="personalization-subtitle">What are Printed Partial Graphics?</h3>
                     <p className="personalization-text">
-                      A color change wrap transforms your vehicle’s appearance
-                      with high-quality vinyl, offering a custom look without
-                      permanent paint changes.
+                      Printed partial graphics add custom-designed vinyl decals or logos to specific areas of your vehicle, offering a unique, eye-catching style without a full wrap.
                     </p>
 
-                    <h3 className="personalization-subtitle">Color Change Wrap Process</h3>
+                    <h3 className="personalization-subtitle">Printed Partial Graphics Process</h3>
                     <ul className="personalization-list">
-                      <li>
-                        Clean the vehicle thoroughly with soap and isopropyl
-                        alcohol for a flawless base.
-                      </li>
-                      <li>
-                        Design and cut high-quality vinyl (e.g., 3M or Avery
-                        Dennison) with custom colors, allowing 2–3 inch overlap.
-                      </li>
-                      <li>
-                        Apply vinyl with a squeegee, aligning designs precisely,
-                        using heat for curves.
-                      </li>
-                      <li>
-                        Trim excess vinyl and tuck edges into seams for a
-                        seamless, vibrant finish.
-                      </li>
-                      <li>
-                        Heat lightly (around 200°F) to set the adhesive,
-                        ensuring long-lasting designs.
-                      </li>
+                      <li>Design custom graphics or logos with our in-house design team.</li>
+                      <li>Print high-quality vinyl using vibrant, eco-friendly inks.</li>
+                      <li>Clean the vehicle with isopropyl alcohol for a flawless base.</li>
+                      <li>Apply decals precisely with alignment templates, using heat for curves.</li>
+                      <li>Seal edges with a clear coat for a durable, showroom-like finish.</li>
                     </ul>
 
-                    <h3 className="personalization-subtitle">Benefits of a Color Change Wrap</h3>
+                    <h3 className="personalization-subtitle">Benefits of Printed Partial Graphics</h3>
                     <ul className="personalization-list">
-                      <li>
-                        Personalized style with vibrant colors or custom
-                        graphics.
-                      </li>
-                      <li>
-                        Protects original paint from scratches and UV rays.
-                      </li>
-                      <li>
-                        Removable without damaging paint, preserving resale
-                        value.
-                      </li>
+                      <li>Personalized style with custom logos or graphic accents.</li>
+                      <li>Protects applied areas from minor scratches and UV rays.</li>
+                      <li>Removable without damaging paint, preserving resale value.</li>
+                      <li>Cost-effective way to enhance specific vehicle areas.</li>
+                      <li>Quick application, completed in a single day.</li>
+                    </ul>
+
+                    <h3 className="personalization-subtitle">Application Areas</h3>
+                    <ul className="personalization-list">
+                      <li>Bonnet or roof for bold, prominent graphic accents.</li>
+                      <li>Side panels or doors for branding or sponsor logos.</li>
+                      <li>Bike tanks or fairings for a sporty, custom look.</li>
+                      <li>Interior trim or steering wheel for a cohesive aesthetic.</li>
+                      <li>Applied in a controlled, clean facility for precision.</li>
+                    </ul>
+
+                    <h3 className="personalization-subtitle">Tips for Stunning Graphics</h3>
+                    <ul className="personalization-list">
+                      <li>Choose high-contrast colours for maximum visual impact.</li>
+                      <li>Start with smaller decals to test placement and design.</li>
+                      <li>Work with our team to ensure graphics align with vehicle contours.</li>
+                    </ul>
+
+                    <p className="personalization-text">
+                      Contact us to create custom printed partial graphics that make your vehicle stand out!
+                    </p>
+                  </>
+                ) : tab === 2 ? (
+                  <>
+                    <h2 className="personalization-title">Full Body Custom Graphics</h2>
+                    <h3 className="personalization-subtitle">What are Full Body Custom Graphics?</h3>
+                    <p className="personalization-text">
+                      Full body custom graphics transform your vehicle with vibrant, bespoke vinyl designs covering the entire exterior, perfect for branding or unique styling.
+                    </p>
+
+                    <h3 className="personalization-subtitle">Full Body Custom Graphics Process</h3>
+                    <ul className="personalization-list">
+                      <li>Collaborate to design custom graphics using advanced design software.</li>
+                      <li>Print premium vinyl with durable, weather-resistant inks.</li>
+                      <li>Thoroughly clean the vehicle to ensure a flawless surface.</li>
+                      <li>Apply graphics with precision, using heat for seamless contour fitting.</li>
+                      <li>Trim and seal edges for a long-lasting, factory-like finish.</li>
+                    </ul>
+
+                    <h3 className="personalization-subtitle">Benefits of Full Body Custom Graphics</h3>
+                    <ul className="personalization-list">
+                      <li>Unique, head-turning designs tailored to your vision.</li>
+                      <li>Protects original paint from scratches and environmental damage.</li>
+                      <li>Removable, allowing design updates without paint damage.</li>
+                      <li>Ideal for racing teams, businesses, or personal expression.</li>
+                      <li>Enhances resale value by preserving the vehicle’s paint.</li>
+                    </ul>
+
+                    <h3 className="personalization-subtitle">Application Areas</h3>
+                    <ul className="personalization-list">
+                      <li>Full vehicle exterior for a complete graphic overhaul.</li>
+                      <li>Bonnet, roof, and bumpers for prominent design elements.</li>
+                      <li>Side panels and doors for branding or sponsor logos.</li>
+                      <li>Interior accents like dashboard trim for a unified look.</li>
+                      <li>Applied in a dust-free studio for impeccable results.</li>
+                    </ul>
+
+                    <h3 className="personalization-subtitle">Tips for Full Body Custom Graphics</h3>
+                    <ul className="personalization-list">
+                      <li>Plan designs with our team to ensure cohesive patterns.</li>
+                      <li>Opt for durable vinyl to withstand Indian weather conditions.</li>
+                      <li>Schedule regular cleaning to maintain vibrant graphics.</li>
+                    </ul>
+
+                    <p className="personalization-text">
+                      Reach out to design a full body custom graphic wrap that reflects your style!
+                    </p>
+                  </>
+                ) : tab === 3 ? (
+                  <>
+                    <h2 className="personalization-title">Full Body Colour Change</h2>
+                    <h3 className="personalization-subtitle">Personalized Vehicle Wrapping</h3>
+                    <p className="personalization-text">
+                      A full body colour change wrap transforms your vehicle’s appearance with high-quality vinyl, offering a custom look without permanent paint changes.
+                    </p>
+
+                    <h3 className="personalization-subtitle">Full Body Colour Change Process</h3>
+                    <ul className="personalization-list">
+                      <li>Clean the vehicle thoroughly with soap and isopropyl alcohol for a flawless base.</li>
+                      <li>Design and cut high-quality vinyl (e.g., 3M or Avery Dennison) with custom colours, allowing 2–3 inch overlap.</li>
+                      <li>Apply vinyl with a squeegee, aligning designs precisely, using heat for curves.</li>
+                      <li>Trim excess vinyl and tuck edges into seams for a seamless, vibrant finish.</li>
+                      <li>Heat lightly (around 200°F) to set the adhesive, ensuring long-lasting designs.</li>
+                    </ul>
+
+                    <h3 className="personalization-subtitle">Benefits of a Full Body Colour Change</h3>
+                    <ul className="personalization-list">
+                      <li>Personalized style with vibrant colours or custom finishes.</li>
+                      <li>Protects original paint from scratches and UV rays.</li>
+                      <li>Removable without damaging paint, preserving resale value.</li>
                       <li>Cost-effective alternative to a full repaint.</li>
                       <li>Quick process, completed in a few days.</li>
                     </ul>
 
                     <h3 className="personalization-subtitle">Application Areas</h3>
                     <ul className="personalization-list">
-                      <li>
-                        Full vehicle wrap for a complete color transformation.
-                      </li>
-                      <li>
-                        Partial wrap on hood, roof, tank, or fairings for
-                        accents.
-                      </li>
+                      <li>Full vehicle wrap for a complete colour transformation.</li>
+                      <li>Bonnet, roof, or bumpers for consistent colour accents.</li>
                       <li>Interior panels or trim for a unified aesthetic.</li>
-                      <li>
-                        Smaller parts like mirrors or spoilers for added flair.
-                      </li>
-                      <li>
-                        Applied in a controlled, clean facility for precision.
-                      </li>
+                      <li>Smaller parts like mirrors or spoilers for added flair.</li>
+                      <li>Applied in a controlled, clean facility for precision.</li>
                     </ul>
 
-                    <h3 className="personalization-subtitle">Tips for a Stunning Color Change Wrap</h3>
+                    <h3 className="personalization-subtitle">Tips for a Stunning Full Body Colour Change</h3>
                     <ul className="personalization-list">
-                      <li>
-                        Start with flat panels like the hood to practice graphic
-                        alignment.
-                      </li>
-                      <li>
-                        Work with our designers to select vibrant or unique
-                        color palettes.
-                      </li>
-                      <li>
-                        Use a partner to handle large vinyl sheets for accuracy.
-                      </li>
+                      <li>Start with flat panels like the bonnet to practice alignment.</li>
+                      <li>Work with our designers to select vibrant or unique colour palettes.</li>
+                      <li>Use a partner to handle large vinyl sheets for accuracy.</li>
                     </ul>
 
                     <p className="personalization-text">
-                      Contact us to create a custom color change wrap that
-                      brings your vision to life!
+                      Contact us to create a full body colour change wrap that brings your vision to life!
                     </p>
                   </>
-                ) : tab === 2 ? (
+                ) : tab === 4 ? (
                   <>
-                    <h2 className="personalization-title">Color PPF</h2>
-                    <h3 className="personalization-subtitle">What is Color PPF?</h3>
+                    <h2 className="personalization-title">Colour PPF</h2>
+                    <h3 className="personalization-subtitle">What is Colour PPF?</h3>
                     <p className="personalization-text">
-                      Color Paint Protection Film (PPF) combines the protective
-                      qualities of traditional PPF with vibrant, custom colors,
-                      shielding your vehicle’s paint while transforming its
-                      appearance.
+                      Colour Paint Protection Film (PPF) combines the protective qualities of traditional PPF with vibrant, custom colours, shielding your vehicle’s paint while transforming its appearance.
                     </p>
 
-                    <h3 className="personalization-subtitle">Color PPF Application Process</h3>
+                    <h3 className="personalization-subtitle">Colour PPF Application Process</h3>
                     <ul className="personalization-list">
-                      <li>
-                        Clean the vehicle to remove dirt and contaminants.
-                      </li>
-                      <li>
-                        Cut colored PPF to fit specific panels using precision
-                        templates.
-                      </li>
-                      <li>
-                        Apply the film, smoothing out bubbles and aligning
-                        edges.
-                      </li>
-                      <li>
-                        Seal edges with heat for a durable, seamless look.
-                      </li>
+                      <li>Thoroughly clean the vehicle to remove dirt and contaminants.</li>
+                      <li>Cut coloured PPF to fit specific panels using precision templates.</li>
+                      <li>Apply the film with a squeegee, smoothing out bubbles and aligning edges.</li>
+                      <li>Use heat to conform the film to curves for a seamless look.</li>
+                      <li>Inspect and seal edges for a durable, paint-like finish.</li>
                     </ul>
 
-                    <h3 className="personalization-subtitle">Benefits of Color PPF</h3>
+                    <h3 className="personalization-subtitle">Benefits of Colour PPF</h3>
                     <ul className="personalization-list">
-                      <li>
-                        Protects against scratches, stone chips, and UV damage.
-                      </li>
-                      <li>
-                        Offers glossy or matte colored finishes without
-                        permanent paint changes.
-                      </li>
-                      <li>
-                        Self-healing properties repair minor scuffs with heat.
-                      </li>
+                      <li>Protects against scratches, stone chips, and UV damage.</li>
+                      <li>Offers glossy or matte coloured finishes without permanent paint changes.</li>
+                      <li>Self-healing properties repair minor scuffs with heat.</li>
                       <li>Removable, preserving original paint for resale.</li>
-                      <li>
-                        Versatile finishes with a range of colors and textures.
-                      </li>
+                      <li>Versatile finishes with a range of colours and textures.</li>
                     </ul>
 
                     <h3 className="personalization-subtitle">Application Areas</h3>
                     <ul className="personalization-list">
-                      <li>
-                        Full vehicle coverage for comprehensive protection and
-                        color change.
-                      </li>
-                      <li>
-                        High-impact areas like hood, bumpers, tank, or fairings.
-                      </li>
-                      <li>
-                        Accents on mirrors, side panels, or handlebars for
-                        customization.
-                      </li>
+                      <li>Full vehicle coverage for comprehensive protection and colour change.</li>
+                      <li>High-impact areas like bonnet, bumpers, tank, or fairings.</li>
+                      <li>Accents on mirrors, side panels, or handlebars for customization.</li>
                       <li>Interior trim or panels for a cohesive aesthetic.</li>
-                      <li>
-                        Installed in a clean, professional facility for
-                        precision.
-                      </li>
+                      <li>Installed in a clean, professional facility for precision.</li>
+                    </ul>
+
+                    <h3 className="personalization-subtitle">Tips for Maintaining Colour PPF</h3>
+                    <ul className="personalization-list">
+                      <li>Hand wash with PPF-safe pH-balanced shampoo to maintain clarity.</li>
+                      <li>Avoid abrasive tools or chemicals to preserve the finish.</li>
+                      <li>Use a microfibre towel for drying to prevent scratches.</li>
                     </ul>
 
                     <p className="personalization-text">
-                      Contact us to explore color PPF options for your car or
-                      bike!
+                      Contact us to explore colour PPF options for your car or bike!
                     </p>
                   </>
-                ) : (
-                  <>
-                    <h2 className="personalization-title">Livery & Decals</h2>
-                    <h3 className="personalization-subtitle">What are Livery & Decals?</h3>
-                    <p className="personalization-text">
-                      Livery and decals involve applying custom graphics, logos,
-                      or racing-inspired designs to vehicles, enhancing their
-                      visual appeal and brand identity.
-                    </p>
-
-                    <h3 className="personalization-subtitle">How: Livery & Decals Application Process</h3>
-                    <ul className="personalization-list">
-                      <li>
-                        Collaborate to design custom graphics or logos using
-                        in-house tools.
-                      </li>
-                      <li>
-                        Select high-quality vinyl or paint for vibrant, durable
-                        finishes.
-                      </li>
-                      <li>
-                        Clean the vehicle with isopropyl alcohol for a flawless
-                        base.
-                      </li>
-                      <li>
-                        Apply graphics with precision templates, using heat for
-                        curves.
-                      </li>
-                      <li>
-                        Trim edges and seal with optional clear coats for a
-                        factory-like finish.
-                      </li>
-                    </ul>
-
-                    <h3 className="personalization-subtitle">Why: Benefits of Livery & Decals</h3>
-                    <ul className="personalization-list">
-                      <li>Unique, eye-catching designs for cars or bikes.</li>
-                      <li>
-                        Professional branding for racing teams or personal
-                        expression.
-                      </li>
-                      <li>Durable vinyl withstands weather and wear.</li>
-                      <li>
-                        Removable for design updates without damaging paint.
-                      </li>
-                      <li>
-                        Pair with interior retrims (e.g., leather, alcantara)
-                        for a cohesive look.
-                      </li>
-                    </ul>
-
-                    <h3 className="personalization-subtitle">Where: Application Areas</h3>
-                    <ul className="personalization-list">
-                      <li>
-                        Full vehicle livery for a complete transformation.
-                      </li>
-                      <li>
-                        Decals on hoods, tanks, fairings, or side panels for
-                        accents.
-                      </li>
-                      <li>
-                        Sponsor logos on doors, bumpers, or frames for racing.
-                      </li>
-                      <li>
-                        Interior panels or steering wheels with decals or
-                        retrims.
-                      </li>
-                      <li>Applied in our in-house facility for precision.</li>
-                    </ul>
-
-                    <p className="personalization-text">
-                      Let us design a livery or decal package that makes your
-                      vehicle stand out!
-                    </p>
-                  </>
-                )}
+                ) : null}
               </div>
 
               {(tab === 1 || tab === 2 || tab === 3) && (

@@ -26,7 +26,7 @@ const Service = ({
               <div
                 key={tabNumber}
                 className={`tab ${activeTab === tabNumber ? "active" : ""}`}
-                style={{ minWidth: tabWidth || "200px"}} 
+                style={{ minWidth: tabWidth || "300px"}} 
                 onClick={() => handleTabClick(tabNumber)}
                 onMouseEnter={() =>
                   handleTabMouseEnter && handleTabMouseEnter(tabNumber)

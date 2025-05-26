@@ -18,14 +18,7 @@ export default function Enhance() {
     setHoveredTab(null);
   };
 
-  const tabs = [
-    "Stage 1",
-    "Stage 2",
-    "Stage 3",
-    "Stage 4",
-    "Stage 5",
-    "Stage 6",
-  ];
+  const tabs = ["Detailing", "Ceramic Coating", "Graphene Coating"];
 
   return (
     <div
@@ -42,78 +35,86 @@ export default function Enhance() {
         handleTabMouseEnter={handleTabMouseEnter}
         handleTabMouseLeave={handleTabMouseLeave}
         tabs={tabs}
-        tabWidth="200px"
+        tabWidth="300px"
       />
 
       {activeTab === 1 && (
         <div className="enhance-tab-content">
           <img
-            src="https://i.shgcdn.com/8152b67e-9de6-4ffc-a37c-25cb1217482c/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
+            src="./Images/enhance_2.JPG"
             alt="PPF on car hood"
             className="enhance-tab-image"
           />
           <div className="enhance-text-section">
-            <h2 className="enhance-main-title">Stage 1 - Protection Detail</h2>
+            <h2 className="enhance-main-title">Premium Vehicle Detailing</h2>
             <h2 className="enhance-section-title">
-              Exterior – Cleaning/Cleansing/Decontamination
+              Exterior Vehicle Detailing
             </h2>
             <h4 className="enhance-sub-title">
-              21 STAGE VINYLE'D CLEANING PROCESS INCLUDING:
+              COMPLETE EXTERIOR DETAILING PROCESS
             </h4>
             <ul className="enhance-process-list">
               <li>
-                The vehicle is washed using PH neutral shampoo using twin grit
-                guard bucket system to prevent any stones and sharp edged
-                particles being carried onto the car via wash mitt.
+                Pre-wash with citrus foam to remove loose dirt and grime safely.
               </li>
               <li>
-                Wheels are cleaned using a nonacidic citrus based cleaner and
-                specially designed horse hair brushes.
+                Two-bucket hand wash with pH-neutral shampoo to avoid swirl
+                marks.
               </li>
               <li>
-                Door shuts, petrol cap, arches and lower sections parts will be
-                cleaned (where accessible).
+                Wheels cleaned with non-acidic cleaner and soft brushes for a
+                sparkling finish.
               </li>
               <li>
-                The vehicle is hand dried using deep-pile microfibre towels.
+                Door frames, wheel arches, and hard-to-reach areas thoroughly
+                cleaned.
               </li>
               <li>
-                The paintwork is treated with a clay bar (mild or aggressive)
-                removing bonded surface contaminants.
+                Clay bar treatment to remove tar, tree sap, and other stuck-on
+                contaminants.
               </li>
               <li>
-                Body solvent is applied to dissolve and remove tar, road grime,
-                honey dew and bug splatter deposits and other petroleum based
-                substances.
+                Hand-dried with soft microfibre towels to prevent scratches.
               </li>
-              <li>Tyres are dressed.</li>
-              <li>Exterior plastics and door trims are dressed.</li>
+              <li>
+                High-quality wax or sealant applied for UV protection and
+                showroom-like shine.
+              </li>
+              <li>
+                Tyres and exterior plastic trims dressed for a neat, polished
+                look.
+              </li>
             </ul>
-            <p className="enhance-sealant-title">SEALANT</p>
+            <p className="enhance-sealant-title">OPTIONAL ADD-ONS</p>
             <p className="enhance-sealant-text">
-              Speak to our team for recommendations on ceramic coatings for the
-              paintwork, windows, and wheels.
+              Ask our team about ceramic coatings, glass sealants, or wheel
+              protectants to enhance your vehicle’s protection.
             </p>
-            <h2 className="enhance-section-title">Interior</h2>
+            <h2 className="enhance-section-title">
+              Interior Vehicle Detailing
+            </h2>
             <ul className="enhance-process-list enhance-interior-list">
-              <li>Carpets vacuumed.</li>
-              <li>Windows are cleaned on the inside.</li>
+              <li>Thorough vacuuming of carpets, seats, and boot.</li>
               <li>
-                Interior trim and surfaces are all cleaned using aerospace-grade
+                Interior surfaces cleaned and conditioned with high-quality
                 products.
+              </li>
+              <li>Windows cleaned for a crystal-clear, streak-free finish.</li>
+              <li>
+                Leather seats cleaned and conditioned to keep them soft and
+                durable.
               </li>
             </ul>
             <h2 className="enhance-section-title">
-              Why choose the Stage 1 Protection Detail?
+              Why Choose Our Vehicle Detailing?
             </h2>
-
             <p>
-              The purpose of a Stage 1 Detail is to decontaminate the paintwork
-              or PPF (Paint Protection Film). Most commonly, a Stage 1 Detail is
-              used to detail satin paint (which cannot be machine polished) or
-              as an ongoing maintenance detail. It doesn’t involve paint
-              correction, and instead, is a thorough deep clean involving both
-              chemical and mechanical decontamination.
+              Our premium vehicle detailing service restores your vehicle’s
+              shine and protects its surfaces. Perfect for all vehicles, this
+              service focuses on deep cleaning and protection, ideal for
+              maintaining paint protection films or matte finishes. Regular
+              vehicle detailing keeps your vehicle looking brand new and helps
+              retain its resale value.
             </p>
           </div>
         </div>
@@ -121,68 +122,90 @@ export default function Enhance() {
       {activeTab === 2 && (
         <div className="enhance-tab-content">
           <img
-            src="https://i.shgcdn.com/297bf929-a9fe-4ae1-afdc-acb9b92042f7/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
+            src="./Images/enhance_3.jpg"
             alt="Enhancement Detail on car"
             className="enhance-tab-image"
           />
           <div className="enhance-text-section">
-            <h2 className="enhance-main-title">Stage 2 - Enhancement Detail</h2>
+            <h2 className="enhance-main-title">Premium Ceramic Coating</h2>
             <h2 className="enhance-section-title">
-              Exterior – Cleaning/Cleansing/Decontamination
+              Exterior Preparation & Application
             </h2>
             <h4 className="enhance-sub-title">
-              24 STAGE VINYLE'D CLEANING PROCESS INCLUDING:
+              COMPREHENSIVE CERAMIC COATING PROCESS
             </h4>
             <ul className="enhance-process-list">
               <li>
-                A layer of thick white foam is applied to the vehicle to help
-                loosen, lift and remove dirt particles from the paintwork
-                without inducing micro scratches.
+                Pre-wash with citrus foam to lift dirt and grime safely from the
+                vehicle’s surface.
               </li>
               <li>
-                The vehicle is then blown dry with “Black Baron Vehicle Dryer”
-                peak airflow rate of just over 330mph, eliminating water
-                streaks.
+                Two-bucket hand wash with pH-neutral shampoo to ensure a clean,
+                swirl-free base.
               </li>
-              <li>The engine bay is cleaned.</li>
+              <li>
+                Clay bar treatment to remove bonded contaminants like tar, tree
+                sap, and industrial fallout.
+              </li>
+              <li>
+                Single-stage polish to enhance gloss and prepare the paint for
+                coating adhesion.
+              </li>
+              <li>
+                Application of premium ceramic coating for long-lasting
+                protection and hydrophobic properties.
+              </li>
+              <li>
+                Wheels coated with specialised ceramic sealant for durability
+                and easy cleaning.
+              </li>
+              <li>
+                Glass surfaces treated with ceramic-based sealant for improved
+                visibility and water repellency.
+              </li>
+              <li>
+                Final inspection to ensure a flawless, showroom-like shine.
+              </li>
             </ul>
             <h4 className="enhance-sub-title">
-              PAINT CORRECTION – 70-80% CORRECTION FACTOR
+              ADDITIONAL PROTECTIVE TREATMENTS
             </h4>
             <ul className="enhance-process-list">
               <li>
-                Paintwork is treated to a one-to-two stage correction process,
-                to remove light paint imperfections, such as minor swirl marks
-                to increase the gloss factor.
+                Tyres dressed with UV-protectant dressing for a sleek,
+                long-lasting finish.
               </li>
               <li>
-                Chrome and stainless steel surfaces are treated and protected.
+                Exterior plastic trims coated to prevent fading and maintain a
+                polished look.
               </li>
-              <li>All light clusters are treated and protected.</li>
+              <li>
+                Chrome or metal surfaces treated to resist corrosion and enhance
+                shine.
+              </li>
             </ul>
-            <h2 className="enhance-section-title">Interior</h2>
+            <h2 className="enhance-section-title">Interior Protection</h2>
             <p>
-              The vehicle is deodorised using specially designed anti-bacterial
-              treatment, which breaks down and eliminates bad odour and bacteria
-              instead of masking them.
+              Interior surfaces are treated with a protective coating to repel
+              spills and stains, while leather seats are conditioned to stay
+              soft and resistant to wear.
             </p>
             <h2 className="enhance-section-title">
-              Why choose the Stage 2 Enhancement Detail?
+              Why Choose Our Ceramic Coating?
             </h2>
-
             <p>
-              This is our entry stage paint correction detail, which removes
-              minor imperfections including fine swirls/scratches in the
-              clearcoat/topcoat of the paint. It is perfect for new cars, or
-              cars with dulled paint that need a refresh. This process results
-              in 70% to 80% 'correction factor', it will not, however, remove
-              any deeper scratches.
+              Our premium ceramic coating service provides your vehicle with
+              advanced protection against UV rays, scratches, and environmental
+              contaminants. It enhances gloss, ensures a showroom-like shine,
+              and makes maintenance effortless with its hydrophobic properties.
+              Ideal for vehicles with paint protection films or those seeking
+              long-term protection, this service boosts durability and retains
+              resale value.
             </p>
-
             <p className="enhance-sealant-text">
-              To seal freshly corrected paintwork we recommend Ceramic Coating
-              for added glossiness, hydrophobic properties and easier
-              maintenance or PPF for ultimate protection.
+              For ultimate protection, ask our team about combining ceramic
+              coating with paint protection film (PPF) or specialised wheel and
+              glass coatings.
             </p>
           </div>
         </div>
@@ -191,276 +214,96 @@ export default function Enhance() {
       {activeTab === 3 && (
         <div className="enhance-tab-content">
           <img
-            src="https://i.shgcdn.com/f432b83b-7fb0-4201-8036-08b66e7933c0/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
+            src="./Images/enhance_4.JPG"
             alt="Correction Detail on car"
             className="enhance-tab-image"
           />
           <div className="enhance-text-section">
-            <h2 className="enhance-main-title">Stage 3 - Correction Detail</h2>
+            <h2 className="enhance-main-title">Premium Graphene Coating</h2>
             <h2 className="enhance-section-title">
-              Exterior – Cleaning/Cleansing/Decontamination
+              Exterior Preparation & Application
             </h2>
             <h4 className="enhance-sub-title">
-              PAINT CORRECTION – 80-95% CORRECTION FACTOR
+              COMPREHENSIVE GRAPHENE COATING PROCESS
             </h4>
             <ul className="enhance-process-list">
               <li>
-                Paint thickness is measured using an ultrasonic paint depth
-                gauge.
+                Pre-wash with citrus foam to safely lift dirt and grime from the
+                vehicle’s surface.
               </li>
               <li>
-                Various lighting is used to establish the condition of the
-                paintwork.
+                Two-bucket hand wash with pH-neutral shampoo to ensure a
+                swirl-free base.
               </li>
               <li>
-                Paintwork is treated to a three stage paint correction process
-                to eliminate defects including medium swirl marks and holograms.
-                Panels are alcohol wiped after every stage to ensure true
-                correction. Exhaust tips are rejuvenated with specially designed
-                metal compounds. Glass is treated with nano polish.
+                Clay bar treatment to remove bonded contaminants like tar, tree
+                sap, and industrial fallout.
+              </li>
+              <li>
+                Paint thickness measured with a digital gauge to assess coating
+                suitability.
+              </li>
+              <li>
+                Single-stage polish to remove minor swirl marks and enhance
+                gloss for optimal coating adhesion.
+              </li>
+              <li>
+                Application of advanced graphene coating for superior
+                durability, heat resistance, and hydrophobic properties.
+              </li>
+              <li>
+                Wheels and glass treated with graphene-based sealants for
+                enhanced protection and easy maintenance.
+              </li>
+              <li>
+                Final inspection to ensure a flawless, showroom-like shine.
               </li>
             </ul>
-            <h2 className="enhance-section-title">Interior</h2>
+            <h2 className="enhance-section-title">Interior Protection</h2>
             <ul className="enhance-process-list enhance-interior-list">
               <li>
-                Carpets are shampooed if necessary and dried using a wet suction
-                vacuum cleaner.
+                Interior surfaces coated with graphene-infused protectant to
+                repel stains and spills.
               </li>
               <li>
-                Specifically designed Alcantara cleaner is applied to revive the
-                Alcantara fibres.
+                Leather seats cleaned and treated to maintain softness and
+                resist wear.
               </li>
               <li>
-                All leather surfaces are cleansed and protected. Air vents,
-                button surrounds and fascia are cleaned using specialised
-                brushes.
+                Windows cleaned inside and out for a crystal-clear, streak-free
+                finish.
               </li>
             </ul>
             <h2 className="enhance-section-title">
-              Why choose the Stage 3 Correction Detail?
+              Why Choose Our Graphene Coating?
             </h2>
-
             <p>
-              This is our used vehicle three stage paint correction and interior
-              detail, which removes medium imperfections including
-              swirls/scratches in the clear coat of the paint. This process
-              results in 80% to 95% 'correction factor'.
+              Our premium graphene coating service offers cutting-edge
+              protection for your vehicle, shielding it from UV rays, minor
+              scratches, and environmental contaminants. The graphene coating
+              provides exceptional durability, heat resistance, and a slick,
+              showroom-like shine that lasts longer than traditional coatings.
+              Ideal for vehicles with paint protection films or those seeking
+              top-tier protection, this service simplifies maintenance and
+              boosts resale value.
             </p>
             <p>
-              The Stage 3 Detail also includes a thorough rejuvenation of all
-              chromatic and metal elements, e.g. the exhaust tips, door shuts,
-              light and air clusters, washing of the interior and deodorisation,
-              leather protection, nano polish of the glass inside and out, and
-              more.
-            </p>
-            <p>
-              This process is designed to bring out the best of a used car,
-              getting the life back into the paintwork and looking as new as it
-              possibly could!
+              The process includes thorough surface preparation, application of
+              graphene coating to paint, wheels, and glass, and interior
+              protection to keep your vehicle in pristine condition. It enhances
+              the appearance and longevity of your vehicle, making it look brand
+              new.
             </p>
             <p>
               <em>
-                This detailing stage doesn't remove any scratches that have gone
-                all the way through the paint.
+                This coating does not repair deep scratches that penetrate the
+                paint layer.
               </em>
             </p>
-
             <p className="enhance-sealant-text enhance-bold">
-              To seal freshly corrected paintwork we recommend Ceramic Coating
-              for added glossiness, hydrophobic properties and easier
-              maintenance or PPF for ultimate protection.
-            </p>
-          </div>
-        </div>
-      )}
-      {activeTab === 4 && (
-        <div className="enhance-tab-content">
-          <img
-            src="https://i.shgcdn.com/f84730ff-b168-4edf-bf06-55cb317626d5/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
-            alt="Ultimate Detail on car"
-            className="enhance-tab-image"
-          />
-          <div className="enhance-text-section">
-            <h2 className="enhance-main-title">Stage 4 - Ultimate Detail</h2>
-            <h2 className="enhance-section-title">
-              Exterior – Cleaning/Cleansing/Decontamination
-            </h2>
-            <ul className="enhance-process-list">
-              <li>Door shuts are cleansed.</li>
-              <li>
-                Wheels are removed, cleaned on the inside and cleansed, then all
-                wheel nuts are torque set to the correct manufacturer’s
-                specifications.
-              </li>
-              <li>Wheels are cleansed, polished and sealed inside and out.</li>
-              <li>Engine bay is detailed.</li>
-            </ul>
-            <h4 className="enhance-sub-title enhance-paint-correction">
-              PAINT CORRECTION – 95%-99% CORRECTION FACTOR
-            </h4>
-            <ul className="enhance-process-list">
-              <li>Alloy wheels paint corrected.</li>
-              <li>
-                Paintwork is treated to a three-to-five stage paint correction
-                process to eliminate defects such as heavy swirl marks,
-                holograms and minor scratches.
-              </li>
-              <li>
-                Deeper surface scratches are stageed using specifically designed
-                finishing papers. Paintwork is checked using a digital
-                microscope in specific areas.
-              </li>
-            </ul>
-            <h2 className="enhance-section-title">Interior</h2>
-            <ul className="enhance-process-list enhance-interior-list">
-              <li>Safety belts are steam cleaned.</li>
-              <li>
-                All leather surfaces are cleaned, de-glossed, fed with essential
-                oils and then protected with leather guard.
-              </li>
-            </ul>
-            <h2 className="enhance-section-title">
-              Why choose the Stage 4 Ultimate Detail?
-            </h2>
-
-            <p>
-              This detailing stage is ideal if you wish to bring your car’s
-              paint back to life. In addition to what we offer in our lower
-              detailing stages, our Stage 4 Detail includes an engine bay
-              detail, underbody clean, wheels removed and polished and much
-              more. With up to five stages of correction we can achieve up to a
-              99% ‘correction factor’. This is the best possible detail to
-              rejuvenate paintwork and create a ‘better than new’ finish.
-            </p>
-
-            <p className="enhance-sealant-text enhance-bold">
-              To seal freshly corrected paintwork we recommend Ceramic Coating
-              for added glossiness, hydrophobic properties and easier
-              maintenance or PPF for ultimate protection.
-            </p>
-          </div>
-        </div>
-      )}
-      {activeTab === 5 && (
-        <div className="enhance-tab-content">
-          <img
-            src="https://i.shgcdn.com/509fdfbc-571b-4fc3-8ed7-efcc314d7ee4/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
-            alt="Signature Detail on car"
-            className="enhance-tab-image"
-          />
-          <div className="enhance-text-section">
-            <h2 className="enhance-main-title">Stage 5 - Signature Detail</h2>
-            <h4 className="enhance-sub-title">
-              Paint Distortion (Orange Peel) Removal
-            </h4>
-            <h4 className="enhance-sub-title">UP TO 100% CORRECTION FACTOR</h4>
-            <p>
-              The focus of this service is to eliminate the inconsistent,
-              distorted finish found in modern clear coats. Our Signature
-              treatment focuses on improving the factory finish achieving a far
-              superior standard.
-            </p>
-            <p>
-              The process includes stageling the clear coat (lacquer) using a
-              variety of specialist tools and eliminating the high points found
-              on modern paint systems.
-            </p>
-            <p>
-              Our expertise, knowledge and years of experience combine to give
-              the VINYLE'D Signature treatment its 100% success rate.
-            </p>
-            <h2 className="enhance-section-title">
-              Why choose the Stage 5 Signature Detail?
-            </h2>
-
-            <p>
-              If you are striving for perfection in your paintwork then our
-              Signature Detail is for you. ‘Orange peel’ or peaks and troughs in
-              the clear coat add unwanted, distortion, texture and dullness to
-              the paint. The VINYLE'D Signature Detail will remove unwanted ‘orange
-              peel’ texture achieving a glass like finish.
-            </p>
-            <p>
-              Our Stage 5 Detail is our Signature Detail which completely
-              restages the clear coat, refining and polishing it in five stages.
-              This involves dry sanding, wet sanding, and paint correction. This
-              treatment is perfect for a car you want to keep and cherish for
-              many years.
-            </p>
-
-            <p className="enhance-sealant-text enhance-bold">
-              To seal freshly corrected paintwork we recommend Ceramic Coating
-              for added glossiness, hydrophobic properties and easier
-              maintenance or PPF for ultimate protection.
-            </p>
-          </div>
-        </div>
-      )}
-      {activeTab === 6 && (
-        <div className="enhance-tab-content">
-          <img
-            src="https://i.shgcdn.com/43a7dc26-3cf8-4f01-a723-a5b1e692d684/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
-            alt="Sub Zero Detail on car"
-            className="enhance-tab-image"
-          />
-          <div className="enhance-text-section">
-            <h2 className="enhance-main-title">Stage 6 - Dry Ice Blasting</h2>
-            <h4 className="enhance-sub-title">
-              Underbody/Engine Bay – Cleaning/Restoration
-            </h4>
-            <p>
-              At VINYLE'D we are known for our detailing, having offered our Stage
-              1 to 5 Details for over 12 years. In 2023 we took detailing to the
-              next stage: Sub Zero. Our Sub Zero detail is a form of ‘dry ice
-              blasting’ which uses frozen CO2 pellets to transform your car,
-              without damaging it. However, we are not talking about paintwork
-              here, our Sub Zero detail goes underneath your car, removing years
-              of road grime from the underbody, engine bay and suspension
-              components, in many cases making them look like brand new again.
-            </p>
-            <h4 className="enhance-sub-title">What is Dry Ice Blasting?</h4>
-            <p>
-              Dry Ice Blasting is able to remove everything from dirt, grime and
-              grease to rust/oxidisation, overspray and coatings (when desired).
-              Better yet, this treatment is safe to use on paint, metal, plastic
-              and rubber.
-            </p>
-            <p>
-              This process works by blasting soft CO2 pellets at high pressure
-              onto the surface in question. Upon contact the pellets immediately
-              turn to gas, and the extreme temperature (-79°C) thermally shocks
-              the contaminants, causing them to lose adhesion with the surface.
-            </p>
-            <p>
-              We are also able to combine this treatment with any number of
-              underbody coatings/sealants to make sure your car stays corrosion
-              free and looking fresh, even underneath!
-            </p>
-            <h2 className="enhance-section-title">Why choose the Sub Zero Detail?</h2>
-
-            <p>
-              Dry ice blasting is not a new craft, however, at VINYLE'D we have
-              finessed the technique to guarantee that the service is always
-              offered at the uncompromising VINYLE'D standard, in line with our
-              paint correction and paint protection services. We have the latest
-              state of the art equipment coupled with a years of experimentation
-              and testing to be able to offer the Ice Blasting like you’ve never
-              seen it before.
-            </p>
-            <p>
-              Underneath a car there are many sensitive components, coatings and
-              lines that must not be damaged. We are very careful to never use
-              excessive pressure on any part of the car to guarantee nothing is
-              damaged or compromised, whilst still achieving the maximum effect
-              and result. Your car will never have been treated so well or
-              looked so good!
-            </p>
-
-            <p className="enhance-sealant-text">
-              Currently we are offering our Sub Zero Detail at our HQ in North
-              London, and to date we have transformed everything from classic
-              911s to the latest Ferrari hypercars. Contact our team to find out
-              what we could do for your car.
+              For ultimate protection, ask our team about combining graphene
+              coating with paint protection film (PPF) or specialised wheel and
+              glass treatments.
             </p>
           </div>
         </div>
