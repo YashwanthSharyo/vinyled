@@ -50,8 +50,8 @@ h2 {
 }
 
 .client-logo {
-  max-width: 100px;
-  height: 80px;
+  max-width: 120px; /* Increased from 100px */
+  height: 100px;     /* Increased from 80px */
   object-fit: contain;
   transition: transform 0.3s ease;
   margin: 0 auto;
@@ -60,6 +60,14 @@ h2 {
 
 .client-logo:hover {
   transform: scale(1.1);
+}
+
+/* Adjust size specifically for smaller screens */
+@media (max-width: 479px) {
+  .client-logo {
+    max-width: 140px;
+    height: 110px;
+  }
 }
 
 /* Review Carousel */
@@ -81,7 +89,7 @@ h2 {
   opacity: 0;
   transition: opacity 1s ease-in-out;
   text-align: center;
-  padding: 1rem 2rem; /* Added padding for spacing */
+  padding: 1rem 2rem;
 }
 
 .review-slide.active {
