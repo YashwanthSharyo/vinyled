@@ -63,7 +63,7 @@ export default function About() {
       <div className="AboutIntro">
         <div className="AboutIntroImageWrapper">
           <img
-            src="public/Images/about_us_1.JPG"
+            src="./Images/about_us_1.JPG"
             alt="Display"
             className="AboutIntroImage"
           />
@@ -132,7 +132,7 @@ export default function About() {
 
           <div className="AboutStandardsImageWrapper">
             <img
-              src="public/Images/about_us_2.JPG"
+              src="./Images/about_us_2.JPG"
               alt="VINYLE'D Example"
               className="AboutStandardsImage"
             />
@@ -162,7 +162,7 @@ export default function About() {
       <div className="AboutFacilities">
         <div className="AboutFacilitiesImageWrapper">
           <img
-            src="public/Images/about_us_3.JPG"
+            src="./Images/about_us_3.JPG"
             alt="Display"
             className="AboutFacilitiesImage"
           />
