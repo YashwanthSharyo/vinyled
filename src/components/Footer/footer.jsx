@@ -125,29 +125,29 @@ const Footer = () => {
               >
                 Protect
               </div>
-              <div
+              {/* <div
                 className="link"
                 onClick={() => handleServiceClick("/maintain")}
               >
                 Maintain
-              </div>
+              </div> */}
               <div
                 className="link"
                 onClick={() => handleServiceClick("/personolization")}
               >
                 Personalization
               </div>
-              <div
+              {/* <div
                 className="link"
                 onClick={() => handleServiceClick("/custom-project")}
               >
                 Custom Projects
-              </div>
+              </div> */}
               <div
                 className="link"
                 onClick={() => handleServiceClick("/branding")}
               >
-                Branding
+                Fleet Branding
               </div>
             </div>
 
