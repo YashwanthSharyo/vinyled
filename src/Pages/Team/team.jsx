@@ -14,9 +14,7 @@ export default function Team() {
     <div className="team-container">
       <div className="team-hero">
         <div>
-          <h2>
-            OUR TEAM
-          </h2>
+          <h2>OUR TEAM</h2>
           <p>Meet the team</p>
         </div>
       </div>
@@ -85,8 +83,10 @@ export default function Team() {
         <p>
           One simple philosophy drives our business:
           <br />
-          <strong>“Treat others as you would like to be treated yourself”</strong>
-          <br />- Nabil Naamo
+          <strong>
+            “Quality means doing it right when no one is looking.”
+          </strong>
+          <br />– Henry Ford
         </p>
       </div>
     </div>
