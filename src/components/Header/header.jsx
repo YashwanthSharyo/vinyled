@@ -47,7 +47,7 @@
 //             <li><Link to="/personolization" onClick={() => handleMenuItemClick("/personolization")}>PERSONALIZE</Link></li>
 //             <li><Link to="/protect" onClick={() => handleMenuItemClick("/protect")}>PROTECT</Link></li>
 //             <li><Link to="/maintain" onClick={() => handleMenuItemClick("/maintain")}>MAINTAIN</Link></li>
-            
+
 //             {/* <li><Link to="/custom-project" onClick={() => handleMenuItemClick("/custom-project")}>CUSTOM PROJECT</Link></li> */}
 //             <li><Link to="/branding" onClick={() => handleMenuItemClick("/branding")}>FLEET BRANDING / COMMERCIAL PROJECT</Link></li>
 //           </ul>
@@ -97,8 +97,7 @@
 
 // export default Header;
 
-
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./header.css";
 import { Link, useNavigate } from "react-router-dom";
 
@@ -244,9 +243,6 @@ import { Link, useNavigate } from "react-router-dom";
 
 // export default Header;
 
-
-
-
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -301,11 +297,15 @@ const Header = () => {
         </li>
 
         <li
-          className={`dropdown ${activeDropdown === "services" ? "active" : ""}`}
+          className={`dropdown ${
+            activeDropdown === "services" ? "active" : ""
+          }`}
           onClick={(e) => {
             if (window.innerWidth <= 1280) {
               e.stopPropagation();
-              setActiveDropdown(activeDropdown === "services" ? null : "services");
+              setActiveDropdown(
+                activeDropdown === "services" ? null : "services"
+              );
             }
           }}
         >
@@ -313,11 +313,46 @@ const Header = () => {
             SERVICES <i className="fa fa-caret-down"></i>
           </a>
           <ul className="dropdown-menu">
-            <li><Link to="/enhance" onClick={() => handleMenuItemClick("/enhance")}>ENHANCE</Link></li>
-            <li><Link to="/personolization" onClick={() => handleMenuItemClick("/personolization")}>PERSONALIZE</Link></li>
-            <li><Link to="/protect" onClick={() => handleMenuItemClick("/protect")}>PROTECT</Link></li>
-            <li><Link to="/maintain" onClick={() => handleMenuItemClick("/maintain")}>MAINTAIN</Link></li>
-            <li><Link to="/branding" onClick={() => handleMenuItemClick("/branding")}>FLEET BRANDING / COMMERCIAL PROJECT</Link></li>
+            <li>
+              <Link
+                to="/enhance"
+                onClick={() => handleMenuItemClick("/enhance")}
+              >
+                ENHANCE
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/personolization"
+                onClick={() => handleMenuItemClick("/personolization")}
+              >
+                PERSONALIZE
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/protect"
+                onClick={() => handleMenuItemClick("/protect")}
+              >
+                PROTECT
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/maintain"
+                onClick={() => handleMenuItemClick("/maintain")}
+              >
+                MAINTAIN
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/branding"
+                onClick={() => handleMenuItemClick("/branding")}
+              >
+                FLEET BRANDING / COMMERCIAL PROJECT
+              </Link>
+            </li>
           </ul>
         </li>
 
@@ -330,22 +365,35 @@ const Header = () => {
             }
           }}
         >
-          <a>
+          <Link to="/about">
             ABOUT US <i className="fa fa-caret-down"></i>
-          </a>
+          </Link>
           <ul className="dropdown-menu">
-            <li><Link to="/our-process" onClick={() => handleMenuItemClick("/our-process")}>BLOGS</Link></li>
+            <li>
+              <Link
+                to="/our-process"
+                onClick={() => handleMenuItemClick("/our-process")}
+              >
+                BLOGS
+              </Link>
+            </li>
           </ul>
         </li>
 
         <li>
-          <Link to="/our-clients" onClick={() => handleMenuItemClick("/our-clients")}>
+          <Link
+            to="/our-clients"
+            onClick={() => handleMenuItemClick("/our-clients")}
+          >
             OUR CLIENTS
           </Link>
         </li>
 
         <li>
-          <Link to="/contact-us" onClick={() => handleMenuItemClick("/contact-us")}>
+          <Link
+            to="/contact-us"
+            onClick={() => handleMenuItemClick("/contact-us")}
+          >
             CONTACT US
           </Link>
         </li>
