@@ -1,11 +1,11 @@
 * {
-  font-family: auto;
+  font-family: 'inter';
 }
 p{
   font-size: 15px;
   color: #333;
   margin-top: -10px;
-  font-family: auto;
+  font-family: 'inter';
 }
 
 .enhance-container {
@@ -34,7 +34,7 @@ p{
 .enhance-text-section {
   flex: 1;
   font-size: 1rem;
-  font-family: auto;
+  font-family: 'inter';
   line-height: 1.5;
   color: #333;
   display: flex;
@@ -49,7 +49,7 @@ p{
   font-size: 39px;
   text-align: left;
   margin-bottom: 0.625rem;
-  font-family: auto;
+  font-family: 'inter';
   font-weight: 600; /* or try 300 */
 }
 
@@ -60,7 +60,7 @@ p{
   font-size: 25px;
   text-align: left;
   margin-bottom: 1rem;
-  font-family: auto;
+  font-family: 'inter';
 }
 
 .enhance-section-title.enhance-interior-title {
@@ -74,7 +74,7 @@ p{
 .enhance-sub-title {
   margin-bottom: -1rem;
   color: #000;
-  font-family: auto;
+  font-family: 'inter';
   font-weight: 700;
   
 }
@@ -88,13 +88,13 @@ p{
   font-size: 15px;
   color: #333333;
   margin-top: 23px;
-  font-family: auto;
+  font-family: 'inter';
   margin-bottom: 30px;
 }
 
 .enhance-process-list li{
   
-  font-family: auto;
+  font-family: 'inter';
 }
 
 .enhance-process-list.enhance-interior-list {
@@ -111,7 +111,7 @@ p{
   margin-top: 0;
   margin-bottom: 1rem;
   font-weight: 600;
-  font-family: auto;
+  font-family: 'inter';
 }
 
 .enhance-sealant-text.enhance-bold {
@@ -147,7 +147,7 @@ p{
 
   .enhance-section-title {
    font-size: 19px;
-   font-family: auto;
+   font-family: 'inter';
   }
 }
 
@@ -166,29 +166,29 @@ p{
   .enhance-text-section {
     font-size: 0.9rem;
     text-align: left; /* Changed from justify to left */
-    font-family: auto;
+    font-family: 'inter';
   }
 
   .enhance-main-title {
     font-size: 31px;
-    font-family: auto;
+    font-family: 'inter';
   }
 
   .enhance-section-title {
     font-size: 19px;
-    font-family: auto;
+    font-family: 'inter';
   }
 
   .enhance-sub-title {
     font-size: 15px;
-    font-family: auto;
+    font-family: 'inter';
   }
 
   .enhance-process-list {
     padding-left: 1rem;
     font-size: 15px;
     color: #333;
-    font-family: auto;
+    font-family: 'inter';
   }
 }
 

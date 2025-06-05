@@ -1,9 +1,9 @@
 * {
-  font-family: auto;
+  font-family: 'inter';
 }
 
 .personalization-wrap-container {
-  font-family: auto;
+  font-family: 'inter';
   background-color: white;
   display: flex;
   justify-content: center;
@@ -46,7 +46,7 @@
 .personalization-content-text .personalization-title {
   color: #ec1d24;
   font-weight: 600;
-  font-family: auto;
+  font-family: 'inter';
   font-style: normal;
   font-size: 39px;
   text-align: left;
@@ -57,7 +57,7 @@
 .personalization-content-text .personalization-subtitle {
   color: #ec1d24;
   font-weight: 600;
-  font-family: auto;
+  font-family: 'inter';
   font-size: 25px;
   margin: 0 0 0.5rem 0;
 }
@@ -75,12 +75,14 @@
     font-size: 15px;
     color: #333333;
     margin-top: 23px;
-    font-family: auto;
+    font-family: 'inter';
     margin-bottom: 30px;
 }
 .personalization-list li{
-  font-family: auto;
+  font-family: 'inter';
 }
+
+
 
 
 .personalization-content-text .personalization-highlight {
@@ -258,7 +260,7 @@
 .personalization-content-text .personalization-title {
  color: #ec1d24;
   font-weight: 600;
-  font-family: auto;
+  font-family: 'inter';
   font-style: normal;
   font-size: 39px;
   text-align: left;
@@ -269,7 +271,7 @@
 .personalization-content-text .personalization-subtitle {
   color: #ec1d24;
   font-weight: 600;
-  font-family: auto;
+  font-family: 'inter';
   font-size: 25px;
   margin: 0 0 0.5rem 0;
 }
@@ -286,7 +288,7 @@
       font-weight: 400;
     font-size: 15px;
     color: #333333;
-    font-family: auto;
+    font-family: 'inter';
 
   margin: 0 0 0.5rem 0;
 }

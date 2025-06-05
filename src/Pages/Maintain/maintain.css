@@ -1,5 +1,5 @@
 *{
-  font-family: auto;
+  font-family: 'inter';
 }
 
 .maintain-container {
@@ -18,7 +18,7 @@
 .wash-title {
   color: #ec1d24;
   font-weight:600;
-  font-family: auto;
+  font-family: 'inter';
   font-style: normal;
   font-size: 39px;
   text-align: center;
@@ -58,7 +58,7 @@
 .wash-plan-details-title {
   color: #ec1d24;
   font-weight: 600;
-  font-family: auto;
+  font-family: 'inter';
   font-style: normal;
   font-size: 25px;
   text-align: left;
@@ -127,7 +127,7 @@
 .section-title {
  color: #ec1d24;
     font-weight: 600;
-    font-family: auto;
+    font-family: 'inter';
     /* font-style: normal; */
     font-size: 27px;
     text-align: left;
@@ -149,7 +149,7 @@
 
 .process-list li {
   margin-bottom: 0.1875rem;
-  font-family: auto;
+  font-family: 'inter';
 }
 
 .uppercase {

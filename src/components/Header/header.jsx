@@ -324,7 +324,7 @@ const Header = () => {
         <li
           className={`dropdown ${activeDropdown === "about" ? "active" : ""}`}
           onClick={(e) => {
-            if (window.innerWidth <= 1280) {
+            if (window.innerWidth <= 1020) {
               e.stopPropagation();
               setActiveDropdown(activeDropdown === "about" ? null : "about");
             }

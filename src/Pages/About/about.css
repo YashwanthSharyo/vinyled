@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: auto;
+  font-family: 'inter';
 }
 
 body {
@@ -86,7 +86,7 @@ body {
 .AboutIntroText > .AboutIntroTitle {
   color: #ec1d24;
   font-weight: 600;
-  font-family: auto;
+  font-family: 'inter';
   font-style: normal;
   font-size: 39px;
   text-align: left;
@@ -95,7 +95,7 @@ body {
 
 .AboutIntroText > .AboutIntroParagraph {
   /* line-height: 24px; */
-  font-family: auto;
+  font-family: 'inter';
   margin-bottom: 15px;
   font-size: 15px;
   color: #333;
@@ -132,7 +132,7 @@ body {
 .AboutStandardsText > .AboutStandardsTitle {
   color: #ec1d24;
   font-weight: 600;
-  font-family: auto;
+  font-family: 'inter';
   font-style: normal;
   font-size: 39px;
   text-align: left;
@@ -145,6 +145,9 @@ body {
   color: #333;
   padding-left: 20px;
   max-width: 100%;
+}
+.AboutStandardsText > .AboutStandardsList li {
+  font-family: 'inter';
 }
 
 .AboutStandardsContent > .AboutStandardsImageWrapper {
@@ -257,20 +260,23 @@ body {
 
 .AboutFacilitiesText > .AboutFacilitiesTitle {
   color: #ec1d24;
-  font-family: auto;
+  font-family: 'inter';
   font-size: 39px;
 }
 
 .AboutFacilitiesText > .AboutFacilitiesParagraph {
   /* line-height: 24px; */
-  font-family: auto;
+  font-family: 'inter';
   font-size: 15px;
-  
+
 }
 
 .AboutFacilitiesText > .AboutFacilitiesList {
   padding-left: 20px;
   max-width: 100%;
+}
+.AboutFacilitiesText > .AboutFacilitiesList li{
+  font-family: 'inter';
 }
 
 .AboutContainer > .AboutFooter {

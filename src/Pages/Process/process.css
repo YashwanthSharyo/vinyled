@@ -1,11 +1,7 @@
-*{
-  font-family: 'Work Sans', sans-serif;
+* li{
+  font-family: 'inter';
 }
 
-
-
-
-/* Wrapper */
 .vehicle-wrapper {
   min-height: 100vh;
   display: flex;
@@ -14,12 +10,6 @@
   background-color: white;
 }
 
-/* Header */
-
-
-
-
-/* Container */
 .vehicle-container {
   max-width: 960px;
   margin-top: 100px;
@@ -28,37 +18,37 @@
   background-color: white;
 }
 
-/* Section */
 .vehicle-section {
- 
   border-radius: 10px;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
-  
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 
 .vehicle-section__title {
   color: #e53e3e;
   font-size: 39px;
+  font-family: 'inter'; /* Added: Explicitly set font-family */
   font-weight: 600;
   margin-bottom: 1rem;
 }
 
 .vehicle-section__content {
   font-size: 15px;
+  font-family: 'inter'; /* Added: Explicitly set font-family */
 }
 
 .vehicle-section__content h3 {
   color: #e53e3e;
   font-size: 27px;
+  font-family: 'inter'; /* Added: Explicitly set font-family */
   margin: 1.25rem 0 0.5rem;
 }
 
 .vehicle-section__content p {
   margin-bottom: 0.75rem;
   font-size: 15px;
+  font-family: 'inter'; /* Added: Explicitly set font-family */
   font-weight: normal;
 }
 
@@ -67,10 +57,9 @@
   margin: 0.75rem 0;
   padding-left: 1.5rem;
   font-size: 15px;
+  font-family: 'inter'; /* Added: Explicitly set font-family */
   color: #333;
 }
-
-
 
 /* Gallery */
 .vehicle-gallery {
@@ -97,6 +86,7 @@
   color: #4a5568;
   margin-top: 0.5rem;
   font-size: 15px;
+  font-family: 'inter'; /* Added: Explicitly set font-family */
 }
 
 /* CTA */
@@ -111,11 +101,13 @@
 .vehicle-cta__title {
   color: #e53e3e;
   font-size: clamp(1.4rem, 4vw, 1.7rem);
+  font-family: 'inter'; /* Added: Explicitly set font-family */
   margin-bottom: 0.75rem;
 }
 
 .vehicle-cta__text {
   font-size: 1rem;
+  font-family: 'inter'; /* Added: Explicitly set font-family */
   margin-bottom: 1.25rem;
   color: #4a5568;
 }
@@ -129,9 +121,9 @@
   text-decoration: none;
   font-weight: 600;
   font-size: 0.95rem;
+  font-family: 'inter'; /* Added: Explicitly set font-family */
   transition: background 0.3s ease, transform 0.2s ease;
 }
-
 
 /* Footer */
 .vehicle-footer {
@@ -140,6 +132,7 @@
   text-align: center;
   padding: 1.25rem;
   font-size: 0.85rem;
+  font-family: 'inter'; /* Added: Explicitly set font-family */
 }
 
 /* Responsive */
@@ -173,14 +166,17 @@
 @media (max-width: 480px) {
   .vehicle-header__title {
     font-size: 1.6rem;
+    font-family: 'inter'; /* Added: Explicitly set font-family */
   }
 
   .vehicle-section__title {
-    font-size:27px;
+    font-size: 27px;
+    font-family: 'inter'; /* Added: Explicitly set font-family */
   }
 
   .vehicle-cta__button {
     padding: 0.5rem 1.5rem;
     font-size: 0.9rem;
+    font-family: 'inter'; /* Added: Explicitly set font-family */
   }
 }

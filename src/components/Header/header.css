@@ -38,12 +38,6 @@ a {
   align-items: center;
 }
 
-/* .header > .logo > .logo-img {
-  width: 170px;
-  height: 80px;
-  object-fit: contain;
-} */
-
 .header > .logo > .logo-img {
   width: 240px;
   height: 50px;
@@ -51,7 +45,7 @@ a {
 }
 
 .header > .menu {
-  display: none; /* Changed: Hidden by default for mobile and tablet */
+  display: none; /* Hidden by default for mobile and tablet */
   justify-content: center;
   align-items: center;
   padding: 0;
@@ -65,7 +59,7 @@ a {
 }
 
 .header > .menu > li {
-  display: block; /* Changed: Block for mobile and tablet dropdowns */
+  display: block;
 }
 
 .header > .menu > li > a {
@@ -83,13 +77,11 @@ a {
   background-color: transparent;
 }
 
-/* Main menu hover - including dropdown */
 .header > .menu > li > a:hover,
 .header > .menu > .dropdown:hover > a {
   color: red;
 }
 
-/* Submenu items hover */
 .header > .menu > .dropdown > .dropdown-menu > li > a:hover {
   color: red;
   background-color: transparent;
@@ -101,11 +93,11 @@ a {
 
 .header > .menu > .dropdown > .dropdown-menu {
   display: none;
-  position: static; /* Changed: Static for mobile and tablet to avoid overlap */
+  position: static;
   background-color: #fff;
-  border: none; /* Simplified for mobile and tablet */
+  border: none;
   z-index: 1;
-  min-width: 100%; /* Full width for mobile and tablet */
+  min-width: 100%;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -113,7 +105,7 @@ a {
 
 .header > .menu > .dropdown.active > .dropdown-menu,
 .header > .menu > .dropdown:hover > .dropdown-menu {
-  display: block; /* Show dropdown on hover (desktop) or active (mobile/tablet) */
+  display: block;
 }
 
 .header > .menu > .dropdown > .dropdown-menu > li > a {
@@ -174,8 +166,8 @@ a {
 }
 
 .header > .menu-icon {
+  display: none; /* Changed: Hidden by default for all screens */
   cursor: pointer;
-  display: inline-block; /* Changed: Visible by default for mobile and tablet */
   padding: 20px 10px;
   user-select: none;
 }
@@ -214,9 +206,9 @@ a {
 
 .header > .menu-btn:checked ~ .menu {
   display: flex;
-  flex-direction: column; /* Vertical menu for mobile and tablet */
+  flex-direction: column;
   max-height: 400px;
-  position: absolute; /* Position below header */
+  position: absolute;
   top: 60px;
   left: 0;
   right: 0;
@@ -246,10 +238,10 @@ a {
   top: 0;
 }
 
-/* Desktop (≥ 1281px) */
-@media (min-width: 1281px) {
+/* Desktop (≥ 1001px) */
+@media (min-width: 1001px) {
   .header > .menu {
-    display: flex; /* Show full menu */
+    display: flex; /* Changed: Show full menu for desktop */
     clear: none;
     float: right;
     max-height: none;
@@ -258,14 +250,7 @@ a {
     width: auto;
   }
 
-  /* .header > .logo > .logo-img {
-    width: 168px;
-    height: 59px;
-    object-fit: contain;
-  } */
-
   .header > .menu > li {
-    /* float: left; Horizontal menu items */
     display: inline-block;
   }
 
@@ -274,7 +259,7 @@ a {
   }
 
   .header > .menu > .dropdown > .dropdown-menu {
-    position: absolute; /* Dropdowns appear below */
+    position: absolute;
     top: 100%;
     left: 0;
     border: 1px solid #f4f4f4;
@@ -282,7 +267,7 @@ a {
   }
 
   .header > .menu-icon {
-    display: none; /* Hide menu icon */
+    display: none; /* Changed: Ensure menu icon is hidden */
   }
 
   .header > .flag-icon {
@@ -290,16 +275,16 @@ a {
   }
 }
 
-/* Tablet and Mobile (≤ 1280px) */
-@media (max-width: 1280px) {
+/* Tablet and Mobile (≤ 1000px) */
+@media (max-width: 1000px) {
   .header {
     position: relative;
     padding: 20px;
   }
   .header > .logo > .logo-img {
-    width: 200px; /* Smaller logo */
+    width: 200px;
     height: 45px;
-    object-fit: contain; /* Avoid cropping */
+    object-fit: contain;
   }
 
   .header > .menu {
@@ -351,7 +336,7 @@ a {
   }
 
   .header > .menu-icon {
-    display: inline-block;
+    display: inline-block; /* Changed: Show hamburger menu for ≤ 1000px */
     position: absolute;
     right: 16px;
     top: 50%;
@@ -368,6 +353,7 @@ a {
     background-color: #000;
   }
 }
+
 .dropdown i.fa-caret-down {
   transition: transform 0.3s ease;
 }
@@ -375,5 +361,3 @@ a {
 .dropdown.active i.fa-caret-down {
   transform: rotate(180deg);
 }
-
-

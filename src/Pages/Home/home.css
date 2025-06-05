@@ -1,5 +1,5 @@
 *{
-   font-family: auto;
+   font-family: 'inter';
 }
 .home-page {
   width: 100%;
@@ -12,7 +12,7 @@
   align-items: center;
   justify-content: center;
   font-size: 24px;
-   font-family: auto;
+   font-family: 'inter';
   font-weight: bold;
   color: white;
   box-sizing: border-box;
@@ -45,7 +45,7 @@
 }
 
 .black-content h1 {
-  font-family: auto;
+  font-family: 'inter';
   font-weight: 400;
   font-size: 65px;
   line-height: 1.1;
@@ -54,7 +54,7 @@
 }
 
 .black-content p {
-   font-family: auto;
+   font-family: 'inter';
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -66,7 +66,7 @@
   height: 45px;
   padding: 12px 24px;
   font-size: 16px;
-  font-family: auto;
+  font-family: 'inter';
   background-color: white;
   color: #000000;
   border: none;
@@ -96,7 +96,7 @@
   width: 100%;
   display: flex;
   font-size: 24px;
-  font-family: auto;
+  font-family: 'inter';
 }
 
 .green-bottom-left {
@@ -111,7 +111,7 @@
 }
 
 .left-title {
-  font-family: auto;
+  font-family: 'inter';
   font-weight: 600;
   font-size: 55px;
   line-height: 1;
@@ -122,7 +122,7 @@
 }
 
 .left-text {
-   font-family: auto;
+   font-family: 'inter';
   font-size: 16px;
   font-weight: 500;
   margin: 0;
@@ -143,7 +143,7 @@
   background-color: white;
   color: black;
   border: none;
-  font-family: auto;
+  font-family: 'inter';
   padding: 12px 24px;
   font-size: 16px;
   cursor: pointer;
@@ -187,7 +187,7 @@
   
   font-weight: 600;
   font-size: 55px;
-  font-family: auto;
+  font-family: 'inter';
   margin-bottom: 24px;
   width: 100%;
   text-align: center;
@@ -197,7 +197,7 @@
 .faq-subtext,
 .faq-contact {
   font-size: 16px;
-  font-family: auto;
+  font-family: 'inter';
   font-weight: 500;
   margin: 8px 0;
   line-height: 1.5;
@@ -210,7 +210,7 @@
   border: none;
   padding: 12px 24px;
   font-size: 16px;
-  font-family: auto;
+  font-family: 'inter';
   cursor: pointer;
   border-radius: 5px;
   margin-top: 20px;
@@ -246,7 +246,7 @@
   width: 100%;
   display: flex;
   font-size: 24px;
-  font-family: auto;
+  font-family: 'inter';
 }
 
 .about-left {
@@ -261,7 +261,7 @@
 }
 
 .about-title {
-  font-family: auto;
+  font-family: 'inter';
   font-weight: 400;
   font-size: 55px;
   line-height: 1;
@@ -272,7 +272,7 @@
 }
 
 .about-text {
-   font-family: auto;
+   font-family: 'inter';
   font-size: 16px;
   font-weight: 500;
   margin: 0;
@@ -295,7 +295,7 @@
   border: none;
   padding: 12px 24px;
   font-size: 16px;
-  font-family: auto;
+  font-family: 'inter';
   cursor: pointer;
   border-radius: 5px;
   transition: background-color 0.3s ease;
@@ -335,7 +335,7 @@
 }
 
 .faq-heading {
-  font-family: auto;
+  font-family: 'inter';
   font-weight: 400;
   font-size: 55px;
   margin-bottom: 24px;
@@ -346,7 +346,7 @@
 .faq-description,
 .faq-help {
   font-size: 16px;
-  font-family: auto;
+  font-family: 'inter';
   font-weight: 500;
   margin: 8px 0;
   line-height: 1.5;
@@ -395,7 +395,7 @@
 }
 
 .content h2 {
-  font-family: auto;
+  font-family: 'inter';
   font-weight: 400;
   font-size: 45px;
   line-height: 1;
@@ -403,7 +403,7 @@
 }
 
 .content p {
-   font-family: auto;
+   font-family: 'inter';
   font-size: 16px;
   font-weight: 500;
   margin-bottom: 20px;
@@ -417,7 +417,7 @@
   padding: 12px 24px;
   font-size: 16px;
   cursor: pointer;
-  font-family: auto;
+  font-family: 'inter';
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }
@@ -464,7 +464,7 @@
 
 .form-heading,
 .location-heading {
-  font-family: auto;
+  font-family: 'inter';
   font-size: 60px;
   margin-bottom: 16px;
   line-height: 1;
@@ -476,7 +476,7 @@
   padding: 12px;
   margin: 10px 0;
   font-size: 16px;
-  font-family: auto;
+  font-family: 'inter';
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
@@ -489,7 +489,7 @@
   border: none;
   padding: 12px 24px;
   font-size: 16px;
-  font-family: auto;
+  font-family: 'inter';
   border-radius: 5px;
   cursor: pointer;
   margin-top: 10px;
@@ -510,13 +510,13 @@
 .contact-label {
   font-weight: bold;
   font-size: 14px;
-  font-family: auto;
+  font-family: 'inter';
   margin: 4px 0;
 }
 
 .contact-text {
   font-size: 16px;
-  font-family: auto;
+  font-family: 'inter';
   font-weight: 400;
   margin: 0 0 16px;
 }
@@ -527,7 +527,7 @@
   border-radius: 20px;
   margin-bottom: 20px;
   text-align: left;
-   font-family: auto;
+   font-family: 'inter';
   color: #444;
   width: 100%;
   margin-left: auto;
@@ -537,7 +537,7 @@
 .location-item {
   margin: 10px 0;
   font-size: 16px;
-  font-family: auto;
+  font-family: 'inter';
   font-weight: 600;
   display: flex;
   align-items: center;
@@ -553,7 +553,7 @@
   border-radius: 20px;
   margin-bottom: 20px;
   text-align: left;
-   font-family: auto;
+   font-family: 'inter';
   color: #444;
   width:auto;
   margin-left: auto;
@@ -565,7 +565,7 @@
   .section {
     min-height: auto;
     font-size: 16px;
-    font-family: auto;
+    font-family: 'inter';
   }
   .section-container {
     width: 100%;
@@ -594,21 +594,21 @@
 
   .black-content h1 {
     font-size: 30px;
-    font-family: auto;
+    font-family: 'inter';
     line-height: 1.2;
     color: white;
   }
 
   .black-content p {
     font-size: 14px;
-    font-family: auto;
+    font-family: 'inter';
     line-height: 1.5;
     margin: 12px 0;
   }
 
   .action-btn {
     font-size: 14px;
-    font-family: auto;
+    font-family: 'inter';
     padding: 8px 16px;
     height: auto;
   }
@@ -629,7 +629,7 @@
 
   .left-title {
     font-size: 32px;
-    font-family: auto;
+    font-family: 'inter';
     margin-left: 0;
     text-align: center;
     margin-top: 10px;
@@ -637,7 +637,7 @@
 
   .left-text {
     font-size: 14px;
-    font-family: auto;
+    font-family: 'inter';
     max-width: 100%;
     margin-left: 0;
     text-align: center;
@@ -650,7 +650,7 @@
 
   .left-button {
     font-size: 14px;
-    font-family: auto;
+    font-family: 'inter';
     padding: 8px 16px;
   }
 
@@ -668,7 +668,7 @@
 
   .faq-title {
     font-size: 32px;
-    font-family: auto;
+    font-family: 'inter';
     margin-bottom: 16px;
     font-weight: bold;
     color: white;
@@ -677,14 +677,14 @@
   .faq-subtext,
   .faq-contact {
     font-size: 14px;
-    font-family: auto;
+    font-family: 'inter';
     margin: 6px 0;
     color: white;
   }
 
   .faq-button {
     font-size: 14px;
-    font-family: auto;
+    font-family: 'inter';
     padding: 8px 16px;
     margin-bottom: 10px;
   }
@@ -706,7 +706,7 @@
 
   .contact-section h2 {
     font-size: 40px;
-    font-family: auto;
+    font-family: 'inter';
     margin-bottom: 12px;
   }
 
@@ -714,7 +714,7 @@
   .contact-section select,
   .contact-section button {
     width: 100%;
-    font-family: auto;
+    font-family: 'inter';
     font-size: 14px;
     padding: 10px;
     margin: 8px 0;
@@ -736,7 +736,7 @@
 
   .contact-section>div>div>div p {
     font-size: 14px;
-    font-family: auto;
+    font-family: 'inter';
   }
 
   .contact-section>div:nth-child(2)>div>div {
@@ -747,7 +747,7 @@
 
   .contact-section>div:nth-child(2)>div>div p {
     font-size: 14px;
-    font-family: auto;
+    font-family: 'inter';
   }
 
   .contact-section>div:nth-child(2)>div>div p span:nth-child(2) {
@@ -757,7 +757,7 @@
   .form-heading,
   .location-heading {
     font-size: 40px;
-    font-family: auto;
+    font-family: 'inter';
   }
 
   .submit-btn {
@@ -782,7 +782,7 @@
     min-height: 45vh;
     /* padding: 20px; */
     font-size: 20px;
-    font-family: auto;
+    font-family: 'inter';
   }
 
   /* Black Section */
@@ -800,21 +800,21 @@
 
   .black-content h1 {
     font-size: 50px;
-    font-family: auto;
+    font-family: 'inter';
     line-height: 1.2;
     color: white;
   }
 
   .black-content p {
     font-size: 16px;
-    font-family: auto;
+    font-family: 'inter';
     line-height: 1.5;
     margin: 14px 0;
   }
 
   .action-btn {
     font-size: 16px;
-    font-family: auto;
+    font-family: 'inter';
     padding: 10px 20px;
     height: auto;
   }
@@ -838,21 +838,21 @@
 
   .left-title {
     font-size: 40px;
-    font-family: auto;
+    font-family: 'inter';
     text-align: center;
    
   }
 
   .left-text {
     font-size: 16px;
-    font-family: auto;
+    font-family: 'inter';
     max-width: 90%;
     margin-left: 20px;
   }
 
   .left-button {
     font-size: 16px;
-    font-family: auto;
+    font-family: 'inter';
     padding: 10px 20px;
   }
 
@@ -862,7 +862,7 @@
 
   .faq-title {
     font-size: 40px;
-    font-family: auto;
+    font-family: 'inter';
     margin-bottom: 20px;
     color: white;
   }
@@ -870,13 +870,13 @@
   .faq-subtext,
   .faq-contact {
     font-size: 16px;
-    font-family: auto;
+    font-family: 'inter';
     color: white;
   }
 
   .faq-button {
     font-size: 16px;
-    font-family: auto;
+    font-family: 'inter';
     padding: 10px 20px;
   }
 
@@ -901,14 +901,14 @@
     width: 100%;
     max-width: none;
     font-size: 16px;
-    font-family: auto;
+    font-family: 'inter';
     padding: 11px;
     margin: 9px 0;
   }
 
   .submit-btn {
     font-size: 16px;
-    font-family: auto;
+    font-family: 'inter';
     padding: 11px 22px;
   }
 
@@ -919,7 +919,7 @@
   .contact-label,
   .contact-text {
     font-size: 16px;
-    font-family: auto;
+    font-family: 'inter';
   }
 
   .location-content {
@@ -932,7 +932,7 @@
 
   .location-item {
     font-size: 16px;
-    font-family: auto;
+    font-family: 'inter';
   }
 }
 
@@ -943,7 +943,7 @@
     align-items: center;
     justify-content: center;
     font-size: 24px;
-    font-family: auto;
+    font-family: 'inter';
     font-weight: bold;
     color: white;
     box-sizing: border-box;
@@ -978,14 +978,14 @@
 
   .black-content h1 {
     font-size: 65px;
-    font-family: auto;
+    font-family: 'inter';
     line-height: 1.1;
     color: white;
   }
 
   .black-content p {
     font-size: 16px;
-    font-family: auto;
+    font-family: 'inter';
     line-height: 1.5;
     margin: 16px 0;
   }
@@ -994,7 +994,7 @@
     height: 45px;
     padding: 12px 24px;
     font-size: 16px;
-    font-family: auto;
+    font-family: 'inter';
   }
 
 
@@ -1012,21 +1012,21 @@
 
   .left-title {
     font-size: 55px;
-    font-family: auto;
+    font-family: 'inter';
     margin-top: 25px;
     
   }
 
   .left-text {
     font-size: 16px;
-     font-family: auto;
+     font-family: 'inter';
     max-width: 80%;
     margin-left: 70px;
   }
 
   .left-button {
     font-size: 16px;
-     font-family: auto;
+     font-family: 'inter';
     padding: 12px 24px;
   }
 
@@ -1036,7 +1036,7 @@
 
   .faq-title {
     font-size: 55px;
-     font-family: auto;
+     font-family: 'inter';
     margin-bottom: 24px;
     color: white;
   }
@@ -1044,14 +1044,14 @@
   .faq-subtext,
   .faq-contact {
     font-size: 16px;
-    font-family: auto;
+    font-family: 'inter';
     margin: 8px 0;
     color: white;
   }
 
   .faq-button {
     font-size: 16px;
-     font-family: auto;
+     font-family: 'inter';
     padding: 12px 24px;
   }
 
@@ -1070,6 +1070,8 @@
     flex: 1;
   }
 }
+
+
 .service-section {
   min-height: 50px;
   background-color: white;
@@ -1086,9 +1088,9 @@
   align-items: center;
 }
 
-.service-section KEEP .service-title {
+.service-section .service-title {
   text-align: center;
-   font-family: auto;
+  font-family: 'inter';
   font-size: 40px;
   font-weight: bold;
   margin-bottom: 20px;
@@ -1104,8 +1106,8 @@
 
 .service-section .service-item {
   position: relative;
-  width: 200px;
-  height: 350px;
+  width: 200px; /* Unchanged: Preserved width */
+  height: 350px; /* Unchanged: Preserved height */
   overflow: hidden;
   cursor: pointer;
 }
@@ -1114,6 +1116,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: filter 0.3s ease; /* Added: Smooth transition for blur effect */
 }
 
 .service-section .service-item .service-overlay {
@@ -1123,6 +1126,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease; /* Added: Smooth transition for overlay */
 }
 
 .service-section .service-item .service-description {
@@ -1132,8 +1136,8 @@
   transform: translate(-50%, -50%);
   color: white;
   font-size: 12px;
-   font-family: auto;
-  font-weight: bold;
+  font-family: 'inter';
+  font-weight: 500;
   width: 90%;
   text-align: center;
   padding: 0 10px;
@@ -1147,6 +1151,15 @@
   opacity: 1;
 }
 
+.service-section .service-item:hover .service-image {
+  filter: blur(5px); /* Added: Blur the image on hover */
+}
+
+.service-section .service-item:hover .service-description {
+  visibility: visible; /* Added: Show description on hover as a fallback */
+  opacity: 1; /* Added: Ensure text is visible on hover */
+}
+
 .service-section .service-item .service-label {
   position: absolute;
   bottom: 40px;
@@ -1154,7 +1167,7 @@
   transform: translateX(-50%);
   color: white;
   font-size: 16px;
-   font-family: auto;
+  font-family: 'inter';
   font-weight: 500;
   text-align: center;
 }
@@ -1167,7 +1180,7 @@
 
   .service-section .service-title {
     font-size: 28px;
-     font-family: auto;
+     font-family: 'inter';
    
     margin-bottom: 15px;
   }
@@ -1184,13 +1197,13 @@
 
   .service-section .service-item .service-description {
     font-size: 10px;
-     font-family: auto;
+     font-family: 'inter';
     padding: 0 5px;
   }
 
   .service-section .service-item .service-label {
     font-size: 16px;
-     font-family: auto;
+     font-family: 'inter';
     bottom: 20px;
   }
 }

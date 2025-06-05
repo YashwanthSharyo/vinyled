@@ -123,9 +123,8 @@ const HomePage = () => {
                   hovered === 2 ? "visible" : ""
                 }`}
               >
-                Ceramic and graphene coatings create a durable, hydrophobic
-                shield on a vehicle's surface, protecting against UV rays,
-                chemical stains, and minor scratches.
+                Ceramic and graphene coatings protect the vehicle from sun, stains, and light scratches.
+
               </div>
               <div className="service-label">Ceramic / Graphene Coating</div>
             </div>
@@ -174,9 +173,8 @@ const HomePage = () => {
                   hovered === 4 ? "visible" : ""
                 }`}
               >
-                Vehicle branding transforms cars, trucks, or fleets into mobile
-                advertisements with custom vinyl wraps, decals, or logos
-                tailored to your business identity.
+               Vehicle branding turns cars into mobile ads with custom wraps, decals, or logos.
+
               </div>
               <div className="service-label">Branding</div>
             </div>
@@ -199,10 +197,7 @@ const HomePage = () => {
                   hovered === 5 ? "visible" : ""
                 }`}
               >
-                Transform your ideas into stunning designs. Our team creates
-                unique visuals tailored to your needs, ensuring a perfect fit
-                for your project, whether it’s branding, marketing, or something
-                else.
+                Transform ideas into stunning visuals. We craft unique designs for branding, marketing, and more.
               </div>
               <div className="service-label">Custom Project</div>
             </div>
@@ -225,10 +220,7 @@ const HomePage = () => {
                   hovered === 6 ? "visible" : ""
                 }`}
               >
-                Transform the look and feel of your vehicle with high-quality
-                wraps. Whether you’re looking for a sleek, modern design or a
-                bold, eye-catching graphic, our custom wraps are the perfect
-                solution.
+               Transform your vehicle with high-quality wraps. Choose sleek designs or bold graphics tailored to your style.
               </div>
               <div className="service-label">Wraps</div>
             </div>
