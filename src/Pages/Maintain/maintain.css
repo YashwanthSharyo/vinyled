@@ -1,5 +1,5 @@
 *{
-  font-family: 'Work Sans', sans-serif;
+  font-family: auto;
 }
 
 .maintain-container {
@@ -17,9 +17,10 @@
 
 .wash-title {
   color: #ec1d24;
-  font-weight: normal;
+  font-weight:600;
+  font-family: auto;
   font-style: normal;
-  font-size: 2.5rem;
+  font-size: 39px;
   text-align: center;
   margin: 0;
 }
@@ -56,9 +57,10 @@
 
 .wash-plan-details-title {
   color: #ec1d24;
-  font-weight: normal;
+  font-weight: 600;
+  font-family: auto;
   font-style: normal;
-  font-size: 1.5625rem;
+  font-size: 25px;
   text-align: left;
   margin-bottom: 1rem;
 }
@@ -96,10 +98,11 @@
 }
 
 .wash-plans-section {
-  padding: 2rem 4rem;
+  padding: 75px;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+ 
 }
 
 .wash-plans-row {
@@ -122,11 +125,12 @@
 }
 
 .section-title {
-  color: #ec1d24;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 27px;
-  text-align: left;
+ color: #ec1d24;
+    font-weight: 600;
+    font-family: auto;
+    /* font-style: normal; */
+    font-size: 27px;
+    text-align: left;
   
 }
 
@@ -139,13 +143,13 @@
 
 .process-list {
   padding-left: 1.5rem;
-  margin-top: 1.5rem;
   color: #333;
   font-size: 15px;
 }
 
 .process-list li {
   margin-bottom: 0.1875rem;
+  font-family: auto;
 }
 
 .uppercase {

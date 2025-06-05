@@ -163,23 +163,7 @@ Vaibhav’s personal touch and commitment to excellence make this shop a standou
 
   return (
     <div>
-      <section className="client-logos">
-        <div className="container">
-          <h2>Our Valued Clients</h2>
-          <div className="client-grid">
-            {clients.map((client, index) => (
-              <img
-                key={index}
-                src={client.logo}
-                alt={client.name}
-                className="client-logo"
-              />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Review Carousel */}
+       {/* Review Carousel */}
       <section className="reviews">
         <div className="container">
           <h2>What Our Clients Say</h2>

@@ -20,7 +20,7 @@ export default function Branding() {
     setHoveredTab(null);
   };
 
-  const tabs = ["Car"];
+  const tabs = [];
 
   return (
     <div

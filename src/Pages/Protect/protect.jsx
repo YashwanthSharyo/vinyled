@@ -157,7 +157,7 @@ export default function Protect() {
 
       <div className="protect-wrap-container">
         {tabs.map((_, index) => {
-          const tab = index + 1; // Map index to 1-based tab number
+          const tab = index + 1;
           return (
             <div
               key={tab}

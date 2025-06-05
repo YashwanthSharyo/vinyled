@@ -20,7 +20,7 @@ a {
   max-width: 100%;
   z-index: 3;
   position: fixed;
-  background-color: #fff;
+  background-color: black;
   height: 60px;
   display: flex;
   justify-content: space-between;
@@ -38,10 +38,16 @@ a {
   align-items: center;
 }
 
-.header > .logo > .logo-img {
-  width: 150px;
-  height: 60px;
+/* .header > .logo > .logo-img {
+  width: 170px;
+  height: 80px;
   object-fit: contain;
+} */
+
+.header > .logo > .logo-img {
+  width: 240px;
+  height: 50px;
+  object-fit: cover;
 }
 
 .header > .menu {
@@ -65,7 +71,7 @@ a {
 .header > .menu > li > a {
   display: block;
   padding: 15px 12px;
-  color: #3a3a3a;
+  color: white;
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -117,7 +123,7 @@ a {
   font-family: 'Manrope', sans-serif;
   font-weight: 400;
   font-size: 12px;
-  line-height: 100%;
+  line-height: 16px;
 }
 
 .header > .menu > .dropdown > a > .icon {
@@ -175,7 +181,7 @@ a {
 }
 
 .header > .menu-icon > .navicon {
-  background: #333;
+  background: #ffff;
   display: block;
   height: 2px;
   position: relative;
@@ -185,7 +191,7 @@ a {
 
 .header > .menu-icon > .navicon:before,
 .header > .menu-icon > .navicon:after {
-  background: #333;
+  background: white;
   content: '';
   display: block;
   height: 100%;
@@ -252,14 +258,14 @@ a {
     width: auto;
   }
 
-  .header > .logo > .logo-img {
+  /* .header > .logo > .logo-img {
     width: 168px;
     height: 59px;
     object-fit: contain;
-  }
+  } */
 
   .header > .menu > li {
-    float: left; /* Horizontal menu items */
+    /* float: left; Horizontal menu items */
     display: inline-block;
   }
 
@@ -288,6 +294,12 @@ a {
 @media (max-width: 1280px) {
   .header {
     position: relative;
+    padding: 20px;
+  }
+  .header > .logo > .logo-img {
+    width: 200px; /* Smaller logo */
+    height: 45px;
+    object-fit: contain; /* Avoid cropping */
   }
 
   .header > .menu {
@@ -353,5 +365,15 @@ a {
   .header > .menu-btn:checked ~ .menu {
     display: flex;
     max-height: 400px;
+    background-color: #000;
   }
 }
+.dropdown i.fa-caret-down {
+  transition: transform 0.3s ease;
+}
+
+.dropdown.active i.fa-caret-down {
+  transform: rotate(180deg);
+}
+
+

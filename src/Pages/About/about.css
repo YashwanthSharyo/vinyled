@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'Work Sans', sans-serif;
+  font-family: auto;
 }
 
 body {
@@ -15,11 +15,10 @@ body {
 }
 
 .AboutContainer > .AboutHero {
-  min-height: 20.75rem;
+  height: 370px;
   background-image: url("https://i.shgcdn.com/b17e6cc1-2f0a-43c3-a589-d620600587c0/-/format/auto/-/preview/3000x3000/-/quality/lighter/");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  background-size: cover; 
   background-position: center center;
   display: flex;
   flex-direction: column;
@@ -30,20 +29,16 @@ body {
   max-width: 100%;
 }
 
+
 .AboutHero > .AboutHeroContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  height: 100%;
+  margin-top: 80px;
 }
-
-
-
-/* .team-hero p {
-  color: #ffffff;
-  text-align: center;
-  font-size: 24px;
-  font-weight: 300;
-  margin-top: -30px;
-} */
-
 
 .AboutHeroContent > .AboutHeroTitle {
   color: #ffffff;
@@ -90,15 +85,17 @@ body {
 
 .AboutIntroText > .AboutIntroTitle {
   color: #ec1d24;
-  font-weight: normal;
+  font-weight: 600;
+  font-family: auto;
   font-style: normal;
-  font-size: 30px;
+  font-size: 39px;
   text-align: left;
-  margin-bottom: 20px;
+  
 }
 
 .AboutIntroText > .AboutIntroParagraph {
-  line-height: 24px;
+  /* line-height: 24px; */
+  font-family: auto;
   margin-bottom: 15px;
   font-size: 15px;
   color: #333;
@@ -134,9 +131,10 @@ body {
 
 .AboutStandardsText > .AboutStandardsTitle {
   color: #ec1d24;
-  font-weight: normal;
+  font-weight: 600;
+  font-family: auto;
   font-style: normal;
-  font-size: 30px;
+  font-size: 39px;
   text-align: left;
   margin-bottom: 20px;
 }
@@ -204,6 +202,7 @@ body {
 }
 .AboutQuote > .AboutQuoteContent  p{
   color: white;
+  font-size: 23px;
 }
 .AboutContainer > .AboutFacilities {
   font-family: Arial, sans-serif;
@@ -258,10 +257,15 @@ body {
 
 .AboutFacilitiesText > .AboutFacilitiesTitle {
   color: #ec1d24;
+  font-family: auto;
+  font-size: 39px;
 }
 
 .AboutFacilitiesText > .AboutFacilitiesParagraph {
-  line-height: 24px;
+  /* line-height: 24px; */
+  font-family: auto;
+  font-size: 15px;
+  
 }
 
 .AboutFacilitiesText > .AboutFacilitiesList {

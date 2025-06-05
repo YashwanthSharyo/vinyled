@@ -7,7 +7,7 @@ const Service = ({
   handleTabClick,
   handleTabMouseEnter,
   handleTabMouseLeave,
-  tabs , // Default to empty array
+  tabs = [], // Default to empty array
   tabWidth, // Prop for custom tab width
 }) => {
   const backgroundUrl =
@@ -18,15 +18,15 @@ const Service = ({
       <h2 className="title">
         <span className="title-highlight"></span> {title}
       </h2>
-      <div className="tab-container">
-        {Array.isArray(tabs) && tabs.length > 0 ? (
-          tabs.map((tabName, index) => {
+      {Array.isArray(tabs) && tabs.length > 0 && (
+        <div className="tab-container">
+          {tabs.map((tabName, index) => {
             const tabNumber = index + 1;
             return (
               <div
                 key={tabNumber}
                 className={`tab ${activeTab === tabNumber ? "active" : ""}`}
-                style={{ minWidth: tabWidth || "300px"}} 
+                style={{ minWidth: tabWidth || "300px" }}
                 onClick={() => handleTabClick(tabNumber)}
                 onMouseEnter={() =>
                   handleTabMouseEnter && handleTabMouseEnter(tabNumber)
@@ -40,11 +40,9 @@ const Service = ({
                 {tabName}
               </div>
             );
-          })
-        ) : (
-          <p>No tabs available</p>
-        )}
-      </div>
+          })}
+        </div>
+      )}
     </div>
   );
 };

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./about.css";
 import { useNavigate } from "react-router-dom";
+import Process from "../Process/process";
+import Team from "../Team/team";
 
 export default function About() {
   const [activeTab, setActiveTab] = useState(1);
@@ -50,6 +52,7 @@ export default function About() {
   });
 
   return (
+    <>
     <div className="AboutContainer">
       <div className="AboutHero">
         <div className="AboutHeroContent">
@@ -225,5 +228,9 @@ export default function About() {
         <p className="AboutFooterText">Follow Us @vinyle'd</p>
       </div>
     </div>
+    <Process />
+    <Team />
+    </>
+    
   );
 }

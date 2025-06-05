@@ -1,5 +1,5 @@
 *{
-  font-family: 'Work Sans', sans-serif;
+  font-family: auto;
 }
 
 .Branding-wrap-container {
@@ -44,8 +44,8 @@
 
 .Branding-content-text .Branding-title {
   color: #ec1d24;
-  font-weight: 500;
-  font-style: normal;
+  font-weight: 600;
+  font-family: auto;
   text-align: left;
   font-size: 39px;
   margin: 0 0 0.5rem 0;
@@ -53,8 +53,8 @@
 
 .Branding-content-text .Branding-subtitle {
   color: #ec1d24;
-  font-weight: normal;
-  font-style: normal;
+  font-weight: 600;
+  font-family: auto;
   font-size: 25px;
   text-align: justify;
   margin: 0 0 0.5rem 0;
@@ -62,9 +62,9 @@
 
 .Branding-content-text .Branding-process-heading {
   color: #3a3a3a;
-  font-size: 1.25rem;
+  font-size: 21px;
+  font-family: auto;
   font-weight: bold;
-  text-align: justify;
   margin: 0 0 0.5rem 0;
 }
 
@@ -78,10 +78,13 @@
 .Branding-list li {
   margin-bottom: 0.1875rem;
 }
+.listing li{
+  font-family: auto;
+}
 
 .Branding-content-text .Branding-highlight {
-  font-weight: 500;
-  
+  font-weight: 600;
+  font-family: auto;
   font-size: 25px;
   text-align: justify;
   margin: 0 0 0.5rem 0;
@@ -93,6 +96,7 @@
   color: #333333;
   text-align: justify;
   margin: 0 0 0.5rem 0;
+  font-family: auto;
 }
 
 /* Responsive Design */

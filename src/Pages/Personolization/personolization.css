@@ -1,9 +1,9 @@
 * {
-  font-family: 'Work Sans', sans-serif;
+  font-family: auto;
 }
 
 .personalization-wrap-container {
-  font-family: Arial, sans-serif;
+  font-family: auto;
   background-color: white;
   display: flex;
   justify-content: center;
@@ -45,7 +45,8 @@
 
 .personalization-content-text .personalization-title {
   color: #ec1d24;
-  font-weight: normal;
+  font-weight: 600;
+  font-family: auto;
   font-style: normal;
   font-size: 39px;
   text-align: left;
@@ -55,9 +56,9 @@
 
 .personalization-content-text .personalization-subtitle {
   color: #ec1d24;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 27px;
+  font-weight: 600;
+  font-family: auto;
+  font-size: 25px;
   margin: 0 0 0.5rem 0;
 }
 
@@ -70,16 +71,17 @@
 }
 
 .personalization-content-text .personalization-list {
-  padding-left: 1.25rem;
-  color: #333333;
-  text-align: justify;
-  font-size: 15px;
-  margin: 0 0 0.5rem 0;
+      font-weight: 400;
+    font-size: 15px;
+    color: #333333;
+    margin-top: 23px;
+    font-family: auto;
+    margin-bottom: 30px;
+}
+.personalization-list li{
+  font-family: auto;
 }
 
-.personalization-list li {
-  margin-bottom: 0.1875rem;
-}
 
 .personalization-content-text .personalization-highlight {
   font-weight: bold;
@@ -206,12 +208,14 @@
     display: grid;
   }
 }
-* {
-  font-family: 'Work Sans', sans-serif;
-}
+
+
+
+
+
 
 .personalization-wrap-container {
-  font-family: Arial, sans-serif;
+  font-family:auto;
   background-color: white;
   display: flex;
   justify-content: center;
@@ -252,19 +256,21 @@
 }
 
 .personalization-content-text .personalization-title {
-  color: #ec1d24;
-  font-weight: normal;
+ color: #ec1d24;
+  font-weight: 600;
+  font-family: auto;
   font-style: normal;
   font-size: 39px;
   text-align: left;
   margin: 0 0 0.5rem 0;
+  
 }
 
 .personalization-content-text .personalization-subtitle {
   color: #ec1d24;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 27px;
+  font-weight: 600;
+  font-family: auto;
+  font-size: 25px;
   margin: 0 0 0.5rem 0;
 }
 
@@ -277,16 +283,15 @@
 }
 
 .personalization-content-text .personalization-list {
-  padding-left: 1.25rem;
-  color: #333333;
-  text-align: justify;
-  font-size: 15px;
+      font-weight: 400;
+    font-size: 15px;
+    color: #333333;
+    font-family: auto;
+
   margin: 0 0 0.5rem 0;
 }
 
-.personalization-list li {
-  margin-bottom: 0.1875rem;
-}
+
 
 .personalization-content-text .personalization-highlight {
   font-weight: bold;

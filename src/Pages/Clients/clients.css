@@ -1,5 +1,5 @@
 * {
-  font-family: 'Work Sans', sans-serif;
+  font-family: auto;
 }
 
 *, *:before, *:after {
@@ -16,6 +16,7 @@ h2 {
   font-size: 39px;
   margin: 1rem 0;
   font-weight: 600;
+  font-family: auto;
 }
 
 /* Client Logos */
@@ -183,9 +184,10 @@ h2 {
 }
 
 .bigger-client-card h3 {
-  font-size: clamp(1rem, 3vw, 1.2rem);
+  font-size: 16;
   margin: 0 0 0.5rem;
   color: #333;
+  font-family: auto;
 }
 
 .bigger-client-card p {

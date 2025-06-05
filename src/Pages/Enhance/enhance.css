@@ -1,9 +1,11 @@
 * {
-  font-family: 'Work Sans', sans-serif;
+  font-family: auto;
 }
 p{
   font-size: 15px;
   color: #333;
+  margin-top: -10px;
+  font-family: auto;
 }
 
 .enhance-container {
@@ -32,6 +34,7 @@ p{
 .enhance-text-section {
   flex: 1;
   font-size: 1rem;
+  font-family: auto;
   line-height: 1.5;
   color: #333;
   display: flex;
@@ -46,18 +49,18 @@ p{
   font-size: 39px;
   text-align: left;
   margin-bottom: 0.625rem;
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 400; /* or try 300 */
+  font-family: auto;
+  font-weight: 600; /* or try 300 */
 }
 
 .enhance-section-title {
   color: #ec1d24;
-  font-weight: normal;
+  font-weight: 600;
   font-style: normal;
   font-size: 25px;
   text-align: left;
   margin-bottom: 1rem;
-  font-family: 'Work Sans', sans-serif;
+  font-family: auto;
 }
 
 .enhance-section-title.enhance-interior-title {
@@ -71,7 +74,7 @@ p{
 .enhance-sub-title {
   margin-bottom: -1rem;
   color: #000;
-  font-size: 15px;
+  font-family: auto;
   font-weight: 700;
   
 }
@@ -84,6 +87,14 @@ p{
   font-weight: 400;
   font-size: 15px;
   color: #333333;
+  margin-top: 23px;
+  font-family: auto;
+  margin-bottom: 30px;
+}
+
+.enhance-process-list li{
+  
+  font-family: auto;
 }
 
 .enhance-process-list.enhance-interior-list {
@@ -100,6 +111,7 @@ p{
   margin-top: 0;
   margin-bottom: 1rem;
   font-weight: 600;
+  font-family: auto;
 }
 
 .enhance-sealant-text.enhance-bold {
@@ -135,6 +147,7 @@ p{
 
   .enhance-section-title {
    font-size: 19px;
+   font-family: auto;
   }
 }
 
@@ -153,24 +166,29 @@ p{
   .enhance-text-section {
     font-size: 0.9rem;
     text-align: left; /* Changed from justify to left */
+    font-family: auto;
   }
 
   .enhance-main-title {
-    font-size: 39px;
+    font-size: 31px;
+    font-family: auto;
   }
 
   .enhance-section-title {
     font-size: 19px;
+    font-family: auto;
   }
 
   .enhance-sub-title {
     font-size: 15px;
+    font-family: auto;
   }
 
   .enhance-process-list {
     padding-left: 1rem;
     font-size: 15px;
     color: #333;
+    font-family: auto;
   }
 }
 
