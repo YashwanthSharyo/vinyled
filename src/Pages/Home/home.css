@@ -21,7 +21,8 @@
 /* Black Section */
 .black {
   background-color: black;
-  background-image: url('/Images/Car.svg');
+  /* background-image: url('/Images/Car.svg'); */
+    background-image: url('/Images/car2.jpg');
   background-size: cover; /* Scales the image to cover the whole area */
   background-position: center top;
   background-repeat: no-repeat;

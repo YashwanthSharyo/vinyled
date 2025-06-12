@@ -152,9 +152,9 @@ async function handleSubmit(e) {
       <section className="section black">
         <div className="black-content">
           <div className="text">
-            <h1>Transform Your Ride with VINYLE'D</h1>
+            <h1>Transform Your Ride with VINYL'ED</h1>
             <p>
-              Revamp your vehicle with VINYLE'Ds expert car wraps, premium paint
+              Revamp your vehicle with VINYL'EDs expert car wraps, premium paint
               protection films, and bespoke graphics. Our Bangalore team has
               been delivering excellence for decades. Trust us to transform your
               car or bike with top-tier materials and unmatched craftsmanship.
@@ -191,7 +191,7 @@ async function handleSubmit(e) {
                 Paint Protection Film (PPF) shields vehicles from scratches,
                 chips, and UV damage, preserving paint and resale value.
               </div>
-              <div className="service-label">PPF</div>
+              <div className="service-label">Enhance</div>
             </div>
 
             {/* Image 2 - Ceramic / Graphene Coating */}
@@ -215,7 +215,7 @@ async function handleSubmit(e) {
                 Ceramic and graphene coatings protect the vehicle from sun,
                 stains, and light scratches.
               </div>
-              <div className="service-label">Ceramic / Graphene Coating</div>
+              <div className="service-label">Personalise</div>
             </div>
 
             {/* Image 3 - Custom Design */}
@@ -241,7 +241,7 @@ async function handleSubmit(e) {
                 or paint protection film patterns tailored to individual style
                 preferences.
               </div>
-              <div className="service-label">Custom Design</div>
+              <div className="service-label">Protect</div>
             </div>
 
             {/* Image 4 - Branding */}
@@ -265,7 +265,7 @@ async function handleSubmit(e) {
                 Vehicle branding turns cars into mobile ads with custom wraps,
                 decals, or logos.
               </div>
-              <div className="service-label">Branding</div>
+              <div className="service-label">Maintain</div>
             </div>
 
             {/* Image 5 - Design Project (Duplicate of PPF and Wraps) */}
@@ -289,7 +289,7 @@ async function handleSubmit(e) {
                 Transform ideas into stunning visuals. We craft unique designs
                 for branding, marketing, and more.
               </div>
-              <div className="service-label">Custom Project</div>
+              <div className="service-label">Fleet Branding</div>
             </div>
 
             {/* Image 6 - Wraps (Duplicate of Ceramic / Graphene Coating) */}
@@ -313,7 +313,7 @@ async function handleSubmit(e) {
                 Transform your vehicle with high-quality wraps. Choose sleek
                 designs or bold graphics tailored to your style.
               </div>
-              <div className="service-label">Wraps</div>
+              <div className="service-label">Bikes</div>
             </div>
           </div>
         </div>
@@ -355,7 +355,7 @@ async function handleSubmit(e) {
             <div className="right-content-centered">
               <h2 className="faq-title">Frequently Asked Questions</h2>
               <p className="faq-subtext">
-                Everything you need to know about VINYLE'D. Can’t find the
+                Everything you need to know about VINYL'ED. Can’t find the
                 answer you’re looking for?
               </p>
               <p className="faq-contact">

@@ -73,11 +73,11 @@
 /* Responsive Design */
 /* Tablet (769px to 1280px) */
 @media (min-width: 769px) and (max-width: 1280px) {
-  .banner {
+  /* .banner {
     min-height: 350px;
-  }
+  } */
 
-  .banner .title {
+  /* .banner .title {
     font-size: 2.5rem;
     left: 20px;
     margin-left: 0;
@@ -86,17 +86,17 @@
     top: 50%;
     transform: translateY(-50%);
     font-family: auto;
-  }
+  } */
 
   .banner .tab-container {
-    max-width: 100%;
-    flex-direction: column;
+    /* max-width: 100%;
+    flex-direction: column; */
     border-bottom: none;
    
   
   }
 
-  .tab-container .tab {
+  /* .tab-container .tab {
     min-width: 100%;
     height: 50px;
     margin-left: 0;
@@ -109,7 +109,7 @@
     color: #555;
     transition: background 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
     font-family: auto;
-  }
+  } */
 
   .tab-container .tab.active {
     background: #DD0000;
