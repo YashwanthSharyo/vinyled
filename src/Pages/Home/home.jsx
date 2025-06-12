@@ -1,6 +1,8 @@
 import React, { useRef, useState } from "react";
 import "./home.css";
 import { Link, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
+
 
 const HomePage = () => {
   const [hovered, setHovered] = useState(null);
@@ -21,19 +23,107 @@ const HomePage = () => {
     });
   };
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+  const handleFaqs = () => {
+    navigate("/faqs");
+    window.scrollTo(0, 0);
   };
 
-  const generateMailtoLink = () => {
-    return `mailto:venagantiyashwanth@gmail.com
-      ?subject=Contact Form
-      &body=Name: ${formData.name}%0AEmail: ${formData.email}%0APhone: ${formData.phone}%0AReferral: ${formData.referral}`.replace(
-      /\s+/g,
-      ""
+  function handleChange(e) {
+    setFormData((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
+  }
+
+
+// async function handleSubmit(e) {
+//   e.preventDefault();
+
+  
+//   const { name, email, phone, referral } = formData;
+//   if (!name || !email || !phone || !referral) {
+//     alert("Please fill in all the fields before submitting.");
+//     return;
+//   }
+
+//   const formBody = new URLSearchParams();
+//   for (const key in formData) {
+//     formBody.append(key, formData[key]);
+//   }
+
+//   try {
+//     const response = await fetch(
+//       "https://script.google.com/macros/s/AKfycbwogtK-Q0d5t28Wu14SCkJ0Y9vaVMNecnuzPWLGDJG0g8E2mhjs55KHPfktRC2mw5zJ/exec",
+//       {
+//         method: "POST",
+//         headers: {
+//           "Content-Type": "application/x-www-form-urlencoded",
+//         },
+//         body: formBody.toString(),
+//       }
+//     );
+
+//     const result = await response.json();
+//     if (result.result === "success") {
+//       alert("Form submitted successfully!");
+//       setFormData({
+//         name: "",
+//         email: "",
+//         phone: "",
+//         referral: "",
+//       });
+//     }
+//     console.log("Response from server:", result);
+//   } catch (err) {
+//     console.error("Error submitting form:", err);
+//   }
+// }
+
+async function handleSubmit(e) {
+  e.preventDefault();
+
+  const { name, email, phone, referral } = formData;
+  if (!name.trim() || !email.trim() || !phone.trim() || !referral.trim()) {
+    toast.error("Please fill in all the fields!");
+    return;
+  }
+
+  const formBody = new URLSearchParams();
+  for (const key in formData) {
+    formBody.append(key, formData[key]);
+  }
+
+  try {
+    const response = await fetch(
+      "https://script.google.com/macros/s/AKfycbwogtK-Q0d5t28Wu14SCkJ0Y9vaVMNecnuzPWLGDJG0g8E2mhjs55KHPfktRC2mw5zJ/exec",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: formBody.toString(),
+      }
     );
-  };
 
+    const result = await response.json();
+    if (result.result === "success") {
+      toast.success("Form submitted successfully!");
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        referral: "",
+      });
+    } else {
+      toast.error("Something went wrong!");
+    }
+  } catch (err) {
+    console.error("Error submitting form:", err);
+    toast.error("Submission failed!");
+  }
+}
+
+  
   const handleMouseEnter = (index) => {
     setHovered(index);
   };
@@ -43,14 +133,13 @@ const HomePage = () => {
   };
 
   const serviceLinks = {
-  1: "/enhance",
-  2: "/protect",
-  3: "/maintain",
-  4: "/personolization",
-  5: "/custom-project",
-  6: "/branding",
-};
-
+    1: "/enhance",
+    2: "/protect",
+    3: "/maintain",
+    4: "/personolization",
+    5: "/custom-project",
+    6: "/branding",
+  };
 
   const handleClick = (index) => {
     setTimeout(() => {
@@ -123,8 +212,8 @@ const HomePage = () => {
                   hovered === 2 ? "visible" : ""
                 }`}
               >
-                Ceramic and graphene coatings protect the vehicle from sun, stains, and light scratches.
-
+                Ceramic and graphene coatings protect the vehicle from sun,
+                stains, and light scratches.
               </div>
               <div className="service-label">Ceramic / Graphene Coating</div>
             </div>
@@ -173,8 +262,8 @@ const HomePage = () => {
                   hovered === 4 ? "visible" : ""
                 }`}
               >
-               Vehicle branding turns cars into mobile ads with custom wraps, decals, or logos.
-
+                Vehicle branding turns cars into mobile ads with custom wraps,
+                decals, or logos.
               </div>
               <div className="service-label">Branding</div>
             </div>
@@ -197,7 +286,8 @@ const HomePage = () => {
                   hovered === 5 ? "visible" : ""
                 }`}
               >
-                Transform ideas into stunning visuals. We craft unique designs for branding, marketing, and more.
+                Transform ideas into stunning visuals. We craft unique designs
+                for branding, marketing, and more.
               </div>
               <div className="service-label">Custom Project</div>
             </div>
@@ -220,7 +310,8 @@ const HomePage = () => {
                   hovered === 6 ? "visible" : ""
                 }`}
               >
-               Transform your vehicle with high-quality wraps. Choose sleek designs or bold graphics tailored to your style.
+                Transform your vehicle with high-quality wraps. Choose sleek
+                designs or bold graphics tailored to your style.
               </div>
               <div className="service-label">Wraps</div>
             </div>
@@ -270,11 +361,11 @@ const HomePage = () => {
               <p className="faq-contact">
                 Feel free to{" "}
                 <Link to="/contact-us" className="contact-link">
-                contact us
+                  contact us
                 </Link>
               </p>
 
-              <button className="faq-button">FAQ's</button>
+              <button className="faq-button" onClick={() => handleFaqs()}>FAQ's</button>
             </div>
           </div>
         </div>
@@ -283,59 +374,59 @@ const HomePage = () => {
           {/* Left Column - Contact Form */}
           <div className="form-column" ref={getInTouchRef}>
             <div className="form-content">
-              <h2 className="form-heading">Get in Touch</h2>
+              <form onSubmit={handleSubmit}>
+                <h2 className="form-heading">Get in Touch</h2>
 
-              <input
-                type="text"
-                placeholder="Name"
-                className="form-input"
-                name="name"
-                onChange={handleChange}
-              />
-              <input
-                type="email"
-                placeholder="Email"
-                className="form-input"
-                name="email"
-                onChange={handleChange}
-              />
-              <input
-                type="tel"
-                placeholder="Phone Number"
-                className="form-input"
-                name="phone"
-                onChange={handleChange}
-              />
+                <input
+                  type="text"
+                  placeholder="Name"
+                  className="form-input"
+                  name="name"
+                  onChange={handleChange}
+                />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  className="form-input"
+                  name="email"
+                  onChange={handleChange}
+                />
+                <input
+                  type="tel"
+                  placeholder="Phone Number"
+                  className="form-input"
+                  name="phone"
+                  onChange={handleChange}
+                />
 
-              <select
-                className="form-select"
-                name="referral"
-                onChange={handleChange}
-              >
-                <option value="">How did you find us?</option>
-                <option value="Google">Google</option>
-                <option value="Friend">Friend</option>
-                <option value="Social Media">Social Media</option>
-                <option value="Advertisement">Advertisement</option>
-                <option value="Other">Other</option>
-              </select>
+                <select
+                  className="form-select"
+                  name="referral"
+                  onChange={handleChange}
+                >
+                  <option value="">How did you find us?</option>
+                  <option value="Google">Google</option>
+                  <option value="Friend">Friend</option>
+                  <option value="Social Media">Social Media</option>
+                  <option value="Advertisement">Advertisement</option>
+                  <option value="Other">Other</option>
+                </select>
 
-              <a
-                href={generateMailtoLink()}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
                 <button className="submit-btn">Submit</button>
-              </a>
+              </form>
 
               <div className="contact-details">
                 <div className="contact-box">
                   <p className="contact-label">&#9742; PHONE</p>
-                  <p className="contact-text"><a href="tel:+919066431968">9066431968</a></p>
+                  <p className="contact-text">
+                    <a href="tel:+919066431968">9066431968</a>
+                  </p>
                 </div>
                 <div className="contact-box">
                   <p className="contact-label">&#9993; EMAIL</p>
-                  <p className="contact-text"><a href="mailto:info@vinyled.in">info@vinyled.in</a></p>
+                  <p className="contact-text">
+                    <a href="mailto:info@vinyled.in">vinyled.in@gmail.com</a>
+                  </p>
                 </div>
               </div>
             </div>
@@ -348,10 +439,16 @@ const HomePage = () => {
 
               <div className="location-box">
                 <p className="location-item">
-                  📞<span><a href="tel:+919066431968">9066431968</a></span>
+                  📞
+                  <span>
+                    <a href="tel:+919066431968">9066431968</a>
+                  </span>
                 </p>
                 <p className="location-item">
-                  📧<span><a href="mailto:info@vinyled.in">info@vinyled.in</a></span>
+                  📧
+                  <span>
+                    <a href="mailto:vinyled.in@gmail.com">vinyled.in@gmail.com</a>
+                  </span>
                 </p>
                 <p className="location-item">
                   📍
@@ -366,7 +463,7 @@ const HomePage = () => {
                 <div className="map-wrapper">
                   <iframe
                     title="Vinyled Location"
-                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7774.2827153716025!2d77.63419702649115!3d13.026668873570573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17ee7674eadb%3A0x9eaf8a9f4430758!2sVinyled%20%7C%20PPF%20%2CWRAP%20%2CSUNFILM%20coating%20for%20car%20in%20Bengaluru!5e0!3m2!1sen!2sin!4v1747321796100!5m2!1sen!2sin"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7774.2827153716025!2d77.63419702649115!3d13.026668873570573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17ee7674eadb%3A0x9eaf8a9f4430758!2sVinyled%20%7C%20PPF%20%2CWRAP%20%2CSUNFILM%20coating%20for%20car%20in%20Bengaluru!5e0!3m2!1sen!2sin!4v1747321796100!5m2!1sen!2sin"
                     width="100%"
                     height="300"
                     style={{ border: 0, marginTop: "1rem" }}

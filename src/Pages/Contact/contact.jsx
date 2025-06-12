@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { InlineWidget } from "react-calendly";
 import "./contact.css";
+import { toast } from "react-toastify";
 
 export default function Contact() {
   // State
@@ -11,11 +12,10 @@ export default function Contact() {
     vehicle: "",
     service: "",
     selectedOptions: [],
-    carDetails: "",
-    studio: "",
+   
+    
     request: "",
-    date: "",
-    time: "",
+    
   });
 
   const [viewMode, setViewMode] = useState("form");
@@ -29,17 +29,15 @@ export default function Contact() {
     }));
   };
 
-  // Handle service dropdown change (to reset selectedOptions)
   const handleServiceChange = (e) => {
     const { value } = e.target;
     setFormData((prev) => ({
       ...prev,
       service: value,
-      selectedOptions: [], // Reset checkboxes when service changes
+      selectedOptions: [], 
     }));
   };
 
-  // Handle checkbox selections
   const handleCheckboxChange = (e) => {
     const { value, checked } = e.target;
     setFormData((prev) => {
@@ -54,19 +52,92 @@ export default function Contact() {
     });
   };
 
-  // Submit handler
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const { name, date, time } = formData;
-    const appointment = `${date} ${time}`;
 
-    alert(`Appointment booked for ${name} on ${appointment}`);
 
-    console.log({
-      ...formData,
-      appointment,
-    });
+
+
+const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  const {
+    name,
+    email,
+    phone,
+    vehicle,
+    service,
+    selectedOptions,
+    
+    request,
+    
+  } = formData;
+
+  // Validate all fields — all must be filled
+  if (
+    !name?.trim() ||
+    !email?.trim() ||
+    !phone?.trim() ||
+    !vehicle?.trim() ||
+    !service?.trim() ||
+    selectedOptions?.length === 0 ||
+   
+    !request?.trim() 
+    
+  ) {
+    toast.error("Please fill in all the fields!");
+    return;
+  }
+
+  const data = {
+    ...formData,
+    selectedOptions: selectedOptions.join(", "), // convert array to comma-separated string
   };
+
+  const encoded = new URLSearchParams(data).toString();
+
+  try {
+    const response = await fetch(
+      "https://script.google.com/macros/s/AKfycbz2s_OtqNF9MEB-pnF2xftJJGN1_etqlv_Mx9KMXvoD5swF8htHiO5ICvvy6dN2mP0e/exec",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: encoded,
+      }
+    );
+
+    const result = await response.json();
+    console.log("Server response:", result);
+
+    if (result.result === "success") {
+      toast.success("Form submitted successfully!");
+
+      // Reset form fields
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        vehicle: "",
+        service: "",
+        selectedOptions: [],
+        carDetails: "",
+        studio: "",
+        request: "",
+       
+      });
+    } else {
+      toast.error("Submission failed. Please try again.");
+    }
+  } catch (error) {
+    console.error("Error submitting form:", error);
+    toast.error("There was an error submitting the form.");
+  }
+};
+
+
+
+
+
   const serviceOptions = {
     Detailing: ["Interior", "Exterior", "Engine Bay"],
     "Paint Protection": ["Ceramic Coating", "PPF", "Wax"],
@@ -100,7 +171,7 @@ export default function Contact() {
           </p>
           <p>
             <strong>Email: </strong>
-            <a href="mailto:info@vinyled.in">info@vinyled.in</a>
+            <a href="mailto:vinyled.in@gmail.com">vinyled.in@gmail.com</a>
           </p>
 
           <p>
@@ -131,9 +202,12 @@ export default function Contact() {
           </button>
         </div>
         {viewMode === "form" ? (
+
+
+
           <form onSubmit={handleSubmit} noValidate>
             <div>
-              <label htmlFor="name">NAME</label>
+              <label htmlFor="name">Name</label>
               <input
                 name="name"
                 placeholder="Enter your name"
@@ -145,7 +219,7 @@ export default function Contact() {
             </div>
 
             <div>
-              <label htmlFor="email">EMAIL</label>
+              <label htmlFor="email">Email</label>
               <input
                 name="email"
                 placeholder="Enter your email"
@@ -157,7 +231,7 @@ export default function Contact() {
             </div>
 
             <div>
-              <label htmlFor="phone">PHONE</label>
+              <label htmlFor="phone">Phone</label>
               <input
                 name="phone"
                 placeholder="Enter phone number"
@@ -170,87 +244,96 @@ export default function Contact() {
 
             {/* ✅ Vehicle Dropdown */}
             <div>
-              <label htmlFor="vehicle">VEHICLE DETAILS</label>
+              <label htmlFor="vehicle">Vehicle Details</label>
               <select
-  name="vehicle"
-  required
-  value={formData.vehicle}
-  onChange={handleChange}
->
-  <option value="">Select Vehicle</option>
+                name="vehicle"
+                required
+                value={formData.vehicle}
+                onChange={handleChange}
+              >
+                <option value="">Select Vehicle</option>
 
-  {/* --- Hatchbacks --- */}
-  <option disabled>-- Hatchbacks --</option>
-  <option value="Maruti Suzuki Swift">Maruti Suzuki Swift</option>
-  <option value="Hyundai i20">Hyundai i20</option>
-  <option value="Tata Tiago">Tata Tiago</option>
-  <option value="Renault Kwid">Renault Kwid</option>
-  <option value="Maruti Suzuki Baleno">Maruti Suzuki Baleno</option>
+                {/* --- Hatchbacks --- */}
+                <option disabled>-- Hatchbacks --</option>
+                <option value="Maruti Suzuki Swift">Maruti Suzuki Swift</option>
+                <option value="Hyundai i20">Hyundai i20</option>
+                <option value="Tata Tiago">Tata Tiago</option>
+                <option value="Renault Kwid">Renault Kwid</option>
+                <option value="Maruti Suzuki Baleno">
+                  Maruti Suzuki Baleno
+                </option>
 
-  {/* --- Sedans --- */}
-  <option disabled>-- Sedans --</option>
-  <option value="Honda City">Honda City</option>
-  <option value="Hyundai Verna">Hyundai Verna</option>
-  <option value="Skoda Slavia">Skoda Slavia</option>
-  <option value="Volkswagen Virtus">Volkswagen Virtus</option>
-  <option value="Toyota Yaris">Toyota Yaris</option>
+                {/* --- Sedans --- */}
+                <option disabled>-- Sedans --</option>
+                <option value="Honda City">Honda City</option>
+                <option value="Hyundai Verna">Hyundai Verna</option>
+                <option value="Skoda Slavia">Skoda Slavia</option>
+                <option value="Volkswagen Virtus">Volkswagen Virtus</option>
+                <option value="Toyota Yaris">Toyota Yaris</option>
 
-  {/* --- SUVs --- */}
-  <option disabled>-- SUVs --</option>
-  <option value="Hyundai Creta">Hyundai Creta</option>
-  <option value="Tata Nexon">Tata Nexon</option>
-  <option value="Mahindra XUV700">Mahindra XUV700</option>
-  <option value="Kia Seltos">Kia Seltos</option>
-  <option value="MG Hector">MG Hector</option>
-  <option value="Toyota Fortuner">Toyota Fortuner</option>
+                {/* --- SUVs --- */}
+                <option disabled>-- SUVs --</option>
+                <option value="Hyundai Creta">Hyundai Creta</option>
+                <option value="Tata Nexon">Tata Nexon</option>
+                <option value="Mahindra XUV700">Mahindra XUV700</option>
+                <option value="Kia Seltos">Kia Seltos</option>
+                <option value="MG Hector">MG Hector</option>
+                <option value="Toyota Fortuner">Toyota Fortuner</option>
 
-  {/* --- Pickup & Vans --- */}
-  <option disabled>-- Pickup / Vans --</option>
-  <option value="Mahindra Bolero Pickup">Mahindra Bolero Pickup</option>
-  <option value="Tata Xenon">Tata Xenon</option>
-  <option value="Toyota Hilux">Toyota Hilux</option>
-  <option value="Maruti Eeco">Maruti Eeco</option>
+                {/* --- Pickup & Vans --- */}
+                <option disabled>-- Pickup / Vans --</option>
+                <option value="Mahindra Bolero Pickup">
+                  Mahindra Bolero Pickup
+                </option>
+                <option value="Tata Xenon">Tata Xenon</option>
+                <option value="Toyota Hilux">Toyota Hilux</option>
+                <option value="Maruti Eeco">Maruti Eeco</option>
 
-  {/* --- Bikes --- */}
-  <option disabled>-- Bikes --</option>
-  <option value="Royal Enfield Classic 350">Royal Enfield Classic 350</option>
-  <option value="Bajaj Pulsar NS200">Bajaj Pulsar NS200</option>
-  <option value="TVS Apache RTR 160 4V">TVS Apache RTR 160 4V</option>
-  <option value="Yamaha MT-15">Yamaha MT-15</option>
-  <option value="KTM Duke 250">KTM Duke 250</option>
-  <option value="Honda CB350 RS">Honda CB350 RS</option>
-  <option value="Suzuki Gixxer 250">Suzuki Gixxer 250</option>
+                {/* --- Bikes --- */}
+                <option disabled>-- Bikes --</option>
+                <option value="Royal Enfield Classic 350">
+                  Royal Enfield Classic 350
+                </option>
+                <option value="Bajaj Pulsar NS200">Bajaj Pulsar NS200</option>
+                <option value="TVS Apache RTR 160 4V">
+                  TVS Apache RTR 160 4V
+                </option>
+                <option value="Yamaha MT-15">Yamaha MT-15</option>
+                <option value="KTM Duke 250">KTM Duke 250</option>
+                <option value="Honda CB350 RS">Honda CB350 RS</option>
+                <option value="Suzuki Gixxer 250">Suzuki Gixxer 250</option>
 
-  {/* --- Scooters --- */}
-  <option disabled>-- Scooters --</option>
-  <option value="Honda Activa 6G">Honda Activa 6G</option>
-  <option value="TVS Ntorq 125">TVS Ntorq 125</option>
-  <option value="Suzuki Access 125">Suzuki Access 125</option>
-  <option value="Yamaha Ray ZR">Yamaha Ray ZR</option>
+                {/* --- Scooters --- */}
+                <option disabled>-- Scooters --</option>
+                <option value="Honda Activa 6G">Honda Activa 6G</option>
+                <option value="TVS Ntorq 125">TVS Ntorq 125</option>
+                <option value="Suzuki Access 125">Suzuki Access 125</option>
+                <option value="Yamaha Ray ZR">Yamaha Ray ZR</option>
 
-  {/* --- Electric Vehicles --- */}
-  <option disabled>-- EVs --</option>
-  <option value="Tata Nexon EV">Tata Nexon EV</option>
-  <option value="MG ZS EV">MG ZS EV</option>
-  <option value="Kia EV6">Kia EV6</option>
-  <option value="Ather 450X">Ather 450X</option>
-  <option value="Ola S1 Pro">Ola S1 Pro</option>
-  <option value="TVS iQube">TVS iQube</option>
+                {/* --- Electric Vehicles --- */}
+                <option disabled>-- EVs --</option>
+                <option value="Tata Nexon EV">Tata Nexon EV</option>
+                <option value="MG ZS EV">MG ZS EV</option>
+                <option value="Kia EV6">Kia EV6</option>
+                <option value="Ather 450X">Ather 450X</option>
+                <option value="Ola S1 Pro">Ola S1 Pro</option>
+                <option value="TVS iQube">TVS iQube</option>
 
-  {/* --- Luxury Vehicles --- */}
-  <option disabled>-- Luxury / Premium --</option>
-  <option value="Mercedes-Benz GLC">Mercedes-Benz GLC</option>
-  <option value="BMW X5">BMW X5</option>
-  <option value="Audi A6">Audi A6</option>
-  <option value="Land Rover Defender">Land Rover Defender</option>
-  <option value="Harley Davidson Iron 883">Harley Davidson Iron 883</option>
-</select>
-
+                {/* --- Luxury Vehicles --- */}
+                <option disabled>-- Luxury / Premium --</option>
+                <option value="Mercedes-Benz GLC">Mercedes-Benz GLC</option>
+                <option value="BMW X5">BMW X5</option>
+                <option value="Audi A6">Audi A6</option>
+                <option value="Land Rover Defender">Land Rover Defender</option>
+                <option value="Harley Davidson Iron 883">
+                  Harley Davidson Iron 883
+                </option>
+              </select>
             </div>
 
             {/* ✅ Service Dropdown */}
             <div>
-              <label htmlFor="service">SERVICE FIELD</label>
+              <label htmlFor="service">Service Type</label>
               <select
                 name="service"
                 required
@@ -286,7 +369,7 @@ export default function Contact() {
             )}
 
             <div>
-              <label htmlFor="request">REQUEST</label>
+              <label htmlFor="request">Request</label>
               <textarea
                 name="request"
                 placeholder="Enter your message"
@@ -299,6 +382,9 @@ export default function Contact() {
               <button type="submit">SEND</button>
             </div>
           </form>
+
+
+
         ) : (
           <div style={{ padding: "20px" }}>
             <h2 style={{ textAlign: "center" }}>
@@ -311,6 +397,8 @@ export default function Contact() {
           </div>
         )}
       </div>
+
+
     </div>
   );
 }

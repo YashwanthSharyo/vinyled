@@ -16,6 +16,8 @@ import Protect from "../../Pages/Protect/protect";
 import Enhance from "../../Pages/Enhance/enhance";
 import Maintain from "../../Pages/Maintain/maintain";
 import Client from "../../Pages/Clients/clients";
+import ContactForm from "../../Pages/Login/login";
+import Faqs from "../../Pages/Faqs/faqs";
 
 function Navigation() {
     return (
@@ -38,6 +40,8 @@ function Navigation() {
                     <Route path="/contact-us" element={<Contact />} />
                     <Route path="/shop-products" element={<ShopProducts />} />
                     <Route path="/whats-app" element={<WhatsApp />} />
+                    <Route path="/contact-form" element={<ContactForm />} />
+                    <Route path="/faqs" element={<Faqs />} />
                 </Routes>
                 <Footer />
             </div>

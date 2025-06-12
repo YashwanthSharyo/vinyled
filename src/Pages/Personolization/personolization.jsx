@@ -118,7 +118,7 @@ export default function Personalization() {
       }}
     >
       <Service
-        title="PERSONALIZATION"
+        title="PERSONALIZE"
         activeTab={activeTab}
         handleTabClick={handleTabClick}
         handleTabMouseEnter={handleTabMouseEnter}

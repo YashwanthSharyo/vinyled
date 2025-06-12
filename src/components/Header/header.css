@@ -17,8 +17,6 @@ a {
 
 .header {
   width: 100%;
-  max-width: 100%;
-  z-index: 3;
   position: fixed;
   background-color: black;
   height: 60px;
@@ -27,6 +25,7 @@ a {
   align-items: center;
   padding: 40px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 3;
 }
 
 .header > .logo {
@@ -45,7 +44,7 @@ a {
 }
 
 .header > .menu {
-  display: none; /* Hidden by default for mobile and tablet */
+  display: none;
   justify-content: center;
   align-items: center;
   padding: 0;
@@ -58,10 +57,6 @@ a {
   line-height: 100%;
 }
 
-.header > .menu > li {
-  display: block;
-}
-
 .header > .menu > li > a {
   display: block;
   padding: 15px 12px;
@@ -69,22 +64,12 @@ a {
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 100%;
-}
-
-.header > .menu > li > a:hover {
-  color: red;
-  background-color: transparent;
 }
 
 .header > .menu > li > a:hover,
-.header > .menu > .dropdown:hover > a {
-  color: red;
-}
-
+.header > .menu > .dropdown:hover > a,
 .header > .menu > .dropdown > .dropdown-menu > li > a:hover {
   color: red;
-  background-color: transparent;
 }
 
 .header > .menu > .dropdown {
@@ -95,9 +80,6 @@ a {
   display: none;
   position: static;
   background-color: #fff;
-  border: none;
-  z-index: 1;
-  min-width: 100%;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -118,40 +100,15 @@ a {
   line-height: 16px;
 }
 
-.header > .menu > .dropdown > a > .icon {
+.header > .menu > .dropdown > a > i.fa-caret-down {
   font-size: 14px;
   margin-left: 3px;
   transition: transform 0.3s ease;
 }
 
-.header > .menu > .dropdown:hover > a > .icon {
+.header > .menu > .dropdown:hover > a > i.fa-caret-down,
+.header > .menu > .dropdown.active > a > i.fa-caret-down {
   transform: rotate(180deg);
-}
-
-.header > .menu > .shop-item {
-  position: relative;
-  list-style: none;
-}
-
-.header > .menu > .shop-item > .shop-link {
-  display: block;
-  padding: 15px 30px;
-  color: black;
-  position: relative;
-  z-index: 2;
-}
-
-.header > .menu > .shop-item::before {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%) skew(-30deg);
-  height: 79px;
-  width: 100%;
-  background-color: #dddddd;
-  z-index: 1;
 }
 
 .header > .flag-icon {
@@ -166,14 +123,13 @@ a {
 }
 
 .header > .menu-icon {
-  display: none; /* Changed: Hidden by default for all screens */
+  display: none;
   cursor: pointer;
   padding: 20px 10px;
-  user-select: none;
 }
 
 .header > .menu-icon > .navicon {
-  background: #ffff;
+  background: white;
   display: block;
   height: 2px;
   position: relative;
@@ -238,13 +194,9 @@ a {
   top: 0;
 }
 
-/* Desktop (≥ 1001px) */
 @media (min-width: 1001px) {
   .header > .menu {
-    display: flex; /* Changed: Show full menu for desktop */
-    clear: none;
-    float: right;
-    max-height: none;
+    display: flex;
     position: static;
     background: transparent;
     width: auto;
@@ -267,20 +219,16 @@ a {
   }
 
   .header > .menu-icon {
-    display: none; /* Changed: Ensure menu icon is hidden */
-  }
-
-  .header > .flag-icon {
-    display: flex;
+    display: none;
   }
 }
 
-/* Tablet and Mobile (≤ 1000px) */
 @media (max-width: 1000px) {
   .header {
     position: relative;
     padding: 20px;
   }
+
   .header > .logo > .logo-img {
     width: 200px;
     height: 45px;
@@ -288,7 +236,7 @@ a {
   }
 
   .header > .menu {
-    display: none; /* Hidden until toggled */
+    display: none;
     position: absolute;
     top: 60px;
     left: 0;
@@ -300,7 +248,6 @@ a {
     max-height: 0;
     overflow-y: auto;
     width: 100%;
-    max-width: 100%;
     z-index: 2;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
@@ -331,12 +278,8 @@ a {
     text-align: center;
   }
 
-  .header > .menu > .shop-item::before {
-    height: 50px;
-  }
-
   .header > .menu-icon {
-    display: inline-block; /* Changed: Show hamburger menu for ≤ 1000px */
+    display: inline-block;
     position: absolute;
     right: 16px;
     top: 50%;

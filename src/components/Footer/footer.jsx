@@ -32,7 +32,7 @@ const Footer = () => {
               <Link to="/" onClick={handleLogoClick}>
                 <img
                   className="logo"
-                  src="Images/vinyled.svg"
+                  src="Images/logo1.svg"
                   alt="Company Logo"
                   style={{ cursor: "pointer" }}
                 />
@@ -163,7 +163,7 @@ const Footer = () => {
                 <a href="tel:9066431968">Phone: 90664 31968</a>
               </div>
               <div className="link">
-                <a href="mailto:info@vinyled.in">Email: info@vinyled.in</a>
+                <a href="mailto:vinyled.in@gmail.com">Email: vinyled.in@gmail.com</a>
               </div>
             </div>
           </div>

@@ -41,7 +41,7 @@
   height: 150px;
   width: 170px;
   object-fit: contain;
-  filter: invert(1);
+  
   margin-bottom: 8px;
 }
 

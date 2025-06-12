@@ -180,7 +180,7 @@
 /* Small Mobile (≤480px) */
 @media (max-width: 480px) {
   .banner {
-    min-height: 250px;
+    min-height: 300px;
   }
 
   .banner .title {
